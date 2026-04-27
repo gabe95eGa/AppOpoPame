@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pràctica d'examen - Educació infantil</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Preparació d'examen</p>
+          <h1>Pràctica tipus test</h1>
+        </div>
+        <button class="ghost-button" id="resetStatsBtn" type="button">Reinicia estadístiques</button>
+      </header>
+
+      <main id="app" class="app"></main>
+    </div>
+
+    <template id="homeTemplate">
+      <section class="grid two">
+        <article class="panel start-panel">
+          <div class="section-title">
+            <p class="eyebrow">Modes disponibles</p>
+            <h2>Comença a practicar</h2>
+          </div>
+          <div class="mode-list">
+            <button class="mode-card" data-mode="first">
+              <span>Primera prova - Tipus test</span>
+              <small>40 preguntes, puntuació sobre 30 i llindar d'apte/a a 15 punts.</small>
+            </button>
+            <button class="mode-card" data-mode="case">
+              <span>Segona prova - Cas pràctic</span>
+              <small>Supòsit professional amb 15 preguntes i penalització també en blanc.</small>
+            </button>
+            <button class="mode-card" data-mode="study">
+              <span>Mode estudi</span>
+              <small>Preguntes per tema, resposta immediata i explicació breu.</small>
+            </button>
+          </div>
+        </article>
+
+        <aside class="panel stats-panel">
+          <div class="section-title">
+            <p class="eyebrow">Resum local</p>
+            <h2>Estadístiques</h2>
+          </div>
+          <div class="stats-grid" id="statsGrid"></div>
+          <div class="weak-list" id="weakTopics"></div>
+        </aside>
+      </section>
+
+      <section class="panel source-panel">
+        <div class="section-title">
+          <p class="eyebrow">Base documental</p>
+          <h2>Fonts utilitzades per aquesta versió</h2>
+        </div>
+        <p>
+          Les preguntes educatives s'han formulat a partir del currículum i la normativa educativa de
+          Catalunya referenciats al temari, especialment el Decret 21/2023, el Decret 282/2006, el
+          Decret 102/2010 i el Decret 150/2017. Els temes generals només s'utilitzen quan formen part
+          explícita dels annexos de l'oposició. Les opcions de resposta es barregen perquè la resposta
+          correcta no aparegui sempre a la mateixa lletra.
+        </p>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

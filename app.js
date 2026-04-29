@@ -1031,6 +1031,9 @@ const CASE_QUESTIONS = [
 const app = document.getElementById("app");
 const homeTemplate = document.getElementById("homeTemplate");
 const resetStatsBtn = document.getElementById("resetStatsBtn");
+const confirmResetModal = document.getElementById("confirmResetModal");
+const cancelResetBtn = document.getElementById("cancelResetBtn");
+const confirmResetBtn = document.getElementById("confirmResetBtn");
 const STORAGE_KEY = "examenEducacioInfantilStats";
 let session = null;
 
@@ -1451,9 +1454,32 @@ function renderStudy() {
   renderStudyList();
 }
 
-resetStatsBtn.addEventListener("click", () => {
+function openResetModal() {
+  confirmResetModal.hidden = false;
+  cancelResetBtn.focus();
+}
+
+function closeResetModal() {
+  confirmResetModal.hidden = true;
+  resetStatsBtn.focus();
+}
+
+resetStatsBtn.addEventListener("click", openResetModal);
+
+cancelResetBtn.addEventListener("click", closeResetModal);
+
+confirmResetBtn.addEventListener("click", () => {
   localStorage.removeItem(STORAGE_KEY);
+  closeResetModal();
   if (!session) renderStats();
+});
+
+confirmResetModal.addEventListener("click", (event) => {
+  if (event.target === confirmResetModal) closeResetModal();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !confirmResetModal.hidden) closeResetModal();
 });
 
 renderHome();

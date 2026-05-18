@@ -305,7 +305,7 @@ Objectiu: ampliar i millorar el banc de preguntes de l'AppOpoPame per als temes 
 **Competencia:** Criteri professional  
 **Enunciat:** Quin criteri s'ajusta millor a una bona seleccio de materials?  
 **Opcions:**  
-1. Prioritzar qualitat, coherencia amb el projecte i possibilitats d'Ãºs per davant del nombre de peces.  
+1. Prioritzar qualitat, coherencia amb el projecte i possibilitats d'ús per davant del nombre de peces.  
 2. Comprar molts materials diferents per impressionar i renovar constantment la proposta.  
 3. Escollir materials molt tancats per reduir la variabilitat del joc.  
 4. Situar els materials en espais elevats per controlar-ne millor l'us.  
@@ -437,7 +437,7 @@ Objectiu: ampliar i millorar el banc de preguntes de l'AppOpoPame per als temes 
 **Competencia:** Criteri professional  
 **Enunciat:** Quina afirmacio es mes coherent amb el valor educatiu de la natura?  
 **Opcions:**  
-1. La natura es un context quotidiÃ  d'exploracio, observacio i relacio.  
+1. La natura es un context quotidià d'exploracio, observacio i relacio.  
 2. La natura te valor sobretot com a decorat de l'espai exterior.  
 3. La natura serveix si l'adult prepara una activitat tancada amb resultat unique.  
 4. La natura es secundaria respecte de les propostes d'interior.  
@@ -603,9 +603,9 @@ Objectiu: ampliar i millorar el banc de preguntes de l'AppOpoPame per als temes 
 **Competencia:** Comprensio normativa i sanitaria  
 **Enunciat:** Quin ordre de la pauta PAS es correcte davant una incidencia a l'aula?  
 **Opcions:**  
-1. Protegir, avisar i socÃ³rrer segons la situacio.  
-2. SocÃ³rrer, protegir i avisar.  
-3. Avisar, socÃ³rrer i desprÃ©s protegir si cal.  
+1. Protegir, avisar i socórrer segons la situacio.  
+2. Socórrer, protegir i avisar.  
+3. Avisar, socórrer i després protegir si cal.  
 4. Registrar, avisar i esperar instruccions abans de fer res.  
 **Correcta:** 0  
 **Explicacio:** La prioritat es protegir l'entorn, alertar els serveis si escau i atendre amb seguretat.  
@@ -617,7 +617,7 @@ Objectiu: ampliar i millorar el banc de preguntes de l'AppOpoPame per als temes 
 **Document/font:** Canal Salut - primers auxilis davant traumatismes  
 **Dificultat:** alta  
 **Competencia:** Aplicacio a suposit practic  
-**Enunciat:** Un infant cau i es toca el cap amb dolor pero sense pÃ¨rdua de consciencia. Quin criteri inicial es mes adequat?  
+**Enunciat:** Un infant cau i es toca el cap amb dolor pero sense pèrdua de consciencia. Quin criteri inicial es mes adequat?  
 **Opcions:**  
 1. Mantenir la calma, valorar l'estat general i seguir el protocol del centre.  
 2. Fer-lo caminar de seguida per comprovar si ja esta be.  
@@ -658,7 +658,7 @@ Objectiu: ampliar i millorar el banc de preguntes de l'AppOpoPame per als temes 
 **Correcta:** 0  
 **Explicacio:** La prevencio combina entorn segur, revisio de materials i organitzacio fisica de l'espai.  
 **Fonts URLs:** [Joguines saludables i segures](https://canalsalut.gencat.cat/ca/vida-saludable/lleure-seguretat/joguines/), [Primers auxilis](https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/)  
-**Notes distractors:** O2 tolera un risc evitable; O3 prioritza preferencia sobre seguretat; O4 sobrevalora la vigilacia i menystÃ© l'entorn.
+**Notes distractors:** O2 tolera un risc evitable; O3 prioritza preferencia sobre seguretat; O4 sobrevalora la vigilacia i menysté l'entorn.
 
 ## 4) Resum de proposta
 

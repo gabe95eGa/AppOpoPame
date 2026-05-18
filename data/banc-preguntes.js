@@ -3391,7 +3391,7 @@ window.EXAM_DATA = {
       "document": "Orientacions curriculars d'educacio infantil",
       "prompt": "Quin criteri s'ajusta millor a una bona seleccio de materials?",
       "options": [
-        "Prioritzar qualitat, coherencia amb el projecte i possibilitats d'Ãºs per davant del nombre de peces.",
+        "Prioritzar qualitat, coherencia amb el projecte i possibilitats d'ús per davant del nombre de peces.",
         "Comprar molts materials diferents per impressionar i renovar constantment la proposta.",
         "Escollir materials molt tancats per reduir la variabilitat del joc.",
         "Situar els materials en espais elevats per controlar-ne millor l'us."
@@ -3577,7 +3577,7 @@ window.EXAM_DATA = {
       "document": "Orientacions curriculars d'educacio infantil + XTEC espais exteriors",
       "prompt": "Quina afirmacio es mes coherent amb el valor educatiu de la natura?",
       "options": [
-        "La natura es un context quotidiÃ d'exploracio, observacio i relacio.",
+        "La natura és un context quotidià d'exploració, observació i relació.",
         "La natura te valor sobretot com a decorat de l'espai exterior.",
         "La natura serveix si l'adult prepara una activitat tancada amb resultat unique.",
         "La natura es secundaria respecte de les propostes d'interior."
@@ -3733,9 +3733,9 @@ window.EXAM_DATA = {
       "document": "Canal Salut - primers auxilis + orientacions curriculars",
       "prompt": "Quin ordre de la pauta PAS es correcte davant una incidencia a l'aula?",
       "options": [
-        "Protegir, avisar i socÃ³rrer segons la situacio.",
-        "SocÃ³rrer, protegir i avisar.",
-        "Avisar, socÃ³rrer i després protegir si cal.",
+        "Protegir, avisar i socórrer segons la situacio.",
+        "Socórrer, protegir i avisar.",
+        "Avisar, socórrer i després protegir si cal.",
         "Registrar, avisar i esperar instruccions abans de fer res."
       ],
       "correct": 0,

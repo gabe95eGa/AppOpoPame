@@ -62,6 +62,10 @@ function formatScore(value) {
   return Number(value).toFixed(3).replace(/\.?0+$/, "");
 }
 
+function reviewPill(question) {
+  return question.reviewLabel ? `<span class="pill review-pill">${question.reviewLabel}</span>` : "";
+}
+
 function renderHome() {
   session = null;
   app.replaceChildren(homeTemplate.content.cloneNode(true));
@@ -162,6 +166,7 @@ function renderExam() {
           <div class="question-meta">
             <span class="pill">${question.theme}</span>
             <span class="pill">${question.document}</span>
+            ${reviewPill(question)}
           </div>
           <h3 class="question-title">${question.prompt}</h3>
           <div class="options">
@@ -346,6 +351,7 @@ function renderResults(result) {
               <div class="question-meta">
                 <span class="pill">${state === "correct" ? "Correcta" : state === "wrong" ? "Incorrecta" : "En blanc"}</span>
                 <span class="pill">${question.theme}</span>
+                ${reviewPill(question)}
               </div>
               <h3>${index + 1}. ${question.prompt}</h3>
               <p><strong>La teva resposta:</strong> ${answerLabel}</p>
@@ -392,6 +398,7 @@ function renderStudy() {
         <div class="question-meta">
           <span class="pill">${question.theme}</span>
           <span class="pill">${question.document}</span>
+          ${reviewPill(question)}
         </div>
         <h3>${question.prompt}</h3>
         <div class="options">

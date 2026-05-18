@@ -348,6 +348,12 @@ h3 {
   font-weight: 800;
 }
 
+.review-pill {
+  border-color: #f0c36d;
+  background: #fff5d7;
+  color: #745114;
+}
+
 .question-title {
   margin-bottom: 18px;
   font-size: 1.28rem;

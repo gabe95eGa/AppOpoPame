@@ -174,10 +174,6 @@ function renderStudySections(item) {
     ${renderStudySection("Contingut principal", mainContent)}
     ${renderStudySection("Punts importants d'examen", examPoints)}
     ${renderSourcesSection(sources)}
-    <section class="study-page-section verification-section">
-      <h4>Verificació</h4>
-      <p>Última verificació del material d'estudi: ${item.lastVerified || "pendent de revisió final amb les fonts oficials"}.</p>
-    </section>
   `;
 }
 
@@ -611,10 +607,6 @@ function renderPlainTextStudy() {
         <p class="lead-text">${renderInlineMarkdown(item.summary)}</p>
         <div class="study-page">
           ${renderStudySections(item)}
-        </div>
-        <div class="study-guide-block">
-          <h3>Pauta d'estudi</h3>
-          <ul>${item.studyGuide.map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
         </div>
         <nav class="study-bottom-navigation" aria-label="Navegació entre temes">
           <button class="ghost-button" id="textPrevBtn" type="button" ${currentIndex <= 0 ? "disabled" : ""}>Tema anterior</button>

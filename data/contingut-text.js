@@ -103,13 +103,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -246,13 +240,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -348,13 +336,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -449,13 +431,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -552,13 +528,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -658,13 +628,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -770,13 +734,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -890,13 +848,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -1005,13 +957,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -1143,13 +1089,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -1265,13 +1205,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -1400,13 +1334,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex I",
@@ -1524,13 +1452,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -1631,13 +1553,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -1743,13 +1659,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -1862,13 +1772,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -1955,13 +1859,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2080,13 +1978,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2196,13 +2088,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2310,13 +2196,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2460,13 +2340,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2601,13 +2475,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2716,13 +2584,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2836,13 +2698,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -2950,13 +2806,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3095,13 +2945,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3223,13 +3067,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3343,13 +3181,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3466,13 +3298,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3604,13 +3430,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3722,13 +3542,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3849,13 +3663,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -3966,13 +3774,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4096,13 +3898,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4234,13 +4030,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4359,13 +4149,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4479,13 +4263,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4604,13 +4382,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -4721,13 +4493,7 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   },
   {
     "annex": "Annex II",
@@ -5285,12 +5051,6 @@ window.STUDY_TEXT = [
           }
         ]
       }
-    ],
-    "studyGuide": [
-      "Estudia el tema de dalt a baix i identifica què pregunta exactament el subtítol.",
-      "Marca els punts testables i comprova després si els reconeixes al mode test.",
-      "Quan fallis una pregunta, torna a la secció corresponent del tema i rellegeix-la completa."
-    ],
-    "lastVerified": "19/05/2026 (validació tècnica del material importat; revisió legal final pendent si escau)"
+    ]
   }
 ];

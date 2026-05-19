@@ -671,12 +671,6 @@ h3 {
   font-weight: 800;
 }
 
-.study-guide-block {
-  margin-top: 4px;
-  padding: 18px 0 0;
-  border-top: 1px solid var(--line);
-}
-
 .documentation-note {
   margin-bottom: 16px;
   padding: 12px 14px;
@@ -713,10 +707,6 @@ h3 {
 .source-badge.pending {
   background: var(--blank-bg);
   color: var(--blank);
-}
-
-.verification-section p {
-  color: var(--muted);
 }
 
 .study-bottom-navigation {
@@ -823,8 +813,7 @@ h3 {
     padding-inline: 10px;
   }
 
-  .study-page-section,
-  .study-guide-block {
+  .study-page-section {
     padding-top: 16px;
   }
 

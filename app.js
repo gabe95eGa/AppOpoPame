@@ -93,38 +93,90 @@ function renderInlineMarkdown(value) {
 function renderStudyBlocks(blocks) {
   return (blocks || []).map((block) => {
     if (block.type === "list") {
-      return `<ul>${block.items.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join("")}</ul>`;
+      const items = block.items.filter((item) => item.trim() !== "---");
+      return items.length ? `<ul>${items.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join("")}</ul>` : "";
     }
+    if (block.text.trim() === "---") return "";
     return `<p>${renderInlineMarkdown(block.text)}</p>`;
   }).join("");
 }
 
-function renderStudySections(item) {
-  if (Array.isArray(item.sections) && item.sections.length) {
-    return item.sections.map((section) => `
-      <section class="study-page-section">
-        <h4>${renderInlineMarkdown(section.heading)}</h4>
-        ${renderStudyBlocks(section.blocks)}
-      </section>
-    `).join("");
-  }
+function getStudySection(item, matcher) {
+  return (item.sections || []).find((section) => matcher(section.heading.toLowerCase()));
+}
 
+function renderStudySection(title, section, fallback = "") {
+  const content = section ? renderStudyBlocks(section.blocks) : fallback;
+  if (!content.trim()) return "";
   return `
     <section class="study-page-section">
-      <h4>Context del tema</h4>
-      <p>${renderInlineMarkdown(item.summary)}</p>
+      <h4>${title}</h4>
+      ${content}
     </section>
-    <section class="study-page-section">
-      <h4>Conceptes essencials</h4>
-      <ul>${(item.keyConcepts || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
-    </section>
-    <section class="study-page-section">
-      <h4>Punts testables</h4>
-      <ul>${(item.testablePoints || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
-    </section>
-    <section class="study-page-section">
+  `;
+}
+
+function isOfficialSource(text) {
+  return /(BOE|Portal Jur[ií]dic|XTEC|Departament|Canal Salut|APDCAT|Protecci[oó] Civil|Ajuntament|Drets Socials|Generalitat)/i.test(text);
+}
+
+function renderSourcesSection(section) {
+  const sourceItems = (section?.blocks || [])
+    .flatMap((block) => block.type === "list" ? block.items : [block.text])
+    .map((text) => text.trim())
+    .filter((text) => text && text !== "---");
+
+  const official = sourceItems.filter(isOfficialSource);
+  const internal = sourceItems.filter((text) => !isOfficialSource(text));
+
+  return `
+    <section class="study-page-section sources-section">
       <h4>Fonts base</h4>
-      <ul>${(item.sources || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+      ${official.length ? `
+        <div class="source-group">
+          <span class="source-badge official">Fonts oficials o institucionals</span>
+          <ul>${official.map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+        </div>
+      ` : `
+        <p><span class="source-badge pending">Pendent de verificació oficial</span></p>
+      `}
+      ${internal.length ? `
+        <div class="source-group">
+          <span class="source-badge internal">Resums interns o apunts d'estudi</span>
+          <ul>${internal.map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+        </div>
+      ` : ""}
+    </section>
+  `;
+}
+
+function mergeBlocks(sections) {
+  return sections
+    .filter(Boolean)
+    .flatMap((section) => [
+      { type: "paragraph", text: `**${section.heading}**` },
+      ...(section.blocks || [])
+    ]);
+}
+
+function renderStudySections(item) {
+  const context = getStudySection(item, (heading) => heading.startsWith("context"));
+  const keyBlock = getStudySection(item, (heading) => heading.startsWith("bloc clau"));
+  const essential = getStudySection(item, (heading) => heading.startsWith("contingut essencial"));
+  const examPoints = getStudySection(item, (heading) => heading.startsWith("punts testables"));
+  const sources = getStudySection(item, (heading) => heading.startsWith("fonts base"));
+  const mainSections = (item.sections || []).filter((section) => ![context, keyBlock, essential, examPoints, sources].includes(section));
+  const mainContent = { blocks: mergeBlocks([essential, ...mainSections]) };
+
+  return `
+    ${renderStudySection("Context", context, `<p>${renderInlineMarkdown(item.summary)}</p>`)}
+    ${renderStudySection("Conceptes clau", keyBlock)}
+    ${renderStudySection("Contingut principal", mainContent)}
+    ${renderStudySection("Punts importants d'examen", examPoints)}
+    ${renderSourcesSection(sources)}
+    <section class="study-page-section verification-section">
+      <h4>Verificació</h4>
+      <p>Última verificació del material d'estudi: ${item.lastVerified || "pendent de revisió final amb les fonts oficials"}.</p>
     </section>
   `;
 }
@@ -507,7 +559,7 @@ function renderStudy() {
 
 function renderPlainTextStudy() {
   app.innerHTML = `
-    <section class="panel review-panel">
+    <section class="panel review-panel study-shell">
       <div class="exam-header">
         <div>
           <p class="eyebrow">Temari per temes</p>
@@ -515,31 +567,38 @@ function renderPlainTextStudy() {
         </div>
         <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
       </div>
+      <div class="documentation-note">
+        <strong>Base documental.</strong>
+        Aquest web és material d'estudi i no substitueix les bases oficials de la convocatòria ni la normativa publicada pels organismes competents.
+      </div>
       <div class="study-controls">
         <label for="textTopicSelect">Tema</label>
         <select id="textTopicSelect">
           ${STUDY_TEXT.map((item, index) => `<option value="${index}">${contentKey(item)} - ${item.title}</option>`).join("")}
         </select>
-        <div class="study-navigation">
-          <button class="ghost-button" id="textPrevBtn" type="button">Tema anterior</button>
-          <button class="ghost-button" id="textNextBtn" type="button">Tema següent</button>
-        </div>
       </div>
       <div id="plainTextContent"></div>
     </section>
   `;
   document.getElementById("homeBtn").addEventListener("click", renderHome);
   const select = document.getElementById("textTopicSelect");
-  const prevBtn = document.getElementById("textPrevBtn");
-  const nextBtn = document.getElementById("textNextBtn");
   const topicCount = STUDY_TEXT.length;
   const updateNavState = () => {
     const currentIndex = Number(select.value);
+    const prevBtn = document.getElementById("textPrevBtn");
+    const nextBtn = document.getElementById("textNextBtn");
+    if (!prevBtn || !nextBtn) return;
     prevBtn.disabled = currentIndex <= 0;
     nextBtn.disabled = currentIndex >= topicCount - 1;
   };
+  const goToTopic = (index) => {
+    select.value = String(index);
+    renderTopic();
+    document.querySelector(".study-shell")?.scrollIntoView({ block: "start" });
+  };
   const renderTopic = () => {
     const item = STUDY_TEXT[Number(select.value)];
+    const currentIndex = Number(select.value);
     document.getElementById("plainTextContent").innerHTML = `
       <article class="plain-study">
         <div class="content-heading">
@@ -557,23 +616,21 @@ function renderPlainTextStudy() {
           <h3>Pauta d'estudi</h3>
           <ul>${item.studyGuide.map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
         </div>
+        <nav class="study-bottom-navigation" aria-label="Navegació entre temes">
+          <button class="ghost-button" id="textPrevBtn" type="button" ${currentIndex <= 0 ? "disabled" : ""}>Tema anterior</button>
+          <button class="ghost-button" id="textNextBtn" type="button" ${currentIndex >= topicCount - 1 ? "disabled" : ""}>Tema següent</button>
+        </nav>
       </article>
     `;
+    document.getElementById("textPrevBtn").addEventListener("click", () => {
+      if (currentIndex > 0) goToTopic(currentIndex - 1);
+    });
+    document.getElementById("textNextBtn").addEventListener("click", () => {
+      if (currentIndex < topicCount - 1) goToTopic(currentIndex + 1);
+    });
     updateNavState();
   };
-  prevBtn.addEventListener("click", () => {
-    const currentIndex = Number(select.value);
-    if (currentIndex <= 0) return;
-    select.value = String(currentIndex - 1);
-    renderTopic();
-  });
-  nextBtn.addEventListener("click", () => {
-    const currentIndex = Number(select.value);
-    if (currentIndex >= topicCount - 1) return;
-    select.value = String(currentIndex + 1);
-    renderTopic();
-  });
-  select.addEventListener("change", renderTopic);
+  select.addEventListener("change", () => goToTopic(Number(select.value)));
   renderTopic();
 }
 

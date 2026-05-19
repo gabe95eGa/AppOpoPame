@@ -1,15 +1,23 @@
 window.EXAM_DATA = {
-  "version": "2026-05-18-v2",
+  "version": "2026-05-19-v3",
   "locale": "ca",
   "methodology": {
-    "summary": "Banc separat de la logica de l'aplicacio. Els distractors s'han revisat perque siguin plausibles i del mateix camp conceptual.",
-    "display": "L'aplicacio barreja sempre l'ordre de les preguntes i de les opcions.",
-    "curriculumScope": "Les preguntes educatives es basen en el curriculum i la normativa educativa de Catalunya referenciats al temari.",
-    "v2": "S han incorporat preguntes v2 per garantir un minim de 4 preguntes per tema. Les dels temes delicats porten etiqueta de revisio per la senyoreta Pame."
+    "summary": "Banc refet a partir dels subtítols exactes del temari de Lliçà d’Amunt i del PDF de Caldes com a pauta comparativa, prioritzant fonts oficials de Catalunya.",
+    "display": "L’aplicació barreja sempre l’ordre de preguntes i opcions; la resposta correcta no queda fixada a la posició A.",
+    "curriculumScope": "Les preguntes educatives de l’Annex II fan referència a l’etapa d’educació infantil de 0 a 3 anys a Catalunya.",
+    "review": "Els temes amb interpretació normativa, municipal o dades sensibles porten etiqueta de revisió per la senyoreta Pame."
   },
   "sources": [
     {
-      "title": "XTEC - Curriculum i orientacio. Educacio infantil",
+      "title": "PDF base de Caldes utilitzat com a pauta comparativa",
+      "url": "docs/fonts/Temari examen Caldes.pdf"
+    },
+    {
+      "title": "Pauta de refactor del temari de Lliçà d’Amunt",
+      "url": "docs/pauta-refactor-temari-llica.md"
+    },
+    {
+      "title": "XTEC - Currículum i orientació. Educació infantil",
       "url": "https://xtec.gencat.cat/ca/curriculum/infantil/"
     },
     {
@@ -17,4611 +25,4531 @@ window.EXAM_DATA = {
       "url": "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/"
     },
     {
-      "title": "Portal Juridic de Catalunya - Decret 21/2023",
+      "title": "Portal Jurídic de Catalunya - Decret 21/2023",
       "url": "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
     },
     {
-      "title": "XTEC - Marc conceptual i normatiu d'educacio inclusiva",
-      "url": "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/marc-conceptual-i-normatiu/"
-    },
-    {
-      "title": "XTEC - Coeducacio i perspectiva de genere",
-      "url": "https://xtec.gencat.cat/ca/alumnat/benestar/coeducacio-i-perspectiva-de-genere/"
+      "title": "Ajuntament de Lliçà d’Amunt",
+      "url": "https://www.llicamunt.cat/"
     }
   ],
   "caseContext": "Suposit practic: ets tecnica d'educacio infantil en una escola bressol municipal de Llica d'Amunt. El grup d'1 a 2 anys inicia el curs amb infants amb ritmes diversos, una familia nova que viu la separacio amb angoixa, un infant amb possibles signes d'alerta comunicatius, canvis en l'alimentacio i la necessitat de revisar protocols de sortida al pati, higiene, imatge i evacuacio.",
   "questionBank": [
     {
-      "id": "g1-01",
+      "id": "a1-v3-01-01",
       "theme": "Annex I - Tema 1",
-      "document": "Constitucio espanyola de 1978",
-      "prompt": "Quina afirmacio descriu millor la posicio de la Constitucio espanyola dins l'ordenament juridic?",
+      "document": "La Constitució Espanyola de 1978. Estructura i principis generals.",
+      "prompt": "Quin apartat de la Constitucio expressa millor els valors superiors de l'ordenament?",
       "options": [
-        "Es la norma suprema a la qual resten subjectes els poders publics i la ciutadania.",
-        "És una norma superior només en matèria de drets fonamentals, però no condiciona l'organització territorial.",
-        "És una llei ordinària que pot ser modificada pel Govern mitjançant decret.",
-        "Té valor polític preferent, però no vincula directament tots els poders públics."
+        "L'article 1.1",
+        "L'article 9.1",
+        "L'article 14.",
+        "L'article 10.1"
       ],
       "correct": 0,
-      "explanation": "La Constitucio es la norma superior de l'ordenament i vincula els poders publics. Font: Annex I, tema 1.",
+      "explanation": "L'article 1.1 proclama llibertat, justícia, igualtat i pluralisme politic.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "i - tema 1"
+        "annex i - tema 1"
       ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g1-02",
-      "theme": "Annex I - Tema 1",
-      "document": "Constitucio espanyola de 1978",
-      "prompt": "Quins valors superiors proclama l'article 1.1 de la Constitucio espanyola?",
-      "options": [
-        "Llibertat, justicia, igualtat i pluralisme politic.",
-        "Legalitat, jerarquia normativa, publicitat i seguretat jurídica.",
-        "Unitat, autonomia, solidaritat i igualtat territorial.",
-        "Eficàcia, descentralització, desconcentració i coordinació."
-      ],
-      "correct": 0,
-      "explanation": "L'article 1.1 situa aquests quatre valors com a valors superiors de l'ordenament. Font: Constitucio, Annex I, tema 1.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 1"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g2-01",
-      "theme": "Annex I - Tema 2",
-      "document": "Constitucio espanyola de 1978",
-      "prompt": "Quin mecanisme protegeix especialment els drets fonamentals davant vulneracions per part dels poders publics?",
-      "options": [
-        "El recurs d'empara davant el Tribunal Constitucional, quan escau.",
-        "La protecció depèn exclusivament de cada administració i no inclou tutela judicial.",
-        "Només es pot invocar davant els òrgans municipals quan hi ha una ordenança específica.",
-        "La garantia principal és la revisió interna del mateix òrgan que ha vulnerat el dret."
-      ],
-      "correct": 0,
-      "explanation": "Les garanties constitucionals inclouen la tutela judicial i, per determinats drets, el recurs d'empara. Font: Annex I, tema 2.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 2"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g2-02",
-      "theme": "Annex I - Tema 2",
-      "document": "Constitucio espanyola de 1978",
-      "prompt": "En materia de drets fonamentals, que implica el principi d'igualtat de l'article 14?",
-      "options": [
-        "Que no pot prevaler discriminacio per raons com naixement, sexe, religio, opinio o qualsevol altra condicio personal o social.",
-        "Que totes les persones rebin sempre exactament les mateixes mesures, sense valorar diferències objectives.",
-        "Que només es prohibeixen discriminacions expressament regulades per una ordenança.",
-        "Que la igualtat s'aplica a l'accés a l'ocupació pública, però no a l'àmbit educatiu."
-      ],
-      "correct": 0,
-      "explanation": "L'article 14 formula la igualtat davant la llei i la prohibicio de discriminacio. Font: Annex I, tema 2.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 2"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g3-01",
-      "theme": "Annex I - Tema 3",
-      "document": "Estatut d'autonomia de Catalunya",
-      "prompt": "Com defineix l'Estatut d'autonomia la seva funcio principal?",
-      "options": [
-        "Com la norma institucional basica de Catalunya.",
-        "És una norma organitzativa sense efectes sobre competències ni institucions catalanes.",
-        "Defineix només símbols i denominacions institucionals, però no drets ni principis.",
-        "Actua com a reglament executiu subordinat als decrets municipals."
-      ],
-      "correct": 0,
-      "explanation": "L'Estatut es la norma institucional basica que defineix institucions, drets, deures i competencies. Font: Annex I, tema 3.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 3",
-        "autonomia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g3-02",
-      "theme": "Annex I - Tema 3",
-      "document": "Estatut d'autonomia de Catalunya",
-      "prompt": "Quin contingut forma part del nucli de l'Estatut d'autonomia de Catalunya segons el temari?",
-      "options": [
-        "Estructura, contingut essencial i principis fonamentals.",
-        "És una norma organitzativa sense efectes sobre competències ni institucions catalanes.",
-        "Defineix només símbols i denominacions institucionals, però no drets ni principis.",
-        "Actua com a reglament executiu subordinat als decrets municipals."
-      ],
-      "correct": 0,
-      "explanation": "El tema 3 de l'Annex I identifica aquests tres blocs com a contingut d'estudi de l'Estatut.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 3",
-        "autonomia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g4-01",
-      "theme": "Annex I - Tema 4",
-      "document": "Administracio local",
-      "prompt": "Quines entitats integren de manera basica l'Administracio local?",
-      "options": [
-        "Municipis, provincies i altres entitats locals reconegudes per l'ordenament.",
-        "La integren únicament els ajuntaments, sense altres ens locals ni entitats territorials.",
-        "Inclou els centres educatius públics com a administracions locals autònomes.",
-        "És una administració delegada sense personalitat pròpia ni interessos locals."
-      ],
-      "correct": 0,
-      "explanation": "El temari situa l'Administracio local com el conjunt d'ens locals, amb el municipi com a peca essencial. Font: Annex I, tema 4.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 4"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g5-01",
-      "theme": "Annex I - Tema 5",
-      "document": "Llei reguladora de les bases del regim local",
-      "prompt": "Quins organs municipals formen part de l'estructura basica de govern d'un ajuntament?",
-      "options": [
-        "Alcaldia, ple i, quan correspon, junta de govern local.",
-        "Alcaldia, secretaria, intervenció i consell escolar municipal.",
-        "Ple, comissions informatives i equip directiu dels serveis educatius.",
-        "Junta de govern, regidories i assemblea de treballadors."
-      ],
-      "correct": 0,
-      "explanation": "La regulacio local preveu organs representatius i executius municipals com l'alcaldia, el ple i la junta de govern local. Font: Annex I, tema 5.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 5"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g5-02",
-      "theme": "Annex I - Tema 5",
-      "document": "El municipi",
-      "prompt": "Que expressa millor la designacio politica dels organs municipals?",
-      "options": [
-        "El ple deriva de l'eleccio dels regidors i l'alcaldia es designa segons les regles electorals municipals.",
-        "L'alcaldia és escollida directament per la ciutadania en una votació separada de la llista de regidors.",
-        "El ple es constitueix per designació de l'alcaldia entre persones de confiança.",
-        "La junta de govern local és triada directament per votació popular i assumeix la representació política general."
-      ],
-      "correct": 0,
-      "explanation": "El tema 5 tracta els organs de representacio politica municipal i la seva designacio. Font: Annex I, tema 5.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 5",
-        "municipi"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g6-01",
-      "theme": "Annex I - Tema 6",
-      "document": "Llei de bases de regim local",
-      "prompt": "En relacio amb les competencies municipals, quina idea es correcta?",
-      "options": [
-        "La llei atribueix competencies als municipis per gestionar interessos propis de la comunitat veinal.",
-        "Les competències municipals són sempre voluntàries i no poden derivar de cap llei sectorial.",
-        "El municipi només pot actuar quan rep una autorització individual de la Generalitat per a cada expedient.",
-        "Els serveis municipals no formen part de les competències locals si tenen finalitat educativa o social."
-      ],
-      "correct": 0,
-      "explanation": "La normativa local reconeix el municipi com a entitat de gestio dels interessos locals. Font: Annex I, tema 6.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 6"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g7-01",
-      "theme": "Annex I - Tema 7",
-      "document": "Acte administratiu",
-      "prompt": "Quina definicio s'ajusta millor al concepte d'acte administratiu?",
-      "options": [
-        "Declaracio de voluntat, judici, coneixement o desig feta per una Administracio en exercici de potestats administratives.",
-        "És qualsevol comunicació interna sense necessitat de competència, forma ni finalitat administrativa.",
-        "Només són actes administratius les decisions que imposen sancions o multes.",
-        "És vàlid si expressa una voluntat pública, encara que l'òrgan no sigui competent."
-      ],
-      "correct": 0,
-      "explanation": "El tema 7 demana concepte, classes i elements de l'acte administratiu; la definicio s'ajusta a la doctrina administrativa habitual.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 7"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g7-02",
-      "theme": "Annex I - Tema 7",
-      "document": "Acte administratiu",
-      "prompt": "Quin element es necessari per a la validesa d'un acte administratiu?",
-      "options": [
-        "Que l'orgue que el dicta sigui competent i segueixi el procediment establert.",
-        "És qualsevol comunicació interna sense necessitat de competència, forma ni finalitat administrativa.",
-        "Només són actes administratius les decisions que imposen sancions o multes.",
-        "És vàlid si expressa una voluntat pública, encara que l'òrgan no sigui competent."
-      ],
-      "correct": 0,
-      "explanation": "Els requisits dels actes administratius inclouen competencia, contingut possible, finalitat i procediment. Font: Annex I, tema 7.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 7"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g8-01",
-      "theme": "Annex I - Tema 8",
-      "document": "Procediment administratiu",
-      "prompt": "Quina sequencia resumeix millor les fases ordinàries del procediment administratiu?",
-      "options": [
-        "Iniciacio, ordenacio/instruccio, finalitzacio i execucio quan correspongui.",
-        "El procediment es redueix a la resolució final, perquè les fases prèvies no tenen efectes jurídics.",
-        "La instrucció només és necessària si la persona interessada ho demana expressament.",
-        "Els terminis i les al·legacions són orientatius i no formen part de les garanties del procediment."
-      ],
-      "correct": 0,
-      "explanation": "El procediment administratiu es treballa per fases generals: iniciacio, instruccio, finalitzacio i execucio. Font: Annex I, tema 8.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 8"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g8-02",
-      "theme": "Annex I - Tema 8",
-      "document": "Llei 39/2015",
-      "prompt": "Quin principi es propi del procediment administratiu comu?",
-      "options": [
-        "La garantia dels drets de les persones interessades durant la tramitacio.",
-        "El procediment es redueix a la resolució final, perquè les fases prèvies no tenen efectes jurídics.",
-        "La instrucció només és necessària si la persona interessada ho demana expressament.",
-        "Els terminis i les al·legacions són orientatius i no formen part de les garanties del procediment."
-      ],
-      "correct": 0,
-      "explanation": "La Llei 39/2015 estructura el procediment comu amb drets de les persones interessades, terminis, al-legacions i resolucio. Font: Annex I, tema 8.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 8"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g9-01",
-      "theme": "Annex I - Tema 9",
-      "document": "Ajuntament de Llica d'Amunt",
-      "prompt": "Si una pregunta demana l'organitzacio de l'Ajuntament de Llica d'Amunt, quin enfocament d'estudi es mes adequat?",
-      "options": [
-        "Relacionar l'organigrama i el funcionament municipal amb els organs locals previstos a la normativa.",
-        "Estudiar només el nom de les regidories, perquè el funcionament municipal no té relació amb els òrgans locals.",
-        "Separar completament l'organització de l'Ajuntament del marc general del règim local.",
-        "Analitzar únicament els serveis educatius sense relacionar-los amb l'estructura municipal."
-      ],
-      "correct": 0,
-      "explanation": "El tema 9 demana organitzacio i funcionament de l'Ajuntament de Llica d'Amunt, dins el marc local. Font: Annex I, tema 9.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 9"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g10-01",
-      "theme": "Annex I - Tema 10",
-      "document": "Personal al servei de les entitats locals",
-      "prompt": "Quina classificacio general del personal al servei de les entitats locals es coherent amb el temari?",
-      "options": [
-        "Personal funcionari, personal laboral i personal eventual, entre altres categories previstes.",
-        "El personal laboral no té deures públics perquè la seva relació és contractual.",
-        "Les incompatibilitats només afecten càrrecs electes i no el personal al servei de l'entitat local.",
-        "Els drets del personal exclouen els deures de confidencialitat, objectivitat i servei públic."
-      ],
-      "correct": 0,
-      "explanation": "El tema 10 inclou concepte i classes de personal, drets, deures i incompatibilitats. Font: Annex I, tema 10.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g10-02",
-      "theme": "Annex I - Tema 10",
-      "document": "Personal local",
-      "prompt": "Quina conducta s'alinea amb els deures del personal public local?",
-      "options": [
-        "Actuar amb objectivitat, integritat, confidencialitat i servei a l'interes general.",
-        "El personal laboral no té deures públics perquè la seva relació és contractual.",
-        "Les incompatibilitats només afecten càrrecs electes i no el personal al servei de l'entitat local.",
-        "Els drets del personal exclouen els deures de confidencialitat, objectivitat i servei públic."
-      ],
-      "correct": 0,
-      "explanation": "Els deures del personal public inclouen integritat, confidencialitat i servei objectiu a l'interes general. Font: Annex I, tema 10.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g11-01",
-      "theme": "Annex I - Tema 11",
-      "document": "Llei organica 3/2018",
-      "prompt": "Quina es una finalitat essencial de la Llei organica 3/2018?",
-      "options": [
-        "Adaptar l'ordenament espanyol al Reglament general de proteccio de dades i garantir drets digitals.",
-        "Compartir dades és correcte si la finalitat és educativa, encara que no s'hagi informat del canal ni de la base jurídica.",
-        "Les dades d'infants només requereixen protecció quan es publiquen a internet.",
-        "La confidencialitat afecta documents oficials, però no converses, fotografies o missatges interns."
-      ],
-      "correct": 0,
-      "explanation": "La LOPDGDD adapta el dret intern al RGPD i garanteix drets digitals. Font: Annex I, tema 11.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "i - tema 11"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g11-02",
-      "theme": "Annex I - Tema 11",
-      "document": "Proteccio de dades",
-      "prompt": "En una escola bressol, quina actuacio respecta millor la proteccio de dades?",
-      "options": [
-        "Compartir dades de salut o imatge nomes amb base legitima, finalitat clara i mesures de confidencialitat.",
-        "Compartir dades és correcte si la finalitat és educativa, encara que no s'hagi informat del canal ni de la base jurídica.",
-        "Les dades d'infants només requereixen protecció quan es publiquen a internet.",
-        "La confidencialitat afecta documents oficials, però no converses, fotografies o missatges interns."
-      ],
-      "correct": 0,
-      "explanation": "La proteccio de dades exigeix licitud, finalitat, minimitzacio, seguretat i confidencialitat. Font: Annex I, tema 11 i Annex II, tema 24.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 11",
-        "dades"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g12-01",
-      "theme": "Annex I - Tema 12",
-      "document": "Prevencio de riscos laborals",
-      "prompt": "Quina accio es preventiva en l'exercici professional d'una tecnica d'educacio infantil?",
-      "options": [
-        "Aplicar protocols d'higiene, ergonomia, ordre dels espais i actuacio davant emergències.",
-        "La prevenció consisteix sobretot a actuar després de l'accident i registrar-ne les conseqüències.",
-        "Els riscos ergonòmics i emocionals no són rellevants en una escola bressol perquè el treball és educatiu.",
-        "Les mesures preventives poden quedar en segon pla si dificulten el ritme ordinari de l'aula."
-      ],
-      "correct": 0,
-      "explanation": "La prevencio de riscos laborals demana anticipar riscos, aplicar mesures preventives i seguir protocols. Font: Annex I, tema 12.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 12"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "g13-01",
-      "theme": "Annex I - Tema 13",
-      "document": "Igualtat i no-discriminacio",
-      "prompt": "Quina practica respon als principis d'igualtat, inclusio i no-discriminacio a la primera infancia?",
-      "options": [
-        "Oferir materials, llenguatges i expectatives lliures d'estereotips i accessibles per a tots els infants.",
-        "La inclusió es treballa només quan hi ha un infant amb diagnòstic o informe extern.",
-        "La igualtat implica oferir exactament la mateixa proposta a tots els infants, sense ajustos.",
-        "La no-discriminació es garanteix evitant parlar de diferències dins l'aula."
-      ],
-      "correct": 0,
-      "explanation": "El tema 13 vincula l'atencio educativa a igualtat, inclusio i no-discriminacio. Font: Annex I, tema 13.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "i - tema 13",
-        "inclus"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e1-01",
-      "theme": "Annex II - Tema 1",
-      "document": "Decret 102/2010",
-      "prompt": "Segons el Decret 102/2010, quins ambits abasta l'autonomia dels centres educatius?",
-      "options": [
-        "Pedagogic, organitzatiu i de gestio de recursos humans i materials.",
-        "L'autonomia de centre permet que cada professional actuï al marge del projecte educatiu si ho considera adequat.",
-        "El projecte educatiu és principalment un document administratiu i no orienta espais, temps ni materials.",
-        "L'autonomia és només econòmica i no afecta decisions pedagògiques o organitzatives."
-      ],
-      "correct": 0,
-      "explanation": "El Decret 102/2010 situa l'autonomia en els ambits pedagogic, organitzatiu i de gestio. Font: Annex II, tema 1.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 1",
-        "autonomia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e1-02",
-      "theme": "Annex II - Tema 1",
-      "document": "Decret 102/2010",
-      "prompt": "Quin document expressa de manera central l'autonomia d'un centre educatiu?",
-      "options": [
-        "El projecte educatiu de centre.",
-        "L'autonomia de centre permet que cada professional actuï al marge del projecte educatiu si ho considera adequat.",
-        "El projecte educatiu és principalment un document administratiu i no orienta espais, temps ni materials.",
-        "L'autonomia és només econòmica i no afecta decisions pedagògiques o organitzatives."
-      ],
-      "correct": 0,
-      "explanation": "El projecte educatiu es la maxima expressio de l'autonomia del centre. Font: Decret 102/2010, Annex II, tema 1.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 1",
-        "autonomia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e2-01",
-      "theme": "Annex II - Tema 2",
-      "document": "Decret 282/2006",
-      "prompt": "Quin ambit regula el Decret 282/2006 esmentat al temari?",
-      "options": [
-        "El primer cicle de l'educacio infantil i els requisits dels centres.",
-        "El primer cicle és sobretot assistencial i, per tant, els requisits pedagògics tenen un paper secundari.",
-        "Els requisits del centre depenen únicament de cada ajuntament, sense marc normatiu comú.",
-        "La titulació de l'equip pot substituir-se per experiència informal si el projecte educatiu ho preveu."
-      ],
-      "correct": 0,
-      "explanation": "El títol del Decret 282/2006 regula el primer cicle d'educacio infantil i els requisits dels centres. Font: Annex II, tema 2.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 2"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e2-02",
-      "theme": "Annex II - Tema 2",
-      "document": "Decret 282/2006",
-      "prompt": "Quin perfil professional pot impartir atencio educativa al primer cicle segons el marc del Decret 282/2006?",
-      "options": [
-        "Mestre/a especialista en educacio infantil o tecnic/a superior en educacio infantil, o titulacio equivalent.",
-        "Qualsevol persona amb experiència en cura d'infants pot assumir el grup si el centre ho autoritza.",
-        "Només mestres d'educació infantil poden intervenir directament en el primer cicle.",
-        "La titulació exigida depèn de cada ajuntament i no del marc regulador del primer cicle."
-      ],
-      "correct": 0,
-      "explanation": "El Decret 282/2006 estableix titulacions professionals per a l'atencio educativa del primer cicle. Font: Annex II, tema 2.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 2"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e3-01",
-      "theme": "Annex II - Tema 3",
-      "document": "Decret 150/2017",
-      "prompt": "Quina finalitat general te el Decret 150/2017 sobre sistema educatiu inclusiu?",
-      "options": [
-        "Garantir que els centres siguin inclusius i ordenin mesures i suports per a tot l'alumnat.",
-        "Les mesures universals només s'activen quan l'infant ja disposa d'un diagnòstic formal.",
-        "Les mesures intensives són la primera resposta davant qualsevol dificultat de participació.",
-        "La inclusió consisteix principalment a oferir activitats separades perquè l'infant avanci al seu ritme."
-      ],
-      "correct": 0,
-      "explanation": "El Decret 150/2017 orienta l'atencio educativa en un sistema inclusiu i ordena mesures i suports. Font: Annex II, tema 3.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 3",
-        "inclus"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e3-02",
-      "theme": "Annex II - Tema 3",
-      "document": "Decret 150/2017",
-      "prompt": "Quins tipus de mesures i suports son propis del marc inclusiu?",
-      "options": [
-        "Universals, addicionals i intensius.",
-        "Ordinàries, específiques i extraordinàries.",
-        "Preventives, correctives i sancionadores.",
-        "Individuals, familiars i comunitàries."
-      ],
-      "correct": 0,
-      "explanation": "El marc inclusiu estructura els suports en universals, addicionals i intensius. Font: Decret 150/2017, Annex II, tema 3.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "ii - tema 3",
-        "inclus"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e4-01",
-      "theme": "Annex II - Tema 4",
-      "document": "Documentacio obligatoria",
-      "prompt": "Quina opcio correspon millor a documentacio pedagogica habitual d'una escola bressol?",
-      "options": [
-        "Projecte educatiu, normes d'organitzacio, programacions i registres d'observacio.",
-        "La documentació de centre és útil només per a inspecció i no ha d'orientar la pràctica quotidiana.",
-        "Els registres d'observació poden substituir el projecte educatiu si són prou detallats.",
-        "Les programacions han de ser tancades per evitar canvis segons els ritmes dels infants."
-      ],
-      "correct": 0,
-      "explanation": "El tema 4 tracta la documentacio obligatoria a les escoles bressol; inclou documents de centre i seguiment educatiu.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 4"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e5-01",
-      "theme": "Annex II - Tema 5",
-      "document": "Desenvolupament psicomotor",
-      "prompt": "Per que l'activitat lliure i autonoma es rellevant de zero a tres anys segons el temari?",
-      "options": [
-        "Perque permet que l'infant explori, s'autoreguli i construeixi progressivament competències motrius i personals.",
-        "L'adult ha d'avançar posicions motrius per estimular abans els aprenentatges.",
-        "L'activitat lliure és valuosa només quan es converteix en una seqüència dirigida i igual per a tot el grup.",
-        "La seguretat exigeix limitar al màxim el moviment espontani encara que l'espai estigui preparat."
-      ],
-      "correct": 0,
-      "explanation": "El tema 5 associa desenvolupament psicomotor, activitat lliure i autonomia amb el rol d'acompanyament de la persona educadora.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 5"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e5-02",
-      "theme": "Annex II - Tema 5",
-      "document": "Emmi Pikler",
-      "prompt": "Quina intervencio s'ajusta millor a un enfocament respectuos amb la maduracio psicomotriu?",
-      "options": [
-        "Preparar un entorn segur i observar, evitant forçar postures o moviments que l'infant encara no ha assolit.",
-        "L'adult ha d'avançar posicions motrius per estimular abans els aprenentatges.",
-        "L'activitat lliure és valuosa només quan es converteix en una seqüència dirigida i igual per a tot el grup.",
-        "La seguretat exigeix limitar al màxim el moviment espontani encara que l'espai estigui preparat."
-      ],
-      "correct": 0,
-      "explanation": "El tema 5 cita Emmi Pikler i el respecte al ritme maduratiu, l'activitat lliure i el paper no invasiu de l'educadora.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 5"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e6-01",
-      "theme": "Annex II - Tema 6",
-      "document": "Neurociencia",
-      "prompt": "Segons el tema de neurociencia, quina idea es clau per entendre els nous aprenentatges?",
-      "options": [
-        "Els aprenentatges es construeixen connectant experiencies noves amb coneixements i vivencies previs.",
-        "Els aprenentatges nous depenen sobretot de repetir consignes fins que l'infant les imita.",
-        "La descoberta és més eficaç quan es desvincula de l'emoció i de l'experiència quotidiana.",
-        "L'adult ha de presentar coneixements tancats perquè els infants de zero a tres anys encara no poden construir hipòtesis."
-      ],
-      "correct": 0,
-      "explanation": "El tema 6 parla de principis fisiologics i de com l'infant crea nous aprenentatges; la connexio amb experiencies previes es coherent amb el tema.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 6"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e7-01",
-      "theme": "Annex II - Tema 7",
-      "document": "Aprenentatge significatiu",
-      "prompt": "Quan podem parlar d'aprenentatge significatiu en un infant?",
-      "options": [
-        "Quan el nou coneixement connecta amb allo que l'infant ja sap, viu o pot comprendre.",
-        "L'aprenentatge és significatiu quan l'activitat té un producte final visible per a l'adult.",
-        "El coneixement previ pot dificultar l'aprenentatge i convé partir sempre de zero.",
-        "Una proposta és significativa si tots els infants resolen la mateixa tasca de la mateixa manera."
-      ],
-      "correct": 0,
-      "explanation": "El tema 7 destaca la connexio entre processos nous i coneixements que l'infant ja disposa.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 7"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e8-01",
-      "theme": "Annex II - Tema 8",
-      "document": "Infant NESE i educacio inclusiva",
-      "prompt": "Quina resposta educativa es mes adequada davant un infant amb necessitats especifiques de suport educatiu?",
-      "options": [
-        "Observar necessitats, coordinar-se amb familia i serveis, i ajustar mesures de suport dins un marc inclusiu.",
-        "Cal esperar un diagnòstic extern abans d'ajustar l'entorn o documentar observacions.",
-        "La família ha de gestionar els suports fora de l'escola perquè el centre només observa el grup.",
-        "La resposta inclusiva consisteix a reduir la participació de l'infant per evitar-li frustració."
-      ],
-      "correct": 0,
-      "explanation": "El tema 8 integra educacio inclusiva, acompanyament de l'infant i la familia, signes d'alerta i serveis educatius.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 8",
-        "inclus"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e8-02",
-      "theme": "Annex II - Tema 8",
-      "document": "Signes d'alerta",
-      "prompt": "Que ha de fer l'equip quan observa signes d'alerta en el desenvolupament d'un infant?",
-      "options": [
-        "Registrar observacions, compartir-les amb l'equip i orientar la comunicacio amb la familia i serveis pertinents.",
-        "Cal esperar un diagnòstic extern abans d'ajustar l'entorn o documentar observacions.",
-        "La família ha de gestionar els suports fora de l'escola perquè el centre només observa el grup.",
-        "La resposta inclusiva consisteix a reduir la participació de l'infant per evitar-li frustració."
-      ],
-      "correct": 0,
-      "explanation": "El temari parla de signes d'alerta, acompanyament familiar i serveis educatius; l'escola observa, documenta i deriva o coordina quan cal.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 8"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e9-01",
-      "theme": "Annex II - Tema 9",
-      "document": "Alimentacio, descans i higiene",
-      "prompt": "Per que alimentacio, descans i higiene es consideren experiencies educatives fonamentals?",
-      "options": [
-        "Perque son moments de cura, benestar, autonomia, vincle i aprenentatge quotidia.",
-        "Són moments assistencials i convé separar-los de la planificació pedagògica.",
-        "Han de seguir sempre el mateix horari encara que els senyals de son, gana o benestar indiquin una altra necessitat.",
-        "La cura és adequada si és ràpida i higiènica, encara que no hi hagi anticipació ni comunicació amb l'infant."
-      ],
-      "correct": 0,
-      "explanation": "El tema 9 presenta alimentacio, descans i higiene com a experiencies fonamentals de cura i benestar de zero a tres anys.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 9",
-        "aliment",
-        "higiene"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e9-02",
-      "theme": "Annex II - Tema 9",
-      "document": "Cura i benestar",
-      "prompt": "Quin criteri d'intervencio educativa es mes adequat durant el canvi de bolquer?",
-      "options": [
-        "Respectar el ritme de l'infant, anticipar verbalment les accions i preservar intimitat i higiene.",
-        "Són moments assistencials i convé separar-los de la planificació pedagògica.",
-        "Han de seguir sempre el mateix horari encara que els senyals de son, gana o benestar indiquin una altra necessitat.",
-        "La cura és adequada si és ràpida i higiènica, encara que no hi hagi anticipació ni comunicació amb l'infant."
-      ],
-      "correct": 0,
-      "explanation": "El tema 10 tracta el control d'esfinters i el bloqueig al lavabo des d'una intervencio respectuosa; higiene i cura tambe apareixen al tema 9.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 9"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e10-01",
-      "theme": "Annex II - Tema 10",
-      "document": "Control d'esfinters",
-      "prompt": "Quin criteri metodologic es respectuos en el proces de control d'esfinters?",
-      "options": [
-        "Acompanyar sense pressio, observant signes de maduracio i coordinant-se amb la familia.",
-        "La rutina fixa és suficient per iniciar el procés encara que no hi hagi signes de maduració.",
-        "La demanda familiar ha de prevaldre sempre sobre l'observació educativa del ritme de l'infant.",
-        "Els accidents s'han de corregir immediatament perquè l'infant prengui consciència del procés."
-      ],
-      "correct": 0,
-      "explanation": "El tema 10 demana una perspectiva respectuosa envers la maduracio de l'infant en el control d'esfinters.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e11-01",
-      "theme": "Annex II - Tema 11",
-      "document": "Joc lliure",
-      "prompt": "Quin valor te el joc lliure a la primera infancia?",
-      "options": [
-        "Afavoreix exploracio, autonomia, relacions, simbolitzacio i construccio d'aprenentatges.",
-        "El joc lliure és educatiu sobretot quan l'adult defineix el resultat esperat de cada infant.",
-        "Els materials estructurats són preferibles perquè permeten comprovar ràpidament si la resposta és correcta.",
-        "La intervenció adulta ha de ser constant per evitar que el joc es desviï dels objectius previstos."
-      ],
-      "correct": 0,
-      "explanation": "El tema 11 situa el joc lliure, la manipulacio i l'experimentacio com a eixos educatius de la primera infancia.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 11",
-        "joc"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e11-02",
-      "theme": "Annex II - Tema 11",
-      "document": "Rol de la persona educadora",
-      "prompt": "Durant el joc espontani, quin rol hauria d'assumir preferentment la persona educadora?",
-      "options": [
-        "Preparar materials, observar, garantir seguretat i intervenir amb mesura quan cal.",
-        "El joc lliure és educatiu sobretot quan l'adult defineix el resultat esperat de cada infant.",
-        "Els materials estructurats són preferibles perquè permeten comprovar ràpidament si la resposta és correcta.",
-        "La intervenció adulta ha de ser constant per evitar que el joc es desviï dels objectius previstos."
-      ],
-      "correct": 0,
-      "explanation": "El tema 11 demana criteris sobre el rol de la persona educadora durant el joc espontani.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 11",
-        "joc"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e12-01",
-      "theme": "Annex II - Tema 12",
-      "document": "Joc simbolic",
-      "prompt": "Per que el joc simbolic ajuda a entendre el mon que envolta l'infant?",
-      "options": [
-        "Perque permet representar situacions, rols i accions quotidianes amb significat propi.",
-        "El joc simbòlic té valor sobretot quan reprodueix fidelment models adults correctes.",
-        "A zero-tres és massa aviat per donar valor educatiu a la representació de rols i situacions.",
-        "La persona educadora ha de corregir el significat del joc si no coincideix amb l'ús real dels objectes."
-      ],
-      "correct": 0,
-      "explanation": "El tema 12 tracta el joc simbolic com a eina per comprendre el mon i elaborar experiencies.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 12",
-        "joc"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e13-01",
-      "theme": "Annex II - Tema 13",
-      "document": "Espais i materials",
-      "prompt": "Quin criteri afavoreix el joc espontani i lliure dels infants de zero a tres anys?",
-      "options": [
-        "Espais segurs, accessibles, rics en materials oberts i amb temps suficient d'exploracio.",
-        "Els materials tancats són més adequats perquè asseguren un ús correcte i comparable.",
-        "La riquesa de l'espai depèn sobretot de la quantitat de materials, encara que no siguin accessibles.",
-        "Canviar sovint tots els racons ajuda més que sostenir referents estables per als infants."
-      ],
-      "correct": 0,
-      "explanation": "El tema 13 relaciona organitzacio d'espais, temps, propostes i materials amb el joc espontani i lliure.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 13",
-        "joc",
-        "espai"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e14-01",
-      "theme": "Annex II - Tema 14",
-      "document": "Espais interiors i exteriors",
-      "prompt": "Quina relacio educativa ha d'existir entre espais interiors i exteriors?",
-      "options": [
-        "Han de formar part d'un entorn educatiu coherent que afavoreixi continuitat, exploracio i benestar.",
-        "L'espai exterior és principalment un temps de descans de les propostes educatives interiors.",
-        "Interior i exterior han de funcionar amb criteris separats perquè responen a objectius diferents.",
-        "L'exterior només té valor pedagògic si s'hi reprodueixen les mateixes activitats dirigides de l'aula."
-      ],
-      "correct": 0,
-      "explanation": "El tema 14 demana la relacio educativa entre espais interiors i exteriors.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 14",
-        "espai"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e15-01",
-      "theme": "Annex II - Tema 15",
-      "document": "Espais exteriors",
-      "prompt": "Quin criteri pedagogic es coherent amb un enfocament de valor d'aprendre i jugar lliurement a l'exterior?",
-      "options": [
-        "Permetre contacte amb natura, moviment, risc mesurat i exploracio autonoma amb supervisio.",
-        "El risc s'ha d'eliminar del tot, encara que això redueixi moviment, descoberta i autonomia.",
-        "La natura és un recurs complementari, però no un context d'aprenentatge quotidià.",
-        "La supervisió adulta ha de convertir l'exterior en una seqüència d'activitats controlades."
-      ],
-      "correct": 0,
-      "explanation": "El tema 15 destaca els espais exteriors, la natura i el rol educador en el joc lliure exterior.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 15",
-        "espai"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e16-01",
-      "theme": "Annex II - Tema 16",
-      "document": "Familia i escola participativa",
-      "prompt": "Com s'ha d'entendre la familia en una escola bressol participativa?",
-      "options": [
-        "Com a primer agent socialitzador i interlocutora clau en el proces educatiu.",
-        "La participació familiar és adequada només en reunions formals i no en la vida quotidiana del centre.",
-        "La familiarització és més eficaç si la separació és ràpida i igual per a tots els infants.",
-        "La família pot aportar informació, però les pautes educatives s'han de decidir sense contrast."
-      ],
-      "correct": 0,
-      "explanation": "El tema 16 defineix la familia com a primer agent socialitzador i tracta la relacio amb families.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 16",
-        "familia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e16-02",
-      "theme": "Annex II - Tema 16",
-      "document": "Familiaritzacio",
-      "prompt": "Quin objectiu te l'organitzacio del temps de familiaritzacio a l'inici de curs?",
-      "options": [
-        "Facilitar una adaptacio progressiva, segura i compartida entre infant, familia i escola.",
-        "La participació familiar és adequada només en reunions formals i no en la vida quotidiana del centre.",
-        "La familiarització és més eficaç si la separació és ràpida i igual per a tots els infants.",
-        "La família pot aportar informació, però les pautes educatives s'han de decidir sense contrast."
-      ],
-      "correct": 0,
-      "explanation": "El tema 16 inclou l'organitzacio del temps de familiaritzacio o inici de curs de l'escola bressol.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 16",
-        "familia"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e17-01",
-      "theme": "Annex II - Tema 17",
-      "document": "Funcio educadora",
-      "prompt": "Quina funcio correspon a la persona educadora en el primer cicle d'educacio infantil?",
-      "options": [
-        "Acompanyar el desenvolupament integral de l'infant, observar, intervenir educativament i treballar en equip.",
-        "La funció educadora és principalment de vigilància i cura, i la reflexió pedagògica correspon a altres perfils.",
-        "El treball en equip és recomanable, però cada educadora pot mantenir criteris contradictoris si li funcionen.",
-        "La formació continuada té sentit només quan hi ha canvis normatius obligatoris."
-      ],
-      "correct": 0,
-      "explanation": "El tema 17 recull competencies, habilitats i actituds de la persona educadora i el seu paper dins l'equip.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 17"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e17-02",
-      "theme": "Annex II - Tema 17",
-      "document": "Formacio continuada",
-      "prompt": "Per que es rellevant la formacio continuada de l'equip educatiu?",
-      "options": [
-        "Per revisar la practica professional i transformar el projecte educatiu amb criteri compartit.",
-        "La funció educadora és principalment de vigilància i cura, i la reflexió pedagògica correspon a altres perfils.",
-        "El treball en equip és recomanable, però cada educadora pot mantenir criteris contradictoris si li funcionen.",
-        "La formació continuada té sentit només quan hi ha canvis normatius obligatoris."
-      ],
-      "correct": 0,
-      "explanation": "El tema 17 vincula formacio continuada, revisio professional i transformacio del projecte educatiu.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 17"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e18-01",
-      "theme": "Annex II - Tema 18",
-      "document": "Accidents i primeres cures",
-      "prompt": "Davant un accident lleu a l'escola bressol, quina resposta inicial es mes adequada?",
-      "options": [
-        "Mantenir la calma, protegir l'infant, aplicar el protocol del centre i informar segons correspongui.",
-        "En accidents lleus és millor no registrar res si l'infant es recupera ràpidament.",
-        "La comunicació amb la família pot substituir l'aplicació del protocol de primeres cures.",
-        "La prioritat és determinar responsabilitats abans d'atendre emocionalment i físicament l'infant."
-      ],
-      "correct": 0,
-      "explanation": "El tema 18 tracta accidents, prevencio i primeres cures; cal actuar amb protocol, seguretat i comunicacio adequada.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 18"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e19-01",
-      "theme": "Annex II - Tema 19",
-      "document": "Higiene i salut",
-      "prompt": "Quina mesura ajuda a prevenir malalties frequents a l'etapa zero a tres?",
-      "options": [
-        "Rentat de mans, ventilacio, neteja de superfícies i seguiment del protocol d'higiene i salut.",
-        "La higiene és responsabilitat individual de cada família i només s'actua al centre si hi ha brot declarat.",
-        "La ventilació i la neteja són secundàries si el grup manté les rutines educatives previstes.",
-        "Els símptomes lleus no cal registrar-los perquè són habituals en infants de zero a tres anys."
-      ],
-      "correct": 0,
-      "explanation": "El tema 19 inclou malalties frequents i protocol d'higiene i salut.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 19",
-        "higiene"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e20-01",
-      "theme": "Annex II - Tema 20",
-      "document": "Pla d'evacuacio",
-      "prompt": "Quin objectiu te un pla d'evacuacio a l'escola bressol?",
-      "options": [
-        "Organitzar pautes per evacuar infants de zero a tres anys amb seguretat davant una emergencia.",
-        "El pla és sobretot un document administratiu i no cal practicar-lo amb l'equip.",
-        "L'evacuació es decideix en el moment segons la ubicació de cada educadora.",
-        "Amb infants petits és preferible esperar a l'aula fins que arribi personal extern."
-      ],
-      "correct": 0,
-      "explanation": "El tema 20 tracta el pla d'evacuacio i les pautes per evacuar infants de zero a tres anys.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 20",
-        "evacuacio"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e21-01",
-      "theme": "Annex II - Tema 21",
-      "document": "Psicoleg a l'escola bressol",
-      "prompt": "Quina tasca es coherent amb la figura del psicoleg a l'escola bressol?",
-      "options": [
-        "Prevenir, orientar, acompanyar equips i families i ajudar en la deteccio de necessitats.",
-        "La figura del psicòleg substitueix l'observació de l'equip quan hi ha sospites de dificultat.",
-        "La seva intervenció és només reactiva, quan ja existeix un diagnòstic o una demanda formal.",
-        "El psicòleg ha d'assumir les decisions pedagògiques per evitar criteris diferents dins l'equip."
-      ],
-      "correct": 0,
-      "explanation": "El tema 21 esmenta tasques de prevencio i acompanyament de la figura del psicoleg.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 21"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e22-01",
-      "theme": "Annex II - Tema 22",
-      "document": "Observacio i documentacio pedagogica",
-      "prompt": "Per que l'observacio sistematica es important a l'escola bressol?",
-      "options": [
-        "Per comprendre processos individuals i relacionals i ajustar l'acompanyament educatiu.",
-        "Documentar vol dir acumular fotografies de moltes situacions perquè les famílies vegin activitat.",
-        "L'observació sistemàtica serveix principalment per classificar infants segons el seu nivell.",
-        "La documentació és útil encara que no es posi en comú ni generi decisions educatives."
-      ],
-      "correct": 0,
-      "explanation": "El tema 22 situa l'observacio i la documentacio pedagogica com a cultura d'infant i projecte d'escola.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 22"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e22-02",
-      "theme": "Annex II - Tema 22",
-      "document": "Documentacio pedagogica",
-      "prompt": "Quin criteri fa que la documentacio pedagogica sigui valuosa?",
-      "options": [
-        "Que reculli evidencies significatives i ajudi a comprendre i compartir processos d'aprenentatge.",
-        "Que mostri moltes evidències visuals encara que no hi hagi interpretació pedagògica.",
-        "Que serveixi sobretot per justificar davant les famílies que s'han fet activitats.",
-        "Que reculli resultats finals i eviti processos incomplets per no generar interpretacions."
-      ],
-      "correct": 0,
-      "explanation": "El tema 22 demana criteris per desenvolupar dues pedagogies quotidianes i comprendre reptes cognitius i relacionals.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 22"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e23-01",
-      "theme": "Annex II - Tema 23",
-      "document": "Comunicacio amb la familia",
-      "prompt": "Quina eina de comunicacio es valida si es fa servir amb criteri professional i proteccio de dades?",
-      "options": [
-        "Entrevistes, agenda o plataforma del centre amb informacio necessaria i respectuosa.",
-        "Les eines informals són adequades si faciliten rapidesa i proximitat amb les famílies.",
-        "La comunicació ha de reservar-se per incidències importants per evitar saturar les famílies.",
-        "La informació quotidiana pot compartir-se amb tot el grup si no sembla especialment sensible."
-      ],
-      "correct": 0,
-      "explanation": "El tema 23 parla de comunicacio amb la familia i eines valides en l'etapa zero a tres.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 23",
-        "familia",
-        "dades"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e24-01",
-      "theme": "Annex II - Tema 24",
-      "document": "Dret d'imatge",
-      "prompt": "Abans de difondre una fotografia identificable d'un infant, que cal garantir?",
-      "options": [
-        "Base legitima o autoritzacio corresponent, informacio clara de finalitat i canals de difusio.",
-        "Una autorització inicial permet qualsevol ús futur de la imatge si l'activitat és del centre.",
-        "Si la imatge es comparteix només amb famílies, no cal revisar finalitat ni canal.",
-        "La protecció d'imatge només és necessària quan la fotografia es publica en una web oberta."
-      ],
-      "correct": 0,
-      "explanation": "El tema 24 tracta la proteccio de dades i el dret d'imatge dels infants; cal consentiment o altra base legitimadora i finalitat clara.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 24",
-        "imatge"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e25-01",
-      "theme": "Annex II - Tema 25",
-      "document": "Nova guia d'alimentacio",
-      "prompt": "Quin criteri general es coherent amb una alimentacio educativa de zero a tres anys?",
-      "options": [
-        "Respectar necessitats, autonomia progressiva, seguretat alimentaria i coordinacio amb la familia.",
-        "La coordinació amb la família permet forçar aliments nous si es considera educativament convenient.",
-        "L'autonomia alimentària s'aconsegueix millor amb pautes iguals i quantitats fixes per a tot el grup.",
-        "La seguretat alimentària és responsabilitat de cuina i no forma part de l'acompanyament educatiu."
-      ],
-      "correct": 0,
-      "explanation": "El tema 25 demana canvis i novetats en l'alimentacio de zero a tres anys; els criteris han de protegir salut, autonomia i benestar.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 25",
-        "aliment"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e26-01",
-      "theme": "Annex II - Tema 26",
-      "document": "Coeducacio",
-      "prompt": "Quina actuacio expressa millor la coeducacio al currículum d'educacio infantil?",
-      "options": [
-        "Revisar materials, llenguatge i propostes per evitar estereotips i garantir igualtat d'oportunitats.",
-        "La coeducació es treballa principalment en activitats puntuals i dies commemoratius.",
-        "A zero-tres els estereotips encara no influeixen, de manera que no cal revisar materials.",
-        "La igualtat s'aconsegueix oferint els mateixos materials, encara que representin rols molt estereotipats."
-      ],
-      "correct": 0,
-      "explanation": "El tema 26 tracta coeducacio i igualtat de genere al nou currículum d'educacio infantil.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 26",
-        "coeducacio"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "e27-01",
-      "theme": "Annex II - Tema 27",
-      "document": "Escoles bressol municipals de Llica d'Amunt",
-      "prompt": "Quin aspecte s'hauria de prioritzar en estudiar les escoles bressol municipals de Llica d'Amunt?",
-      "options": [
-        "Caracteristiques, projecte educatiu i encaix amb el servei municipal d'escola bressol.",
-        "El projecte educatiu municipal és independent del currículum i només defineix serveis complementaris.",
-        "Les característiques del centre importen menys que aplicar activitats estàndard vàlides per a qualsevol escola.",
-        "El servei municipal s'ha d'estudiar només des de l'organització administrativa, no des de la pràctica educativa."
-      ],
-      "correct": 0,
-      "explanation": "El tema 27 demana caracteristiques i projecte educatiu de les escoles bressol municipals de Llica d'Amunt.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagògic i professional",
-      "tags": [
-        "ii - tema 27"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
-      ]
-    },
-    {
-      "id": "v2-a1-t01-01",
-      "theme": "Annex I - Tema 1",
-      "document": "Constitució espanyola de 1978",
-      "prompt": "Quina afirmació resumeix millor el sentit de l'article 1.1 de la Constitució?",
-      "options": [
-        "Espanya es constitueix en un Estat social i democràtic de Dret que propugna la llibertat, la justícia, la igualtat i el pluralisme polític",
-        "La Constitució només ordena l'organització de l'Estat, però no fixa valors superiors",
-        "La forma política de l'Estat és la república parlamentària",
-        "Els valors superiors només afecten els drets fonamentals"
-      ],
-      "correct": 0,
-      "explanation": "L'article 1.1 defineix la forma d'Estat i els valors superiors de l'ordenament.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "tema-01"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies confonen forma d'Estat, valors constitucionals i abast material de la norma."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son articles molt coneguts i propers al mateix bloc constitucional, per aixo son distractors plausibles."
       ]
     },
     {
-      "id": "v2-a1-t01-02",
+      "id": "a1-v3-01-02",
       "theme": "Annex I - Tema 1",
-      "document": "Constitució espanyola de 1978",
-      "prompt": "Què estableix l'article 9.1 de la Constitució?",
+      "document": "La Constitució Espanyola de 1978. Estructura i principis generals.",
+      "prompt": "Quina afirmacio descriu millor la idea d'Estado social i democratic de dret?",
       "options": [
-        "Els ciutadans i els poders públics estan subjectes a la Constitució i a la resta de l'ordenament jurídic",
-        "Només els òrgans judicials estan subjectes directament a la Constitució",
-        "La subjecció a la Constitució depèn de cada administració",
-        "Només les lleis orgàniques poden vincular els poders públics"
+        "L'Estat es limita a garantir eleccions periodiques",
+        "L'Estat sotmet el poder a la llei i orienta l'accio publica cap a llibertat, igualtat i benestar",
+        "L'Estat deixa l'organitzacio social al criteri de cada administracio",
+        "L'Estat nomes regula els drets civils."
       ],
-      "correct": 0,
-      "explanation": "L'article 9.1 fixa la subjecció general de ciutadania i poders públics.",
+      "correct": 1,
+      "explanation": "La formula constitucional combina Estat de dret, dimensio social i legitimacio democratica.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-01"
+        "annex i - tema 1"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Totes les opcions barregen subjectes jurídics reals, però els desplacen cap a un àmbit massa estret o incorrecte."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
-        "https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=9.1"
-      ]
-    },
-    {
-      "id": "v2-a1-t02-01",
-      "theme": "Annex I - Tema 2",
-      "document": "Constitució espanyola de 1978",
-      "prompt": "Quina és la idea central de l'article 14 de la Constitució?",
-      "options": [
-        "Totes les persones són iguals davant la llei i no pot prevaler discriminació per raó de naixement, raça, sexe, religió, opinió o qualsevol altra condició o circumstància personal o social",
-        "La igualtat només opera en l'accés a l'ocupació pública",
-        "La igualtat depèn de la normativa de cada ajuntament",
-        "La diferència de tracte és sempre discriminatòria encara que tingui justificació objectiva"
-      ],
-      "correct": 0,
-      "explanation": "L'article 14 formula la igualtat davant la llei i la prohibició de discriminació.",
-      "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "tema-02"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions errònies combinen mites habituals: igualtat només sectorial, relativisme municipal i absolutisme sense matisos."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les opcions B-D redueixen el model constitucional a una sola dimensio i per aixo son versemblants."
       ]
     },
     {
-      "id": "v2-a1-t02-02",
-      "theme": "Annex I - Tema 2",
-      "document": "Constitució espanyola de 1978",
-      "prompt": "Què protegeix principalment l'article 23 de la Constitució?",
+      "id": "a1-v3-01-03",
+      "theme": "Annex I - Tema 1",
+      "document": "La Constitució Espanyola de 1978. Estructura i principis generals.",
+      "prompt": "Quina es la funcio de l'article 9.1 de la Constitucio?",
       "options": [
-        "El dret a participar en els assumptes públics i a accedir en condicions d'igualtat a les funcions i càrrecs públics",
-        "El dret a la inviolabilitat del domicili",
-        "El dret a la llibertat religiosa",
-        "El dret a la propietat privada"
+        "Regular nomes la jerarquia entre lleis ordinaries",
+        "Establir la forma politica de l'Estat.",
+        "Subjectar ciutadans i poders publics a la Constitucio i a la resta de l'ordenament",
+        "Definir els drets fonamentals"
+      ],
+      "correct": 2,
+      "explanation": "L'article 9.1 formula la subjeccio general a l'ordenament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 1"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions barregen funcions d'altres articles constitucionals molt proxims."
+      ]
+    },
+    {
+      "id": "a1-v3-01-04",
+      "theme": "Annex I - Tema 1",
+      "document": "La Constitució Espanyola de 1978. Estructura i principis generals.",
+      "prompt": "Quin conjunt recull exactament els principis de l'article 9.3?",
+      "options": [
+        "Eficacia, descentralitzacio, coordinacio i participacio",
+        "Igualtat, llibertat, pluralisme i autonomia",
+        "Dignitat, intimitat, tutela i empara.",
+        "Legalitat, jerarquia normativa, publicitat, irretroactivitat, seguretat juridica, responsabilitat i interdiccio de l'arbitrarietat"
+      ],
+      "correct": 3,
+      "explanation": "L'article 9.3 enumera aquests principis basics del sistema juridic.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 1"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D combinen valors, principis administratius i drets, que es justament la confusio habitual."
+      ]
+    },
+    {
+      "id": "a1-v3-02-01",
+      "theme": "Annex I - Tema 2",
+      "document": "Drets i deures fonamentals dels espanyols. Garanties constitucionals.",
+      "prompt": "Que protegeix principalment l'article 14 de la Constitucio?",
+      "options": [
+        "El dret a la vaga.",
+        "La llibertat d'expressio",
+        "La inviolabilitat del domicili",
+        "La igualtat davant la llei i la prohibicio de discriminacio"
+      ],
+      "correct": 3,
+      "explanation": "L'article 14 formula la igualtat juridica i la prohibicio de discriminacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 2"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son drets fonamentals reals pero d'altres articles, per aixo enganyen be."
+      ]
+    },
+    {
+      "id": "a1-v3-02-02",
+      "theme": "Annex I - Tema 2",
+      "document": "Drets i deures fonamentals dels espanyols. Garanties constitucionals.",
+      "prompt": "Quin dret recull l'article 23 de la Constitucio?",
+      "options": [
+        "Participar en els assumptes publics i accedir en igualtat a funcions i carrecs publics",
+        "Demanar informacio a qualsevol administracio sense limit.",
+        "Rebre prestacions socials no contributives",
+        "Gaudir de llibertat religiosa"
       ],
       "correct": 0,
-      "explanation": "L'article 23 vincula participació política i accés igualitari als càrrecs públics.",
+      "explanation": "L'article 23 protegeix participacio politica i acces igualitari al servei public.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-02"
+        "annex i - tema 2"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors són drets fonamentals reals, però d'altres articles de la mateixa secció."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions son drets reals, pero de blocs constitucionals diferents."
       ]
     },
     {
-      "id": "v2-a1-t03-01",
+      "id": "a1-v3-02-03",
+      "theme": "Annex I - Tema 2",
+      "document": "Drets i deures fonamentals dels espanyols. Garanties constitucionals.",
+      "prompt": "Que garanteix l'article 24?",
+      "options": [
+        "La llibertat sindical",
+        "La tutela judicial efectiva i les garanties de defensa",
+        "La inviolabilitat del domicili",
+        "La llibertat de circulacio."
+      ],
+      "correct": 1,
+      "explanation": "L'article 24 centra la proteccio en la tutela judicial i la indefensio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 2"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son drets molt propers en la memoria i funcionen com a distractors limpids."
+      ]
+    },
+    {
+      "id": "a1-v3-02-04",
+      "theme": "Annex I - Tema 2",
+      "document": "Drets i deures fonamentals dels espanyols. Garanties constitucionals.",
+      "prompt": "Quin contingut explica millor l'article 15?",
+      "options": [
+        "Dret a l'educacio",
+        "Dret a la negociacio collectiva.",
+        "Dret a la vida i a la integritat fisica i moral, amb prohibicio de tortura i tractes inhumans o degradants",
+        "Dret a la propietat i a l'herencia"
+      ],
+      "correct": 2,
+      "explanation": "L'article 15 agrupa vida, integritat i prohibicio absoluta de maltractament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 2"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions son drets de rang constitucional, pero no els de l'article 15."
+      ]
+    },
+    {
+      "id": "a1-v3-03-01",
       "theme": "Annex I - Tema 3",
-      "document": "Estatut d'autonomia de Catalunya",
-      "prompt": "Com defineix el Portal Jurídic l'Estatut d'autonomia de Catalunya?",
+      "document": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
+      "prompt": "Com defineix el Portal Juridic l'Estatut d'autonomia de Catalunya?",
       "options": [
-        "Com la norma institucional bàsica que defineix els drets i deures de la ciutadania de Catalunya, les institucions polítiques, les seves competències i les relacions amb l'Estat",
-        "Com un reglament municipal d'aplicació limitada",
-        "Com una llei ordinària sense relació amb les institucions pròpies",
-        "Com una norma tècnica que regula només la llengua administrativa"
+        "Com un reglament municipal general",
+        "Com una llei ordinaria sense rang propi",
+        "Com la norma institucional basica de Catalunya",
+        "Com un document d'orientacio politica sense valor juridic."
       ],
-      "correct": 0,
-      "explanation": "La pàgina institucional del Portal Jurídic descriu l'Estatut en aquests termes.",
+      "correct": 2,
+      "explanation": "L'Estatut es la norma institucional basica de l'autogovern catala.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-03"
+        "annex i - tema 3"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions incorrectes confonen l'abast de l'Estatut amb normes de rang inferior o amb un àmbit parcial."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/lestatut/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les opcions B-D intenten rebaixar el rang juridic de l'Estatut, que es la confusio mes utilitzable."
       ]
     },
     {
-      "id": "v2-a1-t03-02",
+      "id": "a1-v3-03-02",
       "theme": "Annex I - Tema 3",
-      "document": "Estatut d'autonomia de Catalunya",
-      "prompt": "Quin contingut forma part del nucli estatutari?",
+      "document": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
+      "prompt": "Quin contingut forma part del nucli de l'Estatut?",
       "options": [
-        "Els drets i deures de la ciutadania, les institucions polítiques, les competències i les relacions amb l'Estat",
-        "Només l'organització interna dels ajuntaments",
-        "Només el repartiment de tributs",
-        "Exclusivament els símbols de Catalunya"
+        "Nomes el repartiment de tributs",
+        "Nomes simbols i denominacions",
+        "Exclusivament el sistema electoral municipal.",
+        "Institucions, drets i deures, competencies i relacions amb l'Estat"
+      ],
+      "correct": 3,
+      "explanation": "El text estatutari articula institucions, drets, deures i competencies.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 3"
+      ],
+      "sourceRefs": [
+        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/lestatut/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Són respostes parcials que sonen versemblants si es pensa en una sola part del text."
+      ]
+    },
+    {
+      "id": "a1-v3-03-03",
+      "theme": "Annex I - Tema 3",
+      "document": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
+      "prompt": "Quin organisme exerceix la potestat legislativa de la Generalitat?",
+      "options": [
+        "El Parlament de Catalunya",
+        "El Síndic de Greuges.",
+        "El Govern de la Generalitat",
+        "El Consell de Garanties Estatutaries"
       ],
       "correct": 0,
-      "explanation": "L'Estatut estructura el nucli institucional i competencial de l'autogovern.",
+      "explanation": "El Parlament aprova les lleis i fa la funcio legislativa.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-03"
+        "annex i - tema 3"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Són plausibles perquè cada opció agafa una part real del sistema, però la redueix massa."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/lestatut/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres institucions son reals i per aixo funcionen molt be com a distractors."
       ]
     },
     {
-      "id": "v2-a1-t04-01",
-      "theme": "Annex I - Tema 4",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quines entitats integra bàsicament l'Administració local?",
+      "id": "a1-v3-03-04",
+      "theme": "Annex I - Tema 3",
+      "document": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
+      "prompt": "Quina funcio correspon principalment al Govern de la Generalitat?",
       "options": [
+        "La funcio jurisdiccional",
+        "La funcio executiva i la potestat reglamentaria",
+        "La reforma estatutaria sense Parlament",
+        "La fiscalitzacio externa dels municipis."
+      ],
+      "correct": 1,
+      "explanation": "El Govern executa la politica i dicta reglament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 3"
+      ],
+      "sourceRefs": [
+        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/lestatut/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Són confusions habituals entre institucions catalanes, Estat i administracio local."
+      ]
+    },
+    {
+      "id": "a1-v3-04-01",
+      "theme": "Annex I - Tema 4",
+      "document": "L'Administració local. Ens que la integren.",
+      "prompt": "Quines entitats formen bàsicament l'Administracio local?",
+      "options": [
+        "Nomes els ajuntaments",
         "Municipis, províncies, illes i altres entitats locals reconegudes per l'ordenament",
-        "Només els ajuntaments",
-        "Els centres educatius públics com a ens locals",
-        "Només les comunitats autònomes"
+        "Nomes les comunitats autonomes",
+        "Els serveis públics educatius municipals."
       ],
-      "correct": 0,
-      "explanation": "La LBRL parteix del municipi, la província i altres entitats locals.",
+      "correct": 1,
+      "explanation": "La LBRL parteix del municipi, la provincia i altres entitats locals.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-04"
+        "annex i - tema 4"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Totes les opcions pertanyen a nivells institucionals reals, però una sola descriu correctament l'Administració local."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D son reduccions massa estretes; C barreja nivells de govern diferents."
       ]
     },
     {
-      "id": "v2-a1-t04-02",
+      "id": "a1-v3-04-02",
       "theme": "Annex I - Tema 4",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quina afirmació és correcta sobre les entitats locals?",
+      "document": "L'Administració local. Ens que la integren.",
+      "prompt": "Quina afirmacio es correcta sobre les entitats locals?",
       "options": [
-        "Tenen personalitat jurídica plena i capacitat per gestionar els interessos que els són propis",
-        "Només poden actuar si una comunitat autònoma els delega cada expedient",
-        "Són simples òrgans administratius sense autonomia",
-        "No poden contractar ni gestionar serveis públics"
+        "Son simples oficines de tramit sense autonomia",
+        "No poden prestar serveis publics.",
+        "Tenen personalitat juridica plena i capacitat per gestionar interessos propis",
+        "Nomes poden actuar per delegacio puntual"
       ],
-      "correct": 0,
-      "explanation": "La LBRL reconeix autonomia i capacitat jurídica pròpia a les entitats locals.",
+      "correct": 2,
+      "explanation": "La normativa local reconeix autonomia i capacitat propia.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-04"
+        "annex i - tema 4"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies sonen plausibles perquè exageren la tutela autonòmica o redueixen l'ens local a una oficina."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les errònies exageren la tutela o redueixen l'ens local a un organisme auxiliar."
       ]
     },
     {
-      "id": "v2-a1-t04-03",
+      "id": "a1-v3-04-03",
       "theme": "Annex I - Tema 4",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
+      "document": "L'Administració local. Ens que la integren.",
       "prompt": "Amb quin criteri han d'actuar les entitats locals segons la LBRL?",
       "options": [
-        "Amb objectivitat i d'acord amb els principis d'eficàcia, descentralització, desconcentració i coordinació, amb subjecció plena a la llei i al Dret",
-        "Amb autonomia total sense subjecció a cap norma superior",
-        "Amb criteris diferents segons cada servei, encara que contradiguin la llei",
-        "Només amb criteris de proximitat, sense eficàcia ni coordinació"
+        "Amb criteri diferent a cada servei encara que contradigui la llei",
+        "Amb autonomia absoluta fora de qualsevol marc legal",
+        "Nomes amb criteri de proximitat, sense eficacia.",
+        "Amb objectivitat i d'acord amb eficacia, descentralitzacio, desconcentracio i coordinacio"
       ],
-      "correct": 0,
-      "explanation": "La LBRL fixa aquests principis generals d'actuació de les entitats locals.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
+      "correct": 3,
+      "explanation": "La LBRL combina objectivitat, eficacia i subjeccio al Dret.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-04"
+        "annex i - tema 4"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les alternatives són atractives perquè reprodueixen tòpics reals sobre autonomia local, però deixen fora un principi clau."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son distractors bons perquè barregen autonomia local i improvisacio."
       ]
     },
     {
-      "id": "v2-a1-t05-01",
+      "id": "a1-v3-04-04",
+      "theme": "Annex I - Tema 4",
+      "document": "L'Administració local. Ens que la integren.",
+      "prompt": "Quina capacitat practica tenen les entitats locals per complir les seves finalitats?",
+      "options": [
+        "Poden adquirir, posseir, reivindicar, permutar, gravar o alienar béns i exercir accions dins l'ambit de les seves competencies",
+        "Nomes poden redactar informes",
+        "Nomes poden intervenir en educacio infantil.",
+        "Només poden actuar quan ho autoritza un jutjat"
+      ],
+      "correct": 0,
+      "explanation": "La LBRL dona una capacitat juridica amplia al servei de les finalitats locals.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 4"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions posen una motxilla massa petita a l'ens local."
+      ]
+    },
+    {
+      "id": "a1-v3-05-01",
       "theme": "Annex I - Tema 5",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quins òrgans existeixen en tots els ajuntaments?",
+      "document": "El municipi (I). Òrgans de representació política i la seva designació.",
+      "prompt": "Quins organs existeixen en tots els ajuntaments?",
       "options": [
         "Alcalde, tinents d'alcalde i Ple",
-        "Alcalde, secretari i interventor",
-        "Ple, consell escolar i junta de personal",
-        "Junta de Govern Local, gerència i assessoria jurídica"
+        "Regidories delegades i assessoria tecnica.",
+        "Secretaria, intervencio i consell escolar",
+        "Junta de personal i comissio de serveis"
       ],
       "correct": 0,
-      "explanation": "L'article 20 de la LBRL estableix aquests òrgans bàsics.",
+      "explanation": "Aquests son els organs basics de govern local.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-05"
+        "annex i - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions barregen òrgans reals de gestió amb figures administratives que sovint es confonen amb els polítics."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions barregen organitzacio politica amb estructura tecnica o sectorial."
       ]
     },
     {
-      "id": "v2-a1-t05-02",
+      "id": "a1-v3-05-02",
       "theme": "Annex I - Tema 5",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quina afirmació descriu correctament el Ple municipal?",
+      "document": "El municipi (I). Òrgans de representació política i la seva designació.",
+      "prompt": "Com es composa el Ple municipal?",
       "options": [
-        "Està integrat per tots els regidors i és presidit per l'alcalde",
-        "Està integrat només pels membres de la Junta de Govern",
-        "El presideix sempre el secretari municipal",
-        "És un òrgan tècnic sense funció de control"
+        "Nomes per membres de la Junta de Govern",
+        "Per tots els regidors i es presidit per l'alcalde",
+        "Per personal tecnic designat",
+        "Per representants de centres educatius."
       ],
-      "correct": 0,
-      "explanation": "La LBRL assigna al Ple la composició i la presidència indicades.",
+      "correct": 1,
+      "explanation": "El Ple es l'orgue plenari de representacio politica.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-05"
+        "annex i - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies barregen òrgans polítics i tècnics i resulten molt creïbles si es confon govern amb secretaria."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
         "https://www.llicamunt.cat/ajuntament/673-govern/organs-de-govern/ple-municipal"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son errònies plausibles per la confusio entre representacio politica i gestio tecnica."
       ]
     },
     {
-      "id": "v2-a1-t06-01",
-      "theme": "Annex I - Tema 6",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quin criteri bàsic guia l'atribució de competències als municipis?",
+      "id": "a1-v3-05-03",
+      "theme": "Annex I - Tema 5",
+      "document": "El municipi (I). Òrgans de representació política i la seva designació.",
+      "prompt": "Quan existeix la Junta de Govern Local?",
       "options": [
-        "Intervenir en els assumptes que afecten directament els seus interessos amb criteris de descentralització, proximitat, eficàcia i eficiència",
-        "Actuar només quan la competència sigui exclusiva de l'Estat",
-        "Limitar-se a executar instruccions sense marge d'organització",
-        "Exercir només funcions simbòliques"
+        "Nomes amb autoritzacio autonòmica",
+        "A tots els municipis sempre, sense excepcio.",
+        "En municipis de mes de 5.000 habitants i, en alguns de menors, si ho preveu la norma organica o el Ple",
+        "Nomes als municipis capital de provincia"
       ],
-      "correct": 0,
-      "explanation": "La LBRL vincula competències i interessos locals amb principis de descentralització i proximitat.",
+      "correct": 2,
+      "explanation": "La LBRL vincula la Junta a la mida municipal i a la regulacio organica.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-06"
+        "annex i - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions errònies reprodueixen visions massa passives o massa centralitzades del municipi."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els altres enunciats son molt creïbles per l'habit de pensar el municipi com si totes les estructures fossin universals."
       ]
     },
     {
-      "id": "v2-a1-t06-02",
-      "theme": "Annex I - Tema 6",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Quina diferència és més coherent entre competències pròpies i delegades?",
+      "id": "a1-v3-05-04",
+      "theme": "Annex I - Tema 5",
+      "document": "El municipi (I). Òrgans de representació política i la seva designació.",
+      "prompt": "Quina es una funcio del Ple municipal?",
       "options": [
-        "Les pròpies responen a interessos locals, i les delegades s'exerceixen per encàrrec d'una altra administració amb les condicions establertes",
-        "Les pròpies depenen sempre d'una autorització individual",
-        "Les delegades són més lliures perquè no han de seguir cap instrucció",
-        "No hi ha cap diferència jurídica entre ambdues"
+        "La signatura de tots els contractes menors.",
+        "La direccio tecnica de les escoles bressol",
+        "La gestio diaria de la neteja viaria",
+        "El control i la fiscalitzacio dels organs de govern"
       ],
-      "correct": 0,
-      "explanation": "La LBRL distingeix clarament l'origen i el règim de les competències municipals.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "tema-06"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies sonen plausibles perquè barregen autonomia i delegació, dues idees properes però no equivalents."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
-      ]
-    },
-    {
-      "id": "v2-a1-t06-03",
-      "theme": "Annex I - Tema 6",
-      "document": "Llei 7/1985, reguladora de les bases del règim local",
-      "prompt": "Què exigeix la LBRL quan es fixen competències municipals?",
-      "options": [
-        "Que l'atribució tingui en compte la capacitat de gestió de l'entitat local i la naturalesa de l'activitat pública",
-        "Que totes les competències siguin iguals per a tots els municipis",
-        "Que cada ajuntament pugui crear competències sense base legal",
-        "Que la gestió local no tingui relació amb la normativa sectorial"
-      ],
-      "correct": 0,
-      "explanation": "La norma enllaça competència, capacitat de gestió i distribució constitucional.",
+      "correct": 3,
+      "explanation": "El Ple exerceix funcions de representacio i control politic.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-06"
+        "annex i - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions incorrectes barregen simplificació organitzativa amb improvisació normativa, una confusió molt temptadora."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions descriuen tasques reals, pero de gestio o servei, no del Ple."
       ]
     },
     {
-      "id": "v2-a1-t07-01",
+      "id": "a1-v3-06-01",
+      "theme": "Annex I - Tema 6",
+      "document": "El municipi: la regulació de les competències a la Llei de Bases de Règim Local.",
+      "prompt": "Quin criteri bàsic guia l'atribucio de competencies als municipis?",
+      "options": [
+        "Gestionar nomes funcions simbòliques.",
+        "Actuar nomes si l'Estat ho autoritza cada vegada",
+        "Limitar-se a executar ordres externes",
+        "Intervenir en assumptes que afecten els seus interessos amb criteris de descentralitzacio i proximitat"
+      ],
+      "correct": 3,
+      "explanation": "La LBRL vincula competencies i interessos locals amb criteris d'eficacia i proximitat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 6"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres respostes son errors de centralitzacio molt tipics."
+      ]
+    },
+    {
+      "id": "a1-v3-06-02",
+      "theme": "Annex I - Tema 6",
+      "document": "El municipi: la regulació de les competències a la Llei de Bases de Règim Local.",
+      "prompt": "Quina diferència és més coherent entre competencias pròpies i delegades?",
+      "options": [
+        "Les pròpies responen a interessos locals i les delegades s'exerceixen per encàrrec d'una altra administracio",
+        "No hi ha cap diferencia juridica.",
+        "Les propies depenen sempre d'una autoritzacio individual",
+        "Les delegades no tenen cap condicio legal"
+      ],
+      "correct": 0,
+      "explanation": "La diferencia rau en l'origen i en el regim juridic.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 6"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B-D confonen autonomia local amb delegacio i son molt utils com a distractors."
+      ]
+    },
+    {
+      "id": "a1-v3-06-03",
+      "theme": "Annex I - Tema 6",
+      "document": "El municipi: la regulació de les competències a la Llei de Bases de Règim Local.",
+      "prompt": "Què exigeix la LBRL quan es fixen competencies municipals?",
+      "options": [
+        "Que totes les competencies siguin iguals per a tothom",
+        "Que es tingui en compte la capacitat de gestio de l'entitat local i la naturalesa de l'activitat",
+        "Que cada municipi inventi competencies noves sense marc legal",
+        "Que els serveis educatius quedin fora del ambit local."
+      ],
+      "correct": 1,
+      "explanation": "La norma connecta competencia amb capacitat de gestio i marc legal.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 6"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perquè imiten mirades simplistes sobre uniformitat o improvisacio."
+      ]
+    },
+    {
+      "id": "a1-v3-06-04",
+      "theme": "Annex I - Tema 6",
+      "document": "El municipi: la regulació de les competències a la Llei de Bases de Règim Local.",
+      "prompt": "Quina actuacio es coherent amb el model competencial local?",
+      "options": [
+        "El municipi nomes pot actuar si rep una ordre singular cada vegada",
+        "El municipi no pot col·laborar amb altres administracions",
+        "El municipi pot actuar dins l'ambit dels interessos locals i cooperar amb altres administracions",
+        "El municipi nomes pot gestionar urbanisme."
+      ],
+      "correct": 2,
+      "explanation": "El model local admet cooperacio i exercici dins de l'ambit propi.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 6"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les opcions B-D son errors molt creïbles per excés de rigidesa."
+      ]
+    },
+    {
+      "id": "a1-v3-07-01",
       "theme": "Annex I - Tema 7",
-      "document": "Llei 39/2015, del procediment administratiu comú",
-      "prompt": "Quina definició s'ajusta millor a l'acte administratiu?",
+      "document": "L'acte administratiu: concepte i classes. Elements de l'acte administratiu. Requisits dels actes administratius.",
+      "prompt": "Quina definicio s'ajusta millor a l'acte administratiu?",
       "options": [
-        "Declaració de voluntat, judici, coneixement o desig dictada per una Administració Pública en exercici d'una potestat administrativa",
-        "Qualsevol comunicació interna sense rellevància jurídica",
-        "Només una sanció o una multa",
-        "Un document privat que l'Administració arxiva"
+        "Qualsevol comunicacio interna",
+        "Un escrit privat arxivat per l'Administracio.",
+        "Declaracio de voluntat, judici, coneixement o desig dictada per una Administracio en exercici d'una potestat administrativa",
+        "Nomes les sancions"
       ],
-      "correct": 0,
-      "explanation": "La definició clàssica d'acte administratiu inclou declaracions emanades de potestats administratives.",
+      "correct": 2,
+      "explanation": "La definicio combina declaracio i exercici de potestat administrativa.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-07",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 7"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors semblen creïbles perquè redueixen l'acte administratiu a una comunicació o a una sanció."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B-D son errors tipics perquè confonen forma, contingut i efectes."
       ]
     },
     {
-      "id": "v2-a1-t07-02",
+      "id": "a1-v3-07-02",
       "theme": "Annex I - Tema 7",
-      "document": "Llei 39/2015, del procediment administratiu comú",
-      "prompt": "Quins elements són essencials en un acte administratiu?",
+      "document": "L'acte administratiu: concepte i classes. Elements de l'acte administratiu. Requisits dels actes administratius.",
+      "prompt": "Quin element es essencial per a la validesa d'un acte administratiu?",
       "options": [
-        "Competència de l'òrgan, objecte possible i determinat, finalitat pública i forma quan sigui exigible",
-        "Només la signatura de qui l'ha redactat",
-        "La voluntat política de l'òrgan, encara que no hi hagi competència",
-        "El fet que l'interessat hi estigui d'acord"
+        "El fet que l'interessat hi estigui d'acord",
+        "L'acord informal del personal",
+        "La voluntat politica sense procediment.",
+        "Competencia de l'orgue, objecte possible i finalitat publica"
+      ],
+      "correct": 3,
+      "explanation": "La validesa exigeix competencia, objecte licit i finalitat conforme a Dret.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 7"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres opcions barregen conveniencia, acceptacio i voluntarisme."
+      ]
+    },
+    {
+      "id": "a1-v3-07-03",
+      "theme": "Annex I - Tema 7",
+      "document": "L'acte administratiu: concepte i classes. Elements de l'acte administratiu. Requisits dels actes administratius.",
+      "prompt": "Quan adquireix eficacia general un acte administratiu?",
+      "options": [
+        "Quan es notifica o es publica, segons correspongui",
+        "Quan es redacta per primera vegada",
+        "Quan l'interessat l'endevina.",
+        "Quan l'orgue el comenta oralment"
       ],
       "correct": 0,
-      "explanation": "La validesa dels actes exigeix els requisits ordinaris de competència, contingut i finalitat.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
+      "explanation": "La eficacia externa depen de notificacio o publicacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-07",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 7"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions errònies barregen criteris de validesa amb simples elements de conveniència o de tràmit."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres respostes confonen elaboracio interna amb produccio d'efectes."
       ]
     },
     {
-      "id": "v2-a1-t08-01",
+      "id": "a1-v3-07-04",
+      "theme": "Annex I - Tema 7",
+      "document": "L'acte administratiu: concepte i classes. Elements de l'acte administratiu. Requisits dels actes administratius.",
+      "prompt": "Quina afirmacio es mes precisa sobre la revocacio?",
+      "options": [
+        "Tota revocacio anul·la automàticament l'expedient complet",
+        "L'Administracio pot revocar actes de gravamen o desfavorables si no vulnera la llei",
+        "Només es poden revocar els actes favorables",
+        "Només es pot revocar amb consentiment notarial de tercers."
+      ],
+      "correct": 1,
+      "explanation": "La revocacio te un regim juridic propi i no es confon amb anul·lacio ni rectificacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 7"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Es un bloc sensible i els errors aqui solen ser juridicament molt plausibles."
+      ]
+    },
+    {
+      "id": "a1-v3-08-01",
       "theme": "Annex I - Tema 8",
-      "document": "Llei 39/2015, del procediment administratiu comú",
+      "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
       "prompt": "Què reconeix principalment l'article 53 a la persona interessada?",
       "options": [
-        "Drets d'accedir a l'expedient, conèixer l'estat de la tramitació, formular al·legacions i aportar documents",
-        "Només el dret a esperar la resolució final",
-        "Únicament el dret a recórrer quan hi hagi sanció",
-        "La possibilitat de substituir sempre el procediment per un correu electrònic"
+        "Esperar la resolucio final sense participar",
+        "Accedir a l'expedient, conèixer la tramitacio, formular al·legacions i aportar documents",
+        "Rebre sempre una resolucio favorable",
+        "Eliminar el procediment si el considera llarg."
       ],
-      "correct": 0,
-      "explanation": "L'article 53 concentra els drets típics de l'interessat en el procediment.",
+      "correct": 1,
+      "explanation": "L'article 53 recull els drets basics de la persona interessada.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-08",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 8"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les alternatives redueixen l'interessat a un subjecte passiu o barregen via digital amb garanties procedimentals."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres opcions rebaixen o caricaturitzen la posicio de l'interessat."
       ]
     },
     {
-      "id": "v2-a1-t08-02",
+      "id": "a1-v3-08-02",
       "theme": "Annex I - Tema 8",
-      "document": "Llei 39/2015, del procediment administratiu comú",
-      "prompt": "Quan és preceptiu el tràmit d'audiència?",
+      "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
+      "prompt": "Quan es preceptiu el tràmit d'audiència?",
       "options": [
-        "Abans de dictar resolució, quan hagin de ser tinguts en compte nous fets, noves al·legacions o proves no aportades per la persona interessada",
-        "Només quan l'interessat ho demana per escrit",
-        "Només en els procediments sancionadors greus",
-        "Només si l'òrgan instrutor té dubtes polítics"
+        "Nomes en procediments sancionadors greus",
+        "Nomes si l'orgue instrutor ho veu convenient per costum.",
+        "Abans de resoldre, quan s'han de tenir en compte nous fets, al·legacions o proves no aportades",
+        "Nomes si l'interessat ho demana"
       ],
-      "correct": 0,
-      "explanation": "El tràmit d'audiència és una garantia essencial del procediment.",
+      "correct": 2,
+      "explanation": "L'audiencia es una garantia procedimental, no un luxe opcional.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-08",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 8"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies són plausibles perquè limiten l'audiència a supòsits parcials o la vinculen a voluntat subjectiva."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les opcions B-D son errors molt comuns i per aixo funcionen molt be."
       ]
     },
     {
-      "id": "v2-a1-t09-01",
-      "theme": "Annex I - Tema 9",
-      "document": "Reglament orgànic municipal de Lliçà d'Amunt",
-      "prompt": "Quin és el propòsit general del Reglament orgànic municipal de Lliçà d'Amunt?",
+      "id": "a1-v3-08-03",
+      "theme": "Annex I - Tema 8",
+      "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
+      "prompt": "Què ha de fer l'Administracio una vegada iniciat un procediment?",
       "options": [
-        "Afavorir el correcte funcionament de l'entitat municipal i el compliment de les seves finalitats",
-        "Regular només el tràmit de matrícula escolar",
-        "Substituir la LBRL i l'Estatut de Catalunya",
-        "Determinar exclusivament els salaris del personal"
+        "Resoldre nomes si hi ha pressio externa.",
+        "Tancar l'expedient si no hi ha recurs",
+        "Esperar indefinidament",
+        "Dictar resolucio expressa i notificar-la dins el termini legal"
+      ],
+      "correct": 3,
+      "explanation": "L'obligacio de resoldre i notificar es central.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 8"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Els altres enunciats exploten errors habituals sobre silenci i inaccio."
+      ]
+    },
+    {
+      "id": "a1-v3-08-04",
+      "theme": "Annex I - Tema 8",
+      "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
+      "prompt": "Quan es pot usar la tramitacio simplificada?",
+      "options": [
+        "Quan la materia ho permet i hi ha poca complexitat, amb termini i tràmits reduïts",
+        "Quan es vol eliminar l'audiencia.",
+        "Sempre que ho demani l'interessat",
+        "Nomes en materia sancionadora greu"
       ],
       "correct": 0,
-      "explanation": "La pàgina del ROM explica que el reglament busca ordenar el funcionament municipal.",
+      "explanation": "La simplificacio existeix, pero sense convertir-se en supressio de garanties.",
       "difficulty": "mitjana",
-      "competence": "Criteri professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-09",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 8"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions incorrectes són creïbles perquè redueixen el ROM a una sola funció parcial o li atribueixen una jerarquia impossible."
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2015-10565"
       ],
-      "version": "v2",
       "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
-        "https://www.llicamunt.cat/ajuntament/reglament-organic-municipal"
+      "optionNotes": [
+        "D es temptador perquè confon simplificar amb retallar drets."
       ]
     },
     {
-      "id": "v2-a1-t09-02",
+      "id": "a1-v3-09-01",
       "theme": "Annex I - Tema 9",
-      "document": "Reglament orgànic municipal de Lliçà d'Amunt",
-      "prompt": "Quins àmbits tracta explícitament el ROM de Lliçà d'Amunt?",
+      "document": "Organització i funcionament de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quin es el propòsit general del Reglament organic municipal de Lliça d'Amunt?",
       "options": [
-        "Estatut dels regidors, grups municipals, organització municipal, règim de funcionament i participació ciutadana",
-        "Només el transport escolar i les beques",
-        "Exclusivament la neteja viària",
-        "Només les normes de tràmit intern de les escoles bressol"
+        "Ordenar el correcte funcionament de l'entitat municipal i el compliment de les seves finalitats",
+        "Determinar exclusivament salaris i complements.",
+        "Regular nomes la matricula de l'escola bressol",
+        "Substituir la LBRL"
       ],
       "correct": 0,
-      "explanation": "El document municipal enumera aquests blocs com a eixos del reglament.",
+      "explanation": "El ROM estructura organitzacio, funcionament i participacio.",
       "difficulty": "mitjana",
-      "competence": "Criteri professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-09",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 9"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions són plausibles perquè barregen part de la realitat municipal amb àmbits sectorials que no són el nucli del ROM."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://www.llicamunt.cat/ajuntament/reglament-organic-municipal"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres opcions son reals a nivell administratiu, pero massa parcials o impossibles."
       ]
     },
     {
-      "id": "v2-a1-t09-03",
+      "id": "a1-v3-09-02",
       "theme": "Annex I - Tema 9",
-      "document": "Escola bressol municipal Nova Espurna",
+      "document": "Organització i funcionament de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quins àmbits tracta explícitament el ROM de Lliça d'Amunt?",
+      "options": [
+        "Nomes transport escolar i beques",
+        "Estatut dels regidors, grups municipals, organitzacio, regim de funcionament i participacio ciutadana",
+        "Nomes neteja viaria",
+        "Nomes normes internes de les escoles bressol."
+      ],
+      "correct": 1,
+      "explanation": "El ROM delimita el nucli organitzatiu i de funcionament municipal.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 9"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/ajuntament/reglament-organic-municipal"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Són molt plausibles perquè barregen política local amb serveis concrets."
+      ]
+    },
+    {
+      "id": "a1-v3-09-03",
+      "theme": "Annex I - Tema 9",
+      "document": "Organització i funcionament de l'Ajuntament de Lliçà d'Amunt.",
       "prompt": "Quin tret destaca la fitxa oficial de l'EBM Nova Espurna?",
       "options": [
-        "Personal qualificat, educació de 0 a 3 anys, menjador amb aliments de proximitat i espai de descoberta respectuós",
-        "Exclusivament activitats acadèmiques de lectoescriptura",
-        "Servei orientat només a infants de 3 a 6 anys",
-        "Un model centrat únicament en l'assistència i no en l'educació"
+        "Exclusivament lectoescriptura",
+        "Servei només per a 3 a 6 anys",
+        "Educacio de 0 a 3, personal qualificat i servei amb orientacio educativa",
+        "Model purament assistencial sense projecte."
       ],
-      "correct": 0,
-      "explanation": "La fitxa oficial descriu el servei amb una orientació educativa i respectuosa amb el ritme de l'infant.",
+      "correct": 2,
+      "explanation": "La fitxa municipal presenta el centre com a servei educatiu del primer cicle.",
       "difficulty": "mitjana",
-      "competence": "Criteri professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-09",
-        "A revisar per la senyoreta Pame"
+        "annex i - tema 9"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies són plausibles perquè oposen un model educatiu integral a altres marcs més escolars o purament assistencials."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "sourceRefs": [
         "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les errònies contraposen un model educatiu integral amb altres models que son molt recognoscibles."
       ]
     },
     {
-      "id": "v2-a1-t10-01",
-      "theme": "Annex I - Tema 10",
-      "document": "EBEP",
-      "prompt": "Quina classificació general del personal al servei de les administracions públiques recull l'EBEP?",
+      "id": "a1-v3-09-04",
+      "theme": "Annex I - Tema 9",
+      "document": "Organització i funcionament de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quina funcio te el Pla educatiu local Educ360 de Lliça d'Amunt?",
       "options": [
-        "Funcionari, laboral i eventual",
-        "Només funcionari i directiu",
+        "Limitar-se al calendari de matricula.",
+        "Substituir els projectes educatius dels centres",
+        "Regular nomes la part administrativa de les escoles bressol",
+        "Vertebrar la politica educativa municipal 2022-2026 amb visio integral i treball en xarxa"
+      ],
+      "correct": 3,
+      "explanation": "El pla educatiu local es una estrategia municipal de coordinacio educativa.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 9"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/temes/educacio/pla-educatiu-local-de-llica-damunt-educ360"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres opcions son molt versemblants si es confon pla local amb reglament o calendari."
+      ]
+    },
+    {
+      "id": "a1-v3-10-01",
+      "theme": "Annex I - Tema 10",
+      "document": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni col·lectiu del personal laboral de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quina classificacio general recull l'EBEP?",
+      "options": [
         "Docent, sanitari i administratiu",
-        "Fix, interí i temporal com a categories jurídiques úniques"
+        "Politic, tecnic i auxiliar.",
+        "Funcionari, laboral i eventual",
+        "Fix, temporal i interí com a categories uniques"
       ],
-      "correct": 0,
-      "explanation": "L'EBEP distingeix aquestes tres grans classes de personal públic.",
+      "correct": 2,
+      "explanation": "L'EBEP distingeix aquestes tres grans classes de personal.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-10"
+        "annex i - tema 10"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions incorrectes barregen categories laborals, funcionals i de temporalitat, cosa que és molt temptadora."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres categories barregen funcio, temporalitat i nivell professional."
       ]
     },
     {
-      "id": "v2-a1-t10-02",
+      "id": "a1-v3-10-02",
       "theme": "Annex I - Tema 10",
-      "document": "EBEP",
-      "prompt": "Quina conducta s'ajusta millor als deures del personal públic?",
+      "document": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni col·lectiu del personal laboral de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quina conducta s'ajusta millor als deures del personal public?",
       "options": [
-        "Actuar amb objectivitat, integritat, neutralitat i servei a l'interès general",
-        "Prioritzar sempre les indicacions informals de la direcció política",
-        "Compartir informació interna si ajuda a agilitzar el servei",
-        "Separar del tot l'activitat professional del principi de servei públic"
+        "Compartir informacio interna si accelera el servei",
+        "Prioritzar sempre les indicacions informals",
+        "Separar completament l'activitat professional del servei public.",
+        "Actuar amb objectivitat, integritat, neutralitat i servei a l'interes general"
       ],
-      "correct": 0,
-      "explanation": "El codi de conducta del personal públic exigeix objectivitat i servei a l'interès general.",
+      "correct": 3,
+      "explanation": "El codi de conducta del personal public exigeix servei a l'interes general.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-10"
+        "annex i - tema 10"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies són creïbles perquè contraposen neutralitat, agilitat i criteri informal, tres temptacions reals en la pràctica."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Són opcions molt creïbles perquè posen en joc agilitat, informalitat i distància institucional."
       ]
     },
     {
-      "id": "v2-a1-t11-01",
-      "theme": "Annex I - Tema 11",
-      "document": "LOPDGDD i RGPD",
-      "prompt": "Quina és la finalitat essencial de la LOPDGDD?",
+      "id": "a1-v3-10-03",
+      "theme": "Annex I - Tema 10",
+      "document": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni col·lectiu del personal laboral de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quin principi general inspira la Llei 53/1984?",
       "options": [
-        "Adaptar l'ordenament espanyol al RGPD i garantir els drets digitals",
-        "Regular només l'arxiu de documents en paper",
-        "Permetre compartir dades sempre que la finalitat sigui educativa",
-        "Limitar-se a la protecció de dades dels adults"
+        "La dedicacio a un sol lloc de treball, amb excepcions legals",
+        "La compatibilitat automàtica amb qualsevol activitat",
+        "L'aplicacio nomes als càrrecs electes.",
+        "La llibertat absoluta de compatibilitats"
       ],
       "correct": 0,
-      "explanation": "L'article 1 de la LOPDGDD ho diu de manera expressa.",
+      "explanation": "La llei parteix de la incompatibilitat i reserva les excepcions a la norma.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-11"
+        "annex i - tema 10"
       ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-151"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions errònies són plausibles perquè barregen finalitat educativa, suport documental i límit subjectiu d'edat."
+        "B-D son errors habituals perquè semblen solucions pràctiques."
+      ]
+    },
+    {
+      "id": "a1-v3-10-04",
+      "theme": "Annex I - Tema 10",
+      "document": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni col·lectiu del personal laboral de l'Ajuntament de Lliçà d'Amunt.",
+      "prompt": "Quan pot exercir-se una activitat privada si afecta personal al servei d'una administracio?",
+      "options": [
+        "Nomes si el centre hi esta d'acord verbalment",
+        "Quan no impedeixi ni menyscabi els deures ni comprometi imparcialitat o independencia",
+        "Sempre que es faci fora d'horari",
+        "Nomes si l'activitat es petita."
       ],
-      "version": "v2",
-      "sources": [
+      "correct": 1,
+      "explanation": "La compatibilitat depen de la neutralitat i del bon servei.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 10"
+      ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1985-151"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Les altres respostes son temptadores pero juridicament febles."
+      ]
+    },
+    {
+      "id": "a1-v3-11-01",
+      "theme": "Annex I - Tema 11",
+      "document": "Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals.",
+      "prompt": "Quina es la finalitat essencial de la LOPDGDD?",
+      "options": [
+        "Regular nomes arxius en paper",
+        "Adaptar l'ordenament espanyol al RGPD i garantir els drets digitals",
+        "Permetre qualsevol difusio si la finalitat es educativa",
+        "Limitar-se a dades d'adults."
+      ],
+      "correct": 1,
+      "explanation": "La LOPDGDD adapta el dret intern al RGPD i incorpora drets digitals.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 11"
+      ],
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2018-16673",
         "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions redueixen o deformen la funcio de la llei."
       ]
     },
     {
-      "id": "v2-a1-t11-02",
+      "id": "a1-v3-11-02",
       "theme": "Annex I - Tema 11",
-      "document": "RGPD",
-      "prompt": "Quin principi del tractament de dades exigeix recollir només les dades adequades, pertinents i limitades al necessari?",
+      "document": "Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals.",
+      "prompt": "Quin principi exigeix recollir nomes les dades adequades, pertinents i limitades al necessari?",
       "options": [
-        "Minimització de dades",
-        "Publicitat activa",
         "Universalitat del registre",
-        "Disponibilitat immediata"
+        "Disponibilitat immediata.",
+        "Minimitzacio de dades",
+        "Publicitat activa"
       ],
-      "correct": 0,
-      "explanation": "L'article 5 del RGPD recull el principi de minimització.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
+      "correct": 2,
+      "explanation": "El RGPD recull la minimitzacio com a principi del tractament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-11"
+        "annex i - tema 11"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies són creïbles perquè fan servir conceptes administratius reals però no propis de la protecció de dades."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions son concepts administratius reals pero no propis de proteccio de dades."
       ]
     },
     {
-      "id": "v2-a1-t12-01",
-      "theme": "Annex I - Tema 12",
-      "document": "Llei 31/1995 de prevenció de riscos laborals",
-      "prompt": "Què reconeix l'article 14 de la LPRL?",
+      "id": "a1-v3-11-03",
+      "theme": "Annex I - Tema 11",
+      "document": "Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals.",
+      "prompt": "Que cal facilitar quan es recullen dades personals directament d'una persona?",
       "options": [
-        "El dret dels treballadors a una protecció eficaç en matèria de seguretat i salut en el treball",
-        "El dret a decidir individualment si s'apliquen protocols",
-        "El dret a prescindir de tota prevenció si l'activitat és educativa",
-        "El dret a delegar tota la prevenció en famílies i alumnat"
+        "Nomes el consentiment.",
+        "Nomes la finalitat",
+        "Nomes un avís verbal",
+        "Informacio bàsica del tractament i acces facil a la resta d'informacio"
+      ],
+      "correct": 3,
+      "explanation": "El deure d'informar exigeix mes que un simple avís.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 11"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2018-16673"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B-D son temptadors perquè semblen suficients, pero es queden curts."
+      ]
+    },
+    {
+      "id": "a1-v3-11-04",
+      "theme": "Annex I - Tema 11",
+      "document": "Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals.",
+      "prompt": "Que exigeix la normativa quan un centre vol difondre imatges identificables de menors?",
+      "options": [
+        "Base legitimadora o consentiment adequat, finalitat clara i canals de difusio correctes",
+        "Nomes que la foto sigui educativa",
+        "Cap requisit especial si es una xarxa municipal.",
+        "Nomes que la vegin les famílies del grup"
       ],
       "correct": 0,
-      "explanation": "L'article 14 formula el dret bàsic a la protecció eficaç.",
+      "explanation": "La difusio d'imatges de menors exigeix rigor juridic i finalitat precisa.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-12"
+        "annex i - tema 11"
       ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2018-16673",
+        "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions incorrectes són creïbles perquè juguen amb la idea de delegació o de flexibilitat excessiva."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://boe.es/buscar/act.php?id=BOE-A-1995-24292"
+        "Les altres opcions son molt plausibles perquè apel·len a bones intencions educatives o comunitaries."
       ]
     },
     {
-      "id": "v2-a1-t12-02",
+      "id": "a1-v3-12-01",
       "theme": "Annex I - Tema 12",
-      "document": "Llei 31/1995 de prevenció de riscos laborals",
-      "prompt": "Què estableix l'article 15 sobre l'acció preventiva?",
+      "document": "Prevenció de riscos laborals en l'exercici professional del/de la tècnic/a d'educació infantil.",
+      "prompt": "Que reconeix l'article 14 de la LPRL?",
       "options": [
+        "El dret dels treballadors a una proteccio eficaç en matèria de seguretat i salut",
+        "El dret a delegar tota la prevencio en les famílies.",
+        "El dret a decidir si s'apliquen protocols",
+        "El dret a prescindir de la prevencio si l'activitat es educativa"
+      ],
+      "correct": 0,
+      "explanation": "L'article 14 formula el dret basic a la proteccio eficaç.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 12"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-1995-24292"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres respostes son erros plausibles perquè semblen flexibilitat o repartiment de responsabilitats."
+      ]
+    },
+    {
+      "id": "a1-v3-12-02",
+      "theme": "Annex I - Tema 12",
+      "document": "Prevenció de riscos laborals en l'exercici professional del/de la tècnic/a d'educació infantil.",
+      "prompt": "Que estableix l'article 15 sobre l'accio preventiva?",
+      "options": [
+        "Nomes cal actuar després de l'accident",
         "Cal evitar els riscos, avaluar els que no es puguin evitar i combatre'ls a l'origen",
-        "Només cal actuar després de l'accident",
-        "N'hi ha prou amb col·locar cartells d'avís",
-        "La prevenció és opcional si l'espai és petit"
+        "Nomes cal posar cartells",
+        "La prevencio es opcional si l'espai es petit."
       ],
-      "correct": 0,
-      "explanation": "L'article 15 recull els principis generals de l'acció preventiva.",
+      "correct": 1,
+      "explanation": "L'article 15 recull els principis generals de l'accio preventiva.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-12"
+        "annex i - tema 12"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies semblen habituals perquè redueixen la prevenció a avís o a reacció posterior."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-1995-24292"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son distractors molt utilitzables perquè reprodueixen errors de passivitat preventiva."
       ]
     },
     {
-      "id": "v2-a1-t12-03",
+      "id": "a1-v3-12-03",
       "theme": "Annex I - Tema 12",
-      "document": "Llei 31/1995 de prevenció de riscos laborals",
-      "prompt": "Quina mesura forma part de l'organització preventiva?",
+      "document": "Prevenció de riscos laborals en l'exercici professional del/de la tècnic/a d'educació infantil.",
+      "prompt": "Quina mesura forma part de l'organitzacio preventiva?",
       "options": [
-        "Avaluació de riscos i planificació de l'activitat preventiva",
-        "Només revisió visual informal al final de curs",
-        "Actuació exclusiva després d'un accident",
-        "Suspensió de totes les activitats educatives"
+        "Actuacio exclusiva després d'un accident",
+        "Suspensio de totes les activitats educatives.",
+        "Avaluacio de riscos i planificacio de l'activitat preventiva",
+        "Revisio visual informal al final de curs"
       ],
-      "correct": 0,
-      "explanation": "L'article 16 dona centralitat a l'avaluació i la planificació.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
+      "correct": 2,
+      "explanation": "L'avaluacio i la planificacio son la base del sistema preventiu.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-12"
+        "annex i - tema 12"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les opcions errònies són plausibles perquè substitueixen planificació per improvisació o per una reacció purament reactiva."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-1995-24292"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les opcions B-D són errors molt versemblants en una practica quotidiana desordenada."
       ]
     },
     {
-      "id": "v2-a1-t13-01",
-      "theme": "Annex I - Tema 13",
-      "document": "Llei orgànica 3/2007 d'igualtat efectiva",
-      "prompt": "Quin és l'objectiu de la Llei orgànica 3/2007?",
+      "id": "a1-v3-12-04",
+      "theme": "Annex I - Tema 12",
+      "document": "Prevenció de riscos laborals en l'exercici professional del/de la tècnic/a d'educació infantil.",
+      "prompt": "Quina actuacio preventiva es coherent en una escola bressol?",
       "options": [
-        "Fer efectiu el dret a la igualtat de tracte i d'oportunitats entre dones i homes i eliminar la discriminació",
-        "Regular només les quotes electorals",
-        "Substituir la Constitució en matèria d'igualtat",
-        "Limitar-se a l'àmbit privat de la família"
+        "Prioritzar el ritme de la proposta encara que hi hagi riscos evidents.",
+        "Deixar material a prop de la porta si es mes còmode",
+        "Esperar al simulacre per detectar obstacles",
+        "Mantenir lliures les vies de pas, ordenar l'espai i revisar riscos abans de la jornada"
       ],
-      "correct": 0,
-      "explanation": "L'article 1 de la LO 3/2007 formula aquest objectiu de manera expressa.",
+      "correct": 3,
+      "explanation": "La prevencio exigeix anticipacio i ordre espacial.",
       "difficulty": "mitjana",
-      "competence": "Comprensió normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-13"
+        "annex i - tema 12"
       ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-1995-24292"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les errònies són plausibles perquè redueixen la llei a una sola tècnica o a un àmbit privat."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://boe.es/buscar/act.php?id=BOE-A-2007-6115"
+        "Les altres opcions son temptadores perquè son \"practiques\", pero no son preventives."
       ]
     },
     {
-      "id": "v2-a1-t13-02",
+      "id": "a1-v3-13-01",
       "theme": "Annex I - Tema 13",
-      "document": "Constitució espanyola i LO 3/2007",
-      "prompt": "Què obliga els poders públics a fer l'article 9.2 de la Constitució?",
+      "document": "Principis d'igualtat, inclusió i no-discriminació en l'atenció educativa a la primera infància.",
+      "prompt": "Quin es l'objectiu de la LO 3/2007?",
       "options": [
-        "Promoure les condicions perquè la igualtat de l'individu i dels grups sigui real i efectiva",
-        "Garantir només la igualtat formal davant la llei",
-        "Evitar tota diferència de tracte, encara que sigui objectiva",
-        "Traslladar la responsabilitat de la igualtat a les famílies"
+        "Substituir la Constitucio",
+        "Regular nomes quotes electorals",
+        "Limitar-se a l'ambit privat familiar.",
+        "Fer efectiu el dret a la igualtat de tracte i oportunitats entre dones i homes i eliminar la discriminacio"
+      ],
+      "correct": 3,
+      "explanation": "L'article 1 de la LO 3/2007 formula aquest objectiu.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 13"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2007-6115"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les altres opcions redueixen la llei a un àmbit parcial o impossible."
+      ]
+    },
+    {
+      "id": "a1-v3-13-02",
+      "theme": "Annex I - Tema 13",
+      "document": "Principis d'igualtat, inclusió i no-discriminació en l'atenció educativa a la primera infància.",
+      "prompt": "Què obliga els poders publics a fer l'article 9.2 de la Constitucio?",
+      "options": [
+        "Promoure les condicions perquè la igualtat sigui real i efectiva",
+        "Traslladar la responsabilitat a les families.",
+        "Garantir només la igualtat formal",
+        "Evitar qualsevol diferencia de tracte encara que sigui objectiva"
       ],
       "correct": 0,
-      "explanation": "L'article 9.2 vincula els poders públics a una igualtat material i efectiva.",
-      "difficulty": "alta",
-      "competence": "Comprensió normativa",
+      "explanation": "L'article 9.2 apunta a igualtat material i efectiva.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-13"
+        "annex i - tema 13"
       ],
+      "sourceRefs": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors són plausibles perquè contraposen igualtat formal, absència de matisos i externalització de responsabilitats."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
-        "https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=9.2"
+        "Les altres opcions son atractives perquè sonen prudents, pero no son la formula constitucional."
       ]
     },
     {
-      "id": "v2-a1-t13-03",
+      "id": "a1-v3-13-03",
       "theme": "Annex I - Tema 13",
-      "document": "LO 3/2007 i currículum educatiu",
-      "prompt": "Quina actuació és més coherent amb una mirada coeducadora a l'etapa infantil?",
+      "document": "Principis d'igualtat, inclusió i no-discriminació en l'atenció educativa a la primera infància.",
+      "prompt": "Quina actuacio es mes coherent amb una mirada coeducadora?",
       "options": [
+        "Mantenir materials estereotipats per tradicio",
         "Revisar materials, llenguatge, rols de joc i expectatives per evitar estereotips",
-        "Reservar la coeducació per a dates commemoratives",
-        "Mantenir materials estereotipats perquè ja formen part de la tradició",
-        "Considerar que abans dels 3 anys els estereotips no influeixen"
+        "Reservar la coeducacio per dates commemoratives",
+        "Pensar que abans dels 3 anys els estereotips no influeixen."
       ],
-      "correct": 0,
-      "explanation": "La coeducació és transversal i afecta materials, llenguatge i relacions.",
-      "difficulty": "alta",
-      "competence": "Criteri pedagògic i professional",
+      "correct": 1,
+      "explanation": "La coeducacio es transversal i afecta la vida quotidiana del centre.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "tema-13"
+        "annex i - tema 13"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Les altres opcions són creïbles perquè reflecteixen inèrcies reals: puntualitat, tradició i falsa neutralitat evolutiva."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://boe.es/buscar/act.php?id=BOE-A-2007-6115"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son errònies molt plausibles perquè reflecteixen inercia, puntualitat i falsa neutralitat."
       ]
     },
     {
-      "id": "v2-a2-t01-01",
+      "id": "a1-v3-13-04",
+      "theme": "Annex I - Tema 13",
+      "document": "Principis d'igualtat, inclusió i no-discriminació en l'atenció educativa a la primera infància.",
+      "prompt": "Quina idea s'ajusta millor al principi d'igualtat en l'entorn educatiu?",
+      "options": [
+        "Igualtat equival a tractar totes les situacions idènticament",
+        "Igualtat es una questio opcional si no hi ha queixes.",
+        "Igualtat no vol dir fer exactament el mateix a tothom, sino garantir oportunitats i eliminar barreres",
+        "Igualtat només afecta el llenguatge administratiu"
+      ],
+      "correct": 2,
+      "explanation": "La igualtat real exigeix mesures i eliminacio de barreres.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex i - tema 13"
+      ],
+      "sourceRefs": [
+        "https://boe.es/buscar/act.php?id=BOE-A-2007-6115"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Les opcions B-D són molt creïbles perquè barregen uniformitat, formalisme i inaccio."
+      ]
+    },
+    {
+      "id": "v3-a2-t1-01",
       "theme": "Annex II - Tema 1",
-      "document": "Decret 102/2010; XTEC - Curriculum i orientacio. Educacio infantil; Orientacions curriculars del primer cicle",
-      "prompt": "En un centre, qui ha de fixar els criteris generals i qui els aplica en el dia a dia?",
+      "document": "Decret 102/2010, d'autonomia dels centres educatius.",
+      "prompt": "En un centre, com s'ha d'entendre l'autonomia de centre en relacio amb la feina diaria?",
       "options": [
-        "L'equip educatiu fixa els criteris generals i cada educador o educadora decideix com i quan els aplica",
-        "Cada professional decideix lliurement sense criteris compartits",
-        "La secretaria del centre fixa els criteris i l'equip nomes els executa",
-        "El projecte educatiu es redacta una vegada i no condiciona l'accio diaria"
+        "Com un marge d'accio que es pot exercir encara que contradigui els documents de centre.",
+        "Com la llibertat de cada professional per actuar al marge del projecte educatiu.",
+        "Com una autonomia nomes economica, sense incidencia pedagogica.",
+        "Com una autonomia collectiva que fixa criteris comuns i s'aplica amb coherencia en el dia a dia."
       ],
-      "correct": 0,
-      "explanation": "La proposta recull la idea que el treball d'equip defineix els criteris generals i que l'aplicacio quotidiana es concreta al dia a dia amb criteri professional, no amb improvisacio individual.",
+      "correct": 3,
+      "explanation": "El Decret 102/2010 situa l'autonomia en una llogica collectiva i coherent amb el projecte educatiu, no com a improvisacio individual.",
       "difficulty": "mitjana",
       "competence": "Comprensio normativa",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-01"
+        "annex ii - tema 1"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque barregen autonomia amb individualisme, jerarquia administrativa o formalisme documental, tres errors habituals alhora que realistes."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+      "sourceRefs": [
         "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/",
+        "https://xtec.gencat.cat/ca/projectes/lectura/pladelectura/pla-de-lectura-de-centre-i-projecte-educatiu-de-centre/",
         "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son plausibles perque barregen autonomia amb individualisme, reduccio economica o desconnexio del PEC."
       ]
     },
     {
-      "id": "v2-a2-t01-02",
+      "id": "v3-a2-t1-02",
       "theme": "Annex II - Tema 1",
-      "document": "Decret 102/2010; Decret 21/2023",
-      "prompt": "Quin enunciat descriu millor l'autonomia de centre en relacio amb l'organitzacio pedagogica?",
+      "document": "Decret 102/2010, d'autonomia dels centres educatius.",
+      "prompt": "Quin element expressa millor la funcio del projecte educatiu de centre?",
       "options": [
-        "Es una autonomia collectiva que ha de mantenir coherencia amb el projecte educatiu i amb els documents de gestio",
-        "Es una autonomia purament economica i no afecta espais, temps ni materials",
-        "Consisteix a deixar cada aula actuar amb un criteri diferent per evitar rigidesa",
-        "Nomes es pot exercir si hi ha una instruccio externa que detalli cada pas"
+        "Recull identitat, objectius i orienta l'activitat del centre.",
+        "Serveix sobretot per justificar tramits administratius interns.",
+        "Es un text de referencia nomes per a inspeccio.",
+        "Es un document que no ha d'influir en espais, temps ni materials."
       ],
       "correct": 0,
-      "explanation": "L'autonomia no es redueix a pressupost ni a llibertat individual; afecta opcions pedagogiques, organitzatives i de gestio, sempre vinculades al projecte del centre.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-01"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors confonen autonomia amb economia, fragmentacio de criteris o dependencia total d'instruccions externes."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
-      ]
-    },
-    {
-      "id": "v2-a2-t02-01",
-      "theme": "Annex II - Tema 2",
-      "document": "Decret 282/2006; Codi d'educacio de Catalunya",
-      "prompt": "Quin conjunt d'aspectes forma part del nucli regulador del Decret 282/2006?",
-      "options": [
-        "Professionals, espais, instal.lacions, nombre maxim d'infants per unitat, autoritzacio administrativa i participacio de la comunitat educativa",
-        "Nomes el calendari escolar i la distribucio dels dies festius",
-        "Exclusivament el curriculum del segon cicle d'infantil",
-        "Unicament les tarifes i els preus publics del servei"
-      ],
-      "correct": 0,
-      "explanation": "El text consolidat i la seva modificacio de 2010 situen el decret en el terreny dels requisits minims del primer cicle i del procediment d'autoritzacio.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-02"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors desvien el focus cap a calendaris, curriculums o preus publics, que son àmbits propers pero no son l'objecte del decret."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/.content/alfresco/d/d/workspace/SpacesStore/0090/df91fa7d-976f-4876-9702-3f37cbe61faa/decret_ed_infantil.pdf",
-        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/"
-      ]
-    },
-    {
-      "id": "v2-a2-t02-02",
-      "theme": "Annex II - Tema 2",
-      "document": "Decret 282/2006; Codi d'educacio de Catalunya",
-      "prompt": "Quin element reflecteix millor un requisit minim real del primer cicle, segons el decret?",
-      "options": [
-        "La titulacio i la qualificacio professional del personal que atendre l'infant",
-        "L'experiencia informal com a substitut automatic de la titulacio",
-        "La bona voluntat del centre, encara que no hi hagi qualificacio especifica",
-        "La decisio puntual de cada ajuntament sobre qui pot fer de tutor o tutora"
-      ],
-      "correct": 0,
-      "explanation": "El marc normatiu vincula l'atencio educativa del primer cicle a professionals amb titulacio i qualificacio, no a criteris improvisats.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-02"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque apel.len a l'experiencia, la flexibilitat local o la bona intencio, tres errors corrents quan es confon criteri professional amb permissivitat."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/",
-        "https://xtec.gencat.cat/.content/alfresco/d/d/workspace/SpacesStore/0090/df91fa7d-976f-4876-9702-3f37cbe61faa/decret_ed_infantil.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t03-01",
-      "theme": "Annex II - Tema 3",
-      "document": "Decret 150/2017; XTEC - Atencio educativa als alumnes",
-      "prompt": "Com s'han d'identificar i avaluar les NESE dins del marc inclusiu?",
-      "options": [
-        "Considerant el funcionament de l'infant dins del context educatiu, independentment de la seva condicio personal i social",
-        "Esperant sempre un diagnostic extern abans d'observar res",
-        "Valorant nomes l'etiqueta diagnostica i no la participacio real",
-        "Aplicant el mateix suport a tothom per evitar diferencies"
-      ],
-      "correct": 0,
-      "explanation": "El marc inclusiu posa l'accent en el funcionament dins el context, no en una etiqueta aillada de la vida de l'aula.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-03"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque reprodueixen tres errors habituals: esperar el diagnostic, reduir-ho a una etiqueta i uniformitzar suports."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
-        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-Drets_persones_discapacitat/"
-      ]
-    },
-    {
-      "id": "v2-a2-t03-02",
-      "theme": "Annex II - Tema 3",
-      "document": "Decret 150/2017; XTEC - Atencio educativa als alumnes",
-      "prompt": "Que ha de recollir el Pla de Suport Individualitzat segons el marc inclusiu?",
-      "options": [
-        "Les valoracions i la presa de decisions de l'equip docent, amb participacio de la familia i de l'infant quan escaigui",
-        "Nomes una valoracio tecnica sense retorn a la familia",
-        "Un resum de notes finals i incidents disciplinaris",
-        "Un document privat del centre sense relacio amb les mesures i els suports"
-      ],
-      "correct": 0,
-      "explanation": "El PI es un espai de presa de decisions compartida i orienta mesures i suports, no una simple fitxa de classificacio.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-03"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque confonen el PI amb un informe tancat, amb un registre academic o amb un document intern sense funcio educativa."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t04-01",
-      "theme": "Annex II - Tema 4",
-      "document": "XTEC - L'avaluacio i la documentacio pedagogica a l'educacio infantil; Curriculum infantil 0-3",
-      "prompt": "Quin es el valor principal de l'observacio a l'educacio infantil?",
-      "options": [
-        "Obtenir informacio sobre cada infant per millorar el proces d'ensenyament i aprenentatge",
-        "Registrar qui es porta be i qui no",
-        "Fer una llista fixa de conductes per comparar infants entre si",
-        "Substituir la mirada educativa per un simple recompte de fotos"
-      ],
-      "correct": 0,
-      "explanation": "L'observacio serveix per comprendre processos i ajustar l'acompanyament, no per etiquetar ni per acumular proves.",
+      "explanation": "El PEC dona sentit a l'activitat del centre i concreta la seva identitat i les seves prioritats.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-04"
+        "annex ii - tema 1"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/projectes/lectura/pladelectura/pla-de-lectura-de-centre-i-projecte-educatiu-de-centre/",
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque barregen observacio amb control de conducta, classificacio o mera recopilacio visual."
+        "Son versemblants perque fan confusio entre document pedagogic, document administratiu i document de control extern."
+      ]
+    },
+    {
+      "id": "v3-a2-t1-03",
+      "theme": "Annex II - Tema 1",
+      "document": "Decret 102/2010, d'autonomia dels centres educatius.",
+      "prompt": "Quina manera de planificar es mes coherent amb l'autonomia de centre a educacio infantil 0-3?",
+      "options": [
+        "Una proposta unica i tancada per a tot el grup, sense adaptacions.",
+        "Situacions amb sentit, flexibles i contextualitzades, ajustades al ritme dels infants.",
+        "Activitats iguals cada dia per garantir homogeneitat.",
+        "Una planificacio que redueixi la decisio de l'infant al maxim."
       ],
-      "version": "v2",
-      "sources": [
+      "correct": 1,
+      "explanation": "El marc actual demana contextos educatius amb sentit i flexibilitat, no uniformitat ni rigidesa.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio pedagogica",
+      "tags": [
+        "annex ii - tema 1"
+      ],
+      "sourceRefs": [
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Totes les opcions incorrectes son plausibles perque son formes habituals d'excusa per controlar massa la practica."
+      ]
+    },
+    {
+      "id": "v3-a2-t1-04",
+      "theme": "Annex II - Tema 1",
+      "document": "Decret 102/2010, d'autonomia dels centres educatius.",
+      "prompt": "Quin criteri resumeix millor la relacio entre autonomia i organitzacio quotidiana al primer cicle?",
+      "options": [
+        "L'organitzacio ha de seguir sempre el mateix horari, encara que no encaixi amb els ritmes infants.",
+        "L'organitzacio es independent de la cura, del joc i de la vida quotidiana.",
+        "L'organitzacio ha de respondre al projecte de centre i a les necessitats vitals dels infants.",
+        "L'organitzacio nomes te valor si permet reduir decisions pedagogiques."
+      ],
+      "correct": 2,
+      "explanation": "A 0-3, la vida quotidiana forma part del nucli educatiu i s'ha d'organitzar amb criteri pedagogic.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 1"
+      ],
+      "sourceRefs": [
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son plausibles perque separen pedagogia i vida quotidiana o imposen un model adult-centric."
+      ]
+    },
+    {
+      "id": "v3-a2-t2-01",
+      "theme": "Annex II - Tema 2",
+      "document": "Decret 282/2006, pel qual es regula el primer cicle de l'educació infantil i els requisits dels centres.",
+      "prompt": "Quin ambit regula principalment el Decret 282/2006?",
+      "options": [
+        "Exclusivament el curriculm del segon cicle d'infantil.",
+        "La gestio economica dels ajuts municipals.",
+        "El primer cicle de l'educacio infantil i els requisits dels centres.",
+        "Nomes el calendari escolar i les vacances del personal."
+      ],
+      "correct": 2,
+      "explanation": "El decret se centra en el primer cicle i en els requisits dels centres que l'imparteixen.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio normativa",
+      "tags": [
+        "annex ii - tema 2"
+      ],
+      "sourceRefs": [
+        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0090/df91fa7d-976f-4876-9702-3f37cbe61faa/decret_ed_infantil.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors desvien el focus cap a ambit laboral, curricular o financer, pero segueixen sent del mateix mon institucional."
+      ]
+    },
+    {
+      "id": "v3-a2-t2-02",
+      "theme": "Annex II - Tema 2",
+      "document": "Decret 282/2006, pel qual es regula el primer cicle de l'educació infantil i els requisits dels centres.",
+      "prompt": "Quin element forma part dels requisits dels centres del primer cicle?",
+      "options": [
+        "La possibilitat de substituir la titulacio per voluntariat familiar estable.",
+        "Qualsevol persona amb experiencia informal en cura d'infants.",
+        "Unicament la decisio de l'ajuntament, sense criteri normatiu comu.",
+        "Professionals amb titulacio adequada i qualificacio per a l'atencio educativa."
+      ],
+      "correct": 3,
+      "explanation": "El marc normatiu vincula l'atencio educativa a professionals qualificats, no a criteris improvisats.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio normativa",
+      "tags": [
+        "annex ii - tema 2"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0090/df91fa7d-976f-4876-9702-3f37cbe61faa/decret_ed_infantil.pdf",
+        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/Codi-Educacio-de-Catalunya/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son plausibles perque apel.len a experiencia, flexibilitat local o suport familiar, pero no compleixen el requisit professional."
+      ]
+    },
+    {
+      "id": "v3-a2-t2-03",
+      "theme": "Annex II - Tema 2",
+      "document": "Decret 282/2006, pel qual es regula el primer cicle de l'educació infantil i els requisits dels centres.",
+      "prompt": "Quina idea es coherent amb la regulacio dels centres del primer cicle?",
+      "options": [
+        "El centre necessita autoritzacio administrativa i ha de complir requisits objectius.",
+        "El centre depen exclusivament del criteri de la persona directora.",
+        "El centre pot funcionar nomes amb una declaracio responsable interna.",
+        "El centre queda fora de qualsevol control normatiu si es municipal."
+      ],
+      "correct": 0,
+      "explanation": "El decret estableix un marc regulador i d'autoritzacio que no deixa l'obertura o el funcionament a la improvisacio.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio normativa",
+      "tags": [
+        "annex ii - tema 2"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0090/df91fa7d-976f-4876-9702-3f37cbe61faa/decret_ed_infantil.pdf",
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Són plausibles perque juguen amb falsa autonomia, autoautoritzacio o confusio entre titularitat i control normatiu."
+      ]
+    },
+    {
+      "id": "v3-a2-t2-04",
+      "theme": "Annex II - Tema 2",
+      "document": "Decret 282/2006, pel qual es regula el primer cicle de l'educació infantil i els requisits dels centres.",
+      "prompt": "Quin criteri s'ajusta millor a un centre del primer cicle?",
+      "options": [
+        "L'organitzacio ha de prioritzar la uniformitat per sobre dels ritmes infants.",
+        "L'organitzacio del centre ha de posar al centre el benestar, la cura i el desenvolupament dels infants.",
+        "El centre es sobretot un espai de custodia i no cal una mirada pedagogica.",
+        "El projecte educatiu pot separar-se de les condicions dels espais i dels equips."
+      ],
+      "correct": 1,
+      "explanation": "En 0-3, el marc normatiu i pedagogic exigeix pensar el centre com a espai educatiu, no com a simple custodia.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 2"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors son creibles perque barregen assistencialisme, uniformitzacio i separacio entre projecte i condicions materials."
+      ]
+    },
+    {
+      "id": "v3-a2-t3-01",
+      "theme": "Annex II - Tema 3",
+      "document": "Decret 150/2017, de l'atenció a l'alumnat en el marc del sistema inclusiu.",
+      "prompt": "Quin objectiu general persegueix el Decret 150/2017?",
+      "options": [
+        "Activar mesures nomes quan hi ha un diagnostic tancat.",
+        "Garantir que tots els centres sostinguts amb fons publics siguin inclusius.",
+        "Separar l'alumnat amb dificultats per assegurar ritmes homogenis.",
+        "Aplicar sempre la mateixa resposta educativa a tot l'alumnat."
+      ],
+      "correct": 1,
+      "explanation": "El decret desplega el sistema inclusiu per a tots els centres sostinguts amb fons publics.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio normativa",
+      "tags": [
+        "annex ii - tema 3"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/marc-conceptual-i-normatiu/",
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors son plausibles perque reprodueixen errors habituals: segregacio, espera passiva del diagnostic i uniformitzacio."
+      ]
+    },
+    {
+      "id": "v3-a2-t3-02",
+      "theme": "Annex II - Tema 3",
+      "document": "Decret 150/2017, de l'atenció a l'alumnat en el marc del sistema inclusiu.",
+      "prompt": "Quina classificacio de mesures i suports es la propia del marc inclusiu?",
+      "options": [
+        "Ordinaries, especifiques i extraordinaries.",
+        "Preventives, correctives i sancionadores.",
+        "Universals, addicionals i intensius.",
+        "Individuals, familiars i comunitaries."
+      ],
+      "correct": 2,
+      "explanation": "Aquesta es la classificacio que fa servir el marc inclusiu de Catalunya.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio normativa",
+      "tags": [
+        "annex ii - tema 3"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/marc-conceptual-i-normatiu/",
+        "https://xtec.gencat.cat/web/.content/curriculum/diversitat-i-inclusio/mesures-i-suports/universals/mesures-suports-universals-centre-educatiu-2023.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque barregen categories juridiques i categories de gestio educativa, o be introdueixen un llenguatge sancionador."
+      ]
+    },
+    {
+      "id": "v3-a2-t3-03",
+      "theme": "Annex II - Tema 3",
+      "document": "Decret 150/2017, de l'atenció a l'alumnat en el marc del sistema inclusiu.",
+      "prompt": "Quan l'equip detecta barreres de participacio, quina resposta es mes coherent?",
+      "options": [
+        "Considerar que la dificultat es nomes familiar i no de centre.",
+        "Separar l'infant del grup com a primera mesura.",
+        "Esperar un diagnostic extern abans de modificar res.",
+        "Revisar l'entorn, observar i ajustar mesures universals abans de segregar."
+      ],
+      "correct": 3,
+      "explanation": "La inclusio comenca amb la revisio del context i de les barreres, no amb l'aillament de l'infant.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 3"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/projectes-educatius-inclusius/disseny-universal-per-a-laprenentatge/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque representen respostes molt habituals pero pedagogicament febles: esperar, separar o externalitzar."
+      ]
+    },
+    {
+      "id": "v3-a2-t3-04",
+      "theme": "Annex II - Tema 3",
+      "document": "Decret 150/2017, de l'atenció a l'alumnat en el marc del sistema inclusiu.",
+      "prompt": "Quin paper s'atribueix millor a l'EAP dins del marc inclusiu?",
+      "options": [
+        "Col laborar en la deteccio, la valoracio inicial i la coordinacio amb el centre i la familia.",
+        "Substituir l'equip educatiu en la mirada quotidiana de l'aula.",
+        "Gestionar sol les dificultats de l'infant des de fora del grup.",
+        "Fer un diagnostic tancat i immediat sense observacio de centre."
+      ],
+      "correct": 0,
+      "explanation": "L'EAP acompanya, valora i coordina; no substitueix el criteri quotidià de l'equip educatiu.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 3"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/serveis/sez/eap/",
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Són plausibles perque caricaturitzen funcions reals d'assessorament, pero les converteixen en funcions exclusives."
+      ]
+    },
+    {
+      "id": "v3-a2-t4-01",
+      "theme": "Annex II - Tema 4",
+      "document": "Documentació obligatòria a les escoles bressol.",
+      "prompt": "Quin es el valor principal de la documentacio pedagogica?",
+      "options": [
+        "Fer visible el proces d'aprenentatge i ajudar a la reflexio compartida.",
+        "Substituir la relacio educativa per un arxiu de proves.",
+        "Demostrar que totes les activitats acaben igual.",
+        "Classificar infants segons si avancen mes o menys rapid."
+      ],
+      "correct": 0,
+      "explanation": "La documentacio dona visibilitat al proces i ajuda a pensar la practica, no a etiquetar infants.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 4"
+      ],
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/",
         "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque confonen documentacio amb control, classificacio o demostracio de resultats."
       ]
     },
     {
-      "id": "v2-a2-t04-02",
+      "id": "v3-a2-t4-02",
       "theme": "Annex II - Tema 4",
-      "document": "XTEC - Curriculum infantil 0-3",
-      "prompt": "Com defineix el document oficial la documentacio pedagogica?",
+      "document": "Documentació obligatòria a les escoles bressol.",
+      "prompt": "Com s'ha d'entendre l'observacio sistematica a l'educacio infantil?",
       "options": [
-        "Com un instrument per fer visible el treball pedagogic de la llar i mostrar de que son capaços els infants",
-        "Com un arxiu neutral sense interpretacio educativa",
-        "Com un recull de documents pensat sobretot per a inspeccio",
-        "Com una tecnologia per produir imatges boniques sense analisi"
+        "Com una fotografia exacta i neutral de la realitat.",
+        "Com una interpretacio professional que ajuda a comprendre processos.",
+        "Com un registre per buscar errors de conducta.",
+        "Com un substitut del vincle amb l'infant."
       ],
-      "correct": 0,
-      "explanation": "La documentacio pedagogica dona visibilitat als processos, a les activitats i a la relacio educativa, i forma part de la reflexio de l'equip.",
+      "correct": 1,
+      "explanation": "L'observacio implica interpretar i contrastar, no simplement mirar o comptar conductes.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio pedagogica",
+      "tags": [
+        "annex ii - tema 4"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors son plausibles perque redueixen l'observacio a objectivitat absoluta, control o paperassa."
+      ]
+    },
+    {
+      "id": "v3-a2-t4-03",
+      "theme": "Annex II - Tema 4",
+      "document": "Documentació obligatòria a les escoles bressol.",
+      "prompt": "Per a que serveixen conjuntament observacio i documentacio?",
+      "options": [
+        "Per justificar que el criteri adult no s'ha de revisar.",
+        "Per acumular imatges i anotacions sense cap finalitat educativa.",
+        "Per programar, avaluar i compartir la mirada entre equip i famílies.",
+        "Per tenir moltes evidencies sense necessitat de reflexionar-hi."
+      ],
+      "correct": 2,
+      "explanation": "Les dues eines serveixen per ajustar l'accio educativa i fer-la compartible i discutible.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-04"
+        "annex ii - tema 4"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son credibles perque confonen documentacio amb arxiu administratiu, inspeccio o estetica sense sentit pedagogic."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+        "Són plausibles perque representen desviacions molt normals: acumular, tancar criteri o desconnectar la dada de la decisio."
       ]
     },
     {
-      "id": "v2-a2-t04-03",
+      "id": "v3-a2-t4-04",
       "theme": "Annex II - Tema 4",
-      "document": "XTEC - Curriculum infantil 0-3",
-      "prompt": "Segons l'orientacio oficial, l'observacio es millor entendre-la com a...",
+      "document": "Documentació obligatòria a les escoles bressol.",
+      "prompt": "Quin criteri es mes coherent amb la documentacio de centre?",
       "options": [
-        "Interpretacio feta per la persona que observa, no pas com un registre fidel i objectiu de la realitat",
-        "Fotografia exacta i neutra del comportament infantil",
-        "Eina per demostrar que l'infant sempre fa el mateix",
-        "Procediment que substitueix l'acompanyament directe"
+        "Ha de substituir el criteri de l'equip educatiu.",
+        "Ha de limitar-se a recollir fotos boniques de les activitats.",
+        "Ha de quedar separada de la practica diària per mantenir objectivitat.",
+        "Ha de servir per orientar decisions, no nomes per complir un arxiu."
       ],
-      "correct": 0,
-      "explanation": "El text insisteix que observar implica interpretar, i per tant cal contrast, reflexio i humilitat professional.",
+      "correct": 3,
+      "explanation": "La documentacio te sentit si ajuda a pensar i orientar la pratica educativa.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-04"
+        "annex ii - tema 4"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque responen a la temptacio de considerar l'observacio com a prova objectiva o com a substitut del criteri docent."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+        "Els distractors son plausibles perque confonen la documentacio amb esteticisme, distanciament o substitucio del criteri professional."
       ]
     },
     {
-      "id": "v2-a2-t05-01",
+      "id": "v3-a2-t5-01",
       "theme": "Annex II - Tema 5",
-      "document": "Curriculum infantil 0-3; XTEC - Orientacions curriculars",
-      "prompt": "Per que l'activitat lliure i el joc motriu tenen tant pes en el primer cicle?",
+      "document": "El desenvolupament psicomotor dels infants de zero a tres anys. Activitat lliure i autònoma des de l'enfocament d'Emmi Pikler a cada franja d'edat. Criteris a tenir en compte en el rol de la persona educadora.",
+      "prompt": "Per que l'activitat lliure i autonoma es rellevant en el primer cicle?",
       "options": [
-        "Perque permeten explorar, autoregular-se i construir progressivament competencies motrius i personals",
-        "Perque serveixen nomes per descarregar energia abans de la part \"real\" de l'aula",
-        "Perque funcionen millor si totes les criatures repeteixen el mateix moviment",
-        "Perque la motricitat nomes s'aprèn amb instruccions verbals"
+        "Perque convé substituir-la per exercicis iguals per a tot el grup.",
+        "Perque serveix nomes per omplir temps entre activitats dirigides.",
+        "Perque el moviment espontani s'ha de reduir al maxim.",
+        "Perque afavoreix exploracio, autoregulacio i construccio progressiva d'autonomia."
       ],
-      "correct": 0,
-      "explanation": "El joc i l'activitat lliure no son un descans del treball educatiu: son el lloc on el desenvolupament psicomotor pren forma.",
+      "correct": 3,
+      "explanation": "L'activitat lliure no es una pausa del treball educatiu, sino un nucli del desenvolupament.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-05"
+        "annex ii - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque redueixen el joc a desconnexio, uniformitat o verbalitzacio excessiva."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
         "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque redueixen el joc a descans, producte o control del moviment."
       ]
     },
     {
-      "id": "v2-a2-t05-02",
+      "id": "v3-a2-t5-02",
       "theme": "Annex II - Tema 5",
-      "document": "Curriculum infantil 0-3; XTEC - Orientacions curriculars",
-      "prompt": "Quin criteri s'ajusta millor a un acompanyament respectuos amb la maduracio psicomotriu?",
+      "document": "El desenvolupament psicomotor dels infants de zero a tres anys. Activitat lliure i autònoma des de l'enfocament d'Emmi Pikler a cada franja d'edat. Criteris a tenir en compte en el rol de la persona educadora.",
+      "prompt": "Quin criteri s'ajusta millor a un enfocament respectuos amb la maduracio psicomotriu?",
       "options": [
-        "Preparar un entorn segur i evitar forcar postures o moviments que l'infant encara no ha assolit",
-        "Avancar posicions motrius per estimular abans els aprenentatges",
-        "Corregir immediatament qualsevol gest inestable",
-        "Limitar al maxim el moviment espontani per evitar risc"
+        "Preparar un entorn segur i no forcar postures o moviments que l'infant encara no ha assolit.",
+        "Limitar el moviment espontani per eliminar qualsevol risc.",
+        "Avancar posicions motrius per estimular abans els aprenentatges.",
+        "Corregir de seguida qualsevol moviment inestable."
       ],
       "correct": 0,
-      "explanation": "L'acompanyament respectuos no accelera artificiosament el desenvolupament; l'acompanya amb observacio, seguretat i respecte al ritme.",
+      "explanation": "L'enfocament respectuos acompanya la maduracio sense accelerar-la artificialment.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-05"
+        "annex ii - tema 5"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque semblen prudents o estimuladores, pero en realitat imposen un ritme adult i redueixen l'autonomia motriu."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t06-01",
-      "theme": "Annex II - Tema 6",
-      "document": "XTEC - Neurodesenvolupament i aprenentatge",
-      "prompt": "Que afirma la XTEC sobre la maduresa cerebral?",
-      "options": [
-        "Que no es completa al neixer i que requereix aproximadament dues decades per assolir-se",
-        "Que la maduresa cerebral es completa abans de l'any de vida",
-        "Que depen nomes de la memoritzacio escolar",
-        "Que no te relacio amb l'educacio"
       ],
-      "correct": 0,
-      "explanation": "La idea clau es que el desenvolupament cerebral es gradual i que l'educacio hi incideix de manera real.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagògica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-06"
-      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque exageren la precocitat, redueixen el desenvolupament a memoritzar o separen cervell i educacio."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/alumnat/benestar/neurodesenvolupament-i-aprenentatge/"
+        "Els distractors son plausibles perque semblen prudents o estimuladors, pero imposen ritme adult."
       ]
     },
     {
-      "id": "v2-a2-t06-02",
+      "id": "v3-a2-t5-03",
+      "theme": "Annex II - Tema 5",
+      "document": "El desenvolupament psicomotor dels infants de zero a tres anys. Activitat lliure i autònoma des de l'enfocament d'Emmi Pikler a cada franja d'edat. Criteris a tenir en compte en el rol de la persona educadora.",
+      "prompt": "Quin paper te la persona educadora en el desenvolupament psicomotor?",
+      "options": [
+        "Accelerar adquisicions per aconseguir resultats mes rapids.",
+        "Acompanyar, preparar l'entorn i observar sense invadir ni dirigir en excés.",
+        "Repetir moviments fins que tots els infants facin el mateix.",
+        "Intervenir sempre per corregir cada iniciativa de l'infant."
+      ],
+      "correct": 1,
+      "explanation": "La persona educadora crea condicions i acompanya, no substitueix la iniciativa infantil.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio pedagogica",
+      "tags": [
+        "annex ii - tema 5"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque recullen l'excés de direccio, la uniformitat o la correccio continuada."
+      ]
+    },
+    {
+      "id": "v3-a2-t5-04",
+      "theme": "Annex II - Tema 5",
+      "document": "El desenvolupament psicomotor dels infants de zero a tres anys. Activitat lliure i autònoma des de l'enfocament d'Emmi Pikler a cada franja d'edat. Criteris a tenir en compte en el rol de la persona educadora.",
+      "prompt": "Quin criteri d'organitzacio d'espais i materials es mes coherent amb aquest tema?",
+      "options": [
+        "Han de prioritzar la vigilancia per sobre de la descoberta.",
+        "Han de reduir la varietat de materials per simplificar la feina adulta.",
+        "Han de afavorir autonomia, moviment, relacio, seguretat i experimentacio.",
+        "Han de ser uniformes i tancats per reduir al maxim la sorpresa."
+      ],
+      "correct": 2,
+      "explanation": "Espais i materials son una part clau del desenvolupament psicomotor i del joc lliure.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 5"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son plausibles perque semblen organitzatius, pero sacrifiquen qualitat educativa."
+      ]
+    },
+    {
+      "id": "v3-a2-t6-01",
       "theme": "Annex II - Tema 6",
-      "document": "XTEC - Neurodesenvolupament i aprenentatge",
+      "document": "Neurociència. Principis fisiològics de què i com l'infant crea els seus nous aprenentatges.",
+      "prompt": "Quina idea sobre la maduracio cerebral es coherent amb la XTEC?",
+      "options": [
+        "Que el cervell ja arriba plenament madur al primer any.",
+        "Que tot depen nomes de repetir instruccions.",
+        "Que es un proces gradual i no completament acabat al neixer.",
+        "Que la maduracio no te cap relacio amb l'educacio."
+      ],
+      "correct": 2,
+      "explanation": "La maduracio es progressiva, i per tant l'acompanyament educatiu hi te incidencia real.",
+      "difficulty": "mitjana",
+      "competence": "Comprensio pedagogica",
+      "tags": [
+        "annex ii - tema 6"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/neurodesenvolupament-i-aprenentatge/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque simplifiquen en excés el desenvolupament cerebral o el converteixen en un fenomen purament repetitiu."
+      ]
+    },
+    {
+      "id": "v3-a2-t6-02",
+      "theme": "Annex II - Tema 6",
+      "document": "Neurociència. Principis fisiològics de què i com l'infant crea els seus nous aprenentatges.",
       "prompt": "Quina relacio estableix el recurs entre educacio i cervell?",
       "options": [
-        "L'educacio incideix plenament en la manera com funciona el cervell i, per tant, en els comportaments",
-        "L'educacio nomes afecta la conducta visible, no el funcionament cerebral",
-        "El cervell es transforma igual encara que no hi hagi experiències educatives",
-        "El paper educatiu es limitar-se a repetir consignes"
+        "El cervell evoluciona igual encara que no hi hagi experiencia educativa.",
+        "L'educacio nomes afecta la conducta visible, no el cervell.",
+        "L'unic paper de l'educacio es repetir consignes.",
+        "L'educacio incideix en el funcionament del cervell i en el desenvolupament de la conducta."
       ],
-      "correct": 0,
-      "explanation": "El recurs institucional connecta neurodesenvolupament, aprenentatge i conducta, i dona sentit a l'acompanyament pedagogic.",
+      "correct": 3,
+      "explanation": "La relacio educacio-cervell dona fonament al valor de l'acompanyament educatiu a 0-3.",
       "difficulty": "mitjana",
       "competence": "Comprensio pedagogica",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-06"
+        "annex ii - tema 6"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque simplifiquen en excés el vincle entre desenvolupament cerebral, experiència i educacio."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/alumnat/benestar/neurodesenvolupament-i-aprenentatge/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D son plausibles perque separen cervell i educacio o redueixen l'aprenentatge a mecanica."
       ]
     },
     {
-      "id": "v2-a2-t06-03",
+      "id": "v3-a2-t6-03",
       "theme": "Annex II - Tema 6",
-      "document": "XTEC - Orientacions curriculars; XTEC - Neurodesenvolupament i aprenentatge",
-      "prompt": "Segons les orientacions oficials, com s'entenen millor els aprenentatges nous?",
+      "document": "Neurociència. Principis fisiològics de què i com l'infant crea els seus nous aprenentatges.",
+      "prompt": "Com s'entenen millor els aprenentatges nous?",
       "options": [
-        "Com una construccio que connecta amb experiencies i coneixements previs",
-        "Com una copia immediata de continguts nous sense relacio amb res anterior",
-        "Com una resposta automàtica a la repeticio de consignes",
-        "Com un procés independent de l'emocio i de la vida quotidiana"
+        "Com una construccio que connecta amb experiencies i coneixements previs.",
+        "Com un proces independent de l'emocio i de la vida quotidiana.",
+        "Com una copia immediata de continguts sense relacio amb res anterior.",
+        "Com una resposta automatica a la repeticio de consignes."
       ],
       "correct": 0,
-      "explanation": "L'aprenentatge neix quan l'infant pot relacionar allò nou amb allò que ja sap, viu o intueix.",
+      "explanation": "Els aprenentatges nous arrelen quan connecten amb el que l'infant ja viu i ja sap.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-06"
+        "annex ii - tema 6"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque barregen la idea de novetat amb repeticio, desconnexio emocional o aprenentatge mecànic."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
         "https://xtec.gencat.cat/ca/alumnat/benestar/neurodesenvolupament-i-aprenentatge/"
-      ]
-    },
-    {
-      "id": "v2-a2-t07-01",
-      "theme": "Annex II - Tema 7",
-      "document": "Decret 21/2023; XTEC - Educacio infantil",
-      "prompt": "Quan hi ha aprenentatge significatiu?",
-      "options": [
-        "Quan el nou coneixement connecta amb allo que l'infant ja sap, viu o pot comprendre",
-        "Quan la proposta acaba amb un producte visible per a l'adult",
-        "Quan tots els infants fan exactament la mateixa tasca",
-        "Quan el contingut es presenta sense context per evitar distraccions"
       ],
-      "correct": 0,
-      "explanation": "L'aprenentatge significatiu no es defineix pel producte final, sino pel vincle amb l'experiencia i les idees prèvies.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-07"
-      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque confonen significativitat amb visibilitat del resultat, uniformitat o neutralitat artificial."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+        "Són plausibles perque barregen novetat amb repeticio, separacio emocional o aprenentatge mecanic."
       ]
     },
     {
-      "id": "v2-a2-t07-02",
-      "theme": "Annex II - Tema 7",
-      "document": "Decret 21/2023; Orientacions curriculars",
-      "prompt": "Quin plantejament fa mes probable un aprenentatge amb sentit?",
+      "id": "v3-a2-t6-04",
+      "theme": "Annex II - Tema 6",
+      "document": "Neurociència. Principis fisiològics de què i com l'infant crea els seus nous aprenentatges.",
+      "prompt": "Quin context afavoreix mes el desenvolupament cerebral i l'aprenentatge?",
       "options": [
-        "Propostes vivencials i connectades amb la realitat propera de l'infant",
-        "Tasques abstrates i aillades de la vida quotidiana",
-        "Fitxes iguals per a tothom amb una unica resposta valida",
-        "Proves de memoritzacio sense manipulacio ni experiencia"
+        "Un entorn que prioritza la correccio immediata de l'error.",
+        "Un ambient segur, curios i amb una presencia adulta atenta i respectuosa.",
+        "Una dinamica en que l'adult parla sempre i l'infant nomes escolta.",
+        "Un espai que deslliga l'aprenentatge de les experiencias quotidianes."
       ],
-      "correct": 0,
-      "explanation": "Les situacions d'aprenentatge tenen sentit quan parteixen del mon viscut i permeten que l'infant actuï, explori i comparteixi.",
+      "correct": 1,
+      "explanation": "La seguretat emocional i la curiositat són condicions centrals per aprendre amb sentit.",
       "difficulty": "mitjana",
       "competence": "Criteri pedagogic i professional",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-07"
+        "annex ii - tema 6"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque imiten formats escolars tradicionals que sovint es confonen amb \"aprendre be\"."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t07-03",
-      "theme": "Annex II - Tema 7",
-      "document": "Curriculum infantil 0-3; Decret 21/2023",
-      "prompt": "Quin paper te el coneixement previ de l'adult en la tasca educativa del primer cicle?",
-      "options": [
-        "S'ha de posar en contacte amb les descobertes dels infants per extreure la vida sociocultural propera",
-        "S'ha d'imposar perquè l'infant parteixi de zero",
-        "S'ha d'amagar per no influir en la descoberta",
-        "Nomes serveix per corregir errors"
-      ],
-      "correct": 0,
-      "explanation": "L'orientacio oficial entén la intervencio com un diàleg entre els sabers de l'adult i les descobertes infantils.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-07"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque responen a tres errors comuns: imposar, ocultar o reduir la mediacio adulta a correccio."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
-      ]
-    },
-    {
-      "id": "v2-a2-t08-01",
-      "theme": "Annex II - Tema 8",
-      "document": "Decret 150/2017; XTEC - Atencio educativa als alumnes",
-      "prompt": "Quin criteri s'utilitza per identificar i avaluar una NESE?",
-      "options": [
-        "El funcionament de l'infant dins del seu context educatiu, independentment de la seva condicio personal i social",
-        "Nomes el resultat d'un test puntual",
-        "L'opinio d'un adult sense observacio previa",
-        "La comparacio amb la mitjana del grup com a unica referencia"
-      ],
-      "correct": 0,
-      "explanation": "El sistema inclusiu mira la participacio real i les barreres del context, no una etiqueta deslligada de la realitat de l'aula.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-08"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque redueixen la NESE a un test, una impressio subjectiva o una comparacio estadistica simplista."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
-        "https://portaljuridic.gencat.cat/ca/normativa/dret-a-catalunya/Codis-legislacio/codi-Drets_persones_discapacitat/"
-      ]
-    },
-    {
-      "id": "v2-a2-t08-02",
-      "theme": "Annex II - Tema 8",
-      "document": "Decret 150/2017; XTEC - Atencio educativa als alumnes",
-      "prompt": "Que ha d'incloure el PI en la presa de decisions?",
-      "options": [
-        "Les valoracions de l'equip docent i la participacio de la familia i de l'infant quan escaigui, amb les mesures i suports corresponents",
-        "Nomes una descripcio de dificultats",
-        "Un simple registre administratiu sense decisions pedagogiques",
-        "Una decisio tancada de l'especialista sense retorn al centre"
-      ],
-      "correct": 0,
-      "explanation": "El PI es un instrument compartit i orientat a l'accio, no un document de consum intern.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-08"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque degraden el PI a un inventari, a una paperassa o a una decisio unilateral."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t09-01",
-      "theme": "Annex II - Tema 9",
-      "document": "XTEC - Alimentacio saludable",
-      "prompt": "Com defineix la XTEC una alimentacio saludable?",
-      "options": [
-        "Com una alimentacio satisfactoria, suficient, completa, equilibrada, harmonica, segura, adaptada a cada persona i a l'entorn, sostenible i assequible",
-        "Com una alimentacio rapida i homogènia per a tot el grup",
-        "Com un menu fix que no s'ha de revisar mai",
-        "Com una pauta que depen només del gust de la familia"
-      ],
-      "correct": 0,
-      "explanation": "La definicio oficial incorpora salut, adaptacio, sostenibilitat i adequacio al context, de manera molt mes ampla que un simple menu.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagògica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-09"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "Els distractors son plausibles perque redueixen l'alimentacio a velocitat, rigidesa o preferencia subjectiva sense criteri de salut."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/alimentacio-saludable/"
-      ]
-    },
-    {
-      "id": "v2-a2-t09-02",
-      "theme": "Annex II - Tema 9",
-      "document": "XTEC - Alimentacio saludable; primera infància",
-      "prompt": "Quina orientacio es coherent amb l'alimentacio a la primera infància?",
-      "options": [
-        "Tenir en compte orientacions sobre alimentacio, seguretat i higiene en la preparacio dels aliments",
-        "Prioritzar la quantitat per sobre de la qualitat",
-        "Fer servir sempre la mateixa racio per a totes les edats",
-        "Considerar que la preparacio dels aliments no te dimensio educativa"
-      ],
-      "correct": 0,
-      "explanation": "Les recomanacions institucionals insisteixen en la qualitat del que s'ofereix i en la seguretat i higiene del proces.",
-      "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-09"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son plausibles perque son dreceres habituals quan es converteix l'alimentacio en una operacio mecanica."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/alimentacio-saludable/"
-      ]
-    },
-    {
-      "id": "v2-a2-t10-01",
-      "theme": "Annex II - Tema 10",
-      "document": "Decret 21/2023 + orientacions curriculars d'educacio infantil",
-      "prompt": "Quin criteri descriu millor una cura respectuosa durant el canvi de bolquer o el pas al lavabo?",
-      "options": [
-        "Acompanyar amb llenguatge, intimitat, seguretat i respecte pel ritme de l'infant.",
-        "Fer-ho de pressa i en espai obert per guanyar autonomia i visibilitat del grup.",
-        "Mantenir una rutina fixa per a tothom, encara que l'infant no mostri preparacio.",
-        "Evitar parlar amb l'infant per no interferir en la concentracio del proces."
-      ],
-      "correct": 0,
-      "explanation": "La cura forma part de l'educacio i ha de preservar intimitat, comunicacio i autonomia progressiva.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 confon autonomia amb exposicio; O3 barreja maduracio individual i uniformitzacio; O4 transforma una situacio educativa en una accio mecanica."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
-      ]
-    },
-    {
-      "id": "v2-a2-t10-02",
-      "theme": "Annex II - Tema 10",
-      "document": "Orientacions curriculars d'educacio infantil + XTEC curriculum",
-      "prompt": "Si un infant encara no mostra preparacio estable per deixar el bolquer, quina lectura professional es mes coherent?",
-      "options": [
-        "El proces requereix observacio, espera activa i acord amb la familia, no pressio.",
-        "Cal accelerar-lo amb seients al lavabo a hores fixes per crear el costum.",
-        "Si l'escola ho organitza be, la preparacio biologica deixa de ser rellevant.",
-        "El millor es no parlar del tema fins que l'infant ho verbalitzi espontaniament."
-      ],
-      "correct": 0,
-      "explanation": "El control d'esfinters depen de la maduracio i del temps de cada infant; la pauta educativa no substitueix la preparacio.",
-      "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 combina rutina i control, un error habitual; O3 atribueix a l'organitzacio el que depen del desenvolupament; O4 trasllada tota la decisio a la verbalitzacio final."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t10-03",
-      "theme": "Annex II - Tema 10",
-      "document": "Decret 21/2023 + XTEC educacio infantil",
-      "prompt": "Quin enunciat es mes ajustat al sentit educatiu del control d'esfinters?",
-      "options": [
-        "Forma part de l'autonomia corporal i no s'ha d'entendre com una prova de rendiment.",
-        "Es un objectiu que s'ha d'assolir abans de l'entrada a I2 per evitar regressions.",
-        "Depen sobretot de la voluntat de l'infant, no de la seva maduracio fisiologica.",
-        "Serveix principalment per simplificar la gestio del grup i reduir treball a l'equip."
-      ],
-      "correct": 0,
-      "explanation": "El control d'esfinters s'emmarca en autonomia, benestar i respecte del ritme, no en exigencies d'anticipacio academica.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-10"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 introdueix una pressa normativa falsa; O3 confon voluntat amb maduracio; O4 redueix una cura educativa a una necessitat organitzativa."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
-      ]
-    },
-    {
-      "id": "v2-a2-t11-01",
-      "theme": "Annex II - Tema 11",
-      "document": "XTEC curriculum + orientacions curriculars",
-      "prompt": "Quin element fa mes coherent una proposta de joc lliure a la primera infantesa?",
-      "options": [
-        "Materials oberts, possibilitats diverses i temps suficient per explorar.",
-        "Materials tancats amb una unica resposta correcta per comprovar l'aprenentatge.",
-        "Consigna comuna per a tots els infants per assegurar el mateix resultat.",
-        "Activitat curta i tancada per evitar desordre i repeticions."
-      ],
-      "correct": 0,
-      "explanation": "El joc lliure necessita materials oberts i temps, no productes uniformes.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-11"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 associa qualitat a resposta correcta; O3 confon joc amb instruccio comuna; O4 penalitza la repeticio, que sovint forma part de la descoberta."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t11-02",
-      "theme": "Annex II - Tema 11",
-      "document": "Orientacions curriculars d'educacio infantil",
-      "prompt": "Quan un infant repeteix una accio una vegada i una altra en el joc, quina lectura es mes ajustada?",
-      "options": [
-        "Pot estar consolidant una hipotesi, una destresa o una relacio de causa-efecte.",
-        "Segurament no ha entes la proposta i cal redirigir-la immediatament.",
-        "Conve substituir el material per un de mes dirigit i amb menys opcions.",
-        "La repeticio nomes es valida si acaba en un producte observable."
-      ],
-      "correct": 0,
-      "explanation": "La repeticio es un recurs central d'exploracio i aprenentatge, especialment en joc lliure.",
-      "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-11"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O3 confonen exploracio amb desordre; O4 posa el resultat final per damunt del proces."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
         "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors son plausibles perque representen maneres encara freqüents de dirigir l'aprenentatge sense partir del benestar."
       ]
     },
     {
-      "id": "v2-a2-t12-01",
-      "theme": "Annex II - Tema 12",
-      "document": "XTEC curriculum + orientacions curriculars",
-      "prompt": "Quin fenomen indica millor que hi ha joc simbolic?",
+      "id": "v3-a2-t7-01",
+      "theme": "Annex II - Tema 7",
+      "document": "L'aprenentatge significatiu. Importància dels processos i de com els nous coneixements connecten amb els que ja disposa l'infant.",
+      "prompt": "Quan hi ha aprenentatge significatiu?",
       "options": [
-        "L'infant fa servir un objecte per representar-ne un altre o atribuir-li un rol.",
-        "L'infant completa una fitxa amb el mateix model que l'adult.",
-        "L'infant encaixa peces sempre en la mateixa posicio.",
-        "L'infant ordena els materials per color sense cap representacio."
+        "Quan l'activitat acaba amb un producte visible per a l'adult.",
+        "Quan el nou coneixement connecta amb allo que l'infant ja sap, viu o pot comprendre.",
+        "Quan tots els infants fan exactament la mateixa tasca.",
+        "Quan el contingut es presenta sense context per evitar distraccions."
       ],
-      "correct": 0,
-      "explanation": "El joc simbolic implica representacio, substitucio i atribucio de sentit.",
+      "correct": 1,
+      "explanation": "L'aprenentatge significatiu es defineix pel vincle amb l'experiencia i els sabers previs, no pel producte final.",
       "difficulty": "mitjana",
       "competence": "Comprensio pedagogica",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-12"
+        "annex ii - tema 7"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2-O4 descriuen activitats reals de l'etapa, pero no inclouen representacio simbolica."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque confonen significativitat amb visibilitat del resultat, uniformitat o neutralitat artificial."
       ]
     },
     {
-      "id": "v2-a2-t12-02",
+      "id": "v3-a2-t7-02",
+      "theme": "Annex II - Tema 7",
+      "document": "L'aprenentatge significatiu. Importància dels processos i de com els nous coneixements connecten amb els que ja disposa l'infant.",
+      "prompt": "Quin plantejament fa mes probable un aprenentatge amb sentit?",
+      "options": [
+        "Tasques abstrates i aillades de la vida quotidiana.",
+        "Proves de memoritzacio sense manipulacio ni experiencia.",
+        "Propostes vivencials i connectades amb la realitat propera de l'infant.",
+        "Fitxes iguals per a tothom amb una unica resposta valida."
+      ],
+      "correct": 2,
+      "explanation": "Les situacions d'aprenentatge tenen sentit quan parteixen del mon viscut i permeten actuar i explorar.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 7"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque imiten formats escolars tradicionals que sovint es confonen amb \"aprendre be\"."
+      ]
+    },
+    {
+      "id": "v3-a2-t7-03",
+      "theme": "Annex II - Tema 7",
+      "document": "L'aprenentatge significatiu. Importància dels processos i de com els nous coneixements connecten amb els que ja disposa l'infant.",
+      "prompt": "Quin paper te el coneixement previ de l'adult en la tasca educativa?",
+      "options": [
+        "Nomes serveix per corregir errors.",
+        "S'ha d'imposar perque l'infant parteixi de zero.",
+        "S'ha d'amagar per no influir en la descoberta.",
+        "S'ha de posar en contacte amb les descobertes dels infants per construir significat."
+      ],
+      "correct": 3,
+      "explanation": "L'orientacio oficial entén la intervencio com un diàleg entre sabers adults i descobertes infantils.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 7"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Els distractors son plausibles perque responen a tres errors comuns: imposar, ocultar o reduir la mediacio adulta a correccio."
+      ]
+    },
+    {
+      "id": "v3-a2-t7-04",
+      "theme": "Annex II - Tema 7",
+      "document": "L'aprenentatge significatiu. Importància dels processos i de com els nous coneixements connecten amb els que ja disposa l'infant.",
+      "prompt": "Quin element reforca mes l'aprenentatge significatiu a aquesta etapa?",
+      "options": [
+        "La curiositat acompanyada de confiança i d'una presencia adulta atenta i no invasiva.",
+        "L'absencia de relacio amb les vivencies de l'infant.",
+        "La pressio per acabar sempre abans que els altres.",
+        "La prioritat absoluta de l'exercici repetitiu."
+      ],
+      "correct": 0,
+      "explanation": "El text institucional vincula curiositat, benestar i acompanyament respectuos amb un aprenentatge amb sentit.",
+      "difficulty": "mitjana",
+      "competence": "Criteri pedagogic i professional",
+      "tags": [
+        "annex ii - tema 7"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Son plausibles perque representen formes recognoscibles de pressio o mecanitzacio que sovint es confonen amb exigencia."
+      ]
+    },
+    {
+      "id": "v3-a2-08-01",
+      "theme": "Annex II - Tema 8",
+      "document": "L'infant NESE a l'escola bressol. Educació inclusiva. Acompanyament de l'infant, de la família i de les educadores. Signes d'alerta en el desenvolupament de l'infant. Serveis educatius que intervenen.",
+      "prompt": "L'equip observa que un infant de 2 anys participa poc en les propostes de grup i evita algunes situacions. Quina primera actuacio es mes coherent?",
+      "options": [
+        "Registrar observacions, contrastar-les amb l'equip i parlar amb la familia amb respecte.",
+        "Comunicar-ho nomes quan la situacio sigui ja molt evident per no preocupar la familia.",
+        "Esperar un diagnostic extern abans de modificar res de l'entorn.",
+        "Separar temporalment l'infant per reduir-li la sobrecarga del grup."
+      ],
+      "correct": 0,
+      "explanation": "A 0-3, la resposta comenca amb observacio compartida, no amb segregacio ni espera passiva.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 8"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C traslladen la resposta fora de l'aula; D es presenta com a prudencia, pero retrassa la coordinacio."
+      ]
+    },
+    {
+      "id": "v3-a2-08-02",
+      "theme": "Annex II - Tema 8",
+      "document": "L'infant NESE a l'escola bressol. Educació inclusiva. Acompanyament de l'infant, de la família i de les educadores. Signes d'alerta en el desenvolupament de l'infant. Serveis educatius que intervenen.",
+      "prompt": "Quin enunciat s'ajusta millor al tractament del pla de suport individualitzat en el primer cicle d'educacio infantil?",
+      "options": [
+        "El PI es obligatori per a qualsevol infant de 0-3 amb una rutina diferent del grup.",
+        "El PI pot servir com a document de treball, pero no es prescriptiu al primer cicle en els mateixos termes que a altres etapes.",
+        "El PI nomes s'usa quan la familia el demana expressament.",
+        "El PI substitueix la programacio d'aula i les observacions quotidianes."
+      ],
+      "correct": 1,
+      "explanation": "Les orientacions de la XTEC indiquen que al primer cicle el PI no funciona com a document prescriptiu generalitzat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 8"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/pla-de-suport-individualitzat-pi/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B universalitza el document; C el converteix en opcio voluntarista; D li dona un pes que no te."
+      ]
+    },
+    {
+      "id": "v3-a2-08-03",
+      "theme": "Annex II - Tema 8",
+      "document": "L'infant NESE a l'escola bressol. Educació inclusiva. Acompanyament de l'infant, de la família i de les educadores. Signes d'alerta en el desenvolupament de l'infant. Serveis educatius que intervenen.",
+      "prompt": "Quin servei encaixa millor amb la funcio d'assessorar el centre i la familia davant necessitats educatives especifiques?",
+      "options": [
+        "El menjador escolar, perque veu els infants en moments quotidians.",
+        "La direccio del centre nomes quan ja hi ha un conflicte greu.",
+        "L'EAP, com a servei d'assessorament i orientacio psicopedagogica.",
+        "El servei de neteja del centre, si fa una observacio diaria del grup."
+      ],
+      "correct": 2,
+      "explanation": "L'EAP dona suport a centres i famílies en la resposta a la variabilitat i a les necessitats educatives.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 8"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/serveis/sez/eap/",
+        "https://xtec.gencat.cat/ca/serveis/see/",
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C son contextos reals pero no serveis d'assessorament; D simplifica un proces que ha de ser compartit."
+      ]
+    },
+    {
+      "id": "v3-a2-08-04",
+      "theme": "Annex II - Tema 8",
+      "document": "L'infant NESE a l'escola bressol. Educació inclusiva. Acompanyament de l'infant, de la família i de les educadores. Signes d'alerta en el desenvolupament de l'infant. Serveis educatius que intervenen.",
+      "prompt": "Davant una barrera de participacio en una proposta de joc, quina decisio es mes coherent amb la inclusio?",
+      "options": [
+        "Mantenir la proposta exactament igual fins que l'infant s'adapti sol.",
+        "Canviar l'infant de grup per reduir-li la friccio amb els altres.",
+        "Esperar que la familia porti una solucio externa abans d'intervenir.",
+        "Ajustar l'entorn, la proposta i els suports abans de plantejar una separacio de l'infant."
+      ],
+      "correct": 3,
+      "explanation": "La inclusio a 0-3 comenca amb adaptacions a l'entorn i al joc, no amb separacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 8"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/diversitat-i-inclusio/atencio-educativa-als-alumnes/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B externalitza la solucio; C confon equitat amb uniformitat; D desplaça la responsabilitat fora del centre."
+      ]
+    },
+    {
+      "id": "v3-a2-09-01",
+      "theme": "Annex II - Tema 9",
+      "document": "Dret a una alimentació, descans i higiene com a experiències fonamentals de cura i benestar de zero a tres anys. Criteris per a la intervenció educativa.",
+      "prompt": "Per que alimentacio, descans i higiene tenen valor educatiu en l'etapa 0-3?",
+      "options": [
+        "Perque es millor separar-les de tota intervencio educativa.",
+        "Perque permeten descansar de l'activitat pedagogica principal.",
+        "Perque nomes serveixen per mantenir l'ordre i la netedat del grup.",
+        "Perque son situacions quotidianes on es construeixen benestar, autonomia i vincle."
+      ],
+      "correct": 3,
+      "explanation": "A l'etapa infantil, la vida quotidiana educa i dona espai a relacio, autonomia i cura.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 9"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/cura-del-cos/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C redueixen la cura a descans o ordre; D la treu del camp educatiu."
+      ]
+    },
+    {
+      "id": "v3-a2-09-02",
+      "theme": "Annex II - Tema 9",
+      "document": "Dret a una alimentació, descans i higiene com a experiències fonamentals de cura i benestar de zero a tres anys. Criteris per a la intervenció educativa.",
+      "prompt": "Un infant rebutja un aliment nou. Quina intervencio es mes coherent amb 0-3?",
+      "options": [
+        "Oferir-lo sense pressio i mantenir una experiencia positiva i segura.",
+        "Fer-lo asseure mes estona a taula per reforcar l'habituacio.",
+        "Insistir fins que acabi la racio prevista.",
+        "Retirar-lo sempre i no tornar-lo a oferir per evitar conflictes."
+      ],
+      "correct": 0,
+      "explanation": "L'alimentacio educativa respecta senyals de gana/sacietat i evita convertir l'àpat en lluita.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 9"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/alimentacio-saludable/",
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/cura-del-cos/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D transformen l'àpat en obligacio; C sembla prudent, pero empobreix l'exposicio gradual als aliments."
+      ]
+    },
+    {
+      "id": "v3-a2-09-03",
+      "theme": "Annex II - Tema 9",
+      "document": "Dret a una alimentació, descans i higiene com a experiències fonamentals de cura i benestar de zero a tres anys. Criteris per a la intervenció educativa.",
+      "prompt": "Quin criteri s'ajusta millor a l'organitzacio del descans en una llar d'infants?",
+      "options": [
+        "Mantenir un mateix horari universal per garantir disciplina.",
+        "Ajustar el descans als senyals de cansament i no a un horari rigid per a tothom.",
+        "Evitar les rutines per no condicionar el son.",
+        "Deixar que l'infant dormi nomes quan ho demani verbalment."
+      ],
+      "correct": 1,
+      "explanation": "El descans es regula per ritmes individuals, amb previsibilitat pero no uniformitat cega.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 9"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon ordre amb bon acompanyament; C elimina estructura; D trasllada a la verbalitzacio final una necessitat anterior."
+      ]
+    },
+    {
+      "id": "v3-a2-09-04",
+      "theme": "Annex II - Tema 9",
+      "document": "Dret a una alimentació, descans i higiene com a experiències fonamentals de cura i benestar de zero a tres anys. Criteris per a la intervenció educativa.",
+      "prompt": "Durant el canvi de bolquer o la higiene de mans, quin criteri es mes adequat?",
+      "options": [
+        "Fer-ho rapidament i amb tota l'aula observant per acostumar l'infant.",
+        "Convertir-ho en una prova d'autonomia amb premi final.",
+        "Anticipar verbalment els passos, preservar intimitat i respectar el cos de l'infant.",
+        "Evitar parlar per no interrompre la rutina."
+      ],
+      "correct": 2,
+      "explanation": "La cura corporal a 0-3 demana paraula, respecte i un ambient segur i discret.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 9"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/cura-del-cos/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon autonomia amb exposicio; C redueix la relacio; D canvia una cura en una prova."
+      ]
+    },
+    {
+      "id": "v3-a2-10-01",
+      "theme": "Annex II - Tema 10",
+      "document": "Acompanyament en el procés de control d'esfínters a l'escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d'una perspectiva respectuosa envers la maduració de l'infant.",
+      "prompt": "Quin criteri es mes coherent abans d'iniciar el pas estable al lavabo?",
+      "options": [
+        "Iniciar-lo nomes si l'infant ho demana amb paraules.",
+        "Observar signes de preparacio i acordar un acompanyament compartit amb la familia.",
+        "Comencar el proces quan el grup ja fa servir el lavabo, encara que l'infant no mostri preparacio.",
+        "Fixar una data unica per a tots els infants de l'aula."
+      ],
+      "correct": 1,
+      "explanation": "La maduracio no es pot substituir per rutina comuna ni per pressa familiar.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 10"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D uniformitzen; C posa un llindar verbal que no reflecteix la maduracio real."
+      ]
+    },
+    {
+      "id": "v3-a2-10-02",
+      "theme": "Annex II - Tema 10",
+      "document": "Acompanyament en el procés de control d'esfínters a l'escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d'una perspectiva respectuosa envers la maduració de l'infant.",
+      "prompt": "Si un infant que ja havia avanccat en el control d'esfinters torna a tenir accidents, quina lectura es mes adequada?",
+      "options": [
+        "Indica falta de voluntat i s'ha de corregir amb mes disciplina.",
+        "Obliga a tornar a comencar des de zero amb tota la classe.",
+        "Pot ser un retroces puntual lligat a maduracio, canvis o context emocional.",
+        "Demostra que el centre ho havia fet malament i cal interrompre el proces."
+      ],
+      "correct": 2,
+      "explanation": "Els retrocessos poden formar part del desenvolupament i demanen observacio i calma.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 10"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/alumnat/benestar/habits-saludables/cura-del-cos/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B moralitza el proces; C i D exageren un fet habitual i el converteixen en error total."
+      ]
+    },
+    {
+      "id": "v3-a2-10-03",
+      "theme": "Annex II - Tema 10",
+      "document": "Acompanyament en el procés de control d'esfínters a l'escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d'una perspectiva respectuosa envers la maduració de l'infant.",
+      "prompt": "Quin criteri de l'espai del lavabo afavoreix millor l'autonomia progressiva?",
+      "options": [
+        "Un sol moment fix del dia per a tota la classe sense excepcions.",
+        "Espai obert al passadis per veure qui hi entra i qui hi surt.",
+        "Lavabo reservat nomes per a l'adult per evitar incidents.",
+        "Materials accessibles, intimitat suficient i seqüencia comprensible per a l'infant."
+      ],
+      "correct": 3,
+      "explanation": "L'organitzacio de l'espai tambe educa; ha de facilitar autonomia, discrecio i seguretat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 10"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B associa visibilitat amb autonomia; C i D anul len l'aprenentatge individual."
+      ]
+    },
+    {
+      "id": "v3-a2-10-04",
+      "theme": "Annex II - Tema 10",
+      "document": "Acompanyament en el procés de control d'esfínters a l'escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d'una perspectiva respectuosa envers la maduració de l'infant.",
+      "prompt": "Quina resposta es mes adequada si la familia demana accelerar el control d'esfinters?",
+      "options": [
+        "Explicar criteris de maduracio, compartir observacions i evitar pressions.",
+        "Posposar la conversa fins que l'infant ho faci sol.",
+        "Acceptar la demanda i establir una rutina fixa per coherencia.",
+        "Dir que cada familia ho resolgui a casa i al centre es fara el mateix amb tothom."
+      ],
+      "correct": 0,
+      "explanation": "La familia es part de l'acompanyament, pero no pot substituir el criteri de maduracio de l'infant.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 10"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B sembla coherent pero reforca pressio; C i D trenquen la corresponsabilitat educativa."
+      ]
+    },
+    {
+      "id": "v3-a2-11-01",
+      "theme": "Annex II - Tema 11",
+      "document": "El valor del joc lliure a la primera infància. Joc de manipulació i experimentació. Criteris en el rol de la persona educadora durant el joc espontani de l'infant.",
+      "prompt": "Quin enunciat descriu millor el joc lliure a 0-3?",
+      "options": [
+        "Una activitat espontania escollida per l'infant, sense finalitat definida per l'adult.",
+        "Una estona sense proposta que es fa servir per reposar entre tasques.",
+        "Una pausa abans del joc de veritat.",
+        "Una activitat amb consigna comuna per assegurar el mateix resultat."
+      ],
+      "correct": 0,
+      "explanation": "El joc lliure te valor propi i emergeix de la iniciativa infantil.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 11"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D el buiden de valor; C el transforma en activitat dirigida."
+      ]
+    },
+    {
+      "id": "v3-a2-11-02",
+      "theme": "Annex II - Tema 11",
+      "document": "El valor del joc lliure a la primera infància. Joc de manipulació i experimentació. Criteris en el rol de la persona educadora durant el joc espontani de l'infant.",
+      "prompt": "Quan un infant repeteix una accio amb un objecte moltes vegades, quina lectura es mes ajustada?",
+      "options": [
+        "Vol dir que el material no serveix i s'ha de retirar.",
+        "Pot estar explorant una relacio de causa-efecte o consolidant una habilitat.",
+        "Segurament esta avorrit i cal canviar-li l'activitat.",
+        "Nomes te sentit si al final genera una produccio visible."
+      ],
+      "correct": 1,
+      "explanation": "La repeticio forma part de l'experimentacio i de la construccio de coneixement.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 11"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C interpreten la repeticio com un problema; D posa el producte per damunt del proces."
+      ]
+    },
+    {
+      "id": "v3-a2-11-03",
+      "theme": "Annex II - Tema 11",
+      "document": "El valor del joc lliure a la primera infància. Joc de manipulació i experimentació. Criteris en el rol de la persona educadora durant el joc espontani de l'infant.",
+      "prompt": "Durant el joc espontani, quina funcio s'ajusta millor a la persona educadora?",
+      "options": [
+        "Dirigir el joc per garantir que tots segueixin el mateix objectiu.",
+        "Deixar el grup sense presència adulta per afavorir autonomia total.",
+        "Preparar entorn i materials, observar i intervenir amb mesura si cal.",
+        "Corregir cada us inesperat dels objectes."
+      ],
+      "correct": 2,
+      "explanation": "L'adult soste el joc sense colonitzar-lo ni desaparèixer.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 11"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D imposen control; C confon autonomia amb ausencia d'acompanyament."
+      ]
+    },
+    {
+      "id": "v3-a2-11-04",
+      "theme": "Annex II - Tema 11",
+      "document": "El valor del joc lliure a la primera infància. Joc de manipulació i experimentació. Criteris en el rol de la persona educadora durant el joc espontani de l'infant.",
+      "prompt": "Quin efecte pedagogic es mes propi del joc de manipulacio i experimentacio?",
+      "options": [
+        "Practicar obediència i silenci.",
+        "Memoritzar instruccions per repetir-les sense variacions.",
+        "Arribar a un producte final identic al model de l'adult.",
+        "Descobrir relacions entre accio, material i resultat."
+      ],
+      "correct": 3,
+      "explanation": "Manipular permet provar, repetir i entendre relacions concretes del mon.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 11"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D traslladen la lògica escolar o normativa a un joc que ha de ser exploratori."
+      ]
+    },
+    {
+      "id": "v3-a2-12-01",
       "theme": "Annex II - Tema 12",
-      "document": "Orientacions curriculars d'educacio infantil",
-      "prompt": "Quan un infant diu que una capsa es \"un cotxe\", quin criteri adult es mes adequat?",
+      "document": "El joc simbòlic en el desenvolupament i com a eina per entendre el món que envolta l'infant.",
+      "prompt": "Quin comportament indica millor la presencia de joc simbolic?",
+      "options": [
+        "Un infant repeteix una consigna de l'adult.",
+        "Un infant ordena objectes per mida sense atribuir-los cap significat nou.",
+        "Un infant encaixa peces en una unica posicio correcta.",
+        "Un infant fa servir una capsa com si fos un cotxe."
+      ],
+      "correct": 3,
+      "explanation": "El joc simbolic apareix quan un objecte o una accio adquireixen un significat nou.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 12"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C son activitats reals de l'etapa, pero no simboliques; D pertany a instruccio dirigida."
+      ]
+    },
+    {
+      "id": "v3-a2-12-02",
+      "theme": "Annex II - Tema 12",
+      "document": "El joc simbòlic en el desenvolupament i com a eina per entendre el món que envolta l'infant.",
+      "prompt": "Si un infant diu que un bloc es \"un pastis\", quina resposta adulta es mes adequada?",
       "options": [
         "Acceptar el significat del joc i acompanyar-lo sense corregir-lo.",
-        "Corregir-lo per evitar confusions amb l'us real dels objectes.",
-        "Demanar que expliqui la resposta \"correcta\" per assegurar comprensio.",
-        "Retirar la capsa i oferir una joguina amb un sol us possible."
+        "Corregir-lo de seguida per evitar confusions amb la realitat.",
+        "Retirar el bloc i oferir una joguina amb un unic us.",
+        "Demanar-li que doni la resposta correcta abans de continuar jugant."
       ],
       "correct": 0,
       "explanation": "En el joc simbolic, el significat el construeix l'infant i l'adult no l'ha de desfer.",
       "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-12"
+        "annex ii - tema 12"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 confon simbolisme amb error; O3 converteix el joc en pregunta escolar; O4 redueix l'objecte a un us tancat."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
         "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C escolaritzen el joc; D el tanca en una unica funcio."
       ]
     },
     {
-      "id": "v2-a2-t12-03",
+      "id": "v3-a2-12-03",
       "theme": "Annex II - Tema 12",
-      "document": "XTEC curriculum + espais educatius",
-      "prompt": "Quins materials afavoreixen millor el joc simbolic a l'aula?",
+      "document": "El joc simbòlic en el desenvolupament i com a eina per entendre el món que envolta l'infant.",
+      "prompt": "Quins materials afavoreixen millor el joc simbolic en una aula 0-3?",
       "options": [
-        "Objectes quotidians, peces no estructurades i materials que admetin usos diversos.",
-        "Joguines amb una sola funcio i resposta unica per assegurar la manipulacio correcta.",
-        "Fulls de fitxes amb imatges de rols per repetir una historia ja tancada.",
-        "Material molt quantios pero sempre guardat fora de l'abast infantil."
+        "Fitxes amb imatges per reproduir exactament una historia tancada.",
+        "Objectes quotidians, peces obertes i materials que admetin usos diversos.",
+        "Joguines amb una sola funcio i resposta unica.",
+        "Material guardat fora de l'abast per mantenir-lo \"net\"."
       ],
-      "correct": 0,
-      "explanation": "El joc simbolic creix amb materials oberts i accessibles que permeten transformacio i representacio.",
-      "difficulty": "alta",
-      "competence": "Criteri pedagogic i professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-12"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O3 imposen un guio tancat; O4 fa invisible l'accio de l'infant encara que hi hagi recursos."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/"
-      ]
-    },
-    {
-      "id": "v2-a2-t13-01",
-      "theme": "Annex II - Tema 13",
-      "document": "XTEC espais escolars + orientacions curriculars",
-      "prompt": "Quin criteri fa mes educatiu l'organitzacio dels espais de l'aula?",
-      "options": [
-        "Fer que siguin accessibles, llegibles i adaptats a la mida i autonomia dels infants.",
-        "Mantenir-los com a espais neutres per no influir en l'exploracio.",
-        "Omplir-los de molts elements encara que quedin fora de l'abast.",
-        "Canviar-los sovint per evitar que els infants s'hi acostumin."
-      ],
-      "correct": 0,
-      "explanation": "L'espai educa quan es pot llegir, usar i habitar amb autonomia.",
+      "correct": 1,
+      "explanation": "El simbolic creix amb materials oberts i accessibles que permeten transformacio i representacio.",
       "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-13"
+        "annex ii - tema 12"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 assumeix una falsa neutralitat; O3 prioritza quantitat sobre accesibilitat; O4 trenca referents estables."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/",
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/",
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C imposen un guio tancat; D elimina l'accio de l'infant."
       ]
     },
     {
-      "id": "v2-a2-t13-02",
-      "theme": "Annex II - Tema 13",
-      "document": "XTEC espais escolars + curriculum infantil",
-      "prompt": "Que aporta un material obert dins un espai preparat?",
+      "id": "v3-a2-12-04",
+      "theme": "Annex II - Tema 12",
+      "document": "El joc simbòlic en el desenvolupament i com a eina per entendre el món que envolta l'infant.",
+      "prompt": "Quin valor pedagògic predomina quan un grup juga a \"cuidar ninos\" i \"cuinar\"?",
       "options": [
-        "Possibilita usos diversos, iniciativa i diferents nivells de complexitat.",
-        "Garanteix que tots els infants facin la mateixa accio al mateix temps.",
-        "Evita la necessitat d'observar, perque l'objectiu es clar per si sol.",
-        "Fa mes facil corregir els resultats de cada infant."
+        "Aprendre a imitar fidelment les tasques adultes.",
+        "Preparar-se per a activitats acadèmiques posteriors.",
+        "Representar situacions quotidianes i elaborar relacions socials.",
+        "Memoritzar frases adultes correctes."
       ],
-      "correct": 0,
-      "explanation": "El material obert no tanca la funcio i afavoreix exploracio i autonomia.",
+      "correct": 2,
+      "explanation": "El joc simbolic permet reconstruir situacions de la vida quotidiana amb significat propi.",
       "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-13"
+        "annex ii - tema 12"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O4 descriuen l'aspecte controlat que el material obert justament evita; O3 elimina la necessitat d'acompanyament."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/"
-      ]
-    },
-    {
-      "id": "v2-a2-t13-03",
-      "theme": "Annex II - Tema 13",
-      "document": "Orientacions curriculars d'educacio infantil",
-      "prompt": "Quin criteri s'ajusta millor a una bona seleccio de materials?",
-      "options": [
-        "Prioritzar qualitat, coherencia amb el projecte i possibilitats d'ús per davant del nombre de peces.",
-        "Comprar molts materials diferents per impressionar i renovar constantment la proposta.",
-        "Escollir materials molt tancats per reduir la variabilitat del joc.",
-        "Situar els materials en espais elevats per controlar-ne millor l'us."
-      ],
-      "correct": 0,
-      "explanation": "La qualitat del material educa mes que la simple acumulacio d'objectes.",
-      "difficulty": "alta",
-      "competence": "Criteri professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-13"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 fa servir la quantitat com a criteri; O3 limita la riquesa d'usos; O4 elimina autonomia i accesibilitat."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/"
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D el converteixen en exercici verbal; C confon simbolisme amb reproduccio exacta."
       ]
     },
     {
-      "id": "v2-a2-t14-01",
-      "theme": "Annex II - Tema 14",
-      "document": "XTEC curriculum + orientacions curriculars",
-      "prompt": "Quina relacio ha de tenir l'espai exterior amb l'interior de l'escola bressol?",
+      "id": "v3-a2-13-01",
+      "theme": "Annex II - Tema 13",
+      "document": "Organització dels espais/territoris d'aprenentatge, temps i propostes educatives. Tipus de materials que afavoreixen el joc espontani i lliure de l'infant de zero a tres anys. Criteris en el rol de la persona educadora.",
+      "prompt": "Quin criteri fa mes educatiu un espai d'aula per a infants de 0-3?",
       "options": [
-        "Han de formar part d'un entorn coherent i continu per a l'exploracio i el benestar.",
-        "L'exterior es sobretot una pausa del treball educatiu de l'aula.",
-        "Interior i exterior han de seguir logiques separades perque son espais diferents.",
-        "L'exterior nomes te valor si replica exactament les mateixes activitats de dins."
+        "Que estigui ple de materials encara que molts quedin fora de l'abast.",
+        "Que canviï constantment per mantenir l'interes.",
+        "Que sigui accessible, llegible i adaptat a la mida i autonomia dels infants.",
+        "Que sigui neutre i poc definit per no condicionar la descoberta."
+      ],
+      "correct": 2,
+      "explanation": "L'espai educa quan es pot usar i habitar amb autonomia i sentit.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 13"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B juga amb la falsa neutralitat; C prioritza quantitat; D trenca referents estables."
+      ]
+    },
+    {
+      "id": "v3-a2-13-02",
+      "theme": "Annex II - Tema 13",
+      "document": "Organització dels espais/territoris d'aprenentatge, temps i propostes educatives. Tipus de materials que afavoreixen el joc espontani i lliure de l'infant de zero a tres anys. Criteris en el rol de la persona educadora.",
+      "prompt": "Quin criteri sobre el temps afavoreix millor el joc espontani?",
+      "options": [
+        "Fer-lo durar poc per evitar que aparegui desordre.",
+        "Mantenir el joc nomes mentre l'adult el pugui supervisar de prop.",
+        "Tancar la proposta de seguida per passar a una altra activitat.",
+        "Deixar prou temps per explorar, repetir i tornar a començar."
+      ],
+      "correct": 3,
+      "explanation": "El joc necessita temps real per consolidar hipotesis i interessos.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 13"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D prioritzen eficiència; C posa la mirada adulta per damunt del flux del joc."
+      ]
+    },
+    {
+      "id": "v3-a2-13-03",
+      "theme": "Annex II - Tema 13",
+      "document": "Organització dels espais/territoris d'aprenentatge, temps i propostes educatives. Tipus de materials que afavoreixen el joc espontani i lliure de l'infant de zero a tres anys. Criteris en el rol de la persona educadora.",
+      "prompt": "Quin criteri s'ajusta millor a la seleccio de materials per a 0-3?",
+      "options": [
+        "Prioritzar qualitat d'us, coherencia amb el projecte i possibilitats d'accio.",
+        "Guardar els materials perque l'infant no en faci mal us.",
+        "Comprar molts objectes diferents per renovar constantment l'escena.",
+        "Escollir materials molt tancats per reduir la variabilitat."
       ],
       "correct": 0,
-      "explanation": "La continuitat educativa entre espais permet experiencies coherents i riques.",
+      "explanation": "La qualitat del material pesa mes que la simple acumulacio d'objectes.",
       "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-14"
+        "annex ii - tema 13"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/",
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 redueix l'exterior a descans; O3 separa espais i significats; O4 transforma l'exterior en copia de l'aula."
+        "B associa novetat amb qualitat; C tanca el joc; D elimina autonomia i accesibilitat."
+      ]
+    },
+    {
+      "id": "v3-a2-13-04",
+      "theme": "Annex II - Tema 13",
+      "document": "Organització dels espais/territoris d'aprenentatge, temps i propostes educatives. Tipus de materials que afavoreixen el joc espontani i lliure de l'infant de zero a tres anys. Criteris en el rol de la persona educadora.",
+      "prompt": "Un equip reorganitza un raco d'aigua. Quin criteri es mes coherent?",
+      "options": [
+        "Omplir-lo de molts elements per augmentar l'atractiu visual.",
+        "Fer-lo accessible, amb materials a l'abast i espai suficient per manipular.",
+        "Posar-lo en un espai restringit per evitar desordre.",
+        "Convertir-lo en una proposta d'exercicis igual per a tothom."
       ],
-      "version": "v2",
-      "sources": [
+      "correct": 1,
+      "explanation": "L'educadora prepara entorns que conviden a actuar i explorar, no a obeir consignes tancades.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 13"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C confonen control i riquesa; D elimina la singularitat del joc."
+      ]
+    },
+    {
+      "id": "v3-a2-14-01",
+      "theme": "Annex II - Tema 14",
+      "document": "La relació educativa entre els espais interiors i exteriors.",
+      "prompt": "Quin enunciat descriu millor la relacio entre espais interiors i exteriors?",
+      "options": [
+        "L'exterior es sobretot una pausa de l'activitat de l'aula.",
+        "Han de formar part d'un entorn educatiu coherent i continu.",
+        "Interior i exterior responen a logiques independents.",
+        "L'exterior nomes te valor si reprodueix exactament el de dins."
+      ],
+      "correct": 1,
+      "explanation": "La continuitat educativa connecta els dos espais sense igualar-los.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 14"
+      ],
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/curriculum/infantil/",
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B redueix l'exterior a descans; C separa espais i sentit; D els converteix en copia."
       ]
     },
     {
-      "id": "v2-a2-t14-02",
+      "id": "v3-a2-14-02",
       "theme": "Annex II - Tema 14",
-      "document": "XTEC espais exteriors + orientacions curriculars",
-      "prompt": "Quin sentit te la transicio entre interior i exterior en el dia a dia?",
+      "document": "La relació educativa entre els espais interiors i exteriors.",
+      "prompt": "Quin criteri fa mes educativa la transicio entre interior i exterior?",
       "options": [
-        "Ha de mantenir ritmes, seguretat i autonomia, no interrompre bruscament l'experiencia.",
-        "S'ha de fer com mes rapid millor per optimitzar el temps disponible.",
-        "Nomes cal si l'activitat exterior es programada amb antelacio.",
-        "Pot improvisar-se sense criteri si el grup coneix l'espai."
+        "Fer-la tan rapidament com sigui possible.",
+        "Deixar-la a la improvisacio si el grup ja coneix l'espai.",
+        "Mantenir ritmes, seguretat i autonomia, evitant talls bruscos.",
+        "Nomes cuidar-la quan hi ha sortida programada."
       ],
-      "correct": 0,
-      "explanation": "Les transicions tambe eduquen: poden donar continuitat, calma i previsibilitat.",
+      "correct": 2,
+      "explanation": "Les transicions també eduquen i poden donar continuitat i calma.",
       "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-14"
+        "annex ii - tema 14"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 fa prevaldre la rapidesa sobre el benestar; O3 i O4 separen la transicio del sentit educatiu."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/",
         "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B posa rapidesa per davant de benestar; C i D les deslliguen del sentit pedagogic."
       ]
     },
     {
-      "id": "v2-a2-t14-03",
+      "id": "v3-a2-14-03",
       "theme": "Annex II - Tema 14",
-      "document": "XTEC curriculum infantil + espais mirada estetica",
+      "document": "La relació educativa entre els espais interiors i exteriors.",
       "prompt": "Per que l'exterior no s'ha de reduir a \"temps de pati\"?",
       "options": [
-        "Perque es un context d'aprenentatge, moviment, relacio i descoberta.",
-        "Perque el pati nomes serveix per descarregar energia abans de tornar a l'aula.",
-        "Perque la seva utilitat depen sobretot de fer-hi activitats dirigides.",
-        "Perque el valor educatiu augmenta quan hi ha menys contacte amb el medi."
+        "Perque el valor educatiu baixa com mes contacte hi ha amb el medi.",
+        "Perque te sentit sobretot quan hi ha activitats dirigides.",
+        "Perque nomes serveix per descarregar energia.",
+        "Perque es un context d'aprenentatge, moviment, relacio i descoberta."
       ],
-      "correct": 0,
-      "explanation": "L'exterior aporta situacions educatives especifices, no un simple descans.",
-      "difficulty": "alta",
-      "competence": "Criteri professional",
+      "correct": 3,
+      "explanation": "L'exterior ofereix experiencies educatives especifices i quotidianes.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-14"
+        "annex ii - tema 14"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 reprodueix la idea de descarrega; O3 condiciona el valor a la direccio adulta; O4 nega la relacio amb el medi."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/"
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B reprodueix la lògica de descarrega; C el supedita a control adult; D nega la relacio amb el medi."
       ]
     },
     {
-      "id": "v2-a2-t15-01",
+      "id": "v3-a2-14-04",
+      "theme": "Annex II - Tema 14",
+      "document": "La relació educativa entre els espais interiors i exteriors.",
+      "prompt": "Un equip vol portar un raco de lectura a l'exterior. Quin criteri es mes coherent?",
+      "options": [
+        "Mantenir referents estables i un ambient acollidor, adaptant la proposta a l'entorn.",
+        "Canviar completament els materials cada dia.",
+        "Fer-ne una activitat excepcional i molt curta.",
+        "Convertir-lo en una sessio dirigida per evitar distraccions."
+      ],
+      "correct": 0,
+      "explanation": "L'exterior ha de sumar continuitat i sentit, no trencar el fil educatiu.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 14"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D el fan episodic; C el converteix en control excessiu."
+      ]
+    },
+    {
+      "id": "v3-a2-15-01",
       "theme": "Annex II - Tema 15",
-      "document": "XTEC normativa d'espais exteriors + orientacions curriculars",
+      "document": "Els espais exteriors de l'escola bressol. Criteris pedagògics d'un enfocament educatiu des del valor d'aprendre i jugar lliurement a l'exterior i a la natura. Criteris en el rol de la persona educadora.",
       "prompt": "Quin criteri defineix millor el risc mesurat a l'espai exterior?",
       "options": [
         "Gestionar riscos assumibles sense anul lar la descoberta ni el moviment.",
+        "Prioritzar la vigilància constante per sobre de l'experiencia.",
         "Eliminar qualsevol risc encara que l'espai perdi valor de joc.",
-        "Permetre qualsevol situacio sempre que l'infant estigui al pati.",
-        "Prioritzar la vigilacia constante per sobre de l'experiencia."
+        "Permetre qualsevol situacio sempre que l'infant sigui fora."
       ],
       "correct": 0,
       "explanation": "El risc mesurat no es absencia de risc, sino seleccio i gestio professional del que es pot assumir.",
       "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-15"
+        "annex ii - tema 15"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 adopta una logica zero risc; O3 desactiva la funcio educativa del criteri; O4 confon supervisio amb immobilitat."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B adopta risc zero; C confon llibertat amb absencia de criteri; D immobilitza."
       ]
     },
     {
-      "id": "v2-a2-t15-02",
+      "id": "v3-a2-15-02",
       "theme": "Annex II - Tema 15",
-      "document": "XTEC espais exteriors + curriculum infantil",
-      "prompt": "Quina proposta encaixa millor amb un pati educatiu?",
+      "document": "Els espais exteriors de l'escola bressol. Criteris pedagògics d'un enfocament educatiu des del valor d'aprendre i jugar lliurement a l'exterior i a la natura. Criteris en el rol de la persona educadora.",
+      "prompt": "Quina afirmacio es mes coherent amb el valor educatiu de la natura en 0-3?",
       "options": [
-        "Diversitat de textures, ombres, elements naturals i possibilitats de moviment.",
-        "Una superficie uniforme i buida per facilitar el control visual absolut.",
-        "Un espai pensat nomes per a activitats dirigides de curta durada.",
-        "Un lloc on el grup pugui fer sempre la mateixa sequencia motriu."
+        "La natura te valor sobretot com a decorat.",
+        "La natura es un context quotidià d'exploracio, observacio i relacio.",
+        "La natura serveix si l'adult hi prepara una activitat tancada.",
+        "La natura es secundaria respecte de l'interior."
       ],
-      "correct": 0,
+      "correct": 1,
+      "explanation": "El medi natural no es ornamental: ofereix situacions riques i vives d'aprenentatge.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 15"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B trivialitza el medi; C el tanca en activitat dirigida; D el tracta com a residual."
+      ]
+    },
+    {
+      "id": "v3-a2-15-03",
+      "theme": "Annex II - Tema 15",
+      "document": "Els espais exteriors de l'escola bressol. Criteris pedagògics d'un enfocament educatiu des del valor d'aprendre i jugar lliurement a l'exterior i a la natura. Criteris en el rol de la persona educadora.",
+      "prompt": "Quina proposta encaixa millor amb un pati educatiu a 0-3?",
+      "options": [
+        "Una superficie uniforme i buida per tenir control visual absolut.",
+        "Un lloc per repetir sempre la mateixa sequencia motriu.",
+        "Diversitat de textures, ombres, elements naturals i possibilitats de moviment.",
+        "Un espai nomes per a activitats dirigides de curta durada."
+      ],
+      "correct": 2,
       "explanation": "Un pati educatiu ha de convidar a explorar i moure's amb riquesa sensorial.",
       "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-15"
+        "annex ii - tema 15"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/",
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais_mirada_estetica/mirada_estetica_espais/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 dona prioritat al control; O3 i O4 redueixen el pati a exercici o rutina."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/",
-        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/"
+        "B prioritza control; C i D redueixen el pati a exercici o rutina."
       ]
     },
     {
-      "id": "v2-a2-t15-03",
+      "id": "v3-a2-15-04",
       "theme": "Annex II - Tema 15",
-      "document": "Orientacions curriculars d'educacio infantil + XTEC espais exteriors",
-      "prompt": "Quina afirmacio es mes coherent amb el valor educatiu de la natura?",
+      "document": "Els espais exteriors de l'escola bressol. Criteris pedagògics d'un enfocament educatiu des del valor d'aprendre i jugar lliurement a l'exterior i a la natura. Criteris en el rol de la persona educadora.",
+      "prompt": "Quin paper ha d'assumir preferentment la persona educadora a l'espai exterior?",
       "options": [
-        "La natura és un context quotidià d'exploració, observació i relació.",
-        "La natura te valor sobretot com a decorat de l'espai exterior.",
-        "La natura serveix si l'adult prepara una activitat tancada amb resultat unique.",
-        "La natura es secundaria respecte de les propostes d'interior."
+        "Deixar l'exterior sense presència adulta per potenciar autonomia.",
+        "Dirigir constantment el joc per evitar imprevistos.",
+        "Convertir cada troballa en una activitat tancada.",
+        "Observar, garantir seguretat i intervenir amb mesura quan cal."
       ],
-      "correct": 0,
-      "explanation": "El medi natural no es ornamental: ofereix situacions d'exploracio i aprenentatge.",
-      "difficulty": "alta",
-      "competence": "Criteri professional",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-15"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 trivialitza la natura; O3 la subordin a un resultat tancat; O4 la situa com a opcio menor."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
-      ]
-    },
-    {
-      "id": "v2-a2-t16-01",
-      "theme": "Annex II - Tema 16",
-      "document": "Decret 21/2023 + orientacions curriculars",
-      "prompt": "Quin criteri organitzatiu s'ajusta millor a la relacio amb les families segons el marc oficial?",
-      "options": [
-        "El centre ha de preveure una relacio planificada amb moments d'informacio i entrevista.",
-        "N'hi ha prou amb parlar amb les families quan apareix algun problema.",
-        "La relacio amb families es limita al periode d'adaptacio inicial.",
-        "L'equip decideix no fixar cap pauta per poder adaptar-se cas per cas sense compromisos."
-      ],
-      "correct": 0,
-      "explanation": "El marc oficial demana relacio sistematica, confianca i comunicacio regular amb les families.",
+      "correct": 3,
+      "explanation": "L'adult soste el risc i el joc sense colonitzar-lo ni desaparèixer.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-16"
+        "annex ii - tema 15"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 redueix la comunicacio a incidencies; O3 la limita a l'inici; O4 substitueix criteri compartit per improvisacio."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t16-02",
-      "theme": "Annex II - Tema 16",
-      "document": "Decret 21/2023 + orientacions curriculars",
-      "prompt": "Que significa corresponsabilitat entre familia i escola?",
-      "options": [
-        "Compartir informacio, criteri i responsabilitats sense confondre rols professionals i familiars.",
-        "Que la familia decideixi tots els criteris per mantenir coherencia amb casa.",
-        "Que l'escola assumeixi sempre la decisio final i la familia nomes la confirmi.",
-        "Que cada part actu i pel seu compte i informi l'altra si es necessari."
-      ],
-      "correct": 0,
-      "explanation": "La corresponsabilitat no es fusio de rols, sino treball compartit amb funcions definides.",
-      "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-16"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O3 confonen corresponsabilitat amb delegacio; O4 genera discontinuitat entre contextos."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
-      ]
-    },
-    {
-      "id": "v2-a2-t17-01",
-      "theme": "Annex II - Tema 17",
-      "document": "Decret 21/2023 + orientacions curriculars",
-      "prompt": "Quin nucli defineix millor la funcio educadora a la llar d'infants?",
-      "options": [
-        "Acompanyar el desenvolupament integral, observar, intervenir amb criteri i treballar en equip.",
-        "Vigilar i custodiar, mentre la reflexio pedagogica la fan altres perfils.",
-        "Mantenir la distancia emocional per conservar l'objectivitat professional.",
-        "Seguir una rutina fixa i estable per sobre de l'observacio diaria."
-      ],
-      "correct": 0,
-      "explanation": "La funcio educadora combina cura, observacio, intervencio i reflexio compartida.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio pedagogica",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-17"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 separa cura i pedagogia; O3 exagera una falsa neutralitat; O4 converteix la feina en mecanica."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/ca/curriculum/infantil/decret-21-2023/",
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t17-02",
-      "theme": "Annex II - Tema 17",
-      "document": "Orientacions curriculars d'educacio infantil",
-      "prompt": "Per a que serveix la formacio continuada en un equip d'educacio infantil?",
-      "options": [
-        "Per revisar la practica, millorar criteris compartits i actualitzar el projecte educatiu.",
-        "Nomes per complir una exigencia formal de calendari.",
-        "Per substituir l'experiencia acumulada per teoria externa.",
-        "Perque cada professional pugui seguir fent el que ja feia sense debat."
-      ],
-      "correct": 0,
-      "explanation": "La formacio continuada permet mirar la practica i transformar-la amb criteri d'equip.",
-      "difficulty": "mitjana",
-      "competence": "Interpretacio educativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-17"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 formalitza sense impacte; O3 crea una oposicio falsa entre teoria i practica; O4 congela el criteri professional."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
-      ]
-    },
-    {
-      "id": "v2-a2-t18-01",
-      "theme": "Annex II - Tema 18",
-      "document": "Canal Salut - primers auxilis + orientacions curriculars",
-      "prompt": "Quin ordre de la pauta PAS es correcte davant una incidencia a l'aula?",
-      "options": [
-        "Protegir, avisar i socórrer segons la situacio.",
-        "Socórrer, protegir i avisar.",
-        "Avisar, socórrer i després protegir si cal.",
-        "Registrar, avisar i esperar instruccions abans de fer res."
-      ],
-      "correct": 0,
-      "explanation": "La prioritat es protegir l'entorn, alertar els serveis si escau i atendre amb seguretat.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa i sanitaria",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-18"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O3 alteren la sequencia; O4 substitueix l'accio immediata per burocracia."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
-      ]
-    },
-    {
-      "id": "v2-a2-t18-02",
-      "theme": "Annex II - Tema 18",
-      "document": "Canal Salut - primers auxilis davant traumatismes",
-      "prompt": "Un infant cau i es toca el cap amb dolor pero sense pèrdua de consciencia. Quin criteri inicial es mes adequat?",
-      "options": [
-        "Mantenir la calma, valorar l'estat general i seguir el protocol del centre.",
-        "Fer-lo caminar de seguida per comprovar si ja esta be.",
-        "Aplicar una activitat tranquila i observar si s'oblida del cop.",
-        "Deixar que continui jugant per no dramatitzar l'incident."
-      ],
-      "correct": 0,
-      "explanation": "Davant un cop cal observar, protegir i actuar segons protocol, no minimitzar ni forcar moviment.",
-      "difficulty": "alta",
-      "competence": "Aplicacio a suposit practic",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-18"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 i O3 posen a prova el dolor; O4 banalitza un possible risc de lesio."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/traumatismes/",
-        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/"
-      ]
-    },
-    {
-      "id": "v2-a2-t18-03",
-      "theme": "Annex II - Tema 18",
-      "document": "Canal Salut - primers auxilis",
-      "prompt": "Davant un ennuegament greu en un infant conscient, quin criteri es mes coherent?",
-      "options": [
-        "Activar ajuda urgent i seguir la maniobra de socors prevista pel protocol format.",
-        "Esperar que el cos expulsi l'objecte espontaniament per no espantar l'infant.",
-        "Donar-li aigua de seguida per arrossegar l'obstacle.",
-        "Posar-lo a terra i deixar de tocar-lo fins que es tranquil litzi."
-      ],
-      "correct": 0,
-      "explanation": "Els manuals oficials de primers auxilis indiquen actuacio rapida i protocol litzat davant obstruccio greu.",
-      "difficulty": "alta",
-      "competence": "Aplicacio a suposit practic",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-18"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "O2 aposta per l'espera passiva; O3 i O4 fan intervencions inadequades o ineficaces."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/",
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/centres/espais_escolars/espais-exteriors/normativa/",
         "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/traumatismes/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B immobilitza; C confon autonomia amb abandonament; D treu obertura i iniciativa."
       ]
     },
     {
-      "id": "v2-a2-t19-01",
-      "theme": "Annex II - Tema 19",
-      "document": "Decret 21/2023 + XTEC Currículum i orientacio",
-      "prompt": "Quin plantejament descriu millor com s'han d'entendre la higiene i les cures en el primer cicle d'educacio infantil?",
+      "id": "v3-16-01",
+      "theme": "Annex II - Tema 16",
+      "document": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+      "prompt": "Quin plantejament descriu millor la relacio educativa entre la llar d'infants i les famílies?",
       "options": [
-        "Com a moments educatius de la vida quotidiana, pausats i segurs, que respecten els ritmes de l'infant",
-        "Com una rutina assistencial que s'ha de fer de pressa per no interrompre el joc",
-        "Com una activitat secundaria que pot ajustar-se sempre a l'horari fix del grup",
-        "Com una tasca que nomes te sentit si l'infant ja la fa de manera completament autonoma"
+        "Una relacio informal que pot prescindir de criteri professional.",
+        "Una relacio centrada nomes en informar de les incidencies.",
+        "Una relacio on la familia supervisa cada decisio tecnica del centre.",
+        "Una relacio basada en confiança, respecte mutu, professionalitat i corresponsabilitat."
+      ],
+      "correct": 3,
+      "explanation": "Les orientacions de 0-3 insisteixen en cordialitat, respecte i responsabilitat compartida, no en ingerencia ni en comunicacio unidireccional.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 16"
+      ],
+      "sourceRefs": [
+        "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon corresponsabilitat amb control; C redueix el vincle a incidencies; D elimina el marc professional."
+      ]
+    },
+    {
+      "id": "v3-16-02",
+      "theme": "Annex II - Tema 16",
+      "document": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+      "prompt": "Quin criteri es mes coherent en la planificacio de la familiaritzacio?",
+      "options": [
+        "Ajustar el ritme d'incorporacio a cada infant i a cada familia, amb acompanyament progressiu.",
+        "Convertir la familiaritzacio en una rutina curta i fixa independent de les reaccions de l'infant.",
+        "Fer una separacio igual per a tots els infants per guanyar eficacia.",
+        "Mantenir els familiars sempre al marge des del primer dia."
       ],
       "correct": 0,
-      "explanation": "El Decret 21/2023 situa repòs, alimentacio i higiene dins la quotidianitat educativa del primer cicle, amb benestar i respecte pels ritmes.",
+      "explanation": "El currículum 0-3 descriu l'acollida com un procés que s'ha de planificar amb cura i segons les necessitats reals de cada infant i familia.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-19"
+        "annex ii - tema 16"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B redueix la cura a assistencia mecanica; C la sotmet a l'horari; D confon autonomia progressiva amb autonomia total."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=951431",
-        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+        "B uniformitza; C talla el pont de confiança; D converteix l'acollida en un acte mecanic."
       ]
     },
     {
-      "id": "v2-a2-t19-02",
+      "id": "v3-16-03",
+      "theme": "Annex II - Tema 16",
+      "document": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+      "prompt": "Per a que serveix sobretot la primera entrevista amb les famílies?",
+      "options": [
+        "Per recollir tota la informació possible encara que no sigui necessaria.",
+        "Per començar a construir confiança i obtenir la informacio imprescindible per acollir cada infant.",
+        "Per substituir el seguiment quotidià de l'equip.",
+        "Per repartir instruccions tancades sense escoltar la familia."
+      ],
+      "correct": 1,
+      "explanation": "La primera entrevista es una pedra angular de la relacio escola-familia i s'ha de centrar en la informacio pertinent, no en un interrogatori extens.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 16"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B allunya l'entrevista del criteri de pertinença; C n'anul·la la funcio; D la converteix en una comunicacio vertical."
+      ]
+    },
+    {
+      "id": "v3-16-04",
+      "theme": "Annex II - Tema 16",
+      "document": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+      "prompt": "Quin canal es mes propi de la comunicacio quotidiana entre escola i familia a 0-3?",
+      "options": [
+        "Nomes les circulars generals.",
+        "Nomes les converses informals entre adults sense registre ni criteri.",
+        "Entrades i sortides, entrevistes, reunions i recursos escrits o digitals del centre.",
+        "Nomes els missatges urgents quan hi ha un problema."
+      ],
+      "correct": 2,
+      "explanation": "Les fonts oficials destaquen el valor dels contactes diaris, entrevistes i canals definits pel projecte educatiu.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 16"
+      ],
+      "sourceRefs": [
+        "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C redueixen la relacio a un sol tipus de missatge; D sacrifica coherència i seguiment."
+      ]
+    },
+    {
+      "id": "v3-16-05",
+      "theme": "Annex II - Tema 16",
+      "document": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+      "prompt": "Quan una familia viu amb angoixa la separacio, quina resposta educativa es mes encertada?",
+      "options": [
+        "Demanar a la familia que resolgui la situació sense intervencio del centre.",
+        "Evitar parlar-ne per no alimentar el patiment.",
+        "Reforçar la separacio perque l'infant s'adapti abans.",
+        "Acompanyar emocionalment, planificar l'acollida i mantenir contacte quotidià amb la familia."
+      ],
+      "correct": 3,
+      "explanation": "El procés d'acollida demana cura, contacte i lectura del benestar dels infants i de les famílies, no acceleracio ni silenci.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 16"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C desregulen el vincle; D externalitza el problema."
+      ]
+    },
+    {
+      "id": "v3-17-01",
+      "theme": "Annex II - Tema 17",
+      "document": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+      "prompt": "Quina combinacio recull millor les funcions educatives de la persona educadora?",
+      "options": [
+        "Vigilar, custodiar i aplicar rutines sense reflexio pedagògica.",
+        "Organitzar només el material i deixar la resta a la improvisacio.",
+        "Planificar l'ambient, promoure capacitats, acompanyar l'activitat i observar/documentar.",
+        "Desplacar el criteri professional a perfils externs."
+      ],
+      "correct": 2,
+      "explanation": "El currículum 0-3 formula aquestes quatre funcions de manera explicita com a nucli del fer educador.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 17"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D redueixen o externalitzen la funcio; C la deixa incompleta."
+      ]
+    },
+    {
+      "id": "v3-17-02",
+      "theme": "Annex II - Tema 17",
+      "document": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+      "prompt": "Quin paper fa la persona educadora quan es presenta com a referent de l'infant?",
+      "options": [
+        "Manté una distancia emotiva per no generar dependencia.",
+        "Substitueix el pare i la mare en tots els aspectes afectius.",
+        "Es limita a controlar que el grup segueixi l'horari.",
+        "Dona seguretat i confiança en la separacio de la familia i en la relacio amb el nou entorn."
+      ],
+      "correct": 3,
+      "explanation": "El currículum subratlla que el vincle amb la persona educadora dona seguretat i facilita l'adaptacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 17"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon vincle amb substitucio; C evita el vincle; D en limita la funcio a la mera organitzacio."
+      ]
+    },
+    {
+      "id": "v3-17-03",
+      "theme": "Annex II - Tema 17",
+      "document": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+      "prompt": "Quina idea expressa millor el sentit educatiu dels moments de cura?",
+      "options": [
+        "Son situacions educatives que acompanyen la vida quotidiana i construeixen vincle.",
+        "Son tasques exclusives del personal de suport.",
+        "Son interrupcions assistencials que cal fer el mes rapid possible.",
+        "Son moments neutres que no tenen impacte en l'aprenentatge."
+      ],
+      "correct": 0,
+      "explanation": "A l'etapa 0-3, alimentar, canviar, vestir o dormir no son actes aliens a l'educacio, sino part del projecte.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 17"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C separen cura i pedagogia; D la redueix a un rol auxiliar."
+      ]
+    },
+    {
+      "id": "v3-17-04",
+      "theme": "Annex II - Tema 17",
+      "document": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+      "prompt": "Per que la formacio continuada es rellevant dins l'equip educatiu?",
+      "options": [
+        "Per complir un requisit formal sense impacte a l'aula.",
+        "Per revisar la practica, acordar criteris comuns i transformar el projecte educatiu.",
+        "Per permetre que cada persona mantingui criteris contradictoris.",
+        "Per delegar la responsabilitat pedagògica en una persona externa."
+      ],
+      "correct": 1,
+      "explanation": "El projecte educatiu s'alimenta de la reflexio compartida i la formacio continuada, que dona coherencia a la intervencio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 17"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D buiden de sentit la revisio professional; C trenca la coherencia d'equip."
+      ]
+    },
+    {
+      "id": "v3-17-05",
+      "theme": "Annex II - Tema 17",
+      "document": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+      "prompt": "Quan l'infant juga o explora, quina actitud de l'adult es mes coherent?",
+      "options": [
+        "Dirigir cada pas per assegurar un resultat homogeni.",
+        "Mantenir-se sempre al marge per no interferir.",
+        "Estar disponible, observar, aportar el que calgui i no ocupar el protagonisme.",
+        "Intervenir nomes si hi ha soroll o desordre."
+      ],
+      "correct": 2,
+      "explanation": "El text de 0-3 descriu una presència ajustada: l'adult sosté, amplia i observa sense acaparar.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 17"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B sobreintervé; C s'abandona; D redueix el criteri a la gestio del soroll."
+      ]
+    },
+    {
+      "id": "v3-18-01",
+      "theme": "Annex II - Tema 18",
+      "document": "Accidents a l'etapa zero a tres anys. Prevenció i primeres cures.",
+      "prompt": "Quin ordre resumeix millor la resposta inicial davant un accident lleu?",
+      "options": [
+        "Informar la familia, registrar i despres veure si cal actuar.",
+        "Protegir, alertar i socórrer.",
+        "Esperar que l'infant es recuperi per si sol.",
+        "Prioritzar l'explicacio del que ha passat abans d'atendre."
+      ],
+      "correct": 1,
+      "explanation": "El protocol de primers auxilis de Canal Salut parteix del PAS com a seqüencia bàsica.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 18"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D inverteixen les prioritats; C deixa l'infant sense atencio."
+      ]
+    },
+    {
+      "id": "v3-18-02",
+      "theme": "Annex II - Tema 18",
+      "document": "Accidents a l'etapa zero a tres anys. Prevenció i primeres cures.",
+      "prompt": "En quina situació cal valorar amb mes urgencia una trucada als serveis d'emergencia?",
+      "options": [
+        "Quan l'infant plora després d'un petit ensurt sense altres signes.",
+        "Quan la familia demana que es truqui abans d'avaluar.",
+        "Quan hi ha perdua de consciencia o dificultat respiratoria.",
+        "Quan la incidencia sembla menor i l'infant continua jugant."
+      ],
+      "correct": 2,
+      "explanation": "Els criteris de Canal Salut per a primers auxilis mostren que la perdua de consciencia i els problemes respiratoris exigeixen resposta immediata.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 18"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/index.html",
+        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/ennuegaments/index.html"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C descriuen situacions no urgents; D trasllada la decisio a un tercer criteri no clínic."
+      ]
+    },
+    {
+      "id": "v3-18-03",
+      "theme": "Annex II - Tema 18",
+      "document": "Accidents a l'etapa zero a tres anys. Prevenció i primeres cures.",
+      "prompt": "Quin criteri de prevencio es mes coherent amb una llar d'infants?",
+      "options": [
+        "Deixar que l'ordenacio depengui de cada estona i de cada adulta.",
+        "Acumular materials de joc a l'abast per guanyar temps d'organitzacio.",
+        "Prioritzar la decoracio encara que dificulti el pas.",
+        "Mantenir passadissos i sortides lliures, materials ben ubicats i espais pensats per a infants petits."
+      ],
+      "correct": 3,
+      "explanation": "La prevencio d'accidents en 0-3 requereix entorns organitzats, no solament bones intencions.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 18"
+      ],
+      "sourceRefs": [
+        "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/escolaritat/salut-seguretat-escola/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D fan el risc mes probable; C converteix la prevencio en improvisacio."
+      ]
+    },
+    {
+      "id": "v3-18-04",
+      "theme": "Annex II - Tema 18",
+      "document": "Accidents a l'etapa zero a tres anys. Prevenció i primeres cures.",
+      "prompt": "Que ha de passar despres d'atendre un accident lleu?",
+      "options": [
+        "Registrar la incidencia i comunicar-la a la familia segons el procediment del centre.",
+        "No registrar res si l'infant es calma de seguida.",
+        "Deixar la decisio a criteri personal de cada educadora.",
+        "Comunicar primer el cas i registrar-lo despres, si encara es considera rellevant."
+      ],
+      "correct": 0,
+      "explanation": "El banc ja ho tracta, i les fonts oficials sostenen que la resposta educativa inclou registre i comunicacio ordenada.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 18"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/salut-a-z/p/primers-auxilis/index.html",
+        "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/escolaritat/salut-seguretat-escola/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B minimitza l'incident; C trenca la lògica procedimental; D desdibuixa el criteri comú."
+      ]
+    },
+    {
+      "id": "v3-19-01",
       "theme": "Annex II - Tema 19",
-      "document": "Canal Salut - Rentar-se les mans + Hepatitis A / Shigel·losi",
+      "document": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
       "prompt": "Despres de canviar un bolquer, quina actuacio es mes coherent amb la prevencio de contagis?",
       "options": [
-        "Rentar-se les mans amb aigua i sabo i eixugar-les amb una tovallola neta d'un sol us",
-        "Posar-se guants i continuar, perque els guants ja fan la funcio higienica",
-        "Rentar-se les mans nomes si hi ha femta visible o una incidencia",
-        "Fer servir la mateixa tovallola de tela per a tota la jornada per estalviar temps"
+        "Rentar-se les mans amb aigua i sabo.",
+        "Fer servir la mateixa tovallola per a tothom durant tota la jornada.",
+        "Posar-se guants i donar la tasca per acabada.",
+        "Rentar-se nomes si hi havia bruticia visible."
       ],
       "correct": 0,
-      "explanation": "Canal Salut indica que el rentat de mans es clau per evitar la propagacio de malalties, especialment en contextos amb canvi de bolquers frecuente.",
+      "explanation": "Canal Salut destaca el rentat de mans frequent i correcte com una de les mesures mes eficaces.",
       "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-19"
+        "annex ii - tema 19"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B confon proteccio puntual amb higiene real; C fa dependre la prevencio d'un criteri massa tard; D proposa una practica poc segura i poc plausible en un centre."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://canalsalut.gencat.cat/ca/vida-saludable/habits-higiene/rentarse-mans/",
-        "https://canalsalut.gencat.cat/ca/salut-a-z/h/hepatitis/hepatitis-a/",
-        "https://canalsalut.gencat.cat/ca/detalls/article/shigel-losi"
+        "https://canalsalut.gencat.cat/ca/salut-a-z/b/boca-ma-peu/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon guants amb higiene; C arriba tard; D es poc segura i poc plausible."
       ]
     },
     {
-      "id": "v2-a2-t19-03",
+      "id": "v3-19-02",
       "theme": "Annex II - Tema 19",
-      "document": "Canal Salut - Alimentacio saludable en la primera infancia",
-      "prompt": "Quan s'ha de començar a cuidar la higiene bucodental dels infants segons les recomanacions oficials?",
+      "document": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
+      "prompt": "Per que la higiene nasal es rellevant en l'etapa 0-3?",
       "options": [
-        "Des del naixement i, com a minim, dues vegades al dia des de la primera dent",
-        "Nomes quan apareixen les dents definitives",
-        "Nomes si la familia ho demana a l'escola",
-        "Nomes a partir dels tres anys, quan l'infant ja es renta sol"
+        "Perque només te utilitat quan hi ha un brot greu.",
+        "Perque els refredats son frequents i una bona higiene ajuda a prevenir complicacions i a descansar millor.",
+        "Perque substitueix el rentat de mans.",
+        "Perque es una practica exclusiva del domicili familiar."
       ],
-      "correct": 0,
-      "explanation": "Canal Salut indica que la higiene bucodental s'ha de cuidar des del naixement i, des de la primera dent, almenys dues vegades al dia.",
-      "difficulty": "facil-mitjana",
-      "competence": "Comprensio normativa",
+      "correct": 1,
+      "explanation": "El currículum 0-3 vincula la higiene nasal amb el control de malalties de refredat i amb un descans mes reparador.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-19"
+        "annex ii - tema 19"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B trasllada la cura massa tard; C la redueix a una demanda familiar; D confon autonomia d'habit amb moment de inici de la cura."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+        "B i D en limiten l'abast; C la confon amb una altra mesura preventiva."
       ]
     },
     {
-      "id": "v2-a2-t20-01",
-      "theme": "Annex II - Tema 20",
-      "document": "Pla d'emergencia del centre docent",
-      "prompt": "Quin es el propòsit principal d'un pla d'emergencia en un centre educatiu?",
+      "id": "v3-19-03",
+      "theme": "Annex II - Tema 19",
+      "document": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
+      "prompt": "Quan s'ha de començar a cuidar la higiene bucodental segons Canal Salut?",
       "options": [
-        "Reduir la improvisacio i protegir les persones davant una emergencia",
-        "Substituir la formacio del personal per un document intern",
-        "Decidir l'evacuacio segons la preferencia de cada educadora",
-        "Servir nomes per complir un tràmit administratiu sense impacte practic"
+        "Només a partir dels tres anys.",
+        "Només si la familia ho demana al centre.",
+        "Des del naixement i, des de la primera dent, com a minim dues vegades al dia.",
+        "Només quan surten les dents definitives."
+      ],
+      "correct": 2,
+      "explanation": "La guia de primera infancia ho formula de manera explicita i ho vincula a salut i higiene quotidiana.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 19"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C retarden la cura; D la condiciona a una demanda que no es el criteri sanitari."
+      ]
+    },
+    {
+      "id": "v3-19-04",
+      "theme": "Annex II - Tema 19",
+      "document": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
+      "prompt": "Quin factor fa especialment important la higiene en una llar d'infants?",
+      "options": [
+        "La creença que la neteja nomes importa abans dels àpats.",
+        "El fet que els infants de 0-3 no es contagiïn entre ells.",
+        "La idea que les malalties digestives no es relacionen amb els habits higienics.",
+        "La convivencia estreta i la presencia de malalties transmissibles com la shigel·losi o l'hepatitis A."
+      ],
+      "correct": 3,
+      "explanation": "Canal Salut assenyala que algunes malalties son frequents a les escoles bressol i que els bons habits higiènics en redueixen la transmissio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 19"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/detalls/article/shigel-losi",
+        "https://canalsalut.gencat.cat/ca/salut-a-z/h/hepatitis/hepatitis-a/",
+        "https://canalsalut.gencat.cat/ca/vida-saludable/habits-higiene/rentarse-mans/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B, C i D neguen o simplifiquen un risc real i documentat."
+      ]
+    },
+    {
+      "id": "v3-19-05",
+      "theme": "Annex II - Tema 19",
+      "document": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
+      "prompt": "Quin enunciat reflecteix millor la relacio entre higiene, alimentacio i descans?",
+      "options": [
+        "Son moments de cura que formen part del benestar fisic i emocional de l'infant.",
+        "Son moments que cal reduir al maxim per no interrompre l'activitat.",
+        "Son rutines neutrals que no tenen valor educatiu.",
+        "Son tasques separades del projecte de l'escola bressol."
       ],
       "correct": 0,
-      "explanation": "El pla d'emergencia recull les actuacions davant d'una emergencia i busca reduir la improvisacio i protegir les persones.",
+      "explanation": "El currículum 0-3 posa aquestes rutines al centre de la vida quotidiana i les entén com a educatives.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-20"
+        "annex ii - tema 19"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i D trivialitzen el pla; C converteix una resposta organitzada en una decisio improvisada."
+        "B, C i D aparten la cura del nucli del projecte pedagògic."
+      ]
+    },
+    {
+      "id": "v3-20-01",
+      "theme": "Annex II - Tema 20",
+      "document": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+      "prompt": "Quin es el propòsit principal d'un pla d'emergencia en una escola bressol?",
+      "options": [
+        "Substituir la formacio del personal per un document guardat.",
+        "Decidir cada evacuacio segons la persona que estigui a prop.",
+        "Organitzar la resposta del centre per reduir la improvisacio i protegir les persones.",
+        "Fer visible que el centre compleix un tràmit administratiu."
       ],
-      "version": "v2",
-      "sources": [
+      "correct": 2,
+      "explanation": "El pla d'emergencia recull totes les actuacions davant d'una emergencia i posa l'accent en la col·laboracio i la preparacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 20"
+      ],
+      "sourceRefs": [
         "https://educacio.gencat.cat/ca/departament/publicacions/monografies/gestio-centre/pla-emergencia-centre/",
         "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
-      ]
-    },
-    {
-      "id": "v2-a2-t20-02",
-      "theme": "Annex II - Tema 20",
-      "document": "Pla d'emergencia adaptat a llars d'infants",
-      "prompt": "Quina informacio ha de determinar un pla d'emergencia a l'escola bressol?",
-      "options": [
-        "Quan cal evacuar el centre i quan cal confinar-s'hi, i com s'ha de fer en cada cas",
-        "Nomes qui te la responsabilitat legal d'escriure el document",
-        "El calendari de vacances i les activitats de festa major",
-        "El cost econòmic de cada simulacre i de cada sortida al pati"
       ],
-      "correct": 0,
-      "explanation": "El pla ha de definir quan evacuar o confinar i com dur a terme cada actuacio, seguint les caracteristiques de la llar.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-20"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D barregen elements administratius o accessoris amb el nucli real del pla."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
-      ]
-    },
-    {
-      "id": "v2-a2-t20-03",
-      "theme": "Annex II - Tema 20",
-      "document": "Gestio del centre 2023-2024 + pla adaptat a llars d'infants",
-      "prompt": "Quin criteri es mes coherent amb la normativa de simulacres a les escoles bressol?",
-      "options": [
-        "Durant el primer trimestre es poden fer simulacres de confinament i, si es fa evacuacio, pot ser simulada i amb actuacions prèviament divulgades",
-        "Sempre s'ha de fer una evacuacio real per comprovar la resposta del centre",
-        "El simulacre nomes es fa quan hi ha una incidencia real per aprofitar la situacio",
-        "No cal informar el personal abans, per tal de valorar la improvisacio espontània"
-      ],
-      "correct": 0,
-      "explanation": "El curs 2023-2024 indica que a les escoles bressol, per la vulnerabilitat dels infants, el primer trimestre pot usar simulacres de confinament i, si hi ha evacuacio, pot ser simulada amb actuacions divulgades prèviament.",
-      "difficulty": "alta",
-      "competence": "Aplicacio a suposit practic",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-20"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D converteixen un procediment organitzat en una prova insegura o inservible."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/3776/doigc_2023_2024_gestio_19_07_2023.pdf?sequence=33",
-        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
-      ]
-    },
-    {
-      "id": "v2-a2-t21-01",
-      "theme": "Annex II - Tema 21",
-      "document": "EAP",
-      "prompt": "Quin paper descriu millor un EAP en relacio amb una escola bressol?",
-      "options": [
-        "Dona suport al centre, al professorat i a les famílies en la resposta a la variabilitat i a les necessitats educatives especifiques",
-        "Substitueix l'observacio quotidiana de l'equip educatiu quan hi ha una sospita",
-        "Actua nomes quan ja hi ha un diagnosi tancat i formal",
-        "Pren les decisions pedagogiques quotidianes per evitar criteris diferents dins l'equip"
-      ],
-      "correct": 0,
-      "explanation": "L'EAP s'entén com un equip d'assessorament i orientacio psicopedagogica que dona suport als centres, al professorat i a les famílies.",
-      "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-21",
-        "A revisar per la senyoreta Pame"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i D li atribueixen una funcio que no li correspon; C el limita a una resposta reactiva i tardana."
-      ],
-      "version": "v2",
       "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
-        "https://xtec.gencat.cat/ca/serveis/sez/eap/"
+      "optionNotes": [
+        "B i D banalitzen el pla; C converteix la resposta en improvisacio."
       ]
     },
     {
-      "id": "v2-a2-t21-02",
-      "theme": "Annex II - Tema 21",
-      "document": "EAP + 0-3 anys i families",
-      "prompt": "Davant possibles senyals de dificultat en un infant, quin primer enfocament es mes coherent?",
+      "id": "v3-20-02",
+      "theme": "Annex II - Tema 20",
+      "document": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+      "prompt": "Quin criteri ha de recollir un pla d'emergencia adaptat a llars d'infants?",
       "options": [
-        "Observar, contrastar amb l'equip, parlar amb la familia i, si cal, demanar orientacio especialitzada",
-        "Esperar uns mesos sense registrar res per no alarmar ningú",
-        "Substituir la mirada de l'equip per una derivacio immediata sense compartir informacio",
-        "Concloure que no hi ha cap necessitat fins que aparegui un diagnosi formal"
+        "Només les sorties al pati i les activitats de curs.",
+        "Només els horaris de revisio del material.",
+        "Només el nom de la coordinadora.",
+        "Quan cal evacuar i quan cal confinar, i com fer-ho en cada cas."
+      ],
+      "correct": 3,
+      "explanation": "El document adaptat a llars d'infants detalla l'organitzacio en cas d'emergencia, amb fitxes concretes per a evacuacio i confinament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 20"
+      ],
+      "sourceRefs": [
+        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D se'n van a elements accessoris o incomplets."
+      ]
+    },
+    {
+      "id": "v3-20-03",
+      "theme": "Annex II - Tema 20",
+      "document": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+      "prompt": "Quina característica del primer cicle condiciona mes una evacuacio?",
+      "options": [
+        "La dependencia de l'ajuda adulta i la dificultat de desplacament autònom de molts infants.",
+        "La possibilitat de sortir igual que en una escola de primària.",
+        "La capacitat de seguir instruccions complexes sense suport.",
+        "El fet que tots els infants es desplacin sols amb facilitat."
       ],
       "correct": 0,
-      "explanation": "Les fonts oficials situen la comunicacio amb famílies i l'orientacio professional com a passos inicials davant dubtes sobre hàbits o desenvolupament.",
+      "explanation": "El pla per a llars d'infants i el propi sentit educatiu del 0-3 obliguen a pensar en infants que no tenen autonomia homogenea.",
       "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-21",
-        "A revisar per la senyoreta Pame"
+        "annex ii - tema 20"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i D apel·len a una falsa calma; C externalitza tota la resposta i trenca la coordinacio amb la familia i l'equip."
+      "sourceRefs": [
+        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
       ],
-      "version": "v2",
       "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "optionNotes": [
+        "B i C exageren l'autonomia; D trasllada un model que no es el del 0-3."
+      ]
+    },
+    {
+      "id": "v3-20-04",
+      "theme": "Annex II - Tema 20",
+      "document": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+      "prompt": "Quin paper tenen els adults del centre durant una evacuacio de llar d'infants?",
+      "options": [
+        "Primer s'espera que cada infant localitzi la seva familia.",
+        "Cada adult es fa carrec del seu grup i segueix el pla previst, ajudant si cal altres infants o adults.",
+        "Tothom surt de manera espontania pel mateix lloc.",
+        "La coordinacio es deixa per a després de la sortida."
+      ],
+      "correct": 1,
+      "explanation": "El document adaptat estableix una responsabilitat clara per grup i una cadena d'ajuda, especialment amb infants amb mobilitat reduïda.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 20"
+      ],
+      "sourceRefs": [
+        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D trenquen el sentit d'ordre i seguretat del pla."
+      ]
+    },
+    {
+      "id": "v3-20-05",
+      "theme": "Annex II - Tema 20",
+      "document": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+      "prompt": "Quina seqüència reflecteix millor l'organitzacio basica en cas d'emergencia?",
+      "options": [
+        "Sortir corrent sense ordre i buscar primer objectes personals.",
+        "Tancar el centre i esperar que l'emergencia passi sola.",
+        "Avisar, activar l'alarma, desconnectar instal·lacions, obrir portes i posar en marxa el pla.",
+        "Deixar que cada aula resolgui el que pugui sense coordinacio comuna."
+      ],
+      "correct": 2,
+      "explanation": "El pla adaptat enumera les tasques imprescindibles i les assigna a perfils concrets.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 20"
+      ],
+      "sourceRefs": [
+        "https://repositori.educacio.gencat.cat/bitstream/handle/20.500.12694/2900/pla_emergencia_centre_docent_adaptat_llars_infants_2003.pdf?isAllowed=y&sequence=1"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B i D proposen desordre; C paralitza la resposta."
+      ]
+    },
+    {
+      "id": "v3-21-01",
+      "theme": "Annex II - Tema 21",
+      "document": "La figura del psicòleg a l'escola bressol. Tasques de prevenció i acompanyament.",
+      "prompt": "Quin paper descriu millor l'EAP en relacio amb una escola bressol?",
+      "options": [
+        "Actua nomes quan ja hi ha un diagnostici tancat.",
+        "Dona suport al centre, al professorat i a les famílies davant la variabilitat i les necessitats educatives.",
+        "Substitueix l'observacio de l'equip quan hi ha una sospita.",
+        "Pren totes les decisions pedagogiques quotidianes."
+      ],
+      "correct": 1,
+      "explanation": "L'EAP dona suport als centres i a les famílies, i no fa de substitut del treball educatiu ordinari.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 21"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/serveis/sez/eap/",
+        "https://xtec.gencat.cat/ca/serveis/sobre-els-serveis-educatius/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D exageren o desplacen la funcio real de suport."
+      ]
+    },
+    {
+      "id": "v3-21-02",
+      "theme": "Annex II - Tema 21",
+      "document": "La figura del psicòleg a l'escola bressol. Tasques de prevenció i acompanyament.",
+      "prompt": "Davant possibles signes d'alerta en un infant, quin primer enfocament es mes coherent?",
+      "options": [
+        "Esperar sense registrar res per no alarmar ningú.",
+        "Externalitzar-ho tot de seguida sense compartir observacions.",
+        "Observar, contrastar amb l'equip, parlar amb la familia i, si cal, demanar orientacio especialitzada.",
+        "No fer res fins que hi hagi un diagnostici formal."
+      ],
+      "correct": 2,
+      "explanation": "Les fonts oficials situen l'observacio i la coordinacio amb la familia i amb els serveis educatius com a primers passos.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 21"
+      ],
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/serveis/sez/eap/",
         "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B i D posen el llisto massa alt; C trenca la coordinacio."
       ]
     },
     {
-      "id": "v2-a2-t21-03",
+      "id": "v3-21-03",
       "theme": "Annex II - Tema 21",
-      "document": "EAP",
-      "prompt": "Quin tipus d'actuacio encaixa millor amb la funcio dels EAP i no amb una intervencio clinicoterapeutica directa?",
+      "document": "La figura del psicòleg a l'escola bressol. Tasques de prevenció i acompanyament.",
+      "prompt": "Quin tipus d'actuacio encaixa millor amb la funcio d'orientacio psicopedagogica i no amb una intervencio clinica directa?",
       "options": [
-        "Identificar necessitats, elaborar informes d'orientacio i treballar en xarxa amb altres serveis educatius i socials",
-        "Fer sessions de teràpia individual setmanal dins l'aula com a substitut del treball de l'equip",
-        "Dictar a l'equip tots els criteris de manera unidireccional i sense contrast",
-        "Assumir les tutories del grup per resoldre de manera directa les dificultats del dia a dia"
+        "Assumir la tutoria del grup per resoldre el dia a dia.",
+        "Dictar criteris unidireccionals a l'equip sense contrast.",
+        "Fer teràpia individual setmanal dins l'aula com a funcio principal.",
+        "Identificar necessitats, elaborar informes i treballar en xarxa amb serveis i centres."
+      ],
+      "correct": 3,
+      "explanation": "L'EAP treballa en xarxa i en assessorament; no substitueix la tasca docent ni fa una funcio clinica directa a l'aula.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 21"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/serveis/sez/eap/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D desplacen la funcio d'assessorament cap a un altre marc."
+      ]
+    },
+    {
+      "id": "v3-21-04",
+      "theme": "Annex II - Tema 21",
+      "document": "La figura del psicòleg a l'escola bressol. Tasques de prevenció i acompanyament.",
+      "prompt": "Quina és la millor manera d'entendre la prevencio en aquest tema?",
+      "options": [
+        "Com una tasca d'acompanyament i orientacio que ajuda el centre a ajustar la resposta educativa.",
+        "Com una espera passiva fins que aparegui un diagnòstic.",
+        "Com una decisio que correspon només a la familia.",
+        "Com una intervencio externa que elimina la necessitat d'observar."
       ],
       "correct": 0,
-      "explanation": "La funcio de l'EAP es d'assessorament, orientacio, avaluacio i coordinacio en xarxa; no substitueix la tasca educativa ordinaria.",
-      "difficulty": "alta",
-      "competence": "Aplicacio a suposit practic",
+      "explanation": "La prevencio en el marc de l'EAP es un suport per ordenar la resposta educativa, no una substitucio ni una passivitat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-21",
-        "A revisar per la senyoreta Pame"
+        "annex ii - tema 21"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D converteixen l'assessorament en una substitucio de la funcio docent o en una jerarquia impropia. ### Tema 22. Observacio i documentacio pedagogica"
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/serveis/sez/eap/",
+        "https://xtec.gencat.cat/ca/serveis/sobre-els-serveis-educatius/"
       ],
-      "version": "v2",
       "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
-        "https://xtec.gencat.cat/ca/serveis/sez/eap/"
+      "optionNotes": [
+        "B, C i D treuen la prevencio del marc compartit escola-familia-serveis."
       ]
     },
     {
-      "id": "v2-a2-t22-01",
+      "id": "v3-22-01",
       "theme": "Annex II - Tema 22",
-      "document": "Currículum 0-3 anys",
+      "document": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
       "prompt": "Quin enunciat descriu millor la diferencia entre observacio i documentacio pedagogica?",
       "options": [
-        "L'observacio dona informacio per millorar l'ensenyament i la documentacio fa visible el treball pedagogic i els processos dels infants",
-        "L'observacio consisteix a registrar fotos de tot el que passa i la documentacio es limita a arxivar-les",
-        "Les dues coses nomes serveixen per comprovar si l'infant compleix un nivell fix",
-        "La documentacio nomes te sentit si no es comparteix amb l'equip ni amb les famílies"
+        "L'observacio dona informacio i la documentacio fa visible el treball pedagogic i els processos.",
+        "La documentacio nomes val si no es comparteix amb ningú.",
+        "L'observacio consisteix a fer fotos de tot i la documentacio a arxivar-les.",
+        "Les dues coses serveixen nomes per classificar infants."
       ],
       "correct": 0,
-      "explanation": "El currículum 0-3 diferencia clarament les dues funcions: observar per obtenir informacio i documentar per fer visible el treball pedagogic i els processos.",
+      "explanation": "El currículum 0-3 separa la funcio de conèixer el que passa i la de fer-ne visible el sentit pedagogic.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-22"
+        "annex ii - tema 22"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B confon registrar amb entendre; C converteix la mirada pedagogica en classificacio; D fa la documentacio inutil per definicio."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+        "B confon registrar amb comprendre; C converteix la mirada en etiqueta; D buida la documentacio de funcio compartida."
       ]
     },
     {
-      "id": "v2-a2-t22-02",
+      "id": "v3-22-02",
       "theme": "Annex II - Tema 22",
-      "document": "Currículum 0-3 anys",
-      "prompt": "Per que el currículum insisteix que l'observacio no es objectiva ni neutral?",
+      "document": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
+      "prompt": "Per que el currículum insisteix que l'observacio no es un registre fidel i complet?",
       "options": [
-        "Perque sempre implica seleccio, interpretacio i valors de la persona que observa",
-        "Perque nomes s'ha de fer amb instruments digitals",
-        "Perque qualsevol observacio feta a l'escola bressol es un registre exacte i complet",
-        "Perque la subjectivitat nomes apareix quan hi ha fotografies"
+        "Perque només s'ha de fer amb eines digitals.",
+        "Perque sempre implica seleccio i interpretacio de qui observa.",
+        "Perque tota observacio es objectiva per definicio.",
+        "Perque la subjectivitat nomes apareix a les fotografies."
       ],
-      "correct": 0,
-      "explanation": "El text assenyala que l'observacio sempre es una interpretacio i esta travessada per expectatives, marc teoric i condicions de qui observa.",
-      "difficulty": "alta",
-      "competence": "Comprensio normativa",
+      "correct": 1,
+      "explanation": "El text explicita que l'observacio es una interpretacio entre moltes possibles, no una copia fidel de la realitat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-22"
+        "annex ii - tema 22"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B associa la qualitat al suport tecnologic; C i D neguen la parcialitat propia de tota mirada pedagògica."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B tecnifica el problema; C i D neguen la subjectivitat inherent."
       ]
     },
     {
-      "id": "v2-a2-t23-01",
-      "theme": "Annex II - Tema 23",
-      "document": "Orientacions curriculars + 0-3 anys i families",
-      "prompt": "Com ha de ser, en essencia, la relacio entre la familia i l'escola bressol?",
+      "id": "v3-22-03",
+      "theme": "Annex II - Tema 22",
+      "document": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
+      "prompt": "Quin material pot formar part de la documentacio pedagogica amb criteri?",
       "options": [
-        "Basada en el respecte mutu, la confiança, la col·laboracio i la corresponsabilitat",
-        "Basada en una supervisio familiar continua de totes les decisions tecnicopedagogiques",
-        "Basada en comunicar només quan hi ha incidencies negatives",
-        "Basada en canals informals, encara que es perdi coherencia i confidencialitat"
+        "Només productes finals.",
+        "Un recull de fotos fetes a l'atzar sense lectura posterior.",
+        "Notes, audios, videos, fotografies i produccions dels infants seleccionades amb sentit.",
+        "Qualsevol imatge sense filtrar."
+      ],
+      "correct": 2,
+      "explanation": "El material ha de ser significatiu i servir per reflexionar, no per acumular indiscriminadament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 22"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D fan soroll; C elimina el procés, que es la part clau."
+      ]
+    },
+    {
+      "id": "v3-22-04",
+      "theme": "Annex II - Tema 22",
+      "document": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
+      "prompt": "Per a que serveix sobretot la documentacio pedagògica en una llar d'infants?",
+      "options": [
+        "Per evitar la reflexio col·lectiva.",
+        "Per tancar qualsevol debat pedagogic.",
+        "Per demostrar que s'han fet moltes activitats.",
+        "Per compartir criteris amb l'equip i amb les famílies i projectar noves propostes."
+      ],
+      "correct": 3,
+      "explanation": "La documentacio ajuda a entendre l'infant, a visibilitzar el projecte i a obrir reflexio compartida.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 22"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
+        "https://xtec.gencat.cat/ca/formacio/formaciogeneralprofessorat/curriculum/lavaluacio-i-la-documentacio-pedagogica-a-leducacio-infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon documentar amb exhibir; C i D neguen la funcio democratica i professional."
+      ]
+    },
+    {
+      "id": "v3-22-05",
+      "theme": "Annex II - Tema 22",
+      "document": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
+      "prompt": "Que s'ha de fer amb la informacio observada abans de convertir-la en decisio educativa?",
+      "options": [
+        "Analitzar-la, contrastar-la amb l'equip i relacionar-la amb la programacio.",
+        "Guardar-la sense comentar-la.",
+        "Fer servir només el record informal de la persona educadora.",
+        "Fer-ne una lectura instantania i definitiva."
       ],
       "correct": 0,
-      "explanation": "Les orientacions curriculars remarquen respecte mutu, confiança, col·laboracio i rols diferenciats entre famílies i equip educatiu.",
+      "explanation": "El curs 0-3 vincula observacio, documentacio, programacio i avaluacio.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-23"
+        "annex ii - tema 22"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B confon corresponsabilitat amb ingerencia; C redueix el vincle a crisi; D sacrifica el criteri professional i la confidencialitat."
+        "B i D fan la informacio inutil; C la tanca massa aviat."
+      ]
+    },
+    {
+      "id": "v3-23-01",
+      "theme": "Annex II - Tema 23",
+      "document": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+      "prompt": "Com ha de ser, en essencia, la relacio entre la familia i la llar d'infants?",
+      "options": [
+        "Basada en comunicar nomes incidencies negatives.",
+        "Basada en supervisio familiar de totes les decisions.",
+        "Basada en canals informals que poden perdre coherència.",
+        "Basada en respecte mutu, confiança, col·laboracio i corresponsabilitat."
       ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf",
+      "correct": 3,
+      "explanation": "El currículum 0-3 remarca la confiança mútua, la professionalitat i la responsabilitat compartida.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 23"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf",
         "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B confon rols; C redueix la comunicacio; D sacrifica la coherència."
       ]
     },
     {
-      "id": "v2-a2-t23-02",
+      "id": "v3-23-02",
       "theme": "Annex II - Tema 23",
-      "document": "Orientacions curriculars",
-      "prompt": "Quina afirmacio es mes coherent amb el dret de les famílies i el paper de l'equip educatiu?",
+      "document": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+      "prompt": "Quin canal es mes propi de la comunicacio quotidiana amb famílies a 0-3?",
       "options": [
-        "La familia te dret d'estar informada del projecte educatiu i de participar-hi, i l'equip educatiu ha de preservar el funcionament del centre i el seu criteri professional",
-        "La familia pot substituir l'equip en totes les decisions per tenir un paper mes proper",
-        "El projecte educatiu nomes s'explica a la direccio i no a les famílies",
-        "La participacio familiar s'ha de limitar a les activitats festives"
+        "Entrades i sortides, entrevistes, reunions i canals escrits o digitals del centre.",
+        "Només els missatges informals en aplicacions personals.",
+        "Només els missatges urgents.",
+        "Només la cartellera."
       ],
       "correct": 0,
-      "explanation": "Les orientacions curriculars diuen clarament que les famílies tenen dret a estar informades i a participar, però també a respectar les línies pedagogiques i el criteri professional.",
+      "explanation": "Les orientacions curriculars enumeren diversos canals bidireccionals i contextuals, no un de sol.",
       "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-23"
+        "annex ii - tema 23"
       ],
+      "sourceRefs": [
+        "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/",
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B desvirtua la funcio professional; C oculta informacio essencial; D redueix la participacio a una dimensio accessoria."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/curriculum/infantil/orientacions-curriculars/Orientacions-curriculars-educacio-infantil_def.pdf"
+        "B i C són reductius; D treu criteri i traçabilitat."
       ]
     },
     {
-      "id": "v2-a2-t23-03",
+      "id": "v3-23-03",
       "theme": "Annex II - Tema 23",
-      "document": "0-3 anys",
-      "prompt": "Una familia demana orientacio professional per acompanyar hàbits i rebequeries. Quina resposta es mes adequada?",
+      "document": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+      "prompt": "Quan una familia demana orientacio sobre hàbits o rebequeries, que es mes adequat?",
       "options": [
-        "Oferir una entrevista amb l'educadora i proposar pautes concretes que es puguin reforçar a casa",
-        "Dir que la familia ha d'esperar a que l'infant sigui mes gran i ho demani sol",
-        "Respondre nomes amb un missatge breu per evitar allargar la conversa",
-        "Remetre automaticament la consulta a un canal informal entre famílies"
+        "Diu-li que esperi a que l'infant ho resolgui sol.",
+        "Proposar entrevista i pautes concretes per a casa i escola.",
+        "Resoldre-ho amb un missatge curt i prou.",
+        "Desviar la consulta a un grup informal de famílies."
       ],
-      "correct": 0,
-      "explanation": "La font de 0-3 anys recomana demanar entrevista quan cal orientacio professional i reforçar a casa els hàbits treballats a l'escola.",
+      "correct": 1,
+      "explanation": "Les fonts de 0-3 indiquen que la relacio amb la familia ha de permetre acordar pautes i donar continuïtat entre contextos.",
       "difficulty": "mitjana",
-      "competence": "Aplicacio a suposit practic",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-23"
+        "annex ii - tema 23"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B posposa la necessitat; C redueix la funcio orientadora; D desplaça una consulta professional a un espai inadequat."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://educacio.gencat.cat/ca/arees-actuacio/families/families-escola/accio-tutorial-compartida/0-3-anys/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C desfan el suport orientador; D no es un canal professional."
       ]
     },
     {
-      "id": "v2-a2-t24-01",
+      "id": "v3-23-04",
+      "theme": "Annex II - Tema 23",
+      "document": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+      "prompt": "Quin criteri fa mes coherent la comunicacio centre-familia?",
+      "options": [
+        "Que la familia rebi menys dades per evitar dubtes.",
+        "Que es faci servir qualsevol canal sempre que sigui rapid.",
+        "Que la informació serveixi per contrastar punts de vista i millorar el desenvolupament de l'infant.",
+        "Que la informació sigui nomes transmissio del centre."
+      ],
+      "correct": 2,
+      "explanation": "El currículum parla d'una relacio de feedback permanent i de canals que permetin anar i tornar.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 23"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i C fan desaparèixer el contrast; D obvia el criteri professional."
+      ]
+    },
+    {
+      "id": "v3-23-05",
+      "theme": "Annex II - Tema 23",
+      "document": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+      "prompt": "Quina idea resumeix millor el paper dels moments d'entrada i sortida?",
+      "options": [
+        "Son el moment per resoldre tots els temes del curs.",
+        "Son un simple tràmit logístic.",
+        "Son una formalitat sense cap funcio educativa.",
+        "Son espais curts pero molt valuosos per compartir informació rellevant i detectar si cal una conversa mes llarga."
+      ],
+      "correct": 3,
+      "explanation": "El text de 0-3 dona un valor clar als contactes diaris com a ocasions per intercanviar informació i cuidar la relacio.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 23"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "B i D els buiden de sentit; C els carrega amb una funcio impossible."
+      ]
+    },
+    {
+      "id": "v3-24-01",
       "theme": "Annex II - Tema 24",
-      "document": "APDCAT + Departament d'Educacio",
-      "prompt": "Abans de publicar una imatge identificable d'un infant en un web o xarxa social del centre, que cal garantir?",
+      "document": "La protecció de dades i el dret d'imatge dels infants.",
+      "prompt": "Abans de publicar una imatge identificable d'un infant en un web o xarxa del centre, que cal garantir?",
       "options": [
-        "Consentiment lliure, especific, informat i separat d'altres finalitats, o la base legitimadora que correspongui",
-        "Una autoritzacio generica inicial que val per a qualsevol us futur",
-        "Només que la imatge sigui bonica o pedagogicament rellevant",
-        "Que la publicacio es faci en un entorn aparentment tancat, encara que no hi hagi informacio prèvia"
+        "Una autoritzacio generica que val per a sempre.",
+        "Que la difusio sigui interna encara que no s'hagi informat ningú.",
+        "Consentiment informat o una altra base legitimadora adequada.",
+        "Que la imatge sigui bonica o pedagogica."
       ],
-      "correct": 0,
-      "explanation": "Les pautes de l'APDCAT insisteixen que la difusio d'imatges en obert requereix consentiment o base legitimadora i que aquest consentiment ha de ser especific i informat.",
+      "correct": 2,
+      "explanation": "APDCAT i Departament d'Educacio indiquen que la publicacio d'imatges en obert requereix consentiment o base legitimadora, amb informacio prèvia.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-24"
+        "annex ii - tema 24"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B reinterpreta una autoritzacio puntual com si fos indefinida; C i D confonen valor pedagogic o canal amb legalitat."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/",
-        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/publicacio",
         "https://educacio.gencat.cat/ca/departament/proteccio-dades/centres-educatius/index.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B converteix el consentiment en indefinit; C confon valor pedagogic amb legalitat; D ignora el deure d'informar."
       ]
     },
     {
-      "id": "v2-a2-t24-02",
+      "id": "v3-24-02",
       "theme": "Annex II - Tema 24",
-      "document": "APDCAT",
+      "document": "La protecció de dades i el dret d'imatge dels infants.",
+      "prompt": "Quan pot difondre's una imatge sense consentiment segons les pautes de l'APDCAT?",
+      "options": [
+        "Sempre que es comparteixi en un grup privat de famílies.",
+        "Sempre que l'activitat sigui educativa.",
+        "Quan la direccio consideri que l'acte ha estat reeixit.",
+        "Quan es capta en un acte o esdeveniment public i la imatge es accessoria i no afecta la intimitat."
+      ],
+      "correct": 3,
+      "explanation": "L'excepcio es molt limitada i exigeix finalitat informativa/divulgativa, accessorietat i respecte a la intimitat.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 24"
+      ],
+      "sourceRefs": [
+        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D son justificacions habituals pero insuficients."
+      ]
+    },
+    {
+      "id": "v3-24-03",
+      "theme": "Annex II - Tema 24",
+      "document": "La protecció de dades i el dret d'imatge dels infants.",
       "prompt": "Quan una fotografia deixa de ser dada personal a efectes de proteccio de dades?",
       "options": [
-        "Quan la persona afectada no es identificable sense esforços desproporcionats",
-        "Quan es comparteix nomes amb altres famílies del centre",
-        "Quan la foto es fa amb un telefon del centre i no amb una camera professional",
-        "Quan es fa servir a l'aula i no en un espai public"
+        "Quan la persona no es identificable sense esforcos desproporcionats.",
+        "Quan es fa servir dins l'aula i no a internet.",
+        "Quan es comparteix nomes amb famílies conegudes.",
+        "Quan s'ha fet amb un telefon del centre."
       ],
       "correct": 0,
-      "explanation": "L'APDCAT indica que si la persona no es identificable sense esforcos desproporcionats, la imatge no es considera dada de caràcter personal.",
+      "explanation": "APDCAT defineix dada personal com informació sobre persona identificada o identificable; si no ho es sense esforços desproporcionats, no hi ha dada personal.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-24"
+        "annex ii - tema 24"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D semblen canvis de context, però no alteren el criteri juridic de base."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
+        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/dades_personals",
         "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "B, C i D canvien el context, però no el criteri juridic."
       ]
     },
     {
-      "id": "v2-a2-t24-03",
+      "id": "v3-24-04",
       "theme": "Annex II - Tema 24",
-      "document": "APDCAT",
-      "prompt": "En quina situacio pot difondre's una imatge sense consentiment, segons les pautes de l'APDCAT?",
+      "document": "La protecció de dades i el dret d'imatge dels infants.",
+      "prompt": "Quin criteri es mes prudent en relacio amb una autoritzacio de difusio d'imatges?",
       "options": [
-        "Quan es capta en un acte o esdeveniment public i la imatge es merament accessoria i no afecta la intimitat",
-        "Sempre que la foto sigui d'una activitat escolar amb bona finalitat",
-        "Sempre que es comparteixi nomes en un grup privat de famílies",
-        "Quan la direccio consideri que l'activitat ha anat molt be"
+        "Assumir que serveix per a qualsevol us futur",
+        "Tractar-la per finalitats concretes i recordar que es pot revocar",
+        "Reutilitzar-la automàticament en qualsevol nova activitat",
+        "Considerar que ja no cal revisar res si es un grup tancat."
       ],
-      "correct": 0,
-      "explanation": "Les pautes indiquen una excepcio limitada per a actes o esdeveniments publics, sempre que la imatge sigui accessoria i no afecti la intimitat.",
-      "difficulty": "alta",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-24"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son justificacions habituals però insuficients; la norma no depen de la bona intencio o del canal intern."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/",
-        "https://apdcat.gencat.cat/ca/sala_de_premsa/notes_premsa/noticia/Pautes-difusio-imatges-menors-escoles"
-      ]
-    },
-    {
-      "id": "v2-a2-t25-01",
-      "theme": "Annex II - Tema 25",
-      "document": "Canal Salut - Alimentacio saludable en la primera infancia",
-      "prompt": "Quina actuacio ha de facilitar una escola bressol pel que fa a la lactancia?",
-      "options": [
-        "Posar mitjans per continuar la lactancia materna, presencialment o amb llet extreta emmagatzemada",
-        "Recomanar que la lactancia es mantingui sempre fora del centre per simplificar l'organitzacio",
-        "Substituir la llet per qualsevol aliment si l'infant ja menja altres coses",
-        "Limitar la lactancia a moments excepcionals per no alterar les rutines"
-      ],
-      "correct": 0,
-      "explanation": "Canal Salut recomana que les escoles bressol facilitin la continuïtat de la lactancia, fins i tot amb llet extreta i emmagatzemada.",
+      "correct": 1,
+      "explanation": "APDCAT assenyala que el consentiment no te una vigencia fixa i que es bona practica informar del dret a revocar-lo.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-25"
+        "annex ii - tema 24"
       ],
+      "sourceRefs": [
+        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i D redueixen un dret i una opcio de cura; C confon alimentacio complementaria amb substitucio de la llet."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+        "B, C i D converteixen una autoritzacio puntual en un permís obert."
       ]
     },
     {
-      "id": "v2-a2-t25-02",
-      "theme": "Annex II - Tema 25",
-      "document": "Canal Salut - Primera infancia",
-      "prompt": "Si l'escola bressol ofereix esmorzar, quin aliment recomana prioritzar el Canal Salut?",
+      "id": "v3-24-05",
+      "theme": "Annex II - Tema 24",
+      "document": "La protecció de dades i el dret d'imatge dels infants.",
+      "prompt": "Quin criteri reflecteix millor la prudencia professional en el tractament de dades d'una escola bressol?",
       "options": [
-        "Fruita fresca",
-        "Pastisseria de consum habitual",
-        "Begudes ensucrades",
-        "Galetes industrials com a opcio central"
+        "Enviar dades sensibles per missatgeria personal per agilitzar respostes.",
+        "Reutilitzar sempre consentiments antics sense revisar finalitat.",
+        "Compartir nomes les dades imprescindibles i usar canals segurs.",
+        "Passar dades a una altra familia per fer de pont."
       ],
-      "correct": 0,
-      "explanation": "La guia oficial indica que, si s'ofereix esmorzar, convé optar per fruita fresca per la seva qualitat nutricional i pel valor d'exploracio sensorial.",
-      "difficulty": "facil-mitjana",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-25"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D son opcions habituals d'esmorzar però nutricionalment menys coherents que la fruita fresca."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
-      ]
-    },
-    {
-      "id": "v2-a2-t25-03",
-      "theme": "Annex II - Tema 25",
-      "document": "Canal Salut - Primera infancia",
-      "prompt": "Quina organitzacio del dinar afavoreix mes l'autonomia dels infants de 0 a 3 anys?",
-      "options": [
-        "Preveure una seqüència tranquil·la: acabar activitat, rentar-se mans, parar taula i repartir o desparar",
-        "Accelerar la transicio per reduir el temps mort al màxim",
-        "Mantenir el mateix ritme per a tot el grup sense mirar necessitats ni fatigues",
-        "Fer participar només els infants mes grans i deixar els petits sempre en observacio passiva"
-      ],
-      "correct": 0,
-      "explanation": "El Canal Salut destaca que la rutina prèvia al dinar pot afavorir autonomia i autocura si es respecten els ritmes de cada criatura.",
+      "correct": 2,
+      "explanation": "El Departament d'Educacio remarca que cal informar, demanar consentiment quan calgui i tractar només les dades imprescindibles amb garantia de drets.",
       "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-25"
+        "annex ii - tema 24"
       ],
+      "sourceRefs": [
+        "https://educacio.gencat.cat/ca/departament/proteccio-dades/centres-educatius/index.html",
+        "https://apdcat.gencat.cat/ca/documentacio/preguntes-frequents/preguntes-per-a-persones-afectades/ambit-educatiu/"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D semblen eficients o protectors però desplacen l'aprenentatge i la participacio de l'infant."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+        "B i C fan servir canals inadequats; D converteix un permís puntual en indefinit."
       ]
     },
     {
-      "id": "v2-a2-t26-01",
+      "id": "v3-a2-t25-01",
+      "theme": "Annex II - Tema 25",
+      "document": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+      "prompt": "Quin criteri recull millor una novetat rellevant de la guia actual per a les escoles bressol?",
+      "options": [
+        "Substituir la llet per aliments complementaris tan aviat com l'infant mengi triturats amb normalitat.",
+        "Facilitar la continuïtat de la lactància materna, garantir llet com a aportació prioritària i oferir aliments nous de manera progressiva.",
+        "Reservar la lactància per a l'àmbit familiar i evitar-la al centre per simplificar l'organització.",
+        "Prioritzar la uniformitat de menús encara que no respectin el calendari d'incorporació d'aliments."
+      ],
+      "correct": 1,
+      "explanation": "Canal Salut indica que les escoles bressol han de facilitar la lactància materna, garantir l'aportació prioritària de llet més enllà dels 6 mesos i oferir la resta d'aliments progressivament.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 25"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t25-02",
+      "theme": "Annex II - Tema 25",
+      "document": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+      "prompt": "Si l'escola bressol ofereix esmorzar, quina opció s'ajusta millor a la guia actual?",
+      "options": [
+        "Galetes industrials, perquè faciliten quantitats homogènies per a tot el grup.",
+        "Pastisseria de consum habitual, perquè és fàcil d'acceptar pels infants.",
+        "Fruita fresca, perquè és saludable i afavoreix experimentació sensorial i manipulació.",
+        "Batuts ensucrats, perquè aporten energia ràpida i eviten rebutjos."
+      ],
+      "correct": 2,
+      "explanation": "La guia indica explícitament que, si s'ofereix esmorzar, convé optar per la fruita fresca.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 25"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t25-03",
+      "theme": "Annex II - Tema 25",
+      "document": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+      "prompt": "Quin berenar s'ajusta millor a les recomanacions actuals per al 0-3?",
+      "options": [
+        "Postres làctiques ensucrades com a opció habitual.",
+        "Brioixeria industrial, perquè és pràctica i molt acceptada.",
+        "Galetes i crema de xocolata per assegurar aportació energètica.",
+        "Pa integral amb tomàquet i oli o fruita fresca, sense sucres afegits."
+      ],
+      "correct": 3,
+      "explanation": "La guia recomana berenars saludables sense sucres afegits ni sal i desaconsella brioixeria, galetes i postres làctiques ensucrades.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 25"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t25-04",
+      "theme": "Annex II - Tema 25",
+      "document": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+      "prompt": "Quin criteri de comunicació amb les famílies és més coherent amb la guia actual?",
+      "options": [
+        "Contextualitzar l'alimentació dins observacions globals sobre les experiències de l'infant a l'escola bressol.",
+        "Evitar qualsevol comentari sobre alimentació perquè és un àmbit exclusivament familiar.",
+        "Lliurar sempre un registre quantitatiu diari d'ingestes per comparar millor els infants.",
+        "Informar només si l'infant s'acaba tot el plat o rebutja completament l'àpat."
+      ],
+      "correct": 0,
+      "explanation": "Canal Salut adverteix que el registre diari d'ingestes pot generar preocupacions i comparacions inadequades i recomana oferir informació dins pautes globals d'observació.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 25"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t25-05",
+      "theme": "Annex II - Tema 25",
+      "document": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+      "prompt": "Quin criteri és correcte a l'hora de dissenyar els menús del 0-3?",
+      "options": [
+        "Repetir un menú molt estable durant setmanes per evitar exposició a nous aliments.",
+        "Ajustar-los al calendari d'incorporació d'aliments, a les freqüències recomanades i a un patró saludable i sostenible.",
+        "Prioritzar productes molt processats perquè faciliten estandardització i conservació.",
+        "Organitzar els àpats sense relació amb la temporada o els productes locals."
+      ],
+      "correct": 1,
+      "explanation": "La guia demana que els menús es dissenyin segons el calendari d'incorporació d'aliments, les freqüències recomanades i un patró saludable i sostenible amb productes locals i de temporada.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 25"
+      ],
+      "sourceRefs": [
+        "https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/saludable/primera-infancia/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t26-01",
       "theme": "Annex II - Tema 26",
-      "document": "XTEC - Coeducacio i perspectiva de genere",
-      "prompt": "Quina definicio s'ajusta millor a la coeducacio segons XTEC?",
+      "document": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+      "prompt": "Quina formulació s'ajusta millor a la definició institucional de coeducació?",
       "options": [
-        "Accio educadora que potencia la igualtat real d'oportunitats i elimina estereotips i actituds discriminatories",
-        "Activitat puntual per commemorar dies concrets del calendari escolar",
-        "Estrategia que nomes serveix per repartir els mateixos joguets a tots els infants",
-        "Criteri que nomes afecta adolescents i no te interès en 0-3 anys"
+        "Acció educadora que potencia la igualtat real d'oportunitats i rebutja estereotips i actituds discriminatòries.",
+        "Proposta pensada sobretot per a etapes postobligatòries, no per al 0-3.",
+        "Activitat puntual orientada a celebrar efemèrides relacionades amb la igualtat.",
+        "Repartiment dels mateixos materials a tothom, encara que mantinguin rols sexistes."
       ],
       "correct": 0,
-      "explanation": "XTEC defineix la coeducacio com una accio educadora per a la igualtat real d'oportunitats i contra estereotips i discriminacions.",
+      "explanation": "XTEC defineix la coeducació com una acció educadora per a la igualtat real d'oportunitats, sense estereotips sexistes, homòfobs, bifòbics, transfòbics o androcèntrics.",
       "difficulty": "mitjana",
-      "competence": "Comprensio normativa",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-26"
+        "annex ii - tema 26"
       ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i C la redueixen a un gest puntual o mecanic; D la treu del primer cicle sense base."
-      ],
-      "version": "v2",
-      "sources": [
+      "sourceRefs": [
         "https://xtec.gencat.cat/ca/alumnat/benestar/coeducacio-i-perspectiva-de-genere/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
       ]
     },
     {
-      "id": "v2-a2-t26-02",
+      "id": "v3-a2-t26-02",
       "theme": "Annex II - Tema 26",
-      "document": "Currículum 0-3 anys",
-      "prompt": "Quin criteri recull millor el currículum del primer cicle sobre gènere i oportunitats?",
+      "document": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+      "prompt": "Com s'ha d'incorporar la coeducació segons l'enfocament actual del currículum?",
       "options": [
-        "Promoure la igualtat d'oportunitats i evitar que patrons sexistes o androcèntrics imposin caracteristiques o aspiracions segons el sexe",
-        "Acceptar que cada sexe necessita propostes fixes i separades per naturalesa",
-        "Donar per fet que les expectatives diferenciades no afecten els primers mesos de vida",
-        "Mantenir rols i estereotips perquè formen part de la tradicio cultural del centre"
+        "Reservant-la per a tallers externs, sense necessitat d'incorporar-la a la vida d'aula.",
+        "Integrant-la en unitats didàctiques, projectes i activitats, i fent-la visible al projecte educatiu i a les programacions.",
+        "Delegant-la només a les famílies perquè és un àmbit de socialització privat.",
+        "Aplicant-la només quan aparegui un conflicte explícit de discriminació."
       ],
-      "correct": 0,
-      "explanation": "El currículum 0-3 diu expressament que els centres han de promoure la igualtat d'oportunitats i evitar imposicions sexistes o androcèntriques.",
-      "difficulty": "mitjana-alta",
-      "competence": "Comprensio normativa",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-26"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i C minimitzen l'efecte dels estereotips; D confon tradicio amb criteri pedagogic."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t26-03",
-      "theme": "Annex II - Tema 26",
-      "document": "Currículum 0-3 anys",
-      "prompt": "En una aula de 0 a 3 anys, quina actuacio encaixa millor amb una mirada coeducadora?",
-      "options": [
-        "Observar els rols de joc des dels primers mesos, interaccionar amb nens i nenes de manera igualitaria i evitar expectatives diferenciades",
-        "Deixar que els estereotips es corregeixin sols amb l'edat",
-        "Reforçar colors, joguets i rols diferents segons sexe per facilitar l'ordenacio del grup",
-        "Reservar la coeducacio per a l'educacio afectivosexual del segon cicle"
-      ],
-      "correct": 0,
-      "explanation": "El currículum destaca que els rols de gènere s'interioritzen des del naixement i que l'equip ha d'interaccionar amb expectativa igualitaria.",
-      "difficulty": "alta",
-      "competence": "Aplicacio a suposit practic",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-26"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B confia en una correccio espontània que la font no pressuposa; C consolida estereotips; D allunya la coeducacio del primer cicle."
-      ],
-      "version": "v2",
-      "sources": [
-        "https://xtec.gencat.cat/web/.content/alfresco/d/d/workspace/SpacesStore/0080/bfd2cd16-10d5-4103-aba2-ee9744b2399d/Curriculum-Infantil-0-3.pdf"
-      ]
-    },
-    {
-      "id": "v2-a2-t27-01",
-      "theme": "Annex II - Tema 27",
-      "document": "Ajuntament de Llica d'Amunt - Nova Espurna i Palaudaries",
-      "prompt": "Quina descripcio s'ajusta millor a les dues escoles bressol municipals de Llica d'Amunt?",
-      "options": [
-        "N'hi ha dues: Palaudaries, amb 6 estances, i Nova Espurna, amb 8 estances, totes dues per a infants de 0 a 3 anys",
-        "N'hi ha tres i totes comparteixen el mateix edifici i el mateix equip directiu",
-        "Son centres de 3 a 6 anys i no tenen una oferta especifica per a 0 a 3",
-        "Son equipaments educatius sense cap relacio amb el servei municipal d'educacio"
-      ],
-      "correct": 0,
-      "explanation": "Les fitxes municipals indiquen clarament que hi ha dues escoles bressol municipals, amb 6 i 8 estances respectivament, destinades a 0-3.",
-      "difficulty": "facil-mitjana",
-      "competence": "Comprensio del context local",
-      "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-27",
-        "A revisar per la senyoreta Pame"
-      ],
-      "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D desdibuixen la realitat organitzativa que la pagina oficial descriu amb precisio."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
-        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html",
-        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html"
-      ]
-    },
-    {
-      "id": "v2-a2-t27-02",
-      "theme": "Annex II - Tema 27",
-      "document": "Ajuntament de Llica d'Amunt - Nova Espurna i Palaudaries",
-      "prompt": "Quin enfocament pedagògic destaca l'Ajuntament en la descripcio de les escoles bressol municipals?",
-      "options": [
-        "Respectar el ritme de creixement de l'infant, adaptar-se a les seves necessitats i oferir un espai de descoberta respectuós",
-        "Prioritzar activitats estandarditzades iguals per a tots els infants per assegurar uniformitat",
-        "Centrar l'oferta en continguts academics avançats abans de l'etapa obligatoria",
-        "Reduir l'educacio a la custodia mentre les famílies no hi son"
-      ],
-      "correct": 0,
-      "explanation": "La descripcio municipal insisteix en el respecte al ritme, les necessitats i un espai de descoberta amb materials pensats per als interessos dels infants.",
+      "correct": 1,
+      "explanation": "XTEC assenyala que la coeducació i la perspectiva de gènere s'han d'incorporar en projectes, activitats d'aula i documents del centre.",
       "difficulty": "mitjana",
-      "competence": "Criteri pedagogic i professional",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-27",
-        "A revisar per la senyoreta Pame"
+        "annex ii - tema 26"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/coeducacio-i-perspectiva-de-genere/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B i C imposen una lògica homogenitzadora; D redueix la funcio educativa a mera custodia."
-      ],
-      "version": "v2",
-      "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
-        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html",
-        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html"
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
       ]
     },
     {
-      "id": "v2-a2-t27-03",
-      "theme": "Annex II - Tema 27",
-      "document": "Ajuntament de Llica d'Amunt - documents de les escoles bressol",
-      "prompt": "Quins documents es poden consultar a la pagina oficial de Nova Espurna segons la fitxa municipal?",
+      "id": "v3-a2-t26-03",
+      "theme": "Annex II - Tema 26",
+      "document": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+      "prompt": "Quin exemple descriu millor una pràctica coeducadora a l'escola bressol?",
       "options": [
-        "Projecte educatiu, projecte lingüístic, NOFC, pla d'emergencia i procés d'acolliment",
-        "Només un calendari d'activitats i una galeria de fotos",
-        "Exclusivament els preus del servei i cap document pedagògic",
-        "Un únic reglament intern sense cap altre annex"
+        "Mantenir materials estereotipats si són els que més ràpidament identifiquen les famílies.",
+        "Evitar intervenir en rols de joc perquè en 0-3 encara no tenen impacte social.",
+        "Revisar contes, llenguatge, joguines i racons per ampliar referents i evitar rols de gènere rígids.",
+        "Separar propostes de joc segons el sexe per adaptar-se a interessos suposadament naturals."
+      ],
+      "correct": 2,
+      "explanation": "En el 0-3 la coeducació es concreta en decisions quotidianes sobre materials, llenguatge, rols i expectatives.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 26"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/coeducacio-i-perspectiva-de-genere/",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t26-04",
+      "theme": "Annex II - Tema 26",
+      "document": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+      "prompt": "Amb quin principi general del currículum connecta més clarament la coeducació a l'etapa infantil?",
+      "options": [
+        "Prioritzar el control disciplinari per sobre dels processos de convivència.",
+        "Avançar continguts acadèmics abans d'assegurar experiències de relació i benestar.",
+        "Uniformitzar les propostes per evitar diferències entre infants.",
+        "Garantir la igualtat d'oportunitats de tots i cadascun dels infants en un ambient de benestar, relació i aprenentatge."
+      ],
+      "correct": 3,
+      "explanation": "El currículum d'educació infantil situa la igualtat d'oportunitats dins la finalitat de l'etapa; la coeducació hi dona forma concreta.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 26"
+      ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t26-05",
+      "theme": "Annex II - Tema 26",
+      "document": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+      "prompt": "Una educadora diu que a l'aula no cal revisar els estereotips perquè tracta tots els infants \"igual\". Quina valoració és més ajustada?",
+      "options": [
+        "És insuficient, perquè la coeducació no consisteix només a declarar neutralitat, sinó a revisar entorns, llenguatge i expectatives.",
+        "És adequat si les famílies no han expressat cap queixa sobre el tema.",
+        "És correcte, perquè tractar tothom igual elimina automàticament els biaixos de gènere.",
+        "És preferible no revisar res fins al segon cicle d'infantil."
       ],
       "correct": 0,
-      "explanation": "La pagina municipal enumera els documents principals vinculats a l'organitzacio i la vida educativa de les escoles bressol.",
-      "difficulty": "mitjana-alta",
-      "competence": "Comprensio del context local",
+      "explanation": "La coeducació demana intencionalitat pedagògica i revisió activa; la neutralitat declarada no garanteix absència d'estereotips.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
       "tags": [
-        "v2",
-        "annex-i",
-        "annex-ii",
-        "tema-27",
-        "A revisar per la senyoreta Pame"
+        "annex ii - tema 26"
       ],
+      "sourceRefs": [
+        "https://xtec.gencat.cat/ca/alumnat/benestar/coeducacio-i-perspectiva-de-genere/",
+        "https://xtec.gencat.cat/ca/curriculum/infantil/"
+      ],
+      "reviewLabel": null,
       "optionNotes": [
-        "Resposta correcta segons la font indicada.",
-        "B, C i D simplifiquen en excés una pagina que visibilitza documents pedagògics i d'organitzacio rellevants."
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t27-01",
+      "theme": "Annex II - Tema 27",
+      "document": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+      "prompt": "Quina descripció s'ajusta millor a les escoles bressol municipals de Lliçà d'Amunt segons les fitxes municipals actuals?",
+      "options": [
+        "Es tracta de serveis de custòdia sense projecte educatiu propi.",
+        "Hi ha una única escola bressol municipal amb dues seccions administratives però un sol edifici.",
+        "Són centres pensats principalment per al segon cicle d'infantil.",
+        "Hi ha dues escoles bressol municipals: Palaudàries, al barri de Palaudàries, i Nova Espurna, al centre urbà, per a infants de 0 a 3 anys."
       ],
-      "version": "v2",
+      "correct": 3,
+      "explanation": "Les pàgines municipals indiquen explícitament que a Lliçà d'Amunt hi ha dues escoles bressol municipals, una a Palaudàries i una al centre urbà.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 27"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
       "reviewLabel": "A revisar per la senyoreta Pame",
-      "sources": [
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t27-02",
+      "theme": "Annex II - Tema 27",
+      "document": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+      "prompt": "Quin enunciat és correcte sobre la capacitat organitzativa descrita a les fitxes municipals?",
+      "options": [
+        "Palaudàries disposa de 6 estances i Nova Espurna de 8, totes per a l'educació d'infants de 0 a 3 anys.",
+        "El nombre d'estances no s'associa a cap oferta educativa concreta.",
+        "Les dues escoles tenen exactament 8 estances i només una part es destina al 0-3.",
+        "Nova Espurna té 6 estances i Palaudàries 8."
+      ],
+      "correct": 0,
+      "explanation": "Les dues pàgines municipals coincideixen en la descripció de 6 estances per a Palaudàries i 8 per a Nova Espurna.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 27"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t27-03",
+      "theme": "Annex II - Tema 27",
+      "document": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+      "prompt": "Quin enfocament pedagògic destaca l'Ajuntament en la presentació de les seves escoles bressol municipals?",
+      "options": [
+        "Prioritzar resultats acadèmics previs a l'etapa obligatòria.",
+        "Afavorir el desenvolupament de l'infant respectant el seu ritme de creixement i adaptant-se a les seves necessitats.",
+        "Uniformitzar propostes per assegurar que tots els infants avancin al mateix ritme.",
+        "Reduir la funció del centre a la vigilància mentre les famílies treballen."
+      ],
+      "correct": 1,
+      "explanation": "Les fitxes municipals remarquen explícitament el respecte al ritme de creixement i l'adaptació a les necessitats de cada infant.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 27"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html",
         "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t27-04",
+      "theme": "Annex II - Tema 27",
+      "document": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+      "prompt": "Com es presenten els moments de cura a la descripció pedagògica municipal?",
+      "options": [
+        "Com pauses assistencials sense rellevància dins el projecte educatiu.",
+        "Com espais que s'han d'accelerar per deixar més temps a activitats dirigides.",
+        "Com estones educatives treballades per crear un moment acollidor, íntim i tranquil.",
+        "Com responsabilitat exclusiva de cuina i suport, separada de l'acció educativa."
+      ],
+      "correct": 2,
+      "explanation": "La fitxa de Palaudàries explicita que els moments de menjar, dormir i canvi de bolquer són estones educatives pensades i treballades.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 27"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
+      ]
+    },
+    {
+      "id": "v3-a2-t27-05",
+      "theme": "Annex II - Tema 27",
+      "document": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+      "prompt": "Quina combinació d'elements forma part de la informació pública actual de les escoles bressol municipals?",
+      "options": [
+        "Només informació administrativa mínima, sense cap referència a l'acolliment d'infants i famílies.",
+        "Absència de documentació pedagògica pública per protegir l'autonomia del centre.",
+        "Servei de menjador externalitzat sense relació amb el projecte educatiu.",
+        "Servei de menjador amb àpats cuinats al centre i documents com projecte educatiu, NOFC i procés d'acolliment."
+      ],
+      "correct": 3,
+      "explanation": "Les pàgines municipals indiquen servei de menjador amb productes de proximitat i cuina al centre, i enllacen documents com el projecte educatiu 2026, les NOFC i el procés d'acolliment 2026-27.",
+      "difficulty": "mitjana",
+      "competence": "Aplicació del temari",
+      "tags": [
+        "annex ii - tema 27"
+      ],
+      "sourceRefs": [
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-nova-espurna.html",
+        "https://www.llicamunt.cat/el-municipi/equipaments/escola-bressol-municipal-palaudaries.html"
+      ],
+      "reviewLabel": "A revisar per la senyoreta Pame",
+      "optionNotes": [
+        "Distractors plausibles del mateix bloc conceptual, però incompatibles amb el criteri del temari."
       ]
     }
   ],
@@ -4634,8 +4562,8 @@ window.EXAM_DATA = {
       "options": [
         "Fer una familiaritzacio progressiva, acollir l'emocio i coordinar pautes amb la familia.",
         "Mantenir una pauta igual per a tots els infants per evitar diferències entre famílies.",
-        "Reduir la presència familiar des del primer dia perquè l'infant aprengui abans la separació.",
-        "Evitar parlar del plor davant la família per no reforçar la seva angoixa."
+        "Evitar parlar del plor davant la família per no reforçar la seva angoixa.",
+        "Reduir la presència familiar des del primer dia perquè l'infant aprengui abans la separació."
       ],
       "correct": 0,
       "explanation": "La familiaritzacio ha de facilitar una adaptacio segura i compartida entre infant, familia i escola. Font: Annex II, tema 16.",
@@ -4648,8 +4576,8 @@ window.EXAM_DATA = {
       "optionNotes": [
         "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet."
       ]
     },
     {
@@ -4658,12 +4586,12 @@ window.EXAM_DATA = {
       "document": "Infant NESE i signes d'alerta",
       "prompt": "L'equip observa que un infant no respon gaire al nom i evita la mirada en moltes situacions. Que cal fer primer?",
       "options": [
-        "Registrar observacions, contrastar-les amb l'equip i preparar una comunicacio respectuosa amb la familia.",
         "Esperar un informe extern abans de compartir cap observació amb l'equip.",
+        "Registrar observacions, contrastar-les amb l'equip i preparar una comunicacio respectuosa amb la familia.",
         "Interpretar-ho com una etapa normal i no registrar-ho fins que sigui persistent tot el curs.",
         "Preparar una resposta individual fora del grup per evitar que la situació afecti la dinàmica d'aula."
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Els signes d'alerta requereixen observacio, documentacio, coordinacio i acompanyament, no diagnosi precipitada des de l'aula. Font: Annex II, tema 8.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4671,8 +4599,8 @@ window.EXAM_DATA = {
         "ii - tema 8"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
         "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
       ]
@@ -4683,12 +4611,12 @@ window.EXAM_DATA = {
       "document": "Joc lliure",
       "prompt": "Al pati, diversos infants manipulen sorra, fulles i recipients. Quin paper ha de tenir l'educadora?",
       "options": [
-        "Observar, garantir seguretat, enriquir l'entorn si cal i intervenir sense anul-lar la iniciativa.",
-        "Convertir la descoberta en una consigna comuna perquè tots practiquin el mateix ús dels materials.",
         "Retirar part dels materials oberts si el joc no genera un producte visible.",
-        "Intervenir cada vegada que apareix una hipòtesi d'ús no prevista per l'adult."
+        "Intervenir cada vegada que apareix una hipòtesi d'ús no prevista per l'adult.",
+        "Observar, garantir seguretat, enriquir l'entorn si cal i intervenir sense anul-lar la iniciativa.",
+        "Convertir la descoberta en una consigna comuna perquè tots practiquin el mateix ús dels materials."
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "El joc lliure i l'experimentacio necessiten entorns preparats, observacio i intervencio ajustada. Font: Annex II, tema 11.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4697,10 +4625,10 @@ window.EXAM_DATA = {
         "joc"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
+        "Resposta correcta segons el temari i la font indicada.",
+        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual."
       ]
     },
     {
@@ -4709,12 +4637,12 @@ window.EXAM_DATA = {
       "document": "Dret d'imatge",
       "prompt": "El centre vol publicar una fotografia del grup a una xarxa municipal. Que cal comprovar?",
       "options": [
-        "Autoritzacions o base legitima, finalitat, canal de difusio i infants que no poden aparèixer.",
-        "Publicar-la si l'activitat és municipal i la imatge té finalitat educativa.",
+        "Evitar sempre publicar cap imatge, encara que hi hagi consentiment i finalitat informada.",
         "Compartir-la només amb famílies del grup, perquè així no cal revisar autoritzacions.",
-        "Evitar sempre publicar cap imatge, encara que hi hagi consentiment i finalitat informada."
+        "Publicar-la si l'activitat és municipal i la imatge té finalitat educativa.",
+        "Autoritzacions o base legitima, finalitat, canal de difusio i infants que no poden aparèixer."
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "La proteccio de dades i el dret d'imatge exigeixen base legitima, informacio i respecte a la finalitat. Font: Annex II, tema 24.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4723,10 +4651,10 @@ window.EXAM_DATA = {
         "imatge"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada."
       ]
     },
     {
@@ -4736,9 +4664,9 @@ window.EXAM_DATA = {
       "prompt": "Una familia demana iniciar el control d'esfinters tot i que l'infant no mostra signes de preparacio. Quina resposta es millor?",
       "options": [
         "Explicar criteris de maduracio, acordar observacio compartida i evitar pressions.",
+        "Ajornar qualsevol conversa fins que l'infant verbalitzi clarament que ho vol intentar.",
         "Acceptar la demanda familiar i iniciar una rutina fixa per garantir coherència casa-escola.",
-        "Proposar seure al lavabo en moments programats perquè la repetició crea maduració.",
-        "Ajornar qualsevol conversa fins que l'infant verbalitzi clarament que ho vol intentar."
+        "Proposar seure al lavabo en moments programats perquè la repetició crea maduració."
       ],
       "correct": 0,
       "explanation": "El proces ha de respectar la maduracio de l'infant i coordinar escola i familia. Font: Annex II, tema 10.",
@@ -4750,9 +4678,9 @@ window.EXAM_DATA = {
       ],
       "optionNotes": [
         "Resposta correcta segons el temari i la font indicada.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet."
       ]
     },
     {
@@ -4761,12 +4689,12 @@ window.EXAM_DATA = {
       "document": "Alimentacio",
       "prompt": "En el moment de dinar, un infant rebutja un aliment nou. Quina intervencio es mes educativa?",
       "options": [
+        "Retirar l'aliment unes setmanes per evitar rebuig i tornar-ho a provar només si la família ho demana.",
         "Oferir-lo sense pressio, respectar senyals de gana i sacietat i mantenir una experiencia positiva.",
         "Insistir amb petites quantitats fins que l'infant s'acostumi al gust.",
-        "Retirar l'aliment unes setmanes per evitar rebuig i tornar-ho a provar només si la família ho demana.",
         "Marcar una quantitat mínima igual per a tots perquè la pauta sigui clara i justa."
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "L'alimentacio ha de ser una experiencia de benestar, autonomia i cura, no de pressio. Font: Annex II, temes 9 i 25.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4775,9 +4703,9 @@ window.EXAM_DATA = {
         "aliment"
       ],
       "optionNotes": [
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
         "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
         "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
       ]
     },
@@ -4787,12 +4715,12 @@ window.EXAM_DATA = {
       "document": "Accidents",
       "prompt": "Un infant cau i es fa una petita ferida. Quina sequencia es mes correcta?",
       "options": [
-        "Atendre'l, aplicar el protocol de primeres cures, registrar la incidencia i informar la familia segons el procediment.",
         "Informar primer la família i decidir després si cal registrar la incidència.",
-        "Registrar només accidents greus perquè els lleus formen part de la vida quotidiana.",
-        "Aplicar el criteri personal de l'educadora si el protocol no és conegut per tot l'equip."
+        "Aplicar el criteri personal de l'educadora si el protocol no és conegut per tot l'equip.",
+        "Atendre'l, aplicar el protocol de primeres cures, registrar la incidencia i informar la familia segons el procediment.",
+        "Registrar només accidents greus perquè els lleus formen part de la vida quotidiana."
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Davant accidents cal seguir protocols, preservar dades i comunicar correctament. Font: Annex II, tema 18.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4800,10 +4728,10 @@ window.EXAM_DATA = {
         "ii - tema 18"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
+        "Resposta correcta segons el temari i la font indicada.",
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet."
       ]
     },
     {
@@ -4812,12 +4740,12 @@ window.EXAM_DATA = {
       "document": "Evacuacio",
       "prompt": "En un simulacre d'evacuacio, que ha de prioritzar l'equip amb infants de zero a tres anys?",
       "options": [
-        "Sortida ordenada, recompte, calma, suports adequats i seguiment del pla establert.",
-        "Esperar que cada infant sigui recollit per la seva tutora de referència abans de sortir.",
+        "Sortir per grups espontanis segons qui estigui més a prop de la porta.",
         "Prioritzar endur-se documentació i medicacions, encara que retardi la sortida.",
-        "Sortir per grups espontanis segons qui estigui més a prop de la porta."
+        "Esperar que cada infant sigui recollit per la seva tutora de referència abans de sortir.",
+        "Sortida ordenada, recompte, calma, suports adequats i seguiment del pla establert."
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "El pla d'evacuacio fixa pautes per evacuar amb seguretat infants petits. Font: Annex II, tema 20.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4826,10 +4754,10 @@ window.EXAM_DATA = {
         "evacuacio"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada."
       ]
     },
     {
@@ -4839,9 +4767,9 @@ window.EXAM_DATA = {
       "prompt": "Vols preparar una proposta per afavorir joc espontani. Quin criteri tries?",
       "options": [
         "Materials oberts, accessibles, segurs i temps suficient per explorar.",
+        "Canviar la proposta sovint per mantenir l'atenció encara que es talli l'exploració.",
         "Triar materials estructurats perquè permeten comprovar millor si l'objectiu s'ha assolit.",
-        "Preparar molts materials diferents encara que quedin fora de l'abast per generar interès visual.",
-        "Canviar la proposta sovint per mantenir l'atenció encara que es talli l'exploració."
+        "Preparar molts materials diferents encara que quedin fora de l'abast per generar interès visual."
       ],
       "correct": 0,
       "explanation": "Els espais, temps i materials han de facilitar joc lliure, autonomia i exploracio. Font: Annex II, tema 13.",
@@ -4854,9 +4782,9 @@ window.EXAM_DATA = {
       ],
       "optionNotes": [
         "Resposta correcta segons el temari i la font indicada.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet."
       ]
     },
     {
@@ -4865,12 +4793,12 @@ window.EXAM_DATA = {
       "document": "Observacio",
       "prompt": "Despres d'una sessio de joc, que converteix l'observacio en documentacio pedagogica util?",
       "options": [
-        "Seleccionar evidencies significatives, interpretar-les en equip i vincular-les a decisions educatives.",
         "Guardar totes les imatges de la sessió perquè després l'equip pugui triar sense perdre informació.",
         "Descriure només conductes finals per evitar interpretacions subjectives.",
+        "Seleccionar evidencies significatives, interpretar-les en equip i vincular-les a decisions educatives.",
         "Compartir la documentació amb famílies abans de fer-ne lectura pedagògica en equip."
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "La documentacio ha d'ajudar a comprendre processos i orientar l'acompanyament. Font: Annex II, tema 22.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4879,9 +4807,9 @@ window.EXAM_DATA = {
         "joc"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
+        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
       ]
     },
@@ -4891,12 +4819,12 @@ window.EXAM_DATA = {
       "document": "Proteccio de dades",
       "prompt": "Una educadora vol enviar per missatgeria personal dades de salut d'un infant. Quina valoracio es correcta?",
       "options": [
-        "No es adequat si no es fa per canal autoritzat, amb base legitima i confidencialitat.",
-        "És adequat si la informació és urgent i el missatge només s'envia a una persona de confiança.",
+        "És acceptable quan la finalitat és protegir la salut de l'infant, encara que el canal no sigui autoritzat.",
         "És correcte si després s'elimina la conversa del dispositiu personal.",
-        "És acceptable quan la finalitat és protegir la salut de l'infant, encara que el canal no sigui autoritzat."
+        "És adequat si la informació és urgent i el missatge només s'envia a una persona de confiança.",
+        "No es adequat si no es fa per canal autoritzat, amb base legitima i confidencialitat."
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Les dades de salut son especialment sensibles i exigeixen mesures de proteccio i finalitat clara. Font: Annex I, tema 11.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4905,10 +4833,10 @@ window.EXAM_DATA = {
         "dades"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada."
       ]
     },
     {
@@ -4918,9 +4846,9 @@ window.EXAM_DATA = {
       "prompt": "Per facilitar la participacio d'un infant amb necessitat de suport, quin plantejament s'ajusta al Decret 150/2017?",
       "options": [
         "Aplicar mesures universals i, si cal, addicionals o intensives dins un marc inclusiu.",
+        "Organitzar una activitat separada fins que l'infant pugui seguir el ritme del grup.",
         "Aplicar directament mesures intensives perquè la necessitat de suport ja indica alta intensitat.",
-        "Esperar que la família aporti un informe abans de modificar la proposta.",
-        "Organitzar una activitat separada fins que l'infant pugui seguir el ritme del grup."
+        "Esperar que la família aporti un informe abans de modificar la proposta."
       ],
       "correct": 0,
       "explanation": "El sistema inclusiu ordena mesures i suports universals, addicionals i intensius. Font: Annex II, tema 3.",
@@ -4932,9 +4860,9 @@ window.EXAM_DATA = {
       ],
       "optionNotes": [
         "Resposta correcta segons el temari i la font indicada.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
-        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: sembla raonable si es prioritza un criteri incomplet."
       ]
     },
     {
@@ -4943,12 +4871,12 @@ window.EXAM_DATA = {
       "document": "Prevencio de riscos laborals",
       "prompt": "L'aula te joguines al pas i una sortida parcialment bloquejada. Que ha de fer l'equip?",
       "options": [
-        "Ordenar l'espai, retirar obstacles i mantenir lliures les vies de pas i evacuacio.",
         "Mantenir l'espai si l'equip sap esquivar els obstacles durant la jornada.",
+        "Ordenar l'espai, retirar obstacles i mantenir lliures les vies de pas i evacuacio.",
         "Revisar-ho només abans dels simulacres perquè és quan la sortida s'utilitza com a evacuació.",
         "Deixar el material a prop de la porta si facilita l'activitat prevista del dia."
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "La prevencio de riscos exigeix anticipar situacions de perill i mantenir espais segurs. Font: Annex I, tema 12 i Annex II, tema 20.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4956,8 +4884,8 @@ window.EXAM_DATA = {
         "i - tema 12"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
         "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
       ]
@@ -4968,12 +4896,12 @@ window.EXAM_DATA = {
       "document": "Coeducacio",
       "prompt": "En revisar els contes i materials, quin criteri aplica una mirada coeducadora?",
       "options": [
-        "Incloure referents diversos i evitar estereotips de genere en rols, colors i activitats.",
         "Mantenir alguns materials estereotipats perquè responen als interessos que ja expressen els infants.",
         "Treballar la igualtat només en contes específics per no interferir en el joc espontani.",
+        "Incloure referents diversos i evitar estereotips de genere en rols, colors i activitats.",
         "Evitar revisar els rols de joc a zero-tres perquè encara no tenen intencionalitat social."
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "La coeducacio revisa materials i propostes per garantir igualtat i no-discriminacio. Font: Annex II, tema 26.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -4982,9 +4910,9 @@ window.EXAM_DATA = {
         "coeducacio"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
+        "Resposta correcta segons el temari i la font indicada.",
         "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
       ]
     },
@@ -4994,12 +4922,12 @@ window.EXAM_DATA = {
       "document": "Treball en equip",
       "prompt": "L'equip detecta criteris diferents sobre el moment del descans. Quina decisio professional es mes adequada?",
       "options": [
-        "Posar-ho en comu, revisar el projecte i acordar criteris compartits respectant ritmes dels infants.",
-        "Aplicar un mateix horari de descans per a tot el grup perquè facilita l'organització.",
+        "Demanar a les famílies que decideixin el criteri principal per evitar conflictes d'equip.",
         "Permetre que cada educadora mantingui el seu criteri si l'infant acaba descansant.",
-        "Demanar a les famílies que decideixin el criteri principal per evitar conflictes d'equip."
+        "Aplicar un mateix horari de descans per a tot el grup perquè facilita l'organització.",
+        "Posar-ho en comu, revisar el projecte i acordar criteris compartits respectant ritmes dels infants."
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "La persona educadora forma part d'un equip i la formacio/revisio professional transforma el projecte educatiu. Font: Annex II, tema 17.",
       "difficulty": "alta",
       "competence": "Aplicació a supòsit pràctic",
@@ -5007,10 +4935,10 @@ window.EXAM_DATA = {
         "ii - tema 17"
       ],
       "optionNotes": [
-        "Resposta correcta segons el temari i la font indicada.",
-        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional.",
         "Distractor plausible: sembla raonable si es prioritza un criteri incomplet.",
-        "Distractor plausible: introdueix un matís contrari al currículum, la normativa o el criteri professional."
+        "Distractor plausible: recull una confusió habitual del mateix àmbit conceptual.",
+        "Resposta correcta segons el temari i la font indicada."
       ]
     }
   ]

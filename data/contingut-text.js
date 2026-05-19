@@ -1,922 +1,905 @@
 window.STUDY_TEXT = [
   {
-    annex: "Annex I",
-    theme: "Tema 1",
-    title: "Constitució espanyola",
-    reviewLabel: null,
-    summary: "La Constitució de 1978 és la norma suprema de l'ordenament jurídic i vincula poders públics i ciutadania. En aquest tema convé retenir la seva funció general, els valors superiors i el paper que té dins l'Estat social i democràtic de dret.",
-    keyConcepts: [
-      "Norma suprema de l'ordenament jurídic",
-      "Estat social i democràtic de dret",
-      "Valors superiors: llibertat, justícia, igualtat i pluralisme polític",
-      "Subjecció dels poders públics a la Constitució"
+    "annex": "Annex I",
+    "theme": "Tema 1",
+    "title": "La Constitució Espanyola de 1978. Estructura i principis generals.",
+    "reviewLabel": null,
+    "summary": "la v3 hauria de presentar la Constitucio com a text base, amb la seva estructura formal, el sentit de l'Estat social i democratic de dret, els valors superiors i la subjeccio de tothom a la Constitucio. El banc ha de poder preguntar tant el marc general com microdetalls dels articles 1 i 9.",
+    "keyConcepts": [
+      "estructura de la Constitucio, paper de la norma suprema, estat social i democratic de dret, valors superiors, subjeccio a la Constitucio i principi de l'article 9.3.",
+      "la v3 hauria de presentar la Constitucio com a text base, amb la seva estructura formal, el sentit de l'Estat social i democratic de dret, els valors superiors i la subjeccio de tothom a la Constitucio",
+      "El banc ha de poder preguntar tant el marc general com microdetalls dels articles 1 i 9."
     ],
-    commonMistakes: [
-      "Confondre la Constitució amb una llei ordinària reforçada",
-      "Pensar que només afecta drets i no l'organització territorial o institucional",
-      "Oblidar que vincula directament tots els poders públics"
+    "commonMistakes": [
+      "les preguntes existents ja toquen norma suprema i valors de l'article 1.1, pero encara son molt \"de manual\"",
+      "Falta treballar estructura, articles basics i distingir valors, principis i forma politica sense repetir sempre la mateixa definicio.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza què defineix la Constitució i per què és la norma superior",
-      "Repasa els valors de l'article 1.1 sense barrejar-los amb altres principis jurídics",
-      "Fes preguntes tipus test distingint valors constitucionals, principis administratius i organització territorial"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 2",
-    title: "Drets fonamentals",
-    reviewLabel: null,
-    summary: "Aquest tema se centra en els drets fonamentals i en les seves garanties. És important entendre la igualtat davant la llei, la prohibició de discriminació i els mecanismes de tutela davant vulneracions.",
-    keyConcepts: [
-      "Drets fonamentals i llibertats públiques",
-      "Article 14 i principi d'igualtat",
-      "Prohibició de discriminació",
-      "Tutela judicial i recurs d'empara"
+    "annex": "Annex I",
+    "theme": "Tema 2",
+    "title": "Drets i deures fonamentals dels espanyols. Garanties constitucionals.",
+    "reviewLabel": null,
+    "summary": "la v3 hauria de treballar la seccio de drets fonamentals com un bloc de proteccio reforcada, amb exemples de discriminacio, participacio politica, tutela judicial efectiva i separacio entre drets fonamentals, drets dels ciutadans i principis rectors.",
+    "keyConcepts": [
+      "drets fonamentals, drets i deures dels ciutadans, garanties constitucionals, tutela judicial, recurs d'empara i igualtat davant la llei.",
+      "la v3 hauria de treballar la seccio de drets fonamentals com un bloc de proteccio reforcada, amb exemples de discriminacio, participacio politica, tutela judicial efectiva i separacio entre drets fonamentals, drets dels ciutadans i principis rectors."
     ],
-    commonMistakes: [
-      "Reduir la igualtat a tractar tothom exactament igual en qualsevol situació",
-      "Pensar que la protecció depèn només de l'administració que ha actuat",
-      "Limitar els drets fonamentals a àmbits concrets i no al conjunt de l'acció pública"
+    "commonMistakes": [
+      "les preguntes actuals insisteixen en igualtat i empara, que ja estan be, pero encara no exploten prou altres drets del bloc constitucional ni les garanties concretes de l'article 24 i els principis del Titol I.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Relaciona cada dret amb la seva garantia bàsica",
-      "Diferencia igualtat formal, no-discriminació i tutela judicial",
-      "Practica casos on hagis d'identificar si hi ha discriminació o vulneració d'un dret"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 3",
-    title: "Estatut d'autonomia de Catalunya",
-    reviewLabel: null,
-    summary: "L'Estatut és la norma institucional bàsica de Catalunya. Cal conèixer la seva funció, el seu contingut essencial i la manera com articula institucions, drets, deures i competències.",
-    keyConcepts: [
-      "Norma institucional bàsica",
-      "Institucions de Catalunya",
-      "Drets, deures i principis rectors",
-      "Competències i organització territorial"
+    "annex": "Annex I",
+    "theme": "Tema 3",
+    "title": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de fer visibles els grans blocs de l'Estatut: estructura interna, contingut essencial, relacio amb la Generalitat i marc competencial. Cal evitar preguntes massa abstractes i fer-ne de mes fines sobre quina institucio fa cada funcio.",
+    "keyConcepts": [
+      "estructura de l'Estatut, contingut essencial, drets i deures, institucions de la Generalitat, competencies i principis d'autogovern.",
+      "la v3 ha de fer visibles els grans blocs de l'Estatut: estructura interna, contingut essencial, relacio amb la Generalitat i marc competencial",
+      "Cal evitar preguntes massa abstractes i fer-ne de mes fines sobre quina institucio fa cada funcio."
     ],
-    commonMistakes: [
-      "Pensar que l'Estatut només regula símbols o denominacions",
-      "Tractar-lo com si fos un simple reglament executiu",
-      "Separar-ne l'organització institucional del règim competencial"
+    "commonMistakes": [
+      "el banc actual esta encertat en dir que l'Estatut es la norma institucional basica, pero li falta aterrissar en institucions concretes i en el nucli d'estructura, contingut i principis fonamentals que demana el temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Resumeix en una fitxa què és l'Estatut i què no és",
-      "Repasa els seus grans blocs: institucions, drets i competències",
-      "Compara'l amb la Constitució per entendre rang i funció"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 4",
-    title: "Administració local",
-    reviewLabel: null,
-    summary: "El tema presenta el marc general de l'administració local i les entitats que la integren. El més útil és retenir el paper dels ens locals i la idea que gestionen interessos propis de la comunitat.",
-    keyConcepts: [
-      "Ens locals",
-      "Municipi, província i altres entitats locals",
-      "Personalitat jurídica pròpia",
-      "Gestió d'interessos locals"
+    "annex": "Annex I",
+    "theme": "Tema 4",
+    "title": "L'Administració local. Ens que la integren.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de posar el focus en que l'administracio local no es nomes l'ajuntament. Cal incorporar la idea d'ens locals amb personalitat juridica propia, la seva autonomia i els principis d'actuacio que els vinculen al Dret.",
+    "keyConcepts": [
+      "concepte d'administracio local, ens locals, personalitat juridica, autonomia i criteris generals d'actuacio.",
+      "la v3 ha de posar el focus en que l'administracio local no es nomes l'ajuntament",
+      "Cal incorporar la idea d'ens locals amb personalitat juridica propia, la seva autonomia i els principis d'actuacio que els vinculen al Dret."
     ],
-    commonMistakes: [
-      "Identificar administració local només amb l'ajuntament",
-      "Pensar que no té personalitat jurídica pròpia",
-      "Confondre serveis públics locals amb òrgans educatius o sectorials aliens"
+    "commonMistakes": [
+      "la pregunta existent es queda en \"municipis, províncies i altres entitats\", que esta be com a base, pero no fa treballar la funcio ni el marc general de la LBRL amb prou precisio.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Fes un esquema de quines entitats formen l'administració local",
-      "Relaciona cada ens amb la idea de competència o interès local",
-      "Repassa vocabulari bàsic: ens local, personalitat jurídica i autonomia local"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 5",
-    title: "Organització municipal",
-    reviewLabel: null,
-    summary: "Aquest tema treballa els òrgans bàsics de govern municipal i la seva designació política. Convé tenir clars l'alcaldia, el ple i, quan escau, la junta de govern local.",
-    keyConcepts: [
-      "Alcaldia",
-      "Ple municipal",
-      "Junta de govern local",
-      "Representació política municipal"
+    "annex": "Annex I",
+    "theme": "Tema 5",
+    "title": "El municipi (I). Òrgans de representació política i la seva designació.",
+    "reviewLabel": null,
+    "summary": "la v3 ha d'explicar qui forma cada organ, qui el presideix, quina es la seva funcio politica i quines confusions habituals apareixen entre organ politic i organ tecnic.",
+    "keyConcepts": [
+      "organs basics de govern municipal, composicio, designacio i funcions del Ple, l'Alcaldia i la Junta de Govern Local.",
+      "la v3 ha d'explicar qui forma cada organ, qui el presideix, quina es la seva funcio politica i quines confusions habituals apareixen entre organ politic i organ tecnic."
     ],
-    commonMistakes: [
-      "Barrejar òrgans polítics amb òrgans tècnics com secretaria o intervenció",
-      "Pensar que el ple el designa lliurement l'alcaldia",
-      "Atribuir elecció directa popular a òrgans que no la tenen"
+    "commonMistakes": [
+      "el banc ja identifica els organs basics, pero encara fa preguntes molt curtes i gairebe \"de llista\"",
+      "Cal convertir-ho en preguntes amb jerarquia funcional, composicio i matis de designacio.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza els òrgans bàsics i la seva funció general",
-      "Diferencia govern, gestió tècnica i participació",
-      "Practica preguntes on hagis de distingir òrgans municipals d'altres estructures"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 6",
-    title: "Competències municipals",
-    reviewLabel: null,
-    summary: "El municipi actua per gestionar interessos propis de la comunitat veïnal dins el marc legal. L'important és entendre que les competències municipals no són arbitraris locals, sinó funcions reconegudes i regulades.",
-    keyConcepts: [
-      "Interessos propis de la comunitat veïnal",
-      "Competències atribuïdes per llei",
-      "Serveis municipals",
-      "Autonomia local dins el marc normatiu"
+    "annex": "Annex I",
+    "theme": "Tema 6",
+    "title": "El municipi: la regulació de les competències a la Llei de Bases de Règim Local.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de fer visible que les competencies municipals no surten del no-res: venen atribuides per llei i s'entenen en relacio amb la capacitat de gestio i els interessos locals.",
+    "keyConcepts": [
+      "competències pròpies i delegades, interessos locals, criteris d'atribucio i relacio entre autonomia local i marc legal.",
+      "la v3 ha de fer visible que les competencies municipals no surten del no-res: venen atribuides per llei i s'entenen en relacio amb la capacitat de gestio i els interessos locals."
     ],
-    commonMistakes: [
-      "Pensar que les competències municipals són sempre voluntàries",
-      "Creure que el municipi només pot actuar amb autoritzacions puntuals constants",
-      "Excloure els àmbits socials o educatius de l'acció municipal"
+    "commonMistakes": [
+      "la pregunta actual diu que el municipi gestiona interessos propis, que es correcte, pero encara no hi ha prou joc sobre la diferencia entre competencia propia, delegada i la lògica de proximitat.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Fes un resum curt del perquè existeixen les competències municipals",
-      "Relaciona competència municipal amb servei públic local",
-      "Entrena preguntes que barregin autonomia local i límits legals"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 7",
-    title: "Acte administratiu",
-    reviewLabel: "A revisar per la senyoreta Pame",
-    summary: "L'acte administratiu és una declaració feta per l'Administració en exercici de potestats administratives. El tema demana entendre concepte, classes i elements, amb especial cura en competència, contingut, forma i validesa.",
-    keyConcepts: [
-      "Concepte d'acte administratiu",
-      "Declaració de voluntat, judici, coneixement o desig",
-      "Competència de l'òrgan",
-      "Elements de validesa"
+    "annex": "Annex I",
+    "theme": "Tema 7",
+    "title": "L'acte administratiu: concepte i classes. Elements de l'acte administratiu. Requisits dels actes administratius.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "la v3 hauria de separar clarament concepte, element i requisit. A mes, convé construir preguntes que obliguin a distingir validesa interna i produccio d'efectes externs.",
+    "keyConcepts": [
+      "concepte, classes, elements, validesa, eficàcia, competència, motivacio, notificacio, publicacio i possibles vicis.",
+      "la v3 hauria de separar clarament concepte, element i requisit",
+      "A mes, convé construir preguntes que obliguin a distingir validesa interna i produccio d'efectes externs."
     ],
-    commonMistakes: [
-      "Confondre qualsevol comunicació interna amb un acte administratiu",
-      "Pensar que només són actes administratius les sancions",
-      "Oblidar que la competència de l'òrgan és essencial per a la validesa"
+    "commonMistakes": [
+      "el banc actual fa servir definicions correctes pero molt clàssiques",
+      "Falta incorporar classes d'actes, eficacia, notificacio i els matisos de validesa que fan que la pregunta pugi de nivell.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Treballa definició i elements amb llenguatge precís",
-      "Repasa exemples per distingir actes administratius d'altres actuacions",
-      "Abans d'examen, verifica bé els matisos de validesa i eficàcia"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 8",
-    title: "Procediment administratiu",
-    reviewLabel: "A revisar per la senyoreta Pame",
-    summary: "Aquest tema se centra en les fases del procediment administratiu comú i en les garanties de les persones interessades. És clau dominar la seqüència general i entendre que el procediment protegeix drets, terminis i possibilitats d'al·legació.",
-    keyConcepts: [
-      "Iniciació",
-      "Ordenació i instrucció",
-      "Finalització",
-      "Garanties de les persones interessades"
+    "annex": "Annex I",
+    "theme": "Tema 8",
+    "title": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "la v3 ha de presentar el procediment com una xarxa de garanties, no com una simple seqüència de passos. Les preguntes han de fer treballar audiència, termini, resolucio expressa i drets de tramitacio.",
+    "keyConcepts": [
+      "concepte de procediment, principis generals, iniciacio, instruccio, audiencia, resolucio, termini, silenci i tramitacio simplificada.",
+      "la v3 ha de presentar el procediment com una xarxa de garanties, no com una simple seqüència de passos",
+      "Les preguntes han de fer treballar audiència, termini, resolucio expressa i drets de tramitacio."
     ],
-    commonMistakes: [
-      "Reduir el procediment només a la resolució final",
-      "Minimitzar la importància de terminis, audiència i al·legacions",
-      "Pensar que la instrucció només existeix si la demana la persona interessada"
+    "commonMistakes": [
+      "el banc actual ja mostra les fases generals, pero encara no explora prou la posicio de l'interessat ni els moments de garantia procedimental",
+      "Aquest tema demana precisio fina.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza l'ordre de les fases i què passa a cada una",
-      "Associa procediment amb garanties i no només amb tràmit",
-      "Revisa literalitat i matisos jurídics abans de donar-lo per tancat"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 9",
-    title: "Ajuntament de Lliçà d'Amunt",
-    reviewLabel: "A revisar per la senyoreta Pame",
-    summary: "El tema introdueix el context municipal de Lliçà d'Amunt, especialment el Reglament orgànic municipal, el funcionament de l'entitat i el marc local vinculat a educació. Com que depèn de fonts municipals vives, convé revisar-lo abans de cada convocatòria.",
-    keyConcepts: [
-      "Reglament orgànic municipal",
-      "Funcionament de l'entitat municipal",
-      "Organització municipal i participació ciutadana",
-      "Context local de les escoles bressol municipals"
+    "annex": "Annex I",
+    "theme": "Tema 9",
+    "title": "Organització i funcionament de l'Ajuntament de Lliçà d'Amunt.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "la v3 hauria de distingir clarament entre el reglament organic municipal, la pagina institucional de govern, el pla educatiu local i les fitxes de l'EBM. Aquest tema es viu i s'ha de contrastar amb fonts municipals actuals.",
+    "keyConcepts": [
+      "organitzacio municipal propia de Lliça d'Amunt, ROM, funcionament intern, participacio ciutadana i relacio amb el servei d'educacio municipal.",
+      "la v3 hauria de distingir clarament entre el reglament organic municipal, la pagina institucional de govern, el pla educatiu local i les fitxes de l'EBM",
+      "Aquest tema es viu i s'ha de contrastar amb fonts municipals actuals."
     ],
-    commonMistakes: [
-      "Reduir el ROM a un únic àmbit sectorial",
-      "Confondre el reglament municipal amb normes d'abast estatal o estatutari",
-      "Estudiar dades locals com si fossin estables per sempre"
+    "commonMistakes": [
+      "ara mateix hi ha una sola pregunta que només demana \"com estudiar\" l'ajuntament",
+      "Per a un tema d'aquest pes, cal baixar a documents municipals reals i a peces concretes de l'organitzacio local.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Fes una fitxa del ROM i dels blocs que regula",
-      "Relaciona el tema amb el funcionament real de l'ajuntament",
-      "Comprova si hi ha hagut canvis municipals recents abans de l'examen"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 10",
-    title: "Personal al servei de les entitats locals",
-    reviewLabel: null,
-    summary: "Aquest tema tracta la classificació del personal públic local i els seus drets, deures i incompatibilitats. El banc posa l'accent en la distinció entre tipus de personal i en el servei objectiu a l'interès general.",
-    keyConcepts: [
-      "Personal funcionari, laboral i eventual",
-      "EBEP",
-      "Objectivitat, integritat i neutralitat",
-      "Servei a l'interès general"
+    "annex": "Annex I",
+    "theme": "Tema 10",
+    "title": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni col·lectiu del personal laboral de l'Ajuntament de Lliçà d'Amunt.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "la v3 ha de relacionar la categoria professional amb el regim juridic corresponent i, en el cas del personal laboral de l'Ajuntament, amb el conveni collectiu propi. A mes, cal treballar el llenguatge de conducta publica, no nomes el deures abstractes.",
+    "keyConcepts": [
+      "tipus de personal, drets, deures, codi de conducta, incompatibilitats i referencia al conveni collectiu del personal laboral municipal.",
+      "la v3 ha de relacionar la categoria professional amb el regim juridic corresponent i, en el cas del personal laboral de l'Ajuntament, amb el conveni collectiu propi",
+      "A mes, cal treballar el llenguatge de conducta publica, no nomes el deures abstractes."
     ],
-    commonMistakes: [
-      "Barrejar categories jurídiques amb situacions de temporalitat",
-      "Pensar que la bona voluntat substitueix les obligacions del codi de conducta",
-      "Donar més pes a instruccions informals que al servei públic"
+    "commonMistakes": [
+      "el banc ja recull la classificacio basica i algun deure general, pero encara no entra a la part mes especifica del tema: incompatibilitats i el vincle amb el conveni collectiu local.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza la classificació bàsica del personal públic",
-      "Repasa els deures professionals amb exemples concrets",
-      "Entrena preguntes on s'oposin criteri professional, neutralitat i improvisació"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 11",
-    title: "Protecció de dades",
-    reviewLabel: null,
-    summary: "La protecció de dades és especialment rellevant en serveis educatius amb menors i dades de salut. Cal entendre finalitat, base legitimadora, confidencialitat i ús de canals segurs.",
-    keyConcepts: [
-      "Dades personals i dades de salut",
-      "Finalitat del tractament",
-      "Base legitimadora",
-      "Confidencialitat i canals autoritzats"
+    "annex": "Annex I",
+    "theme": "Tema 11",
+    "title": "Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de fer treballar dades personals, dades de salut, minimitzacio, licitud i canals. En un entorn educatiu, la pregunta important no es nomes si es pot compartir, sino com, amb quina base i amb quina informacio.",
+    "keyConcepts": [
+      "proteccio de dades personals, dades de menors, finalitat, minimitzacio, base legitimadora, deure d'informar i garantia de drets digitals.",
+      "la v3 ha de fer treballar dades personals, dades de salut, minimitzacio, licitud i canals",
+      "En un entorn educatiu, la pregunta important no es nomes si es pot compartir, sino com, amb quina base i amb quina informacio."
     ],
-    commonMistakes: [
-      "Pensar que una bona intenció justifica qualsevol canal de comunicació",
-      "Creure que una autorització genèrica serveix per a qualsevol ús futur",
-      "Confondre comunicació interna necessària amb difusió inadequada"
+    "commonMistakes": [
+      "el banc actual ja ha fet un primer pas bo, pero encara hi ha preguntes massa planes sobre \"compartir o no compartir\"",
+      "El tema necessita mes treball sobre principis del tractament i deure d'informacio.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Relaciona cada ús de dades amb finalitat i canal",
-      "Repasa casos sobre dades sensibles, especialment de salut",
-      "Fes una llista mental de pràctiques que mai no s'han de fer amb dispositius personals"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 12",
-    title: "Prevenció de riscos laborals",
-    reviewLabel: null,
-    summary: "La prevenció de riscos laborals implica anticipar perills i mantenir entorns de treball segurs. En context educatiu també afecta vies de pas, materials, evacuació i organització quotidiana de l'espai.",
-    keyConcepts: [
-      "Prevenció i anticipació del risc",
-      "Espais segurs",
-      "Vies de pas i evacuació",
-      "Responsabilitat preventiva de l'equip"
+    "annex": "Annex I",
+    "theme": "Tema 12",
+    "title": "Prevenció de riscos laborals en l'exercici professional del/de la tècnic/a d'educació infantil.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de convertir PRL en conducta quotidiana: anticipar riscos, revisar espais, ordenar materials, tenir protocols i entendre que la prevencio no es reactiva.",
+    "keyConcepts": [
+      "proteccio eficaç, accio preventiva, avaluacio de riscos, planificacio, ordre de l'espai, vies de pas, higiene i protocols d'actuacio.",
+      "la v3 ha de convertir PRL en conducta quotidiana: anticipar riscos, revisar espais, ordenar materials, tenir protocols i entendre que la prevencio no es reactiva."
     ],
-    commonMistakes: [
-      "Normalitzar obstacles o desordre en zones de circulació",
-      "Pensar que només cal revisar seguretat en simulacres o incidències",
-      "Prioritzar la comoditat de l'activitat sobre la seguretat bàsica"
+    "commonMistakes": [
+      "el banc actual fa bé de connectar prevencio amb higiene i emergencies, pero encara li falta més article 14, 15 i 16 de LPRL, i sobretot portar-ho a la feina real d'una tècnica d'educacio infantil.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Observa l'espai mentalment com si haguessis de detectar riscos reals",
-      "Relaciona PRL amb organització material i no només amb papers o protocols",
-      "Practica supòsits curts sobre obstacles, evacuació i ús d'espais"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex I",
-    theme: "Tema 13",
-    title: "Igualtat i no-discriminació",
-    reviewLabel: null,
-    summary: "El tema aborda la igualtat formal i material i la lluita contra la discriminació. En el projecte també es vincula amb la mirada coeducadora i amb l'obligació dels poders públics de fer efectiva la igualtat.",
-    keyConcepts: [
-      "Igualtat de tracte i d'oportunitats",
-      "No-discriminació",
-      "Article 9.2 de la Constitució",
-      "Llei orgànica 3/2007"
+    "annex": "Annex I",
+    "theme": "Tema 13",
+    "title": "Principis d'igualtat, inclusió i no-discriminació en l'atenció educativa a la primera infància.",
+    "reviewLabel": null,
+    "summary": "la v3 ha de treballar la igualtat com una mirada transversal i no com una activitat puntual. També ha de separar igualtat formal, igualtat real i no-discriminacio educativa.",
+    "keyConcepts": [
+      "igualtat real i efectiva, no-discriminacio, coeducacio transversal i eliminacio d'estereotips en l'atencio educativa.",
+      "la v3 ha de treballar la igualtat com una mirada transversal i no com una activitat puntual",
+      "També ha de separar igualtat formal, igualtat real i no-discriminacio educativa."
     ],
-    commonMistakes: [
-      "Reduir la igualtat a una declaració formal sense acció pública",
-      "Pensar que la coeducació és un afegit puntual i no una mirada transversal",
-      "Traslladar la responsabilitat de la igualtat només a l'àmbit privat"
+    "commonMistakes": [
+      "el banc actual ja posa be la idea de materials i expectatives lliures d'estereotips, pero falta més connexio amb l'article 9.2 de la Constitucio i amb la igualtat efectiva de la LO 3/2007.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Diferencia igualtat formal, igualtat real i no-discriminació",
-      "Repasa el paper actiu dels poders públics en aquest àmbit",
-      "Enllaça aquest tema amb coeducació, drets i servei públic"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 1",
-    title: "Autonomia de centre",
-    reviewLabel: null,
-    summary: "L'autonomia de centre s'entén com una autonomia col·lectiva vinculada al projecte educatiu i als documents de gestió. No és improvisació individual, sinó coherència pedagògica, organitzativa i professional compartida.",
-    keyConcepts: [
-      "Autonomia col·lectiva",
-      "Projecte educatiu de centre",
-      "Criteris compartits d'equip",
-      "Coherència organitzativa i pedagògica"
+    "annex": "Annex II",
+    "theme": "Tema 1",
+    "title": "Decret 102/2010, d'autonomia dels centres educatius.",
+    "reviewLabel": null,
+    "summary": "- L'autonomia de centre no es individual ni atomitzada. - El PEC orienta la vida real del centre: espais, temps, materials i criteris d'equip. - En 0-3, l'autonomia s'expressa en decisions quotidianes coherents amb el projecte. - El Decret 21/2023 reforca una mirada de situacions amb sentit, no de rutines rigides.",
+    "keyConcepts": [
+      "del subtitol Autonomia de centre com a autonomia pedagogica, organitzativa i de gestio, sempre vinculada al projecte educatiu i a la coherencia del treball d'equip en el primer cicle. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e1-01 i e1-02 ja van en la bona direccio perque relacionen autonomia i PEC. - Massa generic: les dues preguntes actuals es queden en l'ambit declaratiu i no baixen prou a l'organitzacio quotidiana 0-3. - A refinar: falta contraposar autonomia compartida amb improvisacio individual, i projecte educatiu amb simple document formal.",
+      "- L'autonomia de centre no es individual ni atomitzada",
+      "- El PEC orienta la vida real del centre: espais, temps, materials i criteris d'equip",
+      "- En 0-3, l'autonomia s'expressa en decisions quotidianes coherents amb el projecte"
     ],
-    commonMistakes: [
-      "Confondre autonomia amb llibertat individual de cada aula",
-      "Reduir-la a qüestions econòmiques o administratives",
-      "Pensar que el projecte educatiu és només un document formal"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Explica't en veu alta què diferencia autonomia de centre i improvisació",
-      "Relaciona autonomia amb espais, temps, materials i criteris comuns",
-      "Fes supòsits on hagis de decidir què depèn del projecte i què no"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 2",
-    title: "Decret 282/2006",
-    reviewLabel: null,
-    summary: "Aquest decret regula requisits del primer cicle d'educació infantil, com professionals, espais, instal·lacions, ràtios i autorització administrativa. El seu valor és estructural: fixa condicions mínimes del servei.",
-    keyConcepts: [
-      "Primer cicle d'educació infantil",
-      "Requisits mínims",
-      "Professionals i titulació",
-      "Espais, instal·lacions i autorització"
+    "annex": "Annex II",
+    "theme": "Tema 2",
+    "title": "Decret 282/2006, pel qual es regula el primer cicle de l'educació infantil i els requisits dels centres.",
+    "reviewLabel": null,
+    "summary": "- El decret regula el primer cicle i els requisits dels centres. - El focus no es nomes l'assistencia, sino l'organitzacio educativa. - Hi ha criteris de centres, espais, professionals i autoritzacio. - La norma ha de llegir-se amb el marc general del sistema educatiu i amb la realitat de l'etapa.",
+    "keyConcepts": [
+      "del subtitol Ordenacio del primer cicle 0-3 i requisits dels centres: autoritzacio, espais, condicions, professionals i funcionament adequat a l'etapa. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e2-01 i e2-02 ja encerten el marc general i la titulacio professional. - Massa generic: encara son preguntes de títol i de perfil professional, pero no entren prou en requisits dels centres ni en la logica 0-3. - A refinar: cal evitar que el tema quedi reduit a \"quin ambit regula\" o \"qui hi pot treballar\".",
+      "- El decret regula el primer cicle i els requisits dels centres",
+      "- El focus no es nomes l'assistencia, sino l'organitzacio educativa",
+      "- Hi ha criteris de centres, espais, professionals i autoritzacio"
     ],
-    commonMistakes: [
-      "Confondre'l amb el currículum del segon cicle",
-      "Reduir-lo a calendari o preus públics",
-      "Pensar que l'experiència informal substitueix la qualificació requerida"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Fes una llista dels blocs regulats pel decret",
-      "Associa'l a condicions mínimes i no a criteris pedagògics generals",
-      "Practica preguntes que diferenciïn requisits materials, professionals i curriculars"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 3",
-    title: "Decret 150/2017",
-    reviewLabel: null,
-    summary: "El Decret 150/2017 ordena la resposta educativa en un sistema inclusiu. El punt central és entendre que les mesures i suports s'organitzen de manera progressiva i que la primera resposta ha de partir de la inclusió, no de la segregació.",
-    keyConcepts: [
-      "Sistema educatiu inclusiu",
-      "Mesures i suports universals",
-      "Mesures addicionals i intensives",
-      "Coordinació amb equip, família i serveis"
+    "annex": "Annex II",
+    "theme": "Tema 3",
+    "title": "Decret 150/2017, de l'atenció a l'alumnat en el marc del sistema inclusiu.",
+    "reviewLabel": null,
+    "summary": "- La inclusio no separa l'infant del grup com a primera resposta. - Les mesures s'organitzen en universals, addicionals i intensives. - La deteccio s'ha de fer mirant el funcionament dins del context. - La coordinacio amb familia i serveis educatius forma part de la resposta.",
+    "keyConcepts": [
+      "del subtitol Atencio educativa en un sistema inclusiu: deteccio de barreres, mesures universals/addicionals/intensives, coordinacio i resposta al context de cada infant. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e3-01 i e3-02 serveixen com a base de marc general. - Massa generic: encara no baixen prou a la practica 0-3, ni a la identificacio de NESE, ni al paper de l'EAP i del PI. - A refinar: cal passar de \"que es la inclusio\" a \"com s'actua davant barreres i necessitats\".",
+      "- La inclusio no separa l'infant del grup com a primera resposta",
+      "- Les mesures s'organitzen en universals, addicionals i intensives",
+      "- La deteccio s'ha de fer mirant el funcionament dins del context"
     ],
-    commonMistakes: [
-      "Aplicar mesures intensives com a primera opció",
-      "Esperar un diagnòstic extern abans d'ajustar l'entorn",
-      "Separar l'infant del grup com a resposta inicial"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza l'estructura universal, addicional i intensiva",
-      "Pensa casos on la barrera és de l'entorn i no de l'infant",
-      "Relaciona inclusió amb observació, coordinació i participació"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 4",
-    title: "Documentació pedagògica",
-    reviewLabel: null,
-    summary: "La documentació pedagògica serveix per fer visibles els processos d'aprenentatge i orientar la reflexió educativa. No és acumular fotos o arxius, sinó seleccionar evidències significatives i donar-los lectura pedagògica.",
-    keyConcepts: [
-      "Observació sistemàtica",
-      "Evidències significatives",
-      "Visibilització dels processos",
-      "Reflexió d'equip"
+    "annex": "Annex II",
+    "theme": "Tema 4",
+    "title": "Documentació obligatòria a les escoles bressol.",
+    "reviewLabel": null,
+    "summary": "- Documentar es fer visible la vida educativa i el proces dels infants. - La documentacio obliga a mirar, interpretar i compartir criteri. - No es acumular fotos ni convertir l'espai en un expedient. - Ha d'ajudar a l'equip, a les families i a la presa de decisions pedagogiques.",
+    "keyConcepts": [
+      "del subtitol Documentacio com a eina pedagogica i de qualitat de centre, no com a simple arxiu administratiu. Inclou observacio, registre, programacio i documents d'organitzacio. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e4-01 ja apunta als documents de centre. - Massa generic: la pregunta actual mescla documents obligatoris sense aterrar en el sentit pedagogic de cada document. - A refinar: cal distingir documentacio, observacio i avaluacio, i remarcar que la documentacio ha de servir per comprendre processos.",
+      "- Documentar es fer visible la vida educativa i el proces dels infants",
+      "- La documentacio obliga a mirar, interpretar i compartir criteri",
+      "- No es acumular fotos ni convertir l'espai en un expedient"
     ],
-    commonMistakes: [
-      "Confondre documentar amb fotografiar-ho tot",
-      "Fer-la servir per etiquetar o comparar infants",
-      "Tractar-la com un arxiu neutral sense interpretació"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Diferencia observació, registre i documentació pedagògica",
-      "Repasa per a què serveix cada evidència que es conserva",
-      "Practica exemples on hagis de decidir què documentaries i per què"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 5",
-    title: "Desenvolupament psicomotor",
-    reviewLabel: null,
-    summary: "El desenvolupament psicomotor s'entén com un procés global vinculat al moviment, al to, a la relació amb l'espai i a la construcció d'autonomia. El banc el tracta des d'una mirada respectuosa amb ritmes i iniciativa.",
-    keyConcepts: [
-      "Moviment i globalitat",
-      "Autonomia progressiva",
-      "Respecte pels ritmes individuals",
-      "Entorn que afavoreix l'acció"
+    "annex": "Annex II",
+    "theme": "Tema 5",
+    "title": "El desenvolupament psicomotor dels infants de zero a tres anys. Activitat lliure i autònoma des de l'enfocament d'Emmi Pikler a cada franja d'edat. Criteris a tenir en compte en el rol de la persona educadora.",
+    "reviewLabel": null,
+    "summary": "- El desenvolupament psicomotor es global: cos, relacio, emocio i autonomia. - El joc lliure i la iniciativa propia tenen valor educatiu real. - L'adult prepara l'entorn, observa i intervé amb mesura. - No s'ha de forcar cap adquisicio motriu abans d'hora.",
+    "keyConcepts": [
+      "del subtitol Desenvolupament psicomotor global 0-3, joc i activitat lliure per franges d'edat, autonomia progressiva i rol adult respectuos, no invasiu i atent a l'entorn. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e5-01 i e5-02 ja van en la direccio correcta de moviment lliure i respecte al ritme. - Massa generic: encara no apareix prou la referencia a franges d'edat ni al paper concret de la persona educadora. - A refinar: cal evitar convertir Pikler en un eslogan i portar-la a decisions quotidianes de moviment, espai i intervencio.",
+      "- El desenvolupament psicomotor es global: cos, relacio, emocio i autonomia",
+      "- El joc lliure i la iniciativa propia tenen valor educatiu real",
+      "- L'adult prepara l'entorn, observa i intervé amb mesura"
     ],
-    commonMistakes: [
-      "Forçar adquisicions motores abans de temps",
-      "Reduir la psicomotricitat a exercicis dirigits o productes",
-      "Oblidar la relació entre cos, emoció i aprenentatge"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa fites generals sense convertir-les en calendaris rígids",
-      "Relaciona desenvolupament motor amb benestar i autonomia",
-      "Pensa com l'espai i els materials poden ajudar o frenar el moviment"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 6",
-    title: "Neurociència",
-    reviewLabel: null,
-    summary: "La neurociència apareix al projecte com a marc per entendre que el cervell madura de manera gradual i que l'educació hi incideix plenament. No serveix per accelerar processos, sinó per donar sentit a l'acompanyament respectuós.",
-    keyConcepts: [
-      "Neurodesenvolupament",
-      "Maduresa cerebral gradual",
-      "Relació entre educació i cervell",
-      "Experiència i aprenentatge"
+    "annex": "Annex II",
+    "theme": "Tema 6",
+    "title": "Neurociència. Principis fisiològics de què i com l'infant crea els seus nous aprenentatges.",
+    "reviewLabel": null,
+    "summary": "- El cervell madura de forma gradual. - L'aprenentatge s'alimenta de l'experiencia i del que l'infant ja sap o viu. - L'emocio, la curiositat i la seguretat hi tenen un paper central. - La neurociencia no justifica practiques rigides ni accelerades.",
+    "keyConcepts": [
+      "del subtitol Neurodesenvolupament, maduracio cerebral gradual i condicions que fan possible l'aprenentatge: experiencia, vincle, emocio, curiositat i context. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e6-01 ja apunta a la connexio entre experiencia i nous aprenentatges. - Massa generic: encara es queda en una idea global de neurociencia i no explicita prou els principis fisiologics ni el paper del context. - A refinar: cal evitar el to de \"neuro\" com a etiqueta de moda i portar-lo a criteri pedagogic concret.",
+      "- El cervell madura de forma gradual",
+      "- L'aprenentatge s'alimenta de l'experiencia i del que l'infant ja sap o viu",
+      "- L'emocio, la curiositat i la seguretat hi tenen un paper central"
     ],
-    commonMistakes: [
-      "Pensar que la maduresa cerebral és gairebé completa al néixer",
-      "Separar desenvolupament cerebral i experiència educativa",
-      "Fer servir la neurociència com a justificació de pràctiques rígides"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Queda't amb les idees clau, no amb simplificacions espectaculars",
-      "Relaciona neurodesenvolupament amb ritmes, entorn i vincle",
-      "Repassa preguntes que oposin maduració gradual a aprenentatge mecànic"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 7",
-    title: "Aprenentatge significatiu",
-    reviewLabel: null,
-    summary: "L'aprenentatge significatiu parteix de l'experiència de l'infant, del context i de situacions amb sentit. El banc hi contraposa activitats uniformes, directivitat excessiva i separació artificial entre vida quotidiana i aprenentatge.",
-    keyConcepts: [
-      "Infant protagonista",
-      "Situacions significatives i contextualitzades",
-      "Vida quotidiana com a espai d'aprenentatge",
-      "Acompanyament ajustat de l'adult"
+    "annex": "Annex II",
+    "theme": "Tema 7",
+    "title": "L'aprenentatge significatiu. Importància dels processos i de com els nous coneixements connecten amb els que ja disposa l'infant.",
+    "reviewLabel": null,
+    "summary": "- L'aprenentatge significatiu connecta amb el que l'infant ja sap o viu. - No depen del producte final visible, sino del proces. - Les situacions amb sentit i la vida quotidiana son llocs d'aprenentatge. - L'adult acompanya i ajusta, no imposa una sola via.",
+    "keyConcepts": [
+      "del subtitol Aprenentatge significatiu com a connexio entre nous coneixements i experiencia previa, amb valor dels processos, de la vida quotidiana i del context. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e7-01 ja apunta a la definicio correcta. - Massa generic: encara no entra prou en processos, context, situacions amb sentit ni valor de la vida quotidiana. - A refinar: cal oposar aprenentatge amb sentit a fitxes, uniformitat i productes visibles.",
+      "- L'aprenentatge significatiu connecta amb el que l'infant ja sap o viu",
+      "- No depen del producte final visible, sino del proces",
+      "- Les situacions amb sentit i la vida quotidiana son llocs d'aprenentatge"
     ],
-    commonMistakes: [
-      "Pensar que només s'aprèn en activitats programades",
-      "Prioritzar productes iguals per a tot el grup",
-      "Confondre autonomia amb absència d'acompanyament"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Relaciona aquest tema amb joc, cura i exploració",
-      "Repasa exemples d'aprenentatge amb sentit i exemples de mera execució",
-      "Fes preguntes on hagis de detectar directivitat excessiva"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 8",
-    title: "NESE i educació inclusiva",
-    reviewLabel: null,
-    summary: "Aquest tema aplica la mirada inclusiva a infants amb necessitats específiques de suport educatiu. La clau és observar, documentar, coordinar i ajustar l'entorn abans de precipitar etiquetes o segregacions.",
-    keyConcepts: [
-      "NESE",
-      "Barreres a la participació",
-      "Observació i coordinació",
-      "Resposta educativa inclusiva"
+    "annex": "Annex II",
+    "theme": "Tema 8",
+    "title": "L'infant NESE a l'escola bressol. Educació inclusiva. Acompanyament de l'infant, de la família i de les educadores. Signes d'alerta en el desenvolupament de l'infant. Serveis educatius que intervenen.",
+    "reviewLabel": null,
+    "summary": "- La mirada ha de partir de la participacio real de l'infant en el grup i de les barreres del context. - L'observacio, el registre i la coordinacio interna son el primer pas abans de qualsevol derivacio o etiqueta. - La resposta ha de ser inclusiva dins l'entorn habitual sempre que sigui possible, amb mesures graduades. - La familia no es un receptor passiu, sino part de l'acompanyament i de la presa de decisions compartida.",
+    "keyConcepts": [
+      "NESE en 0-3, resposta inclusiva des de l'aula, acompanyament a la familia, deteccio de signes d'alerta i coordinacio amb serveis educatius. El focus no es la teoria general de la inclusio, sino com s'actua a l'escola bressol. ### Que del banc actual es massa genèric o aprofitable - Aprofitable: e8-01, e8-02 i v2-a2-t08-01, v2-a2-t08-02 ja posen el nucli en NESE, observacio i resposta educativa. - Massa generic: encara parlen molt de \"inclusio\" en abstracte i poc de les decisions concretes d'una llar d'infants 0-3. - Massa generic: el PI apareix com a idea general, pero cal afinar que al primer cicle no es prescriptiu en els mateixos termes que a altres etapes. - Punt feble: falta separar be deteccio educativa, coordinacio amb familia i paper dels serveis (EAP, i si escau altres recursos especialitzats).",
+      "- La mirada ha de partir de la participacio real de l'infant en el grup i de les barreres del context",
+      "- L'observacio, el registre i la coordinacio interna son el primer pas abans de qualsevol derivacio o etiqueta",
+      "- La resposta ha de ser inclusiva dins l'entorn habitual sempre que sigui possible, amb mesures graduades"
     ],
-    commonMistakes: [
-      "Esperar massa temps sense registrar signes d'alerta",
-      "Substituir la mirada educativa per una derivació immediata",
-      "Respondre separant l'infant del grup com a primera mesura"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Uneix aquest tema amb el Decret 150/2017 i amb l'observació pedagògica",
-      "Practica casos on hagis de prioritzar passos inicials professionals",
-      "Memoritza que la inclusió comença a l'aula i en l'entorn"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 9",
-    title: "Alimentació, descans i higiene",
-    reviewLabel: null,
-    summary: "Alimentació, descans i higiene formen part de la vida quotidiana i tenen valor educatiu. S'han d'acompanyar amb respecte al ritme, al benestar, a la intimitat i a l'autonomia progressiva.",
-    keyConcepts: [
-      "Vida quotidiana com a situació educativa",
-      "Respecte al ritme individual",
-      "Benestar i intimitat",
-      "Autonomia progressiva"
+    "annex": "Annex II",
+    "theme": "Tema 9",
+    "title": "Dret a una alimentació, descans i higiene com a experiències fonamentals de cura i benestar de zero a tres anys. Criteris per a la intervenció educativa.",
+    "reviewLabel": null,
+    "summary": "- Menjar, dormir i higiene no son pauses del projecte: son projecte educatiu. - El criteri central es el respecte al ritme individual i a la senyal de l'infant. - La qualitat de la cura depen de la comunicacio, la intimitat i la coordinacio amb la familia. - El centre ha de evitar pressio, uniformitzacio i visio purament assistencial.",
+    "keyConcepts": [
+      "Alimentacio, descans i higiene com a situacions educatives de cura i benestar en 0-3. El focus ha de ser la intervencio quotidiana: ritmes, intimitat, autonomia, seguretat i relacio amb la familia. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e9-01, e9-02 i v2-a2-t09-01, v2-a2-t09-02 ja trenquen la idea de rutina mecanica. - Massa generic: \"alimentacio, descans i higiene\" apareix com una sola massa; convé separar cada situacio i els seus criteris. - Massa generic: falta mes pes de cura corporal concreta, descans real i higiene amb llenguatge i intimitat. - Punt feble: el banc encara no fa prou visible que aquestes rutines educen tant com una proposta de joc.",
+      "- Menjar, dormir i higiene no son pauses del projecte: son projecte educatiu",
+      "- El criteri central es el respecte al ritme individual i a la senyal de l'infant",
+      "- La qualitat de la cura depen de la comunicacio, la intimitat i la coordinacio amb la familia"
     ],
-    commonMistakes: [
-      "Convertir aquestes situacions en rutines mecàniques",
-      "Forçar la ingesta, el son o el control corporal",
-      "Fer prevaler l'horari del centre sobre els senyals de l'infant"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa què fa educativa una situació de cura",
-      "Relaciona benestar, comunicació i autonomia en cada rutina",
-      "Practica casos sobre àpats, descans, higiene i coordinació amb famílies"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 10",
-    title: "Control d'esfínters",
-    reviewLabel: null,
-    summary: "El control d'esfínters s'ha d'acompanyar d'acord amb la maduració de l'infant i en coordinació amb la família. El projecte rebutja la pressió, les rutines imposades sense preparació i les interpretacions moralitzadores dels accidents.",
-    keyConcepts: [
-      "Maduració",
-      "Signes de preparació",
-      "Coordinació família-escola",
-      "Acompanyament sense pressió"
+    "annex": "Annex II",
+    "theme": "Tema 10",
+    "title": "Acompanyament en el procés de control d'esfínters a l'escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d'una perspectiva respectuosa envers la maduració de l'infant.",
+    "reviewLabel": null,
+    "summary": "- El control d'esfinters depen de signes de preparacio i no d'un calendari fix. - Els accidents i regressions formen part del proces i no s'han de llegir com a fracassos morals. - El lavabo i el canvi de bolquer son moments educatius de llenguatge, autonomia i intimitat. - L'acord amb la familia ha de ser informatiu i compartit, no imposat.",
+    "keyConcepts": [
+      "Proces de maduracio, pas del bolquer al lavabo, ritmes individuals i acompanyament respectuos. El focus no es \"aconseguir que deixi el bolquer aviat\", sino com es fa l'acompanyament. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e10-01 i v2-a2-t10-01, v2-a2-t10-02, v2-a2-t10-03 ja capten la idea de no pressionar. - Massa generic: encara es repeteix massa la formula \"pressio + familia + maduracio\" i falta vida d'aula concreta. - Massa generic: convé obrir el focus a intimitat, autonomia, accidents, regressions i organitzacio del lavabo. - Punt feble: el tema sovint queda massa proper al 9; en v3 cal separar cura corporal general i control d'esfinters.",
+      "- El control d'esfinters depen de signes de preparacio i no d'un calendari fix",
+      "- Els accidents i regressions formen part del proces i no s'han de llegir com a fracassos morals",
+      "- El lavabo i el canvi de bolquer son moments educatius de llenguatge, autonomia i intimitat"
     ],
-    commonMistakes: [
-      "Iniciar el procés només perquè ho demana la família",
-      "Programar-lo de manera rígida per accelerar resultats",
-      "Interpretar escapaments o retrocessos com a desobediència"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza els criteris de preparació abans que les tècniques",
-      "Repasa com comunicar aquest tema a la família",
-      "Practica situacions on calgui prioritzar maduració i observació compartida"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 11",
-    title: "Joc lliure",
-    reviewLabel: null,
-    summary: "El joc lliure és font de benestar, exploració, relació i aprenentatge. L'adult ha de preparar l'entorn, observar i intervenir només quan calgui per sostenir seguretat, benestar o procés educatiu.",
-    keyConcepts: [
-      "Joc lliure amb valor educatiu",
-      "Autonomia i iniciativa",
-      "Materials oberts",
-      "Intervenció ajustada de l'adult"
+    "annex": "Annex II",
+    "theme": "Tema 11",
+    "title": "El valor del joc lliure a la primera infància. Joc de manipulació i experimentació. Criteris en el rol de la persona educadora durant el joc espontani de l'infant.",
+    "reviewLabel": null,
+    "summary": "- El joc lliure es espontani i el seu sentit no esta prefixat per l'adult. - Manipular i repetir son formes de descobrir relacions i hipotesis. - L'adult prepara entorn i materials, observa i intervé amb mesura. - El joc lliure no es un descans ni una activitat de tancament, sino una via d'aprenentatge.",
+    "keyConcepts": [
+      "Valor educatiu del joc lliure, manipulacio i experimentacio com a processos, i rol adult d'acompanyament. El focus no es el joc en general, sino el joc espontani a 0-3 i la funcio de l'adult. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e11-01, e11-02, v2-a2-t11-01, v2-a2-t11-02. - Massa generic: encara es repeteix massa \"materials oberts\" i \"no dirigir el resultat\", pero falta aprofundir en experimentacio, repeticio i relacio causa-efecte. - Massa generic: convé separar joc lliure, joc de manipulacio i joc d'experimentacio sense confondre'ls amb activitats dirigides. - Punt feble: l'adult apareix com a observador, pero cal explicitar millor la seva funcio de preparar, sostenir i protegir.",
+      "- El joc lliure es espontani i el seu sentit no esta prefixat per l'adult",
+      "- Manipular i repetir son formes de descobrir relacions i hipotesis",
+      "- L'adult prepara entorn i materials, observa i intervé amb mesura"
     ],
-    commonMistakes: [
-      "Tractar el joc com una simple pausa sense valor",
-      "Dirigir-lo per obtenir un resultat igual per a tothom",
-      "Pensar que el joc lliure no requereix preparació de l'entorn"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Relaciona joc lliure amb aprenentatge significatiu i autonomia",
-      "Repasa quin és el paper correcte de l'educadora",
-      "Practica preguntes on els distractors siguin directivitat o assistencialisme"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 12",
-    title: "Joc simbòlic",
-    reviewLabel: null,
-    summary: "El joc simbòlic permet representar experiències, relacions i situacions del món quotidià. En educació infantil és una via de llenguatge, imaginació, relació i elaboració d'experiències.",
-    keyConcepts: [
-      "Representació simbòlica",
-      "Imitació i recreació de vivències",
-      "Llenguatge i imaginació",
-      "Relació entre joc i desenvolupament"
+    "annex": "Annex II",
+    "theme": "Tema 12",
+    "title": "El joc simbòlic en el desenvolupament i com a eina per entendre el món que envolta l'infant.",
+    "reviewLabel": null,
+    "summary": "- El joc simbolic emergeix quan un objecte o accio representa una altra realitat. - L'adult no ha de corregir el significat del joc, sino sostenir-lo. - Els materials oberts, quotidians i accessibles afavoreixen la representacio. - El joc simbolic ajuda a elaborar experiències i relacions socials.",
+    "keyConcepts": [
+      "Joc simbolic com a representacio, imitacio creativa i comprensio del mon. El focus es en el que fa l'infant amb els objectes, els rols i les situacions, no en la perfeccio del resultat. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e12-01 i v2-a2-t12-01, v2-a2-t12-02, v2-a2-t12-03. - Massa generic: el joc simbolic apareix com a \"representar el mon\", pero falta mes concrecio sobre substitucio, rols, significat i acceptacio del joc no literal. - Massa generic: convé evitar barrejar joc simbolic amb joc lliure general o amb materials oberts sense especificar el rol simbòlic. - Punt feble: cal més presència de situacions reals d'aula 0-3, no només definicions.",
+      "- El joc simbolic emergeix quan un objecte o accio representa una altra realitat",
+      "- L'adult no ha de corregir el significat del joc, sino sostenir-lo",
+      "- Els materials oberts, quotidians i accessibles afavoreixen la representacio"
     ],
-    commonMistakes: [
-      "Reduir-lo a entreteniment sense valor cognitiu o emocional",
-      "Intervenir massa per determinar els rols de joc",
-      "Confondre joc simbòlic amb activitat dirigida de reproducció exacta"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Pensa exemples clars de joc simbòlic en 0-3",
-      "Relaciona'l amb llenguatge, relació i expressió",
-      "Diferencia'l del joc lliure general i del joc purament funcional"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 13",
-    title: "Espais i materials",
-    reviewLabel: null,
-    summary: "Els espais i materials han d'afavorir exploració, accessibilitat, seguretat i temps suficient per actuar. El banc posa molt el focus en materials oberts i en la relació entre entorn preparat i autonomia.",
-    keyConcepts: [
-      "Entorn preparat",
-      "Materials oberts i accessibles",
-      "Seguretat i qualitat educativa",
-      "Temps d'exploració"
+    "annex": "Annex II",
+    "theme": "Tema 13",
+    "title": "Organització dels espais/territoris d'aprenentatge, temps i propostes educatives. Tipus de materials que afavoreixen el joc espontani i lliure de l'infant de zero a tres anys. Criteris en el rol de la persona educadora.",
+    "reviewLabel": null,
+    "summary": "- L'espai ha de ser llegible, accessible i coherent amb l'autonomia infantil. - El temps de joc ha de ser prou llarg per permetre exploracio i repeticio. - Els materials han de tenir qualitat d'us, no solament quantitat o atractiu visual. - L'adult prepara, observa i ajusta; no monopolitza ni desapareix.",
+    "keyConcepts": [
+      "Territoris d'aprenentatge, organitzacio del temps i proposta, materials que afavoreixen el joc espontani i rol adult. El focus ha de ser com es prepara l'entorn per a l'accio autonoma dels infants de 0-3. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e13-01, v2-a2-t13-01, v2-a2-t13-02, v2-a2-t13-03. - Massa generic: \"espais i materials\" encara barreja massa criteris i no sempre diferencia territori, temps i proposta. - Massa generic: convé insistir en accessibilitat real, durada suficient i qualitat dels materials, no nomes en \"materials oberts\". - Punt feble: falta mes criteri sobre el paper de l'educadora quan l'entorn ja esta preparat i el joc ja ha començat.",
+      "- L'espai ha de ser llegible, accessible i coherent amb l'autonomia infantil",
+      "- El temps de joc ha de ser prou llarg per permetre exploracio i repeticio",
+      "- Els materials han de tenir qualitat d'us, no solament quantitat o atractiu visual"
     ],
-    commonMistakes: [
-      "Omplir l'espai de materials poc accessibles o decoratius",
-      "Substituir materials oberts per materials d'una sola resposta correcta",
-      "Canviar la proposta massa ràpid i tallar l'exploració"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Observa mentalment una aula i pensa si els materials conviden a actuar",
-      "Repasa què diferencia un material obert d'un d'estructurat",
-      "Fes preguntes comparant control visual de l'espai i valor d'ús real"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 14",
-    title: "Espais interiors i exteriors",
-    reviewLabel: null,
-    summary: "Interior i exterior han de formar un entorn coherent i continu d'aprenentatge. El projecte insisteix que l'exterior no és una pausa del treball educatiu, sinó un espai amb sentit propi connectat amb la resta del centre.",
-    keyConcepts: [
-      "Continuïtat educativa entre espais",
-      "Coherència entre interior i exterior",
-      "Transicions amb sentit",
-      "Benestar i exploració"
+    "annex": "Annex II",
+    "theme": "Tema 14",
+    "title": "La relació educativa entre els espais interiors i exteriors.",
+    "reviewLabel": null,
+    "summary": "- Interior i exterior formen un unic entorn educatiu amb funcions complementaries. - Les transicions son moments educatius i no sols desplacaments. - L'exterior no es una pausa del treball de l'aula, sino un espai amb sentit propi. - La coherencia entre espais ajuda a benestar, exploracio i autonomia.",
+    "keyConcepts": [
+      "Relacio educativa, coherencia i continuitat entre dins i fora. El focus no es comparar espais, sino entendre com es connecten pedagògicament i com es gestionen les transicions. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e14-01 i v2-a2-t14-01, v2-a2-t14-02, v2-a2-t14-03. - Massa generic: el banc parla de coherencia, pero no suficientment de transicions ni de continuitat de proposta. - Massa generic: encara apareix \"exterior = pati\" de forma massa simple; cal afinar que el fora també educa. - Punt feble: falta un to més concret sobre adaptar activitats i espais sense perdre el fil pedagogic.",
+      "- Interior i exterior formen un unic entorn educatiu amb funcions complementaries",
+      "- Les transicions son moments educatius i no sols desplacaments",
+      "- L'exterior no es una pausa del treball de l'aula, sino un espai amb sentit propi"
     ],
-    commonMistakes: [
-      "Separar interior i exterior com si tinguessin lògiques educatives alienes",
-      "Entendre l'exterior només com a descans o esbarjo",
-      "Pensar que l'exterior només és útil si replica exactament l'aula"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa quina continuïtat s'espera entre els dos espais",
-      "Pensa en les transicions com a moments educatius",
-      "Practica preguntes on hagis de detectar reduccions simplistes del pati"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 15",
-    title: "Espais exteriors",
-    reviewLabel: null,
-    summary: "L'espai exterior és context d'aprenentatge, moviment, natura, relació i risc mesurat. El criteri professional no és eliminar tot risc, sinó gestionar riscos assumibles sense anul·lar la descoberta.",
-    keyConcepts: [
-      "Exterior com a espai educatiu",
-      "Risc mesurat",
-      "Moviment i natura",
-      "Supervisió amb criteri"
+    "annex": "Annex II",
+    "theme": "Tema 15",
+    "title": "Els espais exteriors de l'escola bressol. Criteris pedagògics d'un enfocament educatiu des del valor d'aprendre i jugar lliurement a l'exterior i a la natura. Criteris en el rol de la persona educadora.",
+    "reviewLabel": null,
+    "summary": "- L'exterior es un espai educatiu en si mateix i no un simple pati. - La natura i els materials naturals amplien l'experiencia, la curiositat i el moviment. - El risc ha de ser assumible i gestionat professionalment. - La persona educadora acompanya, observa i regula sense immobilitzar el joc.",
+    "keyConcepts": [
+      "Espai exterior com a context d'aprendre i jugar lliurement, relacio amb la natura, risc mesurat i rol adult. El focus no es la seguretat abstracta, sino el balanç entre descoberta, benestar i proteccio. ### Que del banc actual es massa generic o aprofitable - Aprofitable: e15-01 i v2-a2-t15-01, v2-a2-t15-02, v2-a2-t15-03. - Massa generic: encara hi ha massa \"natura + moviment + risc mesurat\" i falta concretar criteris d'organitzacio, materials naturals i intervencio adulta. - Massa generic: convé que el banc no redueixi el pati a un espai de descompressio. - Punt feble: cal remarcar que el risc mesurat no es improvisacio ni permisivitat sense criteri.",
+      "- L'exterior es un espai educatiu en si mateix i no un simple pati",
+      "- La natura i els materials naturals amplien l'experiencia, la curiositat i el moviment",
+      "- El risc ha de ser assumible i gestionat professionalment"
     ],
-    commonMistakes: [
-      "Aplicar una lògica de risc zero que empobreix l'espai",
-      "Permetre qualsevol situació sense selecció professional",
-      "Confondre supervisió amb control immobilitzador"
+    "commonMistakes": [
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa què vol dir exactament risc mesurat",
-      "Relaciona pati educatiu amb materials, natura i moviment",
-      "Practica distractors que oposen seguretat professional i sobreprotecció"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 16",
-    title: "Família i escola participativa",
-    reviewLabel: null,
-    summary: "La família és el primer agent socialitzador i la relació amb l'escola bressol s'ha de basar en confiança, comunicació i corresponsabilitat. La familiarització i la participació s'han d'organitzar amb sensibilitat i criteri compartit.",
-    keyConcepts: [
-      "Família com a primer agent socialitzador",
-      "Confiança i corresponsabilitat",
-      "Familiarització progressiva",
-      "Canals i moments de comunicació"
+    "annex": "Annex II",
+    "theme": "Tema 16",
+    "title": "La família com a primer agent socialitzador. Relació amb les famílies a una escola participativa. Organització del temps de familiarització o inici de curs de l'escola bressol.",
+    "reviewLabel": null,
+    "summary": "- La familia es el primer context relacional de l'infant i la llar d'infants no la substitueix. - La relacio ha de basar-se en cordialitat, respecte mutu, professionalitat i confiança. - La familiaritzacio s'ha de planificar, personalitzar i entendre com una incorporacio progressiva, no com una separacio brusca. - La comunicacio ha de ser bidireccional: entrades i sortides, entrevistes, reunions, canals escrits i recursos de seguiment. - L'acollida ha de tenir en compte ritmes, costums, objectes personals i necessitats de cada infant.",
+    "keyConcepts": [
+      "La mirada del tema no es \"familia en general\", sino la relacio escola-familia en 0-3, la familiaritzacio, la confiança, la corresponsabilitat i els canals de comunicacio i acollida.",
+      "- La familia es el primer context relacional de l'infant i la llar d'infants no la substitueix",
+      "- La relacio ha de basar-se en cordialitat, respecte mutu, professionalitat i confiança",
+      "- La familiaritzacio s'ha de planificar, personalitzar i entendre com una incorporacio progressiva, no com una separacio brusca"
     ],
-    commonMistakes: [
-      "Confondre participació amb ingerència en totes les decisions professionals",
-      "Accelerar la separació de manera poc respectuosa amb l'infant",
-      "Comunicar només incidències negatives"
+    "commonMistakes": [
+      "Aprofitable: e16-01, e16-02 i case-01 ja apunten a familia, primer agent socialitzador i familiaritzacio",
+      "Massa generic: les opcions encara son molt obertes i no aterren prou en el sentit pedagogic de l'acollida, els primers contactes, l'entrevista inicial i el seguiment quotidià.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Fes una fitxa del que necessita una bona relació escola-família",
-      "Repasa el sentit educatiu de la familiarització",
-      "Practica casos on hagis de triar canals i to de comunicació"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 17",
-    title: "Funció educadora",
-    reviewLabel: null,
-    summary: "La funció educadora integra cura, observació, intervenció amb criteri, reflexió i treball en equip. No es redueix a custodiar infants, sinó a sostenir el seu desenvolupament dins el projecte educatiu del centre.",
-    keyConcepts: [
-      "Acompanyament integral",
-      "Cura amb dimensió educativa",
-      "Treball en equip",
-      "Revisió compartida de la pràctica"
+    "annex": "Annex II",
+    "theme": "Tema 17",
+    "title": "La funció de la persona educadora en el primer cicle d'educació infantil. Competències, habilitats i actitud com a acompanyant referent del desenvolupament i l'aprenentatge integral de l'infant. Paper com a membre d'un equip. Formació continuada per a la revisió professional i transformació del projecte educatiu.",
+    "reviewLabel": null,
+    "summary": "- L'educadora no fa custodia passiva: fa d'acompanyant referent i sosté el desenvolupament integral. - Les seves funcions inclouen planificar l'ambient, promoure capacitats, acompanyar l'activitat i observar/documentar. - La vida quotidiana i les cures formen part de la funcio educadora. - El treball en equip i la formacio continuada serveixen per revisar la practica i transformar el projecte educatiu. - El rol de la persona educadora requereix disponibilitat, calma, adaptacio i criteri compartit.",
+    "keyConcepts": [
+      "El tema no tracta només \"què fa una educadora\", sinó la funcio professional completa: planificar, organitzar, acompanyar, observar, documentar i treballar en equip dins del projecte educatiu.",
+      "- L'educadora no fa custodia passiva: fa d'acompanyant referent i sosté el desenvolupament integral",
+      "- Les seves funcions inclouen planificar l'ambient, promoure capacitats, acompanyar l'activitat i observar/documentar",
+      "- La vida quotidiana i les cures formen part de la funcio educadora"
     ],
-    commonMistakes: [
-      "Separar cura i pedagogia com si fossin camps diferents",
-      "Aplicar rutines fixes per sobre de l'observació diària",
-      "Pensar que la reflexió professional correspon només a altres perfils"
+    "commonMistakes": [
+      "Aprofitable: e17-01, e17-02 i case-15 ja situen la funcio educadora com a acompanyament integral i formacio continuada",
+      "Massa generic: encara falta més pes de l'entorn educatiu, de la presència referencial i del vincle entre cura, observacio i decisions d'equip.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Resumeix en quatre verbs què fa realment una educadora",
-      "Relaciona aquest tema amb autonomia de centre i projecte educatiu",
-      "Practica supòsits sobre criteris compartits i presa de decisions d'equip"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 18",
-    title: "Accidents i primeres cures",
-    reviewLabel: null,
-    summary: "Davant un accident cal actuar amb calma, seguir el protocol, registrar la incidència i informar correctament la família. El tema combina resposta immediata, prevenció i criteri professional de derivació.",
-    keyConcepts: [
-      "Resposta inicial",
-      "Protocol de primeres cures",
-      "Registre de la incidència",
-      "Comunicació amb la família"
+    "annex": "Annex II",
+    "theme": "Tema 18",
+    "title": "Accidents a l'etapa zero a tres anys. Prevenció i primeres cures.",
+    "reviewLabel": null,
+    "summary": "- Davant un accident: protegir, alertar, socórrer. - La prevencio s'ha de lligar a l'organitzacio de l'espai, els materials, les vies de pas i la vigilància activa. - En infants de 0-3, la resposta ha de tenir en compte la fragilitat, la mobilitat reduïda i la necessitat de calma. - El registre de la incidència i la comunicacio amb la familia formen part del procediment. - Cal distingir entre primeres cures i actuacions que ja reclamen atencio sanitaria.",
+    "keyConcepts": [
+      "El tema ha d'anar de prevencio, resposta immediata, primers auxilis, registre i comunicacio adequada en una llar d'infants, amb especial atencio als infants petits.",
+      "- Davant un accident: protegir, alertar, socórrer",
+      "- La prevencio s'ha de lligar a l'organitzacio de l'espai, els materials, les vies de pas i la vigilància activa",
+      "- En infants de 0-3, la resposta ha de tenir en compte la fragilitat, la mobilitat reduïda i la necessitat de calma"
     ],
-    commonMistakes: [
-      "Informar abans d'atendre adequadament la situació",
-      "No registrar accidents considerats lleus",
-      "Actuar només amb criteri personal en lloc de seguir protocol"
+    "commonMistakes": [
+      "Aprofitable: e18-01 i case-07 ja segueixen la lògica de protocol i comunicacio",
+      "Massa generic: encara no aterra prou en el PAS, les situacions mes habituals i la diferencia entre prevenir, atendre i informar.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa la seqüència bàsica d'actuació davant incidències",
-      "Relaciona prevenció amb organització d'espais i materials",
-      "Practica preguntes que diferenciïn atenció, registre i comunicació"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 19",
-    title: "Salut i higiene",
-    reviewLabel: null,
-    summary: "La salut i la higiene formen part del benestar quotidià dels infants i de la responsabilitat educativa del centre. El seu tractament ha de combinar prevenció, observació, hàbits saludables i respecte per la intimitat.",
-    keyConcepts: [
-      "Benestar físic i emocional",
-      "Hàbits saludables",
-      "Prevenció",
-      "Observació de signes de malestar"
+    "annex": "Annex II",
+    "theme": "Tema 19",
+    "title": "Malalties més freqüents a l'etapa zero a tres anys. Protocol d'higiene i salut.",
+    "reviewLabel": null,
+    "summary": "- La salut i la higiene formen part de la vida quotidiana i de la cura educativa. - El rentat de mans, la ventilacio, la neteja i la higiene nasal son mesures de prevencio. - El menjar, la cura del cos i el descans estan lligats a benestar i salut. - La higiene bucodental s'ha de cuidar des del naixement i des de la primera dent. - En infants petits, les malalties transmissibles i digestives demanen especial prudencia i bons habits.",
+    "keyConcepts": [
+      "El tema no es limita a \"higiene\" ni a \"salut\" en abstracte, sino a les malalties mes frequents de 0-3 i als protocols quotidians de prevencio i cura.",
+      "- La salut i la higiene formen part de la vida quotidiana i de la cura educativa",
+      "- El rentat de mans, la ventilacio, la neteja i la higiene nasal son mesures de prevencio",
+      "- El menjar, la cura del cos i el descans estan lligats a benestar i salut"
     ],
-    commonMistakes: [
-      "Reduir la higiene a una rutina mecànica sense comunicació",
-      "Separar salut i educació com si fossin àmbits independents",
-      "No detectar o no compartir canvis rellevants en l'estat de l'infant"
+    "commonMistakes": [
+      "Aprofitable: e19-01 ja apunta a higiene i prevencio",
+      "Massa generic: encara falta concretar malalties habituals, higiene de mans, higiene nasal, higiene bucodental, ventilacio i criteris de salut amb arrel a Canal Salut.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Enllaça aquest tema amb alimentació, descans i cura",
-      "Repasa què vol dir prevenir i no només reaccionar",
-      "Practica situacions on la salut s'expressa en petits indicis quotidians"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 20",
-    title: "Evacuació",
-    reviewLabel: null,
-    summary: "L'evacuació exigeix preparació, ordre, calma i seguiment del pla establert. En una escola bressol el pes recau en la seguretat dels infants petits, el recompte i l'actuació coordinada de l'equip.",
-    keyConcepts: [
-      "Pla d'evacuació",
-      "Sortida ordenada",
-      "Recompte",
-      "Coordinació de l'equip"
+    "annex": "Annex II",
+    "theme": "Tema 20",
+    "title": "Pla d'evacuació a l'escola bressol. Pautes per evacuar infants de zero a tres anys.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "- El pla d'emergencia del centre docent defineix actuacions, responsables i itineraris. - A les llars d'infants hi ha fitxes específiques per evacuacio i confinament. - L'evacuacio s'ha d'entendre com a resposta organitzada i no improvisada. - Els infants de 0-3 no es desplacen igual que l'alumnat d'etapes posteriors: cal preveure ajuda, cadena de sortida i suport adult. - El pla ha de saber quan evacuar, quan confinar i com actuar en cada cas.",
+    "keyConcepts": [
+      "El focus es l'evacuacio en llar d'infants, pero amb una lectura realista del que implica amb infants molt petits: ordre, velocitat, responsables, confinament si cal i adaptacio al centre.",
+      "- El pla d'emergencia del centre docent defineix actuacions, responsables i itineraris",
+      "- A les llars d'infants hi ha fitxes específiques per evacuacio i confinament",
+      "- L'evacuacio s'ha d'entendre com a resposta organitzada i no improvisada"
     ],
-    commonMistakes: [
-      "Improvisar grups segons proximitat sense seguir el pla",
-      "Prioritzar objectes o papers per sobre de la sortida segura",
-      "Confiar en criteris espontanis en lloc de procediments previstos"
+    "commonMistakes": [
+      "Aprofitable: e20-01 i case-08 serveixen com a base",
+      "Massa generic: encara falta concretar sortides, confinament, responsables de planta i limitacions dels infants petits.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Memoritza les prioritats bàsiques en un simulacre o emergència",
-      "Relaciona evacuació amb PRL i ordre de l'espai",
-      "Practica casos on hagis de detectar què no s'hauria de prioritzar"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 21",
-    title: "Psicòleg a l'escola bressol",
-    reviewLabel: "A revisar per la senyoreta Pame",
-    summary: "En el material del projecte, aquest tema es treballa sobretot a través del paper de l'EAP i de l'orientació psicopedagògica. La idea clau és que l'assessorament extern dona suport al centre, però no substitueix l'observació quotidiana ni les decisions pedagògiques d'equip.",
-    keyConcepts: [
-      "EAP",
-      "Assessorament i orientació psicopedagògica",
-      "Suport a centre, professorat i famílies",
-      "Coordinació davant signes d'alerta"
+    "annex": "Annex II",
+    "theme": "Tema 21",
+    "title": "La figura del psicòleg a l'escola bressol. Tasques de prevenció i acompanyament.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "- El referent institucional mes proper es l'EAP, equip d'assessorament i orientacio psicopedagogica. - La seva funcio es donar suport al centre, al professorat i a les famílies, no fer teràpia a l'aula. - La intervencio acostuma a iniciar-se amb observacio, contrast i coordinacio, no amb diagnòstics precipitats. - L'acompanyament extern ha d'ajudar a eliminar barreres, ordenar respostes i millorar el treball compartit.",
+    "keyConcepts": [
+      "Aquest tema s'ha d'abordar amb molta cura: el temari parla de psicoleg, pero en el marc oficial de Catalunya el que apareix clarament es l'EAP i l'orientacio psicopedagogica i de suport al centre i a les famílies.",
+      "- El referent institucional mes proper es l'EAP, equip d'assessorament i orientacio psicopedagogica",
+      "- La seva funcio es donar suport al centre, al professorat i a les famílies, no fer teràpia a l'aula",
+      "- La intervencio acostuma a iniciar-se amb observacio, contrast i coordinacio, no amb diagnòstics precipitats"
     ],
-    commonMistakes: [
-      "Pensar que el servei extern substitueix la mirada educativa del centre",
-      "Esperar diagnòstics tancats per començar a actuar",
-      "Externalitzar tota la resposta sense coordinació amb la família"
+    "commonMistakes": [
+      "Aprofitable: e21-01 ja apunta al suport, la prevencio i l'acompanyament",
+      "Massa generic: cal evitar que sembli una intervencio clinica directa o que el psicoleg substitueixi l'observacio i el criteri de l'equip",
+      "Marca: A revisar per la senyoreta Pame."
     ],
-    studyGuide: [
-      "Estudia aquest tema com a funció de suport i no de substitució",
-      "Repasa els primers passos davant dubtes sobre desenvolupament",
-      "Verifica abans d'examen els matisos terminològics del tema"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 22",
-    title: "Observació i documentació pedagògica",
-    reviewLabel: null,
-    summary: "L'observació ajuda a comprendre processos i la documentació pedagògica transforma aquesta mirada en eina de reflexió i decisió. Aquest tema reforça que observar no és etiquetar i documentar no és acumular-ho tot.",
-    keyConcepts: [
-      "Observació sistemàtica",
-      "Comprensió de processos",
-      "Selecció d'evidències",
-      "Decisions educatives"
+    "annex": "Annex II",
+    "theme": "Tema 22",
+    "title": "L'observació sistemàtica i la documentació pedagògica de la cultura de l'infant com a projecte d'escola. Criteris pel desenvolupament d'aquestes dues eines pedagògiques de forma quotidiana, individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
+    "reviewLabel": null,
+    "summary": "- L'observacio no es una fotografia exacta de la realitat, sino una interpretacio professional. - La documentacio pedagògica fa visible el treball, els processos i la cultura d'infant. - S'hi poden incloure notes, videos, audios, fotos i produccions dels infants, sempre amb criteri i sentit. - Les observacions i la documentacio s'han de portar a l'equip i, quan correspongui, a les famílies. - El banc hauria de distingir clarament observar, interpretar, documentar i decidir.",
+    "keyConcepts": [
+      "No es tracta només de \"mirar\" o \"fer fotos\", sino d'observar, interpretar, seleccionar evidencies i convertir-les en documentacio que ajuda a decidir millor i a compartir el sentit educatiu.",
+      "- L'observacio no es una fotografia exacta de la realitat, sino una interpretacio professional",
+      "- La documentacio pedagògica fa visible el treball, els processos i la cultura d'infant",
+      "- S'hi poden incloure notes, videos, audios, fotos i produccions dels infants, sempre amb criteri i sentit"
     ],
-    commonMistakes: [
-      "Registrar només productes finals",
-      "Guardar totes les imatges sense criteri",
-      "Compartir evidències sense haver-ne fet lectura pedagògica en equip"
+    "commonMistakes": [
+      "Aprofitable: e22-01, e22-02 i case-09 van en la bona direccio",
+      "Massa generic: encara falta insistir en la subjectivitat de l'observacio, la seleccio d'evidencies, l'us en equip i el paper de la documentacio com a reflexio democratica.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Compara aquest tema amb el de documentació pedagògica del bloc inicial",
-      "Practica la diferència entre observar, interpretar i decidir",
-      "Pensa sempre per a què serveix una observació concreta"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 23",
-    title: "Comunicació amb famílies",
-    reviewLabel: null,
-    summary: "La comunicació amb famílies ha de basar-se en respecte mutu, confiança, col·laboració i criteri professional. Informar no és només traslladar incidències, sinó construir una relació continuada i coherent.",
-    keyConcepts: [
-      "Respecte mutu",
-      "Confiança i col·laboració",
-      "Dret de les famílies a estar informades",
-      "Criteri professional i confidencialitat"
+    "annex": "Annex II",
+    "theme": "Tema 23",
+    "title": "La comunicació amb la família. Eines de comunicació vàlides en l'etapa de zero a tres anys.",
+    "reviewLabel": null,
+    "summary": "- La relacio amb la familia ha de ser cordial, professional i bidireccional. - Els canals han de permetre anar de casa a l'escola i de l'escola a casa. - Les entrades i sortides, la primera entrevista i les reunions periodiques son espais clau. - La comunicacio no es pot reduir a incidencies ni a un monoleg del centre. - Quan cal orientacio, la conversa amb la familia ha d'ajudar a construir acords i coherencia.",
+    "keyConcepts": [
+      "El tema demana canals, moments, to i criteri professional per comunicar amb famílies a 0-3, no una llista de mitjans deslligada del projecte educatiu.",
+      "- La relacio amb la familia ha de ser cordial, professional i bidireccional",
+      "- Els canals han de permetre anar de casa a l'escola i de l'escola a casa",
+      "- Les entrades i sortides, la primera entrevista i les reunions periodiques son espais clau"
     ],
-    commonMistakes: [
-      "Reduir la comunicació a problemes o moments crítics",
-      "Confondre corresponsabilitat amb supervisió contínua de l'equip",
-      "Fer servir canals informals que perden coherència o confidencialitat"
+    "commonMistakes": [
+      "Aprofitable: e23-01 ja apunta a canals valids i proteccio de dades",
+      "Massa generic: encara falta aterrar-ho en entrades i sortides, entrevistes, reunions, llibreta/plataforma i retroaccio bidireccional.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa quina informació s'ha de compartir i com",
-      "Relaciona aquest tema amb familiarització, projecte educatiu i dades",
-      "Practica preguntes on hagis de triar el to i el marc adequat de comunicació"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 24",
-    title: "Protecció de dades i dret d'imatge",
-    reviewLabel: null,
-    summary: "En escola bressol, la imatge i les dades dels infants exigeixen una cura especial. Cal verificar autoritzacions o base legítima, finalitat, canal de difusió i respecte a la confidencialitat.",
-    keyConcepts: [
-      "Dret d'imatge",
-      "Protecció de dades de menors",
-      "Finalitat i base legítima",
-      "Canals segurs de comunicació o difusió"
+    "annex": "Annex II",
+    "theme": "Tema 24",
+    "title": "La protecció de dades i el dret d'imatge dels infants.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "- Una fotografia identificable d'un infant es dada personal. - El centre ha d'informar, demanar consentiment quan calgui i limitar la difusio a la finalitat prevista. - El consentiment no s'ha d'interpretar com una llicencia per a usos futurs indeterminats. - En casos molt concrets, una imatge d'un acte o esdeveniment public pot difondre's sense consentiment si es merament accessoria i no afecta la intimitat. - Si la persona no es identificable sense esforcos desproporcionats, la imatge no es considera dada personal.",
+    "keyConcepts": [
+      "El tema ha de centrar-se en dades personals de menors, consentiment o base legitimadora, finalitat, difusio i excepcions molt limitades.",
+      "- Una fotografia identificable d'un infant es dada personal",
+      "- El centre ha d'informar, demanar consentiment quan calgui i limitar la difusio a la finalitat prevista",
+      "- El consentiment no s'ha d'interpretar com una llicencia per a usos futurs indeterminats"
     ],
-    commonMistakes: [
-      "Publicar imatges perquè l'activitat és bonica o pedagògica",
-      "Pensar que un grup tancat eximeix de revisar autoritzacions",
-      "Confondre comunicació interna necessària amb difusió pública"
+    "commonMistakes": [
+      "Aprofitable: e24-01 i case-04 ja apunten a autoritzacio, finalitat i canal",
+      "Massa generic: falta precisar millor quan una imatge es dada personal, quan pot haver excepcio i que no val qualsevol consentiment generic.",
+      "Estudiar el tema de manera massa genèrica sense atendre el subtítol concret del temari."
     ],
-    studyGuide: [
-      "Repasa sempre quatre preguntes: per a què, amb quina base, per quin canal i amb quins infants",
-      "Relaciona aquest tema amb el de protecció de dades de l'Annex I",
-      "Practica casos sobre fotografies, xarxes, circulars i canals interns"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 25",
-    title: "Alimentació zero-tres",
-    reviewLabel: null,
-    summary: "L'alimentació en zero-tres s'entén com una experiència de benestar, relació i aprenentatge d'hàbits saludables. El criteri central és oferir sense pressió, respectar gana i sacietat i coordinar-se amb la família.",
-    keyConcepts: [
-      "Hàbits saludables",
-      "Senyals de gana i sacietat",
-      "Experiència positiva d'àpat",
-      "Coordinació amb la família"
+    "annex": "Annex II",
+    "theme": "Tema 25",
+    "title": "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys.",
+    "reviewLabel": null,
+    "summary": "La nova guia d'alimentació 0-3 situa l'alimentació com una experiència de salut, aprenentatge, benestar i sostenibilitat. A les escoles bressol es recomana promoure la lactància materna, garantir l'aportació prioritària de llet més enllà dels 6 mesos i introduir progressivament altres aliments dins un patró saludable. Si el centre ofereix esmorzar, la fruita fresca és l'opció prioritària; si ofereix berenar, cal prioritzar opcions saludables sense sucres afegits ni sal i evitar brioixeria, galetes o postres làctiques ensucrades. Els menús s'han de dissenyar segons el calendari d'incorporació d'aliments i amb productes locals i de temporada. També és rellevant que la comunicació amb les famílies sobre l'alimentació es faci amb criteri pedagògic global i no només amb registres quantitatius d'ingesta que poden generar comparacions innecessàries.",
+    "keyConcepts": [
+      "Nova guia d'alimentació de zero a tres anys. Canvis i novetats en l'alimentació de zero a tres anys. El focus no és només \"alimentació saludable\" en general, sinó què canvia o què s'ha de destacar específicament en el marc actual per a escoles bressol i infants de 0 a 3 anys a Catalunya: lactància, prioritat de la llet, incorporació d'aliments, esmorzars i berenars saludables, menús segurs i sostenibles, i criteris de comunicació amb les famílies.",
+      "La nova guia d'alimentació 0-3 situa l'alimentació com una experiència de salut, aprenentatge, benestar i sostenibilitat",
+      "A les escoles bressol es recomana promoure la lactància materna, garantir l'aportació prioritària de llet més enllà dels 6 mesos i introduir progressivament altres aliments dins un patró saludable",
+      "Si el centre ofereix esmorzar, la fruita fresca és l'opció prioritària; si ofereix berenar, cal prioritzar opcions saludables sense sucres afegits ni sal i evitar brioixeria, galetes o postres làctiques ensucrades"
     ],
-    commonMistakes: [
-      "Insistir o forçar perquè l'infant mengi",
-      "Fixar quantitats mínimes iguals per a tothom",
-      "Convertir l'àpat en un pols de control adult"
+    "commonMistakes": [
+      "e25-01 és una bona porta d'entrada perquè connecta alimentació, autonomia, seguretat alimentària i coordinació amb la família",
+      "v2-a2-t25-01 és útil perquè concreta la continuïtat de la lactància a l'escola bressol",
+      "v2-a2-t25-02 és útil perquè incorpora la recomanació específica de fruita fresca a l'esmorzar"
     ],
-    studyGuide: [
-      "Diferencia alimentació saludable de pressió alimentària",
-      "Repasa com es construeix una experiència positiva al menjador",
-      "Practica casos de rebuig d'un aliment, novetats i coordinació amb famílies"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 26",
-    title: "Coeducació",
-    reviewLabel: null,
-    summary: "La coeducació és una mirada transversal que revisa estereotips, llenguatge, materials, rols i expectatives. En zero-tres no és massa aviat: el projecte la presenta com una part quotidiana de la pràctica educativa.",
-    keyConcepts: [
-      "Igualtat real d'oportunitats",
-      "Revisió d'estereotips de gènere",
-      "Materials i contes diversos",
-      "Mirada transversal"
+    "annex": "Annex II",
+    "theme": "Tema 26",
+    "title": "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil.",
+    "reviewLabel": null,
+    "summary": "La coeducació, segons XTEC, és una acció educadora orientada a la igualtat real d'oportunitats i a l'eliminació d'estereotips i actituds discriminatòries. En el nou currículum d'educació infantil això no queda com un afegit extern, sinó que s'ha d'incorporar en les unitats, projectes i activitats d'aula, i també en el projecte educatiu i les programacions. En el 0-3 això implica revisar llenguatge, contes, propostes de joc, organització d'espais, expectatives adultes i representació de rols. També connecta amb la finalitat general de l'etapa: garantir un ambient de benestar, relació i aprenentatge que asseguri la igualtat d'oportunitats de tots i cadascun dels infants.",
+    "keyConcepts": [
+      "Coeducació o educació en la igualtat de gènere al nou currículum d'educació infantil. El centre del tema no és només definir coeducació, sinó veure com queda integrada dins el nou currículum d'educació infantil i quines implicacions té a la pràctica educativa 0-3: entorns, llenguatge, materials, expectatives, programacions i projecte educatiu.",
+      "La coeducació, segons XTEC, és una acció educadora orientada a la igualtat real d'oportunitats i a l'eliminació d'estereotips i actituds discriminatòries",
+      "En el nou currículum d'educació infantil això no queda com un afegit extern, sinó que s'ha d'incorporar en les unitats, projectes i activitats d'aula, i també en el projecte educatiu i les programacions",
+      "En el 0-3 això implica revisar llenguatge, contes, propostes de joc, organització d'espais, expectatives adultes i representació de rols"
     ],
-    commonMistakes: [
-      "Tractar la coeducació com una activitat puntual o commemorativa",
-      "Mantenir estereotips perquè semblen tradicionals o espontanis",
-      "Pensar que en 0-3 encara no influeixen els rols socials"
+    "commonMistakes": [
+      "e26-01, v2-a2-t26-01, v2-a2-t26-02 i case-14 tenen bona base conceptual",
+      "El resum actual de text i slides encerta els eixos principals: transversalitat, revisió d'estereotips i impacte real al 0-3",
+      "Encara s'explica la coeducació sobretot com una mirada general, però es vincula poc de manera explícita amb el nou currículum i els seus vectors o amb la incorporació en programacions, projectes i activitats"
     ],
-    studyGuide: [
-      "Observa mentalment contes, racons, llenguatge i expectatives",
-      "Relaciona coeducació amb igualtat i no-discriminació",
-      "Practica preguntes on l'error sigui la falsa neutralitat"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   },
   {
-    annex: "Annex II",
-    theme: "Tema 27",
-    title: "Escoles bressol municipals de Lliçà d'Amunt",
-    reviewLabel: "A revisar per la senyoreta Pame",
-    summary: "Aquest tema recull el context local de les escoles bressol municipals de Lliçà d'Amunt, especialment Nova Espurna i Palaudàries. Com que depèn d'informació municipal viva, és un tema útil però que s'ha de revisar abans de convocatòries o canvis organitzatius.",
-    keyConcepts: [
-      "Nova Espurna i Palaudàries",
-      "Servei municipal d'educació 0-3",
-      "Context local i organització de les escoles",
-      "Enfocament pedagògic municipal"
+    "annex": "Annex II",
+    "theme": "Tema 27",
+    "title": "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu.",
+    "reviewLabel": "A revisar per la senyoreta Pame",
+    "summary": "A revisar per la senyoreta Pame Les fonts municipals actuals descriuen dues escoles bressol municipals a Lliçà d'Amunt: Palaudàries, situada al barri de Palaudàries, i Nova Espurna, al centre urbà. La primera disposa de 6 estances i la segona de 8, totes destinades a infants de 0 a 3 anys. Les dues presenten un discurs pedagògic alineat amb el 0-3: desenvolupament de l'infant respectant el ritme de creixement, observació com a base de l'acompanyament, espais de descoberta, valor educatiu dels moments de cura i centralitat del joc. També s'hi destaca el servei de menjador amb àpats elaborats al mateix centre amb productes de proximitat. A més, les pàgines municipals enllacen documentació oficial actualitzada, com la informació general de les escoles bressol, el projecte educatiu 2026, el projecte lingüístic, les NOFC i el procés d'acolliment d'infants i famílies.",
+    "keyConcepts": [
+      "Les escoles bressol municipals de Lliçà d'Amunt, característiques i projecte educatiu. Aquest tema és municipal i s'ha d'allunyar completament del material de Caldes. El focus real és: quines escoles bressol municipals té Lliçà d'Amunt, quines característiques bàsiques tenen i quins trets del projecte educatiu i del funcionament públic s'expressen a les fonts municipals.",
+      "A revisar per la senyoreta Pame Les fonts municipals actuals descriuen dues escoles bressol municipals a Lliçà d'Amunt: Palaudàries, situada al barri de Palaudàries, i Nova Espurna, al centre urbà",
+      "La primera disposa de 6 estances i la segona de 8, totes destinades a infants de 0 a 3 anys",
+      "Les dues presenten un discurs pedagògic alineat amb el 0-3: desenvolupament de l'infant respectant el ritme de creixement, observació com a base de l'acompanyament, espais de descoberta, valor educatiu dels moments de cura i centralitat del joc"
     ],
-    commonMistakes: [
-      "Donar per definitives dades municipals que poden canviar",
-      "Confondre nombre de centres, estances o característiques bàsiques",
-      "Separar el context municipal del projecte educatiu que es descriu"
+    "commonMistakes": [
+      "e27-01 és útil perquè ja posa el focus en característiques, projecte educatiu i servei municipal",
+      "v2-a2-t27-01, v2-a2-t27-02 i v2-a2-t27-03 ja han fet la substitució principal de Caldes per Lliçà",
+      "El fet que el tema estigui marcat amb revisió és correcte i s'ha de mantenir"
     ],
-    studyGuide: [
-      "Fes una fitxa breu de cada escola bressol municipal citada al material",
-      "Repasa quina mirada educativa destaca la descripció municipal",
-      "Verifica abans d'examen qualsevol dada organitzativa o de capacitat"
+    "studyGuide": [
+      "Llegeix el subtítol complet del tema abans de memoritzar definicions.",
+      "Relaciona cada concepte amb una situació real d’escola bressol o d’administració local quan correspongui.",
+      "Practica les preguntes v3 fixant-te en per què els distractors són plausibles però incorrectes."
     ]
   }
 ];

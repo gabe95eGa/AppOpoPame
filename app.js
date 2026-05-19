@@ -75,6 +75,60 @@ function contentKey(item) {
   return `${item.annex} - ${item.theme}`;
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function renderInlineMarkdown(value) {
+  return escapeHtml(value)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<span class="source-link">$1</span>');
+}
+
+function renderStudyBlocks(blocks) {
+  return (blocks || []).map((block) => {
+    if (block.type === "list") {
+      return `<ul>${block.items.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join("")}</ul>`;
+    }
+    return `<p>${renderInlineMarkdown(block.text)}</p>`;
+  }).join("");
+}
+
+function renderStudySections(item) {
+  if (Array.isArray(item.sections) && item.sections.length) {
+    return item.sections.map((section) => `
+      <section class="study-page-section">
+        <h4>${renderInlineMarkdown(section.heading)}</h4>
+        ${renderStudyBlocks(section.blocks)}
+      </section>
+    `).join("");
+  }
+
+  return `
+    <section class="study-page-section">
+      <h4>Context del tema</h4>
+      <p>${renderInlineMarkdown(item.summary)}</p>
+    </section>
+    <section class="study-page-section">
+      <h4>Conceptes essencials</h4>
+      <ul>${(item.keyConcepts || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+    </section>
+    <section class="study-page-section">
+      <h4>Punts testables</h4>
+      <ul>${(item.testablePoints || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+    </section>
+    <section class="study-page-section">
+      <h4>Fonts base</h4>
+      <ul>${(item.sources || []).map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
+    </section>
+  `;
+}
+
 function renderHome() {
   session = null;
   app.replaceChildren(homeTemplate.content.cloneNode(true));
@@ -495,24 +549,13 @@ function renderPlainTextStudy() {
           </div>
           ${contentReviewPill(item)}
         </div>
-        <p class="lead-text">${item.summary}</p>
-        <div class="plain-grid">
-          <section>
-            <h3>Conceptes essencials</h3>
-            <ul>${item.keyConcepts.map((text) => `<li>${text}</li>`).join("")}</ul>
-          </section>
-          <section>
-            <h3>Punts testables</h3>
-            <ul>${item.testablePoints.map((text) => `<li>${text}</li>`).join("")}</ul>
-          </section>
-          <section>
-            <h3>Fonts base</h3>
-            <ul>${item.sources.map((text) => `<li>${text}</li>`).join("")}</ul>
-          </section>
+        <p class="lead-text">${renderInlineMarkdown(item.summary)}</p>
+        <div class="study-page">
+          ${renderStudySections(item)}
         </div>
         <div class="study-guide-block">
           <h3>Pauta d'estudi</h3>
-          <ul>${item.studyGuide.map((text) => `<li>${text}</li>`).join("")}</ul>
+          <ul>${item.studyGuide.map((text) => `<li>${renderInlineMarkdown(text)}</li>`).join("")}</ul>
         </div>
       </article>
     `;

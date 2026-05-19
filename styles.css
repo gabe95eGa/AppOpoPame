@@ -25,9 +25,16 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     linear-gradient(180deg, #eef5f8 0, var(--bg) 280px),
     var(--bg);
@@ -57,9 +64,9 @@ select:focus-visible {
 }
 
 .app-shell {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1180px, 100%);
   margin: 0 auto;
-  padding: 18px 0 48px;
+  padding: 18px 16px 48px;
 }
 
 .topbar {
@@ -123,6 +130,7 @@ h3 {
 }
 
 .panel {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -381,6 +389,11 @@ h3 {
   line-height: 1.4;
 }
 
+.option span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .option:hover,
 .option:focus-visible {
   border-color: rgba(37, 99, 235, 0.55);
@@ -526,12 +539,19 @@ h3 {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  min-width: 0;
   margin-bottom: 16px;
+}
+
+.study-controls label {
+  flex: 0 0 auto;
 }
 
 .study-controls select {
   flex: 1 1 320px;
-  min-width: 220px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   min-height: 42px;
   padding: 0 12px;
   border: 1px solid var(--line);
@@ -586,10 +606,12 @@ h3 {
 }
 
 .plain-study {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: linear-gradient(180deg, #fff, #fbfdff);
   box-shadow: var(--shadow-tight);
+  overflow-wrap: anywhere;
 }
 
 .plain-study ul {
@@ -621,10 +643,46 @@ h3 {
 }
 
 .lead-text {
-  max-width: 860px;
+  max-width: 920px;
   color: var(--ink);
   font-size: 1.04rem;
   line-height: 1.6;
+}
+
+.study-page {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.study-page-section {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.study-page-section h4 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.study-page-section p {
+  margin-bottom: 12px;
+  line-height: 1.62;
+}
+
+.study-page-section p:last-child {
+  margin-bottom: 0;
+}
+
+.study-page-section li {
+  overflow-wrap: anywhere;
+}
+
+.source-link {
+  font-weight: 800;
 }
 
 .plain-grid {
@@ -693,8 +751,8 @@ h3 {
 
 @media (max-width: 620px) {
   .app-shell {
-    width: min(100% - 20px, 1180px);
-    padding-top: 14px;
+    width: 100%;
+    padding: 12px 10px 32px;
   }
 
   .topbar,
@@ -702,6 +760,11 @@ h3 {
   .content-heading {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .topbar .ghost-button,
+  .exam-header .secondary-button {
+    width: 100%;
   }
 
   .stats-grid {
@@ -737,5 +800,16 @@ h3 {
 
   .study-navigation button {
     flex: 1 1 calc(50% - 4px);
+    padding-inline: 10px;
+  }
+
+  .plain-study,
+  .study-page-section,
+  .study-guide-block {
+    padding: 14px;
+  }
+
+  .lead-text {
+    font-size: 1rem;
   }
 }

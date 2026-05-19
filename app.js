@@ -7,7 +7,6 @@ if (!EXAM_DATA) {
 const QUESTION_BANK = EXAM_DATA.questionBank;
 const CASE_CONTEXT = EXAM_DATA.caseContext;
 const CASE_QUESTIONS = EXAM_DATA.caseQuestions;
-const STUDY_SLIDES = window.STUDY_SLIDES || [];
 const STUDY_TEXT = window.STUDY_TEXT || [];
 
 const app = document.getElementById("app");
@@ -83,7 +82,6 @@ function renderHome() {
     button.addEventListener("click", () => {
       const mode = button.dataset.mode;
       if (mode === "study") renderStudy();
-      if (mode === "slides") renderSlidesStudy();
       if (mode === "plainText") renderPlainTextStudy();
       if (mode === "first") startExam("first");
       if (mode === "case") startExam("case");
@@ -453,64 +451,13 @@ function renderStudy() {
   renderStudyList();
 }
 
-function renderSlidesStudy() {
-  app.innerHTML = `
-    <section class="panel review-panel">
-      <div class="exam-header">
-        <div>
-          <p class="eyebrow">Temari en slides</p>
-          <h2>Estudi visual per tema</h2>
-        </div>
-        <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
-      </div>
-      <div class="study-controls">
-        <label for="slideTopicSelect">Tema</label>
-        <select id="slideTopicSelect">
-          ${STUDY_SLIDES.map((item, index) => `<option value="${index}">${contentKey(item)} - ${item.title}</option>`).join("")}
-        </select>
-      </div>
-      <div id="slidesContent"></div>
-    </section>
-  `;
-  document.getElementById("homeBtn").addEventListener("click", renderHome);
-  const select = document.getElementById("slideTopicSelect");
-  const renderTopic = () => {
-    const item = STUDY_SLIDES[Number(select.value)];
-    document.getElementById("slidesContent").innerHTML = `
-      <div class="content-heading">
-        <div>
-          <p class="eyebrow">${contentKey(item)}</p>
-          <h3>${item.title}</h3>
-          ${item.subtitle ? `<p class="muted">${item.subtitle}</p>` : ""}
-        </div>
-        ${contentReviewPill(item)}
-      </div>
-      <div class="slides-grid">
-        ${item.slides.map((slide, index) => `
-          <article class="slide-card">
-            <span class="slide-number">${index + 1}</span>
-            <h3>${slide.title}</h3>
-            <ul>
-              ${slide.points.map((point) => `<li>${point}</li>`).join("")}
-            </ul>
-            ${slide.remember ? `<p class="remember"><strong>Recorda:</strong> ${slide.remember}</p>` : ""}
-            ${slide.source ? `<p class="source-note">${slide.source}</p>` : ""}
-          </article>
-        `).join("")}
-      </div>
-    `;
-  };
-  select.addEventListener("change", renderTopic);
-  renderTopic();
-}
-
 function renderPlainTextStudy() {
   app.innerHTML = `
     <section class="panel review-panel">
       <div class="exam-header">
         <div>
-          <p class="eyebrow">Temari en text pla</p>
-          <h2>Lectura sintètica per tema</h2>
+          <p class="eyebrow">Temari per temes</p>
+          <h2>Lectura d'estudi</h2>
         </div>
         <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
       </div>
@@ -519,12 +466,24 @@ function renderPlainTextStudy() {
         <select id="textTopicSelect">
           ${STUDY_TEXT.map((item, index) => `<option value="${index}">${contentKey(item)} - ${item.title}</option>`).join("")}
         </select>
+        <div class="study-navigation">
+          <button class="ghost-button" id="textPrevBtn" type="button">Tema anterior</button>
+          <button class="ghost-button" id="textNextBtn" type="button">Tema següent</button>
+        </div>
       </div>
       <div id="plainTextContent"></div>
     </section>
   `;
   document.getElementById("homeBtn").addEventListener("click", renderHome);
   const select = document.getElementById("textTopicSelect");
+  const prevBtn = document.getElementById("textPrevBtn");
+  const nextBtn = document.getElementById("textNextBtn");
+  const topicCount = STUDY_TEXT.length;
+  const updateNavState = () => {
+    const currentIndex = Number(select.value);
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex >= topicCount - 1;
+  };
   const renderTopic = () => {
     const item = STUDY_TEXT[Number(select.value)];
     document.getElementById("plainTextContent").innerHTML = `
@@ -539,21 +498,38 @@ function renderPlainTextStudy() {
         <p class="lead-text">${item.summary}</p>
         <div class="plain-grid">
           <section>
-            <h3>Conceptes clau</h3>
+            <h3>Conceptes essencials</h3>
             <ul>${item.keyConcepts.map((text) => `<li>${text}</li>`).join("")}</ul>
           </section>
           <section>
-            <h3>Errors habituals</h3>
-            <ul>${item.commonMistakes.map((text) => `<li>${text}</li>`).join("")}</ul>
+            <h3>Punts testables</h3>
+            <ul>${item.testablePoints.map((text) => `<li>${text}</li>`).join("")}</ul>
           </section>
           <section>
-            <h3>Pauta d'estudi</h3>
-            <ul>${item.studyGuide.map((text) => `<li>${text}</li>`).join("")}</ul>
+            <h3>Fonts base</h3>
+            <ul>${item.sources.map((text) => `<li>${text}</li>`).join("")}</ul>
           </section>
+        </div>
+        <div class="study-guide-block">
+          <h3>Pauta d'estudi</h3>
+          <ul>${item.studyGuide.map((text) => `<li>${text}</li>`).join("")}</ul>
         </div>
       </article>
     `;
+    updateNavState();
   };
+  prevBtn.addEventListener("click", () => {
+    const currentIndex = Number(select.value);
+    if (currentIndex <= 0) return;
+    select.value = String(currentIndex - 1);
+    renderTopic();
+  });
+  nextBtn.addEventListener("click", () => {
+    const currentIndex = Number(select.value);
+    if (currentIndex >= topicCount - 1) return;
+    select.value = String(currentIndex + 1);
+    renderTopic();
+  });
   select.addEventListener("change", renderTopic);
   renderTopic();
 }

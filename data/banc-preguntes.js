@@ -7,7 +7,8 @@ window.EXAM_DATA = {
     "curriculumScope": "Les preguntes de l’Annex II fan referència al primer cicle d’educació infantil, especialment l’etapa 0-3, en el marc de Catalunya i de les escoles bressol municipals de Lliçà d’Amunt.",
     "questionDistribution": "40 temes x 4 preguntes = 160 preguntes. El test pot seleccionar-ne 40 de forma aleatòria.",
     "review": "Els ítems amb interpretació normativa, municipal, dades personals, salut o protocols interns poden portar etiqueta de revisió normativa recomanada.",
-    "caseFallback": "El banc MD nou no incloïa preguntes de cas pràctic; es conserven temporalment les preguntes de cas existents perquè la segona prova continuï funcionant."
+    "caseFallback": "El banc MD nou no incloïa preguntes de cas pràctic; es conserven temporalment les preguntes de cas existents perquè la segona prova continuï funcionant.",
+    "distractorDifficulty": "Distractors incorrectes revisats per reduir pistes absolutes com sempre, mai o només, fent-los més plausibles sense canviar la resposta correcta."
   },
   "sources": [
     {
@@ -213,7 +214,7 @@ window.EXAM_DATA = {
         "L'Estat es limita a garantir eleccions periodiques",
         "L'Estat sotmet el poder a la llei i orienta l'acció pública cap a llibertat, igualtat i benestar",
         "L'Estat deixa l'organització social al criteri de cada administració",
-        "L'Estat nomes regula els drets civils."
+        "L'Estat sobretot regula els drets civils."
       ],
       "correct": 1,
       "explanation": "La formula constitucional combina Estat de dret, dimensio social i legitimacio democratica.",
@@ -237,7 +238,7 @@ window.EXAM_DATA = {
       "document": "La Constitució Espanyola de 1978. Estructura i principis generals.",
       "prompt": "Quina es la funció de l'article 9.1 de la Constitució?",
       "options": [
-        "Regular nomes la jerarquia entre lleis ordinaries",
+        "Regular sobretot la jerarquia entre lleis ordinaries",
         "Establir la forma política de l'Estat.",
         "Subjectar ciutadans i poders públics a la Constitució i a la resta de l'ordenament",
         "Definir els drets fonamentals"
@@ -426,9 +427,9 @@ window.EXAM_DATA = {
       "document": "L'Estatut de Catalunya: estructura, contingut essencial i principis fonamentals.",
       "prompt": "Quin contingut forma part del nucli de l'Estatut?",
       "options": [
-        "Nomes el repartiment de tributs",
-        "Nomes simbols i denominacions",
-        "Exclusivament el sistema electoral municipal.",
+        "el repartiment de tributs",
+        "simbols i denominacions",
+        "principalment el sistema electoral municipal.",
         "Institucions, drets i deures, competencies i relacions amb l'Estat"
       ],
       "correct": 3,
@@ -507,9 +508,9 @@ window.EXAM_DATA = {
       "document": "L'Administració local. Ens que la integren.",
       "prompt": "Quines entitats formen bàsicament l'Administració local?",
       "options": [
-        "Nomes els ajuntaments",
+        "els ajuntaments",
         "Municipis, províncies, illes i altres entitats locals reconegudes per l'ordenament",
-        "Nomes les comunitats autonomes",
+        "les comunitats autonomes",
         "Els serveis públics educatius municipals."
       ],
       "correct": 1,
@@ -537,7 +538,7 @@ window.EXAM_DATA = {
         "Son simples oficines de tramit sense autonomia",
         "No poden prestar serveis públics.",
         "Tenen personalitat jurídica plena i capacitat per gestionar interessos propis",
-        "Nomes poden actuar per delegacio puntual"
+        "poden actuar per delegacio puntual"
       ],
       "correct": 2,
       "explanation": "La normativa local reconeix autonomia i capacitat propia.",
@@ -563,7 +564,7 @@ window.EXAM_DATA = {
       "options": [
         "Amb criteri diferent a cada servei encara que contradigui la llei",
         "Amb autonomia absoluta fora de qualsevol marc legal",
-        "Nomes amb criteri de proximitat, sense eficacia.",
+        "Amb criteri de proximitat, sense eficacia.",
         "Amb objectivitat i d'acord amb eficacia, descentralitzacio, desconcentracio i coordinacio"
       ],
       "correct": 3,
@@ -589,9 +590,9 @@ window.EXAM_DATA = {
       "prompt": "Quina capacitat practica tenen les entitats locals per complir les seves finalitats?",
       "options": [
         "Poden adquirir, posseir, reivindicar, permutar, gravar o alienar béns i exercir accions dins l'ambit de les seves competencies",
-        "Nomes poden redactar informes",
-        "Nomes poden intervenir en educació infantil.",
-        "Només poden actuar quan ho autoritza un jutjat"
+        "poden redactar informes",
+        "poden intervenir en educació infantil.",
+        "poden actuar quan ho autoritza un jutjat"
       ],
       "correct": 0,
       "explanation": "La LBRL dona una capacitat jurídica amplia al servei de les finalitats locals.",
@@ -642,7 +643,7 @@ window.EXAM_DATA = {
       "document": "El municipi (I). Òrgans de representació política i la seva designació.",
       "prompt": "Com es composa el Ple municipal?",
       "options": [
-        "Nomes per membres de la Junta de Govern",
+        "Per membres de la Junta de Govern",
         "Per tots els regidors i es presidit per l'alcalde",
         "Per personal tecnic designat",
         "Per representants de centres educatius."
@@ -670,10 +671,10 @@ window.EXAM_DATA = {
       "document": "El municipi (I). Òrgans de representació política i la seva designació.",
       "prompt": "Quan existeix la Junta de Govern Local?",
       "options": [
-        "Nomes amb autoritzacio autonòmica",
-        "A tots els municipis sempre, sense excepcio.",
+        "Amb autoritzacio autonòmica",
+        "A tots els municipis com a regla general.",
         "En municipis de mes de 5.000 habitants i, en alguns de menors, si ho preveu la norma organica o el Ple",
-        "Nomes als municipis capital de provincia"
+        "als municipis capital de provincia"
       ],
       "correct": 2,
       "explanation": "La LBRL vincula la Junta a la mida municipal i a la regulacio organica.",
@@ -724,8 +725,8 @@ window.EXAM_DATA = {
       "document": "El Municipi: La regulació de les competències a la Llei de Bases de Règim Local.",
       "prompt": "Quin criteri bàsic guia l'atribucio de competencies als municipis?",
       "options": [
-        "Gestionar nomes funcions simbòliques.",
-        "Actuar nomes si l'Estat ho autoritza cada vegada",
+        "Gestionar sobretot funcions simbòliques.",
+        "Actuar sobretot si l'Estat ho autoritza cada vegada",
         "Limitar-se a executar ordres externes",
         "Intervenir en assumptes que afecten els seus interessos amb criteris de descentralitzacio i proximitat"
       ],
@@ -753,7 +754,7 @@ window.EXAM_DATA = {
       "options": [
         "Les pròpies responen a interessos locals i les delegades s'exerceixen per encàrrec d'una altra administració",
         "No hi ha cap diferencia jurídica.",
-        "Les propies depenen sempre d'una autoritzacio individual",
+        "Les propies depenen d'una autoritzacio individual de l'administracio superior",
         "Les delegades no tenen cap condicio legal"
       ],
       "correct": 0,
@@ -805,10 +806,10 @@ window.EXAM_DATA = {
       "document": "El Municipi: La regulació de les competències a la Llei de Bases de Règim Local.",
       "prompt": "Quina actuacio es coherent amb el model competencial local?",
       "options": [
-        "El municipi nomes pot actuar si rep una ordre singular cada vegada",
+        "El municipi sobretot pot actuar si rep una ordre singular cada vegada",
         "El municipi no pot col·laborar amb altres administracions",
         "El municipi pot actuar dins l'ambit dels interessos locals i cooperar amb altres administracions",
-        "El municipi nomes pot gestionar urbanisme."
+        "El municipi sobretot pot gestionar urbanisme."
       ],
       "correct": 2,
       "explanation": "El model local admet cooperacio i exercici dins de l'ambit propi.",
@@ -835,7 +836,7 @@ window.EXAM_DATA = {
         "Qualsevol comunicació interna",
         "Un escrit privat arxivat per l'Administració.",
         "Declaracio de voluntat, judici, coneixement o desig dictada per una Administració en exercici d'una potestat administrativa",
-        "Nomes les sancions"
+        "les sancions"
       ],
       "correct": 2,
       "explanation": "La definicio combina declaracio i exercici de potestat administrativa.",
@@ -915,8 +916,8 @@ window.EXAM_DATA = {
       "options": [
         "Tota revocacio anul·la automàticament l'expedient complet",
         "L'Administració pot revocar actes de gravamen o desfavorables si no vulnera la llei",
-        "Només es poden revocar els actes favorables",
-        "Només es pot revocar amb consentiment notarial de tercers."
+        "es poden revocar els actes favorables",
+        "es pot revocar amb consentiment notarial de tercers."
       ],
       "correct": 1,
       "explanation": "La revocacio te un regim jurídic propi i no es confon amb anul·lacio ni rectificacio.",
@@ -942,7 +943,7 @@ window.EXAM_DATA = {
       "options": [
         "Esperar la resolucio final sense participar",
         "Accedir a l'expedient, conèixer la tramitació, formular al·legacions i aportar documents",
-        "Rebre sempre una resolucio favorable",
+        "Rebre de manera habitual una resolucio favorable",
         "Eliminar el procediment si el considera llarg."
       ],
       "correct": 1,
@@ -967,10 +968,10 @@ window.EXAM_DATA = {
       "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
       "prompt": "Quan es preceptiu el tràmit d'audiència?",
       "options": [
-        "Nomes en procediments sancionadors greus",
-        "Nomes si l'orgue instrutor ho veu convenient per costum.",
+        "En procediments sancionadors greus",
+        "Quan l'orgue instrutor ho veu convenient per costum.",
         "Abans de resoldre, quan s'han de tenir en compte nous fets, al·legacions o proves no aportades",
-        "Nomes si l'interessat ho demana"
+        "Quan l'interessat ho demana"
       ],
       "correct": 2,
       "explanation": "L'audiencia es una garantia procedimental, no un luxe opcional.",
@@ -994,7 +995,7 @@ window.EXAM_DATA = {
       "document": "El procediment administratiu: concepte i principis generals. Fases del procediment administratiu.",
       "prompt": "Què ha de fer l'Administració una vegada iniciat un procediment?",
       "options": [
-        "Resoldre nomes si hi ha pressio externa.",
+        "Resoldre sobretot si hi ha pressio externa.",
         "Tancar l'expedient si no hi ha recurs",
         "Esperar indefinidament",
         "Dictar resolucio expressa i notificar-la dins el termini legal"
@@ -1023,8 +1024,8 @@ window.EXAM_DATA = {
       "options": [
         "Quan la materia ho permet i hi ha poca complexitat, amb termini i tràmits reduïts",
         "Quan es vol eliminar l'audiencia.",
-        "Sempre que ho demani l'interessat",
-        "Nomes en materia sancionadora greu"
+        "Quan ho demani l'interessat",
+        "En materia sancionadora greu"
       ],
       "correct": 0,
       "explanation": "La simplificacio existeix, pero sense convertir-se en supressio de garanties.",
@@ -1049,8 +1050,8 @@ window.EXAM_DATA = {
       "prompt": "Quin es el propòsit general del Reglament organic municipal de Lliçà d'Amunt?",
       "options": [
         "Ordenar el correcte funcionament de l'entitat municipal i el compliment de les seves finalitats",
-        "Determinar exclusivament salaris i complements.",
-        "Regular nomes la matricula de l'escola bressol",
+        "Determinar principalment salaris i complements.",
+        "Regular sobretot la matricula de l'escola bressol",
         "Substituir la LBRL"
       ],
       "correct": 0,
@@ -1075,10 +1076,10 @@ window.EXAM_DATA = {
       "document": "Organització i funcionament de l’Ajuntament de Lliçà d’Amunt.",
       "prompt": "Quins àmbits tracta explícitament el ROM de Lliçà d'Amunt?",
       "options": [
-        "Nomes transport escolar i beques",
+        "transport escolar i beques",
         "Estatut dels regidors, grups municipals, organització, regim de funcionament i participació ciutadana",
-        "Nomes neteja viaria",
-        "Nomes normes internes de les escoles bressol."
+        "neteja viaria",
+        "normes internes de les escoles bressol."
       ],
       "correct": 1,
       "explanation": "El ROM delimita el nucli organitzatiu i de funcionament municipal.",
@@ -1102,8 +1103,8 @@ window.EXAM_DATA = {
       "document": "Organització i funcionament de l’Ajuntament de Lliçà d’Amunt.",
       "prompt": "Quin tret destaca la fitxa oficial de l'EBM Nova Espurna?",
       "options": [
-        "Exclusivament lectoescriptura",
-        "Servei només per a 3 a 6 anys",
+        "principalment lectoescriptura",
+        "Servei sobretot per a 3 a 6 anys",
         "Educació de 0 a 3, personal qualificat i servei amb orientacio educativa",
         "Model purament assistencial sense projecte."
       ],
@@ -1131,7 +1132,7 @@ window.EXAM_DATA = {
       "options": [
         "Limitar-se al calendari de matricula.",
         "Substituir els projectes educatius dels centres",
-        "Regular nomes la part administrativa de les escoles bressol",
+        "Regular sobretot la part administrativa de les escoles bressol",
         "Vertebrar la política educativa municipal 2022-2026 amb visió integral i treball en xarxa"
       ],
       "correct": 3,
@@ -1184,7 +1185,7 @@ window.EXAM_DATA = {
       "prompt": "Quina conducta s'ajusta millor als deures del personal públic?",
       "options": [
         "Compartir informació interna si accelera el servei",
-        "Prioritzar sempre les indicacions informals",
+        "Prioritzar de manera habitual les indicacions informals",
         "Separar completament l'activitat professional del servei públic.",
         "Actuar amb objectivitat, integritat, neutralitat i servei a l'interes general"
       ],
@@ -1212,7 +1213,7 @@ window.EXAM_DATA = {
       "options": [
         "La dedicacio a un sol lloc de treball, amb excepcions legals",
         "La compatibilitat automàtica amb qualsevol activitat",
-        "L'aplicacio nomes als càrrecs electes.",
+        "L'aplicacio sobretot als càrrecs electes.",
         "La llibertat absoluta de compatibilitats"
       ],
       "correct": 0,
@@ -1237,10 +1238,10 @@ window.EXAM_DATA = {
       "document": "El personal al servei de les entitats locals: concepte i classes. Drets, deures i incompatibilitats. El conveni Col·lectiu del Personal Laboral de l’Ajuntament de Lliçà d’Amunt.",
       "prompt": "Quan pot exercir-se una activitat privada si afecta personal al servei d'una administració?",
       "options": [
-        "Nomes si el centre hi esta d'acord verbalment",
+        "Quan el centre hi esta d'acord verbalment",
         "Quan no impedeixi ni menyscabi els deures ni comprometi imparcialitat o independencia",
-        "Sempre que es faci fora d'horari",
-        "Nomes si l'activitat es petita."
+        "Quan es faci fora d'horari",
+        "Quan l'activitat es petita."
       ],
       "correct": 1,
       "explanation": "La compatibilitat depen de la neutralitat i del bon servei.",
@@ -1264,7 +1265,7 @@ window.EXAM_DATA = {
       "document": "Llei orgànica 3/2018, de 5 de desembre, de protecció de dades personals i garantia dels drets digitals.",
       "prompt": "Quina es la finalitat essencial de la LOPDGDD?",
       "options": [
-        "Regular nomes arxius en paper",
+        "Regular sobretot arxius en paper",
         "Adaptar l'ordenament espanyol al RGPD i garantir els drets digitals",
         "Permetre qualsevol difusio si la finalitat es educativa",
         "Limitar-se a dades d'adults."
@@ -1319,9 +1320,9 @@ window.EXAM_DATA = {
       "document": "Llei orgànica 3/2018, de 5 de desembre, de protecció de dades personals i garantia dels drets digitals.",
       "prompt": "Que cal facilitar quan es recullen dades personals directament d'una persona?",
       "options": [
-        "Nomes el consentiment.",
-        "Nomes la finalitat",
-        "Nomes un avís verbal",
+        "el consentiment.",
+        "la finalitat",
+        "un avís verbal",
         "Informació bàsica del tractament i acces facil a la resta d'informació"
       ],
       "correct": 3,
@@ -1347,9 +1348,9 @@ window.EXAM_DATA = {
       "prompt": "Que exigeix la normativa quan un centre vol difondre imatges identificables de menors?",
       "options": [
         "Base legitimadora o consentiment adequat, finalitat clara i canals de difusio correctes",
-        "Nomes que la foto sigui educativa",
+        "que la foto sigui educativa",
         "Cap requisit especial si es una xarxa municipal.",
-        "Nomes que la vegin les famílies del grup"
+        "que la vegin les famílies del grup"
       ],
       "correct": 0,
       "explanation": "La difusio d'imatges de menors exigeix rigor jurídic i finalitat precisa.",
@@ -1401,9 +1402,9 @@ window.EXAM_DATA = {
       "document": "Prevenció de riscos laborals en l’exercici professional del/de la tècnic/a d’educació infantil.",
       "prompt": "Que estableix l'article 15 sobre l'acció preventiva?",
       "options": [
-        "Nomes cal actuar després de l'accident",
+        "cal actuar després de l'accident",
         "Cal evitar els riscos, avaluar els que no es puguin evitar i combatre'ls a l'origen",
-        "Nomes cal posar cartells",
+        "cal posar cartells",
         "La prevenció es opcional si l'espai es petit."
       ],
       "correct": 1,
@@ -1483,7 +1484,7 @@ window.EXAM_DATA = {
       "prompt": "Quin es l'objectiu de la LO 3/2007?",
       "options": [
         "Substituir la Constitució",
-        "Regular nomes quotes electorals",
+        "Regular sobretot quotes electorals",
         "Limitar-se a l'ambit privat familiar.",
         "Fer efectiu el dret a la igualtat de tracte i oportunitats entre dones i homes i eliminar la discriminació"
       ],
@@ -1511,7 +1512,7 @@ window.EXAM_DATA = {
       "options": [
         "Promoure les condicions perquè la igualtat sigui real i efectiva",
         "Traslladar la responsabilitat a les famílies.",
-        "Garantir només la igualtat formal",
+        "Garantir sobretot la igualtat formal",
         "Evitar qualsevol diferencia de tracte encara que sigui objectiva"
       ],
       "correct": 0,
@@ -1566,7 +1567,7 @@ window.EXAM_DATA = {
         "Igualtat equival a tractar totes les situacions idènticament",
         "Igualtat es una questio opcional si no hi ha queixes.",
         "Igualtat no vol dir fer exactament el mateix a tothom, sino garantir oportunitats i eliminar barreres",
-        "Igualtat només afecta el llenguatge administratiu"
+        "Igualtat sobretot afecta el llenguatge administratiu"
       ],
       "correct": 2,
       "explanation": "La igualtat real exigeix mesures i eliminacio de barreres.",
@@ -1592,7 +1593,7 @@ window.EXAM_DATA = {
       "options": [
         "Com un marge d'acció que es pot exercir encara que contradigui els documents de centre.",
         "Com la llibertat de cada professional per actuar al marge del projecte educatiu.",
-        "Com una autonomia nomes economica, sense incidencia pedagogica.",
+        "Com una autonomia sobretot economica, sense incidencia pedagogica.",
         "Com una autonomia collectiva que fixa criteris comuns i s'aplica amb coherencia en el dia a dia."
       ],
       "correct": 3,
@@ -1621,7 +1622,7 @@ window.EXAM_DATA = {
       "options": [
         "Recull identitat, objectius i orienta l'activitat del centre.",
         "Serveix sobretot per justificar tramits administratius interns.",
-        "Es un text de referencia nomes per a inspeccio.",
+        "Es un text de referencia sobretot per a inspeccio.",
         "Es un document que no ha d'influir en espais, temps ni materials."
       ],
       "correct": 0,
@@ -1676,10 +1677,10 @@ window.EXAM_DATA = {
       "document": "Decret 102/2010, de 3 d’agost, d’autonomia dels centres educatius.",
       "prompt": "Quin criteri resumeix millor la relació entre autonomia i organització quotidiana al primer cicle?",
       "options": [
-        "L'organització ha de seguir sempre el mateix horari, encara que no encaixi amb els ritmes infants.",
+        "L'organització ha de mantenir un horari uniforme encara que no encaixi amb els ritmes dels infants.",
         "L'organització es independent de la cura, del joc i de la vida quotidiana.",
         "L'organització ha de respondre al projecte de centre i a les necessitats vitals dels infants.",
-        "L'organització nomes te valor si permet reduir decisions pedagogiques."
+        "L'organització sobretot te valor si permet reduir decisions pedagogiques."
       ],
       "correct": 2,
       "explanation": "A 0-3, la vida quotidiana forma part del nucli educatiu i s'ha d'organitzar amb criteri pedagogic.",
@@ -1704,10 +1705,10 @@ window.EXAM_DATA = {
       "document": "Decret 282/2006, de 4 de juliol, pel qual es regula el primer cicle de l’educació infantil i els requisits dels centres.",
       "prompt": "Quin ambit regula principalment el Decret 282/2006?",
       "options": [
-        "Exclusivament el curriculm del segon cicle d'infantil.",
+        "principalment el curriculm del segon cicle d'infantil.",
         "La gestió economica dels ajuts municipals.",
         "El primer cicle de l'educació infantil i els requisits dels centres.",
-        "Nomes el calendari escolar i les vacances del personal."
+        "el calendari escolar i les vacances del personal."
       ],
       "correct": 2,
       "explanation": "El decret se centra en el primer cicle i en els requisits dels centres que l'imparteixen.",
@@ -1735,7 +1736,7 @@ window.EXAM_DATA = {
       "options": [
         "La possibilitat de substituir la titulacio per voluntariat familiar estable.",
         "Qualsevol persona amb experiencia informal en cura d'infants.",
-        "Unicament la decisio de l'ajuntament, sense criteri normatiu comu.",
+        "basicament la decisio de l'ajuntament, sense criteri normatiu comu.",
         "Professionals amb titulacio adequada i qualificacio per a l'atencio educativa."
       ],
       "correct": 3,
@@ -1762,8 +1763,8 @@ window.EXAM_DATA = {
       "prompt": "Quina idea es coherent amb la regulacio dels centres del primer cicle?",
       "options": [
         "El centre necessita autoritzacio administrativa i ha de complir requisits objectius.",
-        "El centre depen exclusivament del criteri de la persona directora.",
-        "El centre pot funcionar nomes amb una declaracio responsable interna.",
+        "El centre depen principalment del criteri de la persona directora.",
+        "El centre pot funcionar sobretot amb una declaracio responsable interna.",
         "El centre queda fora de qualsevol control normatiu si es municipal."
       ],
       "correct": 0,
@@ -1817,10 +1818,10 @@ window.EXAM_DATA = {
       "document": "Decret 150/2017, del 17 d’octubre, de l’atenció a l’alumnat en el marc del sistema inclusiu.",
       "prompt": "Quin objectiu general persegueix el Decret 150/2017?",
       "options": [
-        "Activar mesures nomes quan hi ha un diagnostic tancat.",
+        "Activar mesures sobretot quan hi ha un diagnostic tancat.",
         "Garantir que tots els centres sostinguts amb fons públics siguin inclusius.",
         "Separar l'alumnat amb dificultats per assegurar ritmes homogenis.",
-        "Aplicar sempre la mateixa resposta educativa a tot l'alumnat."
+        "Aplicar una resposta educativa uniforme a tot l'alumnat."
       ],
       "correct": 1,
       "explanation": "El decret desplega el sistema inclusiu per a tots els centres sostinguts amb fons públics.",
@@ -1873,7 +1874,7 @@ window.EXAM_DATA = {
       "document": "Decret 150/2017, del 17 d’octubre, de l’atenció a l’alumnat en el marc del sistema inclusiu.",
       "prompt": "Quan l'equip detecta barreres de participació, quina resposta es mes coherent?",
       "options": [
-        "Considerar que la dificultat es nomes familiar i no de centre.",
+        "Considerar que la dificultat es sobretot familiar i no de centre.",
         "Separar l'infant del grup com a primera mesura.",
         "Esperar un diagnostic extern abans de modificar res.",
         "Revisar l'entorn, observar i ajustar mesures universals abans de segregar."
@@ -2040,7 +2041,7 @@ window.EXAM_DATA = {
       "prompt": "Per que l'activitat lliure i autonoma es rellevant en el primer cicle?",
       "options": [
         "Perque convé substituir-la per exercicis iguals per a tot el grup.",
-        "Perque serveix nomes per omplir temps entre activitats dirigides.",
+        "Perque serveix sobretot per omplir temps entre activitats dirigides.",
         "Perque el moviment espontani s'ha de reduir al maxim.",
         "Perque afavoreix exploracio, autoregulacio i construccio progressiva d'autonomia."
       ],
@@ -2098,7 +2099,7 @@ window.EXAM_DATA = {
         "Accelerar adquisicions per aconseguir resultats mes rapids.",
         "Acompanyar, preparar l'entorn i observar sense invadir ni dirigir en excés.",
         "Repetir moviments fins que tots els infants facin el mateix.",
-        "Intervenir sempre per corregir cada iniciativa de l'infant."
+        "Intervenir de forma directiva per corregir cada iniciativa de l'infant."
       ],
       "correct": 1,
       "explanation": "La persona educadora crea condicions i acompanya, no substitueix la iniciativa infantil.",
@@ -2152,7 +2153,7 @@ window.EXAM_DATA = {
       "prompt": "Quina idea sobre la maduracio cerebral es coherent amb la XTEC?",
       "options": [
         "Que el cervell ja arriba plenament madur al primer any.",
-        "Que tot depen nomes de repetir instruccions.",
+        "Que tot depen sobretot de repetir instruccions.",
         "Que es un proces gradual i no completament acabat al neixer.",
         "Que la maduracio no te cap relació amb l'educació."
       ],
@@ -2179,7 +2180,7 @@ window.EXAM_DATA = {
       "prompt": "Quina relació estableix el recurs entre educació i cervell?",
       "options": [
         "El cervell evoluciona igual encara que no hi hagi experiencia educativa.",
-        "L'educació nomes afecta la conducta visible, no el cervell.",
+        "L'educació sobretot afecta la conducta visible, no el cervell.",
         "L'unic paper de l'educació es repetir consignes.",
         "L'educació incideix en el funcionament del cervell i en el desenvolupament de la conducta."
       ],
@@ -2235,7 +2236,7 @@ window.EXAM_DATA = {
       "options": [
         "Un entorn que prioritza la correccio immediata de l'error.",
         "Un ambient segur, curios i amb una presencia adulta atenta i respectuosa.",
-        "Una dinamica en que l'adult parla sempre i l'infant nomes escolta.",
+        "Una dinamica centrada en l'explicacio de l'adult i l'escolta passiva de l'infant.",
         "Un espai que deslliga l'aprenentatge de les experiencias quotidianes."
       ],
       "correct": 1,
@@ -2317,7 +2318,7 @@ window.EXAM_DATA = {
       "document": "L’aprenentatge significatiu. La importància dels processos i com els nous coneixements connecten amb els que ja disposa l’infant.",
       "prompt": "Quin paper te el coneixement previ de l'adult en la tasca educativa?",
       "options": [
-        "Nomes serveix per corregir errors.",
+        "serveix per corregir errors.",
         "S'ha d'imposar perque l'infant parteixi de zero.",
         "S'ha d'amagar per no influir en la descoberta.",
         "S'ha de posar en contacte amb les descobertes dels infants per construir significat."
@@ -2347,7 +2348,7 @@ window.EXAM_DATA = {
       "options": [
         "La curiositat acompanyada de confiança i d'una presencia adulta atenta i no invasiva.",
         "L'absencia de relació amb les vivencies de l'infant.",
-        "La pressio per acabar sempre abans que els altres.",
+        "La pressio per acabar abans que els altres com a criteri de valoracio.",
         "La prioritat absoluta de l'exercici repetitiu."
       ],
       "correct": 0,
@@ -2374,7 +2375,7 @@ window.EXAM_DATA = {
       "prompt": "L'equip observa que un infant de 2 anys participa poc en les propostes de grup i evita algunes situacions. Quina primera actuacio es mes coherent?",
       "options": [
         "Registrar observacions, contrastar-les amb l'equip i parlar amb la família amb respecte.",
-        "Comunicar-ho nomes quan la situació sigui ja molt evident per no preocupar la família.",
+        "Comunicar-ho sobretot quan la situació sigui ja molt evident per no preocupar la família.",
         "Esperar un diagnostic extern abans de modificar res de l'entorn.",
         "Separar temporalment l'infant per reduir-li la sobrecarga del grup."
       ],
@@ -2404,7 +2405,7 @@ window.EXAM_DATA = {
       "options": [
         "El PI es obligatori per a qualsevol infant de 0-3 amb una rutina diferent del grup.",
         "El PI pot servir com a document de treball, pero no es prescriptiu al primer cicle en els mateixos termes que a altres etapes.",
-        "El PI nomes s'usa quan la família el demana expressament.",
+        "El PI sobretot s'usa quan la família el demana expressament.",
         "El PI substitueix la programacio d'aula i les observacions quotidianes."
       ],
       "correct": 1,
@@ -2431,7 +2432,7 @@ window.EXAM_DATA = {
       "prompt": "Quin servei encaixa millor amb la funció d'assessorar el centre i la família davant necessitats educatives especifiques?",
       "options": [
         "El menjador escolar, perque veu els infants en moments quotidians.",
-        "La direccio del centre nomes quan ja hi ha un conflicte greu.",
+        "La direccio del centre sobretot quan ja hi ha un conflicte greu.",
         "L'EAP, com a servei d'assessorament i orientacio psicopedagogica.",
         "El servei de neteja del centre, si fa una observació diaria del grup."
       ],
@@ -2490,7 +2491,7 @@ window.EXAM_DATA = {
       "options": [
         "Perque es millor separar-les de tota intervencio educativa.",
         "Perque permeten descansar de l'activitat pedagogica principal.",
-        "Perque nomes serveixen per mantenir l'ordre i la netedat del grup.",
+        "Perque sobretot serveixen per mantenir l'ordre i la netedat del grup.",
         "Perque son situacions quotidianes on es construeixen benestar, autonomia i vincle."
       ],
       "correct": 3,
@@ -2520,7 +2521,7 @@ window.EXAM_DATA = {
         "Oferir-lo sense pressio i mantenir una experiencia positiva i segura.",
         "Fer-lo asseure mes estona a taula per reforcar l'habituacio.",
         "Insistir fins que acabi la racio prevista.",
-        "Retirar-lo sempre i no tornar-lo a oferir per evitar conflictes."
+        "Retirar-lo uns dies i reintroduir-lo quan el grup l'accepti millor."
       ],
       "correct": 0,
       "explanation": "L'alimentació educativa respecta senyals de gana/sacietat i evita convertir l'àpat en lluita.",
@@ -2549,7 +2550,7 @@ window.EXAM_DATA = {
         "Mantenir un mateix horari universal per garantir disciplina.",
         "Ajustar el descans als senyals de cansament i no a un horari rigid per a tothom.",
         "Evitar les rutines per no condicionar el son.",
-        "Deixar que l'infant dormi nomes quan ho demani verbalment."
+        "Deixar que l'infant dormi sobretot quan ho demani verbalment."
       ],
       "correct": 1,
       "explanation": "El descans es regula per ritmes individuals, amb previsibilitat pero no uniformitat cega.",
@@ -2603,7 +2604,7 @@ window.EXAM_DATA = {
       "document": "Acompanyament en el procés de control d’esfínters a l’escola bressol. Del bolquer al lavabo. Criteris conceptuals i metodològics per a la intervenció educativa des d’una perspectiva respectuosa vers la maduració de l’infant.",
       "prompt": "Quin criteri es mes coherent abans d'iniciar el pas estable al lavabo?",
       "options": [
-        "Iniciar-lo nomes si l'infant ho demana amb paraules.",
+        "Iniciar-lo sobretot si l'infant ho demana amb paraules.",
         "Observar signes de preparacio i acordar un acompanyament compartit amb la família.",
         "Comencar el proces quan el grup ja fa servir el lavabo, encara que l'infant no mostri preparacio.",
         "Fixar una data unica per a tots els infants de l'aula."
@@ -2661,7 +2662,7 @@ window.EXAM_DATA = {
       "options": [
         "Un sol moment fix del dia per a tota la classe sense excepcions.",
         "Espai obert al passadis per veure qui hi entra i qui hi surt.",
-        "Lavabo reservat nomes per a l'adult per evitar incidents.",
+        "Lavabo reservat sobretot per a l'adult per evitar incidents.",
         "Materials accessibles, intimitat suficient i seqüencia comprensible per a l'infant."
       ],
       "correct": 3,
@@ -2746,7 +2747,7 @@ window.EXAM_DATA = {
         "Vol dir que el material no serveix i s'ha de retirar.",
         "Pot estar explorant una relació de causa-efecte o consolidant una habilitat.",
         "Segurament esta avorrit i cal canviar-li l'activitat.",
-        "Nomes te sentit si al final genera una produccio visible."
+        "te sentit si al final genera una produccio visible."
       ],
       "correct": 1,
       "explanation": "La repeticio forma part de l'experimentacio i de la construccio de coneixement.",
@@ -2968,7 +2969,7 @@ window.EXAM_DATA = {
       "prompt": "Quin criteri sobre el temps afavoreix millor el joc espontani?",
       "options": [
         "Fer-lo durar poc per evitar que aparegui desordre.",
-        "Mantenir el joc nomes mentre l'adult el pugui supervisar de prop.",
+        "Mantenir el joc sobretot mentre l'adult el pugui supervisar de prop.",
         "Tancar la proposta de seguida per passar a una altra activitat.",
         "Deixar prou temps per explorar, repetir i tornar a començar."
       ],
@@ -3054,7 +3055,7 @@ window.EXAM_DATA = {
         "L'exterior es sobretot una pausa de l'activitat de l'aula.",
         "Han de formar part d'un entorn educatiu coherent i continu.",
         "Interior i exterior responen a logiques independents.",
-        "L'exterior nomes te valor si reprodueix exactament el de dins."
+        "L'exterior sobretot te valor si reprodueix exactament el de dins."
       ],
       "correct": 1,
       "explanation": "La continuitat educativa connecta els dos espais sense igualar-los.",
@@ -3082,7 +3083,7 @@ window.EXAM_DATA = {
         "Fer-la tan rapidament com sigui possible.",
         "Deixar-la a la improvisacio si el grup ja coneix l'espai.",
         "Mantenir ritmes, seguretat i autonomia, evitant talls bruscos.",
-        "Nomes cuidar-la quan hi ha sortida programada."
+        "cuidar-la quan hi ha sortida programada."
       ],
       "correct": 2,
       "explanation": "Les transicions també eduquen i poden donar continuitat i calma.",
@@ -3109,7 +3110,7 @@ window.EXAM_DATA = {
       "options": [
         "Perque el valor educatiu baixa com mes contacte hi ha amb el medi.",
         "Perque te sentit sobretot quan hi ha activitats dirigides.",
-        "Perque nomes serveix per descarregar energia.",
+        "Perque sobretot serveix per descarregar energia.",
         "Perque es un context d'aprenentatge, moviment, relació i descoberta."
       ],
       "correct": 3,
@@ -3166,7 +3167,7 @@ window.EXAM_DATA = {
         "Gestionar riscos assumibles sense anul lar la descoberta ni el moviment.",
         "Prioritzar la vigilància constante per sobre de l'experiencia.",
         "Eliminar qualsevol risc encara que l'espai perdi valor de joc.",
-        "Permetre qualsevol situació sempre que l'infant sigui fora."
+        "Permetre qualsevol situació quan l'infant sigui fora."
       ],
       "correct": 0,
       "explanation": "El risc mesurat no es absencia de risc, sino seleccio i gestió professional del que es pot assumir.",
@@ -3220,9 +3221,9 @@ window.EXAM_DATA = {
       "prompt": "Quina proposta encaixa millor amb un pati educatiu a 0-3?",
       "options": [
         "Una superficie uniforme i buida per tenir control visual absolut.",
-        "Un lloc per repetir sempre la mateixa sequencia motriu.",
+        "Un lloc per repetir de manera habitual la mateixa sequencia motriu.",
         "Diversitat de textures, ombres, elements naturals i possibilitats de moviment.",
-        "Un espai nomes per a activitats dirigides de curta durada."
+        "Un espai sobretot per a activitats dirigides de curta durada."
       ],
       "correct": 2,
       "explanation": "Un pati educatiu ha de convidar a explorar i moure's amb riquesa sensorial.",
@@ -3276,7 +3277,7 @@ window.EXAM_DATA = {
       "prompt": "Quin plantejament descriu millor la relació educativa entre la llar d'infants i les famílies?",
       "options": [
         "Una relació informal que pot prescindir de criteri professional.",
-        "Una relació centrada nomes en informar de les incidencies.",
+        "Una relació centrada sobretot en informar de les incidencies.",
         "Una relació on la família supervisa cada decisio tecnica del centre.",
         "Una relació basada en confiança, respecte mutu, professionalitat i corresponsabilitat."
       ],
@@ -3306,7 +3307,7 @@ window.EXAM_DATA = {
         "Ajustar el ritme d'incorporacio a cada infant i a cada família, amb acompanyament progressiu.",
         "Convertir la familiarització en una rutina curta i fixa independent de les reaccions de l'infant.",
         "Fer una separacio igual per a tots els infants per guanyar eficacia.",
-        "Mantenir els familiars sempre al marge des del primer dia."
+        "Mantenir els familiars al marge fins que l'infant s'hagi adaptat."
       ],
       "correct": 0,
       "explanation": "El currículum 0-3 descriu l'acollida com un procés que s'ha de planificar amb cura i segons les necessitats reals de cada infant i família.",
@@ -3358,10 +3359,10 @@ window.EXAM_DATA = {
       "document": "La família com a primer agent socialitzador. La relació amb les famílies a una escola participativa. Organització del temps de la familiarització o inici de curs de l’escola bressol.",
       "prompt": "Quin canal es mes propi de la comunicació quotidiana entre escola i família a 0-3?",
       "options": [
-        "Nomes les circulars generals.",
-        "Nomes les converses informals entre adults sense registre ni criteri.",
+        "les circulars generals.",
+        "les converses informals entre adults sense registre ni criteri.",
         "Entrades i sortides, entrevistes, reunions i recursos escrits o digitals del centre.",
-        "Nomes els missatges urgents quan hi ha un problema."
+        "els missatges urgents quan hi ha un problema."
       ],
       "correct": 2,
       "explanation": "Les fonts oficials destaquen el valor dels contactes diaris, entrevistes i canals definits pel projecte educatiu.",
@@ -3387,7 +3388,7 @@ window.EXAM_DATA = {
       "prompt": "Quina combinacio recull millor les funcions educatives de la persona educadora?",
       "options": [
         "Vigilar, custodiar i aplicar rutines sense reflexio pedagògica.",
-        "Organitzar només el material i deixar la resta a la improvisacio.",
+        "Organitzar sobretot el material i deixar la resta a la improvisacio.",
         "Planificar l'ambient, promoure capacitats, acompanyar l'activitat i observar/documentar.",
         "Desplacar el criteri professional a perfils externs."
       ],
@@ -3609,7 +3610,7 @@ window.EXAM_DATA = {
         "Rentar-se les mans amb aigua i sabo.",
         "Fer servir la mateixa tovallola per a tothom durant tota la jornada.",
         "Posar-se guants i donar la tasca per acabada.",
-        "Rentar-se nomes si hi havia bruticia visible."
+        "Rentar-se sobretot si hi havia bruticia visible."
       ],
       "correct": 0,
       "explanation": "Canal Salut destaca el rentat de mans frequent i correcte com una de les mesures mes eficaces.",
@@ -3634,7 +3635,7 @@ window.EXAM_DATA = {
       "document": "Malalties més freqüents a l’etapa zero a tres anys. Protocol d’higiene i salut.",
       "prompt": "Per que la higiene nasal es rellevant en l'etapa 0-3?",
       "options": [
-        "Perque només te utilitat quan hi ha un brot greu.",
+        "Perque sobretot te utilitat quan hi ha un brot greu.",
         "Perque els refredats son frequents i una bona higiene ajuda a prevenir complicacions i a descansar millor.",
         "Perque substitueix el rentat de mans.",
         "Perque es una practica exclusiva del domicili familiar."
@@ -3661,10 +3662,10 @@ window.EXAM_DATA = {
       "document": "Malalties més freqüents a l’etapa zero a tres anys. Protocol d’higiene i salut.",
       "prompt": "Quan s'ha de començar a cuidar la higiene bucodental segons Canal Salut?",
       "options": [
-        "Només a partir dels tres anys.",
-        "Només si la família ho demana al centre.",
+        "A partir dels tres anys.",
+        "Quan la família ho demana al centre.",
         "Des del naixement i, des de la primera dent, com a minim dues vegades al dia.",
-        "Només quan surten les dents definitives."
+        "Quan surten les dents definitives."
       ],
       "correct": 2,
       "explanation": "La guia de primera infancia ho formula de manera explicita i ho vincula a salut i higiene quotidiana.",
@@ -3688,7 +3689,7 @@ window.EXAM_DATA = {
       "document": "Malalties més freqüents a l’etapa zero a tres anys. Protocol d’higiene i salut.",
       "prompt": "Quin factor fa especialment important la higiene en una llar d'infants?",
       "options": [
-        "La creença que la neteja nomes importa abans dels àpats.",
+        "La creença que la neteja sobretot importa abans dels àpats.",
         "El fet que els infants de 0-3 no es contagiïn entre ells.",
         "La idea que les malalties digestives no es relacionen amb els habits higienics.",
         "La convivencia estreta i la presencia de malalties transmissibles com la shigel·losi o l'hepatitis A."
@@ -3745,9 +3746,9 @@ window.EXAM_DATA = {
       "document": "Pla d’evacuació a l’escola bressol. Pautes per evacuar infants de zero a tres anys.",
       "prompt": "Quin criteri ha de recollir un pla d'emergencia adaptat a llars d'infants?",
       "options": [
-        "Només les sorties al pati i les activitats de curs.",
-        "Només els horaris de revisio del material.",
-        "Només el nom de la coordinadora.",
+        "les sorties al pati i les activitats de curs.",
+        "els horaris de revisio del material.",
+        "el nom de la coordinadora.",
         "Quan cal evacuar i quan cal confinar, i com fer-ho en cada cas."
       ],
       "correct": 3,
@@ -3826,7 +3827,7 @@ window.EXAM_DATA = {
       "document": "La figura del psicòleg a l’escola bressol. Tasques de prevenció i acompanyament.",
       "prompt": "Quin paper descriu millor l'EAP en relació amb una escola bressol?",
       "options": [
-        "Actua nomes quan ja hi ha un diagnostici tancat.",
+        "Actua sobretot quan ja hi ha un diagnostici tancat.",
         "Dona suport al centre, al professorat i a les famílies davant la variabilitat i les necessitats educatives.",
         "Substitueix l'observació de l'equip quan hi ha una sospita.",
         "Pren totes les decisions pedagogiques quotidianes."
@@ -3911,7 +3912,7 @@ window.EXAM_DATA = {
       "options": [
         "Com una tasca d'acompanyament i orientacio que ajuda el centre a ajustar la resposta educativa.",
         "Com una espera passiva fins que aparegui un diagnòstic.",
-        "Com una decisio que correspon només a la família.",
+        "Com una decisio que correspon sobretot a la família.",
         "Com una intervencio externa que elimina la necessitat d'observar."
       ],
       "correct": 0,
@@ -3938,9 +3939,9 @@ window.EXAM_DATA = {
       "prompt": "Quin enunciat descriu millor la diferencia entre observació i documentació pedagogica?",
       "options": [
         "L'observació dona informació i la documentació fa visible el treball pedagogic i els processos.",
-        "La documentació nomes val si no es comparteix amb ningú.",
+        "La documentació sobretot val si no es comparteix amb ningú.",
         "L'observació consisteix a fer fotos de tot i la documentació a arxivar-les.",
-        "Les dues coses serveixen nomes per classificar infants."
+        "Les dues coses serveixen sobretot per classificar infants."
       ],
       "correct": 0,
       "explanation": "El currículum 0-3 separa la funció de conèixer el que passa i la de fer-ne visible el sentit pedagogic.",
@@ -3965,10 +3966,10 @@ window.EXAM_DATA = {
       "document": "L’observació sistemàtica i la documentació pedagògica de la cultura de l’infant com a projecte d’escola. Criteris pel desenvolupament d’aquestes dues eines pedagògiques de forma quotidiana de forma individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
       "prompt": "Per que el currículum insisteix que l'observació no es un registre fidel i complet?",
       "options": [
-        "Perque només s'ha de fer amb eines digitals.",
+        "Perque sobretot s'ha de fer amb eines digitals.",
         "Perque sempre implica seleccio i interpretacio de qui observa.",
         "Perque tota observació es objectiva per definicio.",
-        "Perque la subjectivitat nomes apareix a les fotografies."
+        "Perque la subjectivitat sobretot apareix a les fotografies."
       ],
       "correct": 1,
       "explanation": "El text explicita que l'observació es una interpretacio entre moltes possibles, no una copia fidel de la realitat.",
@@ -3992,7 +3993,7 @@ window.EXAM_DATA = {
       "document": "L’observació sistemàtica i la documentació pedagògica de la cultura de l’infant com a projecte d’escola. Criteris pel desenvolupament d’aquestes dues eines pedagògiques de forma quotidiana de forma individual, en parella educativa i en equip per a la comprensió i acompanyament dels reptes cognitius i relacionals dels infants de zero a tres anys.",
       "prompt": "Quin material pot formar part de la documentació pedagogica amb criteri?",
       "options": [
-        "Només productes finals.",
+        "productes finals.",
         "Un recull de fotos fetes a l'atzar sense lectura posterior.",
         "Notes, audios, videos, fotografies i produccions dels infants seleccionades amb sentit.",
         "Qualsevol imatge sense filtrar."
@@ -4048,7 +4049,7 @@ window.EXAM_DATA = {
       "document": "La comunicació amb la família. Eines de comunicació vàlides en l’etapa de zero a tres anys.",
       "prompt": "Com ha de ser, en essencia, la relació entre la família i la llar d'infants?",
       "options": [
-        "Basada en comunicar nomes incidencies negatives.",
+        "Basada en comunicar sobretot incidencies negatives.",
         "Basada en supervisio familiar de totes les decisions.",
         "Basada en canals informals que poden perdre coherència.",
         "Basada en respecte mutu, confiança, col·laboracio i corresponsabilitat."
@@ -4077,9 +4078,9 @@ window.EXAM_DATA = {
       "prompt": "Quin canal es mes propi de la comunicació quotidiana amb famílies a 0-3?",
       "options": [
         "Entrades i sortides, entrevistes, reunions i canals escrits o digitals del centre.",
-        "Només els missatges informals en aplicacions personals.",
-        "Només els missatges urgents.",
-        "Només la cartellera."
+        "els missatges informals en aplicacions personals.",
+        "els missatges urgents.",
+        "la cartellera."
       ],
       "correct": 0,
       "explanation": "Les orientacions curriculars enumeren diversos canals bidireccionals i contextuals, no un de sol.",
@@ -4132,9 +4133,9 @@ window.EXAM_DATA = {
       "prompt": "Quin criteri fa mes coherent la comunicació centre-família?",
       "options": [
         "Que la família rebi menys dades per evitar dubtes.",
-        "Que es faci servir qualsevol canal sempre que sigui rapid.",
+        "Que es faci servir qualsevol canal quan sigui rapid.",
         "Que la informació serveixi per contrastar punts de vista i millorar el desenvolupament de l'infant.",
-        "Que la informació sigui nomes transmissio del centre."
+        "Que la informació sigui sobretot transmissio del centre."
       ],
       "correct": 2,
       "explanation": "El currículum parla d'una relació de feedback permanent i de canals que permetin anar i tornar.",
@@ -4158,7 +4159,7 @@ window.EXAM_DATA = {
       "document": "La protecció de dades i el dret d’imatge dels infants.",
       "prompt": "Abans de publicar una imatge identificable d'un infant en un web o xarxa del centre, que cal garantir?",
       "options": [
-        "Una autoritzacio generica que val per a sempre.",
+        "Una autoritzacio generica que val per a qualsevol ús futur.",
         "Que la difusio sigui interna encara que no s'hagi informat ningú.",
         "Consentiment informat o una altra base legitimadora adequada.",
         "Que la imatge sigui bonica o pedagogica."
@@ -4186,8 +4187,8 @@ window.EXAM_DATA = {
       "document": "La protecció de dades i el dret d’imatge dels infants.",
       "prompt": "Quan pot difondre's una imatge sense consentiment segons les pautes de l'APDCAT?",
       "options": [
-        "Sempre que es comparteixi en un grup privat de famílies.",
-        "Sempre que l'activitat sigui educativa.",
+        "Quan es comparteixi en un grup privat de famílies.",
+        "Quan l'activitat sigui educativa.",
         "Quan la direccio consideri que l'acte ha estat reeixit.",
         "Quan es capta en un acte o esdeveniment públic i la imatge es accessoria i no afecta la intimitat."
       ],
@@ -4215,7 +4216,7 @@ window.EXAM_DATA = {
       "options": [
         "Quan la persona no es identificable sense esforcos desproporcionats.",
         "Quan es fa servir dins l'aula i no a internet.",
-        "Quan es comparteix nomes amb famílies conegudes.",
+        "Quan es comparteix sobretot amb famílies conegudes.",
         "Quan s'ha fet amb un telefon del centre."
       ],
       "correct": 0,
@@ -4350,9 +4351,9 @@ window.EXAM_DATA = {
       "prompt": "Quin criteri de comunicació amb les famílies és més coherent amb la guia actual?",
       "options": [
         "Contextualitzar l'alimentació dins observacions globals sobre les experiències de l'infant a l'escola bressol.",
-        "Evitar qualsevol comentari sobre alimentació perquè és un àmbit exclusivament familiar.",
-        "Lliurar sempre un registre quantitatiu diari d'ingestes per comparar millor els infants.",
-        "Informar només si l'infant s'acaba tot el plat o rebutja completament l'àpat."
+        "Evitar qualsevol comentari sobre alimentació perquè és un àmbit principalment familiar.",
+        "Lliurar un registre quantitatiu diari d'ingestes per comparar millor els infants.",
+        "Informar sobretot si l'infant s'acaba tot el plat o rebutja completament l'àpat."
       ],
       "correct": 0,
       "explanation": "Canal Salut adverteix que el registre diari d'ingestes pot generar preocupacions i comparacions inadequades i recomana oferir informació dins pautes globals d'observació.",
@@ -4405,8 +4406,8 @@ window.EXAM_DATA = {
       "options": [
         "Reservant-la per a tallers externs, sense necessitat d'incorporar-la a la vida d'aula.",
         "Integrant-la en unitats didàctiques, projectes i activitats, i fent-la visible al projecte educatiu i a les programacions.",
-        "Delegant-la només a les famílies perquè és un àmbit de socialització privat.",
-        "Aplicant-la només quan aparegui un conflicte explícit de discriminació."
+        "Delegant-la sobretot a les famílies perquè és un àmbit de socialització privat.",
+        "Aplicant-la sobretot quan aparegui un conflicte explícit de discriminació."
       ],
       "correct": 1,
       "explanation": "XTEC assenyala que la coeducació i la perspectiva de gènere s'han d'incorporar en projectes, activitats d'aula i documents del centre.",
@@ -4515,7 +4516,7 @@ window.EXAM_DATA = {
       "options": [
         "Palaudàries disposa de 6 estances i Nova Espurna de 8, totes per a l'educació d'infants de 0 a 3 anys.",
         "El nombre d'estances no s'associa a cap oferta educativa concreta.",
-        "Les dues escoles tenen exactament 8 estances i només una part es destina al 0-3.",
+        "Les dues escoles tenen exactament 8 estances i una part es destina al 0-3.",
         "Nova Espurna té 6 estances i Palaudàries 8."
       ],
       "correct": 0,
@@ -4675,8 +4676,8 @@ window.EXAM_DATA = {
       "document": "Dret d'imatge",
       "prompt": "El centre vol publicar una fotografia del grup a una xarxa municipal. Que cal comprovar?",
       "options": [
-        "Evitar sempre publicar cap imatge, encara que hi hagi consentiment i finalitat informada.",
-        "Compartir-la només amb famílies del grup, perquè així no cal revisar autoritzacions.",
+        "Limitar la publicacio a un canal institucional i revisar despres les autoritzacions si alguna familia ho demana.",
+        "Compartir-la en un espai tancat per a famílies del grup sense revisar el consentiment individual.",
         "Publicar-la si l'activitat és municipal i la imatge té finalitat educativa.",
         "Autoritzacions o base legitima, finalitat, canal de difusio i infants que no poden aparèixer."
       ],
@@ -4727,7 +4728,7 @@ window.EXAM_DATA = {
       "document": "Alimentacio",
       "prompt": "En el moment de dinar, un infant rebutja un aliment nou. Quina intervencio es mes educativa?",
       "options": [
-        "Retirar l'aliment unes setmanes per evitar rebuig i tornar-ho a provar només si la família ho demana.",
+        "Retirar l'aliment uns dies i reintroduir-lo quan el grup el mengi amb normalitat.",
         "Oferir-lo sense pressio, respectar senyals de gana i sacietat i mantenir una experiencia positiva.",
         "Insistir amb petites quantitats fins que l'infant s'acostumi al gust.",
         "Marcar una quantitat mínima igual per a tots perquè la pauta sigui clara i justa."
@@ -4756,7 +4757,7 @@ window.EXAM_DATA = {
         "Informar primer la família i decidir després si cal registrar la incidència.",
         "Aplicar el criteri personal de l'educadora si el protocol no és conegut per tot l'equip.",
         "Atendre'l, aplicar el protocol de primeres cures, registrar la incidencia i informar la familia segons el procediment.",
-        "Registrar només accidents greus perquè els lleus formen part de la vida quotidiana."
+        "Registrar la incidencia quan la ferida requereixi atencio externa o trucada a la familia."
       ],
       "correct": 2,
       "explanation": "Davant accidents cal seguir protocols, preservar dades i comunicar correctament. Font: Annex II, tema 18.",
@@ -4832,7 +4833,7 @@ window.EXAM_DATA = {
       "prompt": "Despres d'una sessio de joc, que converteix l'observacio en documentacio pedagogica util?",
       "options": [
         "Guardar totes les imatges de la sessió perquè després l'equip pugui triar sense perdre informació.",
-        "Descriure només conductes finals per evitar interpretacions subjectives.",
+        "Descriure sobretot el resultat final de l'activitat per mantenir una documentacio objectiva.",
         "Seleccionar evidencies significatives, interpretar-les en equip i vincular-les a decisions educatives.",
         "Compartir la documentació amb famílies abans de fer-ne lectura pedagògica en equip."
       ],
@@ -4859,7 +4860,7 @@ window.EXAM_DATA = {
       "options": [
         "És acceptable quan la finalitat és protegir la salut de l'infant, encara que el canal no sigui autoritzat.",
         "És correcte si després s'elimina la conversa del dispositiu personal.",
-        "És adequat si la informació és urgent i el missatge només s'envia a una persona de confiança.",
+        "És adequat si la informació és urgent i s'envia a una persona de l'equip amb responsabilitat directa.",
         "No es adequat si no es fa per canal autoritzat, amb base legitima i confidencialitat."
       ],
       "correct": 3,
@@ -4911,7 +4912,7 @@ window.EXAM_DATA = {
       "options": [
         "Mantenir l'espai si l'equip sap esquivar els obstacles durant la jornada.",
         "Ordenar l'espai, retirar obstacles i mantenir lliures les vies de pas i evacuacio.",
-        "Revisar-ho només abans dels simulacres perquè és quan la sortida s'utilitza com a evacuació.",
+        "Revisar-ho al tancament de la jornada i deixar constància de la incidència per al manteniment.",
         "Deixar el material a prop de la porta si facilita l'activitat prevista del dia."
       ],
       "correct": 1,
@@ -4935,7 +4936,7 @@ window.EXAM_DATA = {
       "prompt": "En revisar els contes i materials, quin criteri aplica una mirada coeducadora?",
       "options": [
         "Mantenir alguns materials estereotipats perquè responen als interessos que ja expressen els infants.",
-        "Treballar la igualtat només en contes específics per no interferir en el joc espontani.",
+        "Treballar la igualtat en propostes específiques sense modificar materials que ja funcionen en el joc lliure.",
         "Incloure referents diversos i evitar estereotips de genere en rols, colors i activitats.",
         "Evitar revisar els rols de joc a zero-tres perquè encara no tenen intencionalitat social."
       ],

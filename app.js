@@ -75,6 +75,24 @@ function contentKey(item) {
   return `${item.annex} - ${item.theme}`;
 }
 
+function clampNumber(value, min, max) {
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) return max;
+  return Math.min(max, Math.max(min, Math.round(parsed)));
+}
+
+function annexLabel(value) {
+  if (value === "annex-i") return "Només Annex I";
+  if (value === "annex-ii") return "Només Annex II";
+  return "Annex I i Annex II";
+}
+
+function questionsForAnnex(value) {
+  if (value === "annex-i") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex I"));
+  if (value === "annex-ii") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex II"));
+  return QUESTION_BANK;
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -185,11 +203,49 @@ function renderHome() {
       const mode = button.dataset.mode;
       if (mode === "study") renderStudy();
       if (mode === "plainText") renderPlainTextStudy();
-      if (mode === "first") startExam("first");
+      if (mode === "first") renderFirstExamSetup();
       if (mode === "case") startExam("case");
     });
   });
   renderStats();
+}
+
+function renderFirstExamSetup() {
+  app.innerHTML = `
+    <section class="panel review-panel">
+      <div class="exam-header">
+        <div>
+          <p class="eyebrow">Primera prova</p>
+          <h2>Configura el test</h2>
+        </div>
+        <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
+      </div>
+      <div class="setup-grid">
+        <label>
+          <span>Nombre de preguntes</span>
+          <input id="questionCountInput" type="number" min="20" max="40" step="1" value="40">
+        </label>
+        <label>
+          <span>Àmbit del temari</span>
+          <select id="annexFilterSelect">
+            <option value="all">Annex I i Annex II</option>
+            <option value="annex-i">Només Annex I</option>
+            <option value="annex-ii">Només Annex II</option>
+          </select>
+        </label>
+      </div>
+      <p class="muted setup-note">Pots practicar amb qualsevol quantitat entre 20 i 40 preguntes. La puntuació manté +0,75 per encert, -0,187 per error i 0 en blanc.</p>
+      <div class="actions">
+        <button class="primary-button" id="startConfiguredExamBtn" type="button">Comença la prova</button>
+      </div>
+    </section>
+  `;
+  document.getElementById("homeBtn").addEventListener("click", renderHome);
+  document.getElementById("startConfiguredExamBtn").addEventListener("click", () => {
+    const questionCount = clampNumber(document.getElementById("questionCountInput").value, 20, 40);
+    const annexFilter = document.getElementById("annexFilterSelect").value;
+    startExam("first", { questionCount, annexFilter });
+  });
 }
 
 function renderStats() {
@@ -234,19 +290,25 @@ function renderStats() {
     : `<p class="muted">Encara no es poden deduir temes mes fallats.</p>`;
 }
 
-function startExam(type) {
+function startExam(type, options = {}) {
   const isCase = type === "case";
-  const baseQuestions = isCase ? CASE_QUESTIONS : sample(QUESTION_BANK, 40);
+  const questionCount = clampNumber(options.questionCount || 40, 20, 40);
+  const annexFilter = options.annexFilter || "all";
+  const pool = questionsForAnnex(annexFilter);
+  const baseQuestions = isCase ? CASE_QUESTIONS : sample(pool, questionCount);
+  const firstMax = baseQuestions.length * 0.75;
   session = {
     type,
-    title: isCase ? "Segona prova - Cas practic" : "Primera prova - Tipus test",
+    title: isCase ? "Segona prova - Cas practic" : `Primera prova - ${annexLabel(annexFilter)}`,
     questions: prepareQuestions(baseQuestions),
     current: 0,
     answers: {},
     context: isCase ? CASE_CONTEXT : "",
+    questionCount,
+    annexFilter,
     config: isCase
       ? { correct: 1.333, wrong: -0.333, blank: -0.333, max: 19.995, pass: null }
-      : { correct: 0.75, wrong: -0.187, blank: 0, max: 30, pass: 15 }
+      : { correct: 0.75, wrong: -0.187, blank: 0, max: firstMax, pass: firstMax / 2 }
   };
   renderExam();
 }
@@ -475,7 +537,10 @@ function renderResults(result) {
       </div>
     </section>
   `;
-  document.getElementById("repeatBtn").addEventListener("click", () => startExam(session.type));
+  document.getElementById("repeatBtn").addEventListener("click", () => startExam(session.type, {
+    questionCount: session.questionCount,
+    annexFilter: session.annexFilter
+  }));
   document.getElementById("homeBtn").addEventListener("click", renderHome);
 }
 

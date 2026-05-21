@@ -88,8 +88,8 @@ function annexLabel(value) {
 }
 
 function questionsForAnnex(value) {
-  if (value === "annex-i") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex I"));
-  if (value === "annex-ii") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex II"));
+  if (value === "annex-i") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex I -"));
+  if (value === "annex-ii") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex II -"));
   return QUESTION_BANK;
 }
 

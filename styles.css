@@ -356,6 +356,20 @@ h3 {
   font-weight: 800;
 }
 
+.reference-pill,
+.question-reference {
+  border-color: #c7d2fe;
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.question-reference {
+  display: inline-block;
+  margin-right: 4px;
+}
+
 .review-pill {
   border-color: #f0c36d;
   background: #fff5d7;

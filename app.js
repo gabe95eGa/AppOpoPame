@@ -67,6 +67,10 @@ function reviewPill(question) {
   return question.reviewLabel ? `<span class="pill review-pill">${question.reviewLabel}</span>` : "";
 }
 
+function questionReference(question) {
+  return question.id;
+}
+
 function contentReviewPill(item) {
   return item.reviewLabel ? `<span class="pill review-pill">${item.reviewLabel}</span>` : "";
 }
@@ -338,6 +342,7 @@ function renderExam() {
         </div>
         <div class="question-card">
           <div class="question-meta">
+            <span class="pill reference-pill">${questionReference(question)}</span>
             <span class="pill">${question.theme}</span>
             <span class="pill">${question.document}</span>
             ${reviewPill(question)}
@@ -423,7 +428,7 @@ function renderReview() {
           const label = answer === undefined || answer === null ? "En blanc" : question.options[answer];
           return `
             <div class="review-item ${answer === undefined || answer === null ? "blank" : ""}">
-              <strong>${index + 1}. ${question.prompt}</strong>
+              <strong>${index + 1}. <span class="question-reference">${questionReference(question)}</span> ${question.prompt}</strong>
               <p class="muted">Resposta marcada: ${label}</p>
               <button class="secondary-button" data-edit="${index}" type="button">Revisa aquesta pregunta</button>
             </div>
@@ -523,6 +528,7 @@ function renderResults(result) {
           return `
             <article class="review-item ${state}">
               <div class="question-meta">
+                <span class="pill reference-pill">${questionReference(question)}</span>
                 <span class="pill">${state === "correct" ? "Correcta" : state === "wrong" ? "Incorrecta" : "En blanc"}</span>
                 <span class="pill">${question.theme}</span>
                 ${reviewPill(question)}
@@ -573,6 +579,7 @@ function renderStudy() {
     document.getElementById("studyList").innerHTML = questions.map((question) => `
       <article class="study-item" data-study="${question.id}">
         <div class="question-meta">
+          <span class="pill reference-pill">${questionReference(question)}</span>
           <span class="pill">${question.theme}</span>
           <span class="pill">${question.document}</span>
           ${reviewPill(question)}

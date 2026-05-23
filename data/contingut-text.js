@@ -52,6 +52,30 @@ window.STUDY_TEXT = [
         ]
       },
       {
+        "heading": "Principis generals explicats",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Els principis generals són les idees bàsiques que expliquen com s’organitza l’Estat i com han d’actuar els poders públics. En un test convé distingir els valors de l’article 1.1, la sobirania i forma política de l’article 1, la unitat i autonomia de l’article 2 i les garanties jurídiques de l’article 9."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Valors superiors:** llibertat, justícia, igualtat i pluralisme polític. Són els criteris que orienten tot l’ordenament.",
+              "**Estat social i democràtic de dret:** combina submissió a la llei, participació democràtica i compromís amb drets socials i benestar.",
+              "**Sobirania nacional:** resideix en el poble espanyol, del qual emanen els poders de l’Estat.",
+              "**Forma política:** la Constitució estableix la monarquia parlamentària.",
+              "**Unitat i autonomia:** la Constitució afirma la unitat de la nació espanyola i reconeix el dret a l’autonomia de nacionalitats i regions.",
+              "**Seguretat jurídica i legalitat:** els poders públics estan sotmesos a la Constitució i a la resta de l’ordenament jurídic."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Idea d’examen: si una opció parla de llibertat, justícia, igualtat i pluralisme polític, normalment apunta als valors superiors. Si parla de poble espanyol, apunta a sobirania nacional. Si parla de sotmetre els poders públics a la llei, apunta a Estat de dret o principi de legalitat."
+          }
+        ]
+      },
+      {
         "heading": "Contingut essencial",
         "blocks": [
           {
@@ -166,6 +190,32 @@ window.STUDY_TEXT = [
               "Dret a l’educació.",
               "Llibertat sindical i dret de vaga.",
               "Dret de petició."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Definició de drets, deures i garanties",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Els drets fonamentals són posicions jurídiques bàsiques reconegudes a les persones i especialment protegides per la Constitució. Limiten l’actuació dels poders públics i permeten exigir respecte, protecció o prestacions segons el tipus de dret."
+          },
+          {
+            "type": "paragraph",
+            "text": "Els deures constitucionals són obligacions que la Constitució imposa a la ciutadania o als poders públics, com contribuir al sosteniment de les despeses públiques o respectar l’ordenament jurídic."
+          },
+          {
+            "type": "paragraph",
+            "text": "Les garanties constitucionals són els mecanismes que fan efectius els drets. No són drets nous, sinó instruments de protecció: reserva de llei, respecte al contingut essencial, tutela judicial, procediment preferent i sumari, recurs d’empara i control de constitucionalitat de les lleis."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Dret:** allò que la persona pot exigir o exercir amb protecció jurídica.",
+              "**Deure:** obligació constitucionalment prevista.",
+              "**Garantia:** mecanisme que protegeix el dret i evita que quedi buit de contingut.",
+              "**Exemple pràctic:** la llibertat ideològica és un dret; la tutela judicial i el recurs d’empara són vies per protegir drets fonamentals."
             ]
           }
         ]
@@ -371,6 +421,28 @@ window.STUDY_TEXT = [
               "**Àrees metropolitanes.**",
               "**Mancomunitats de municipis.**",
               "**Entitats municipals descentralitzades**, quan existeixen."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Què és l’Administració local",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "L’Administració local és el conjunt d’ens públics territorials més propers a la ciutadania, encarregats de gestionar interessos propis d’una comunitat local. Forma part de l’organització territorial de l’Estat i actua amb autonomia dins del marc de la llei."
+          },
+          {
+            "type": "paragraph",
+            "text": "La idea central és la proximitat: el municipi és l’ens bàsic, la província agrupa municipis i altres entitats locals poden existir quan la normativa les reconeix. Tots aquests ens tenen personalitat jurídica i capacitat per actuar en l’àmbit de les seves competències."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Municipi:** entitat bàsica i canal immediat de participació ciutadana.",
+              "**Província:** agrupació de municipis amb funció de cooperació i assistència, especialment als municipis amb menys recursos.",
+              "**Altres ens locals:** comarques, àrees metropolitanes, mancomunitats o entitats d’àmbit territorial inferior al municipi quan la normativa ho preveu.",
+              "**No confondre:** una comunitat autònoma forma part de l’organització territorial de l’Estat, però no és Administració local."
             ]
           }
         ]
@@ -667,6 +739,47 @@ window.STUDY_TEXT = [
         ]
       },
       {
+        "heading": "Elements i classes amb exemples",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "**Element subjectiu:** l’òrgan que dicta l’acte ha de ser competent. Si no ho és, l’acte pot ser invàlid.",
+              "**Element objectiu:** el contingut ha de ser possible, lícit i determinat.",
+              "**Element causal:** hi ha d’haver uns fets o pressupòsits que justifiquin l’acte.",
+              "**Element finalista:** l’acte ha de perseguir l’interès públic previst per la norma, no una finalitat desviada.",
+              "**Element formal:** normalment ha de constar per escrit, amb notificació o publicació quan sigui necessari."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Classes freqüents d’examen: favorable o de gravamen; exprés o presumpte per silenci; definitiu o de tràmit; reglat o discrecional. La clau és entendre què fa l’acte i quin efecte té dins del procediment."
+          }
+        ]
+      },
+      {
+        "heading": "Definició clara i esquema de comprensió",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Un acte administratiu és una decisió o declaració formal de l’Administració, dictada per un òrgan competent, en exercici d’una potestat administrativa, que produeix efectes jurídics en un cas concret. Per exemple: una resolució, una llicència, una sanció, una notificació d’admissió o la concessió d’un dret."
+          },
+          {
+            "type": "paragraph",
+            "text": "No tot document administratiu és un acte administratiu. Un informe, una nota interna o una proposta poden formar part de l’expedient, però només són acte administratiu quan expressen una decisió o declaració amb efectes jurídics."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Qui el dicta?** Una Administració pública o un òrgan administratiu competent.",
+              "**Amb quina base?** Una potestat administrativa reconeguda per l’ordenament.",
+              "**Què produeix?** Efectes jurídics: crea, modifica, reconeix, denega o extingeix una situació.",
+              "**Com s’ha de dictar?** Seguint el procediment legal i respectant competència, finalitat, forma i motivació quan correspongui."
+            ]
+          }
+        ]
+      },
+      {
         "heading": "Elements de l’acte administratiu",
         "blocks": [
           {
@@ -766,6 +879,45 @@ window.STUDY_TEXT = [
               "Procediment administratiu comú.",
               "Procediments sancionadors i de responsabilitat patrimonial.",
               "Principis de la iniciativa legislativa i potestat reglamentària."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Conceptes que solen confondre’s",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "**Desistiment:** la persona abandona la seva sol·licitud o procediment, però pot tornar a iniciar-ne un altre si el dret ho permet.",
+              "**Renúncia:** la persona abandona el dret mateix, si és renunciable.",
+              "**Caducitat:** finalització per inactivitat o venciment de termini en els supòsits previstos.",
+              "**Silenci administratiu:** efecte jurídic de la manca de resolució expressa dins termini; pot ser estimatori o desestimatori segons la normativa aplicable.",
+              "**Notificació:** comunicació individual d’un acte a la persona interessada; la publicació és una forma de difusió general quan procedeix."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Explicació completa del procediment",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El procediment administratiu és el camí ordenat que segueix l’Administració abans de dictar una resolució. Serveix perquè la decisió final sigui legal, motivada quan calgui, controlable i respectuosa amb els drets de les persones interessades."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cal entendre’l com una seqüència: primer s’inicia, després s’ordena i s’investiguen els fets, es dona audiència quan correspon, es resol i finalment s’executa o es notifica la decisió."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Iniciació:** pot ser d’ofici per l’Administració o a sol·licitud de la persona interessada.",
+              "**Ordenació:** impuls dels tràmits, acumulació si escau, compliment de terminis i organització de l’expedient.",
+              "**Instrucció:** al·legacions, proves, informes i altres actuacions necessàries per conèixer els fets.",
+              "**Audiència:** permet a la persona interessada conèixer l’expedient i formular al·legacions abans de la resolució quan legalment correspongui.",
+              "**Finalització:** resolució expressa, desistiment, renúncia, caducitat, impossibilitat material o terminació convencional en els casos previstos.",
+              "**Execució:** compliment de l’acte administratiu quan és vàlid i eficaç, amb mitjans legalment previstos si cal execució forçosa."
             ]
           }
         ]

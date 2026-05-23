@@ -7,6 +7,7 @@ if (!EXAM_DATA) {
 const QUESTION_BANK = EXAM_DATA.questionBank;
 const CASE_CONTEXT = EXAM_DATA.caseContext;
 const CASE_QUESTIONS = EXAM_DATA.caseQuestions;
+const PREVIOUS_YEAR_QUESTIONS = EXAM_DATA.previousYearQuestions || [];
 const STUDY_TEXT = window.STUDY_TEXT || [];
 
 const app = document.getElementById("app");
@@ -71,6 +72,23 @@ function questionReference(question) {
   return question.id;
 }
 
+function questionTheme(question) {
+  return question.theme || (question.year ? `Anys anteriors - ${question.year}` : "Pregunta de pràctica");
+}
+
+function questionDocument(question) {
+  return question.document || question.sourceExam || "Banc de preguntes";
+}
+
+function questionExplanation(question) {
+  if (question.explanation) return question.explanation;
+  if (question.sourceType === "pregunta d'any anterior") {
+    const letter = question.answerLetter ? `${question.answerLetter.toUpperCase()}) ` : "";
+    return `Pregunta d'any anterior. Resposta marcada a la pauta: ${letter}${question.options[question.correct]}.`;
+  }
+  return "Resposta correcta segons el banc de preguntes.";
+}
+
 function contentReviewPill(item) {
   return item.reviewLabel ? `<span class="pill review-pill">${item.reviewLabel}</span>` : "";
 }
@@ -95,6 +113,35 @@ function questionsForAnnex(value) {
   if (value === "annex-i") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex I -"));
   if (value === "annex-ii") return QUESTION_BANK.filter((question) => question.theme.startsWith("Annex II -"));
   return QUESTION_BANK;
+}
+
+function previousExamGroups() {
+  return [
+    {
+      value: "2022-main",
+      label: "Prova 2022 - preguntes principals",
+      questions: PREVIOUS_YEAR_QUESTIONS.filter((question) => question.year === "2022" && !question.isReserve)
+    },
+    {
+      value: "2022-all",
+      label: "Prova 2022 - principals i reserva",
+      questions: PREVIOUS_YEAR_QUESTIONS.filter((question) => question.year === "2022")
+    },
+    {
+      value: "2023-main",
+      label: "Prova 2023 - preguntes principals",
+      questions: PREVIOUS_YEAR_QUESTIONS.filter((question) => question.year === "2023" && !question.isReserve)
+    },
+    {
+      value: "2023-all",
+      label: "Prova 2023 - principals i reserva",
+      questions: PREVIOUS_YEAR_QUESTIONS.filter((question) => question.year === "2023")
+    }
+  ].filter((group) => group.questions.length > 0);
+}
+
+function previousExamByValue(value) {
+  return previousExamGroups().find((group) => group.value === value) || previousExamGroups()[0];
 }
 
 function escapeHtml(value) {
@@ -209,6 +256,7 @@ function renderHome() {
       if (mode === "plainText") renderPlainTextStudy();
       if (mode === "first") renderFirstExamSetup();
       if (mode === "case") startExam("case");
+      if (mode === "previous") renderPreviousExamSetup();
     });
   });
   renderStats();
@@ -249,6 +297,54 @@ function renderFirstExamSetup() {
     const questionCount = clampNumber(document.getElementById("questionCountInput").value, 20, 40);
     const annexFilter = document.getElementById("annexFilterSelect").value;
     startExam("first", { questionCount, annexFilter });
+  });
+}
+
+function renderPreviousExamSetup() {
+  const groups = previousExamGroups();
+  if (!groups.length) {
+    app.innerHTML = `
+      <section class="panel review-panel">
+        <div class="exam-header">
+          <div>
+            <p class="eyebrow">Anys anteriors</p>
+            <h2>No hi ha preguntes disponibles</h2>
+          </div>
+          <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
+        </div>
+        <p class="muted">El banc actual no inclou preguntes d'anys anteriors.</p>
+      </section>
+    `;
+    document.getElementById("homeBtn").addEventListener("click", renderHome);
+    return;
+  }
+
+  app.innerHTML = `
+    <section class="panel review-panel">
+      <div class="exam-header">
+        <div>
+          <p class="eyebrow">Anys anteriors</p>
+          <h2>Escull una prova recuperada</h2>
+        </div>
+        <button class="secondary-button" id="homeBtn" type="button">Torna a l'inici</button>
+      </div>
+      <div class="setup-grid">
+        <label>
+          <span>Test disponible</span>
+          <select id="previousExamSelect">
+            ${groups.map((group) => `<option value="${group.value}">${group.label} (${group.questions.length} preguntes)</option>`).join("")}
+          </select>
+        </label>
+      </div>
+      <p class="muted setup-note">Aquest mode manté les preguntes recuperades de proves anteriors i aplica la mateixa correcció de pràctica que la primera prova.</p>
+      <div class="actions">
+        <button class="primary-button" id="startPreviousExamBtn" type="button">Comença el test</button>
+      </div>
+    </section>
+  `;
+  document.getElementById("homeBtn").addEventListener("click", renderHome);
+  document.getElementById("startPreviousExamBtn").addEventListener("click", () => {
+    startExam("previous", { previousSelection: document.getElementById("previousExamSelect").value });
   });
 }
 
@@ -296,20 +392,24 @@ function renderStats() {
 
 function startExam(type, options = {}) {
   const isCase = type === "case";
+  const isPrevious = type === "previous";
   const questionCount = clampNumber(options.questionCount || 40, 20, 40);
   const annexFilter = options.annexFilter || "all";
+  const previousSelection = options.previousSelection || "2022-main";
+  const previousExam = previousExamByValue(previousSelection);
   const pool = questionsForAnnex(annexFilter);
-  const baseQuestions = isCase ? CASE_QUESTIONS : sample(pool, questionCount);
+  const baseQuestions = isCase ? CASE_QUESTIONS : isPrevious ? previousExam.questions : sample(pool, questionCount);
   const firstMax = baseQuestions.length * 0.75;
   session = {
     type,
-    title: isCase ? "Segona prova - Cas practic" : `Primera prova - ${annexLabel(annexFilter)}`,
+    title: isCase ? "Segona prova - Cas practic" : isPrevious ? `Anys anteriors - ${previousExam.label}` : `Primera prova - ${annexLabel(annexFilter)}`,
     questions: prepareQuestions(baseQuestions),
     current: 0,
     answers: {},
-    context: isCase ? CASE_CONTEXT : "",
+    context: isCase ? CASE_CONTEXT : isPrevious ? "Preguntes recuperades de proves anteriors de Lliçà d'Amunt." : "",
     questionCount,
     annexFilter,
+    previousSelection,
     config: isCase
       ? { correct: 1.333, wrong: -0.333, blank: -0.333, max: 19.995, pass: null }
       : { correct: 0.75, wrong: -0.187, blank: 0, max: firstMax, pass: firstMax / 2 }
@@ -343,8 +443,8 @@ function renderExam() {
         <div class="question-card">
           <div class="question-meta">
             <span class="pill reference-pill">${questionReference(question)}</span>
-            <span class="pill">${question.theme}</span>
-            <span class="pill">${question.document}</span>
+            <span class="pill">${questionTheme(question)}</span>
+            <span class="pill">${questionDocument(question)}</span>
             ${reviewPill(question)}
           </div>
           <h3 class="question-title">${question.prompt}</h3>
@@ -475,7 +575,8 @@ function calculateResults() {
     }
 
     if (state !== "correct") {
-      topicMisses[question.theme] = (topicMisses[question.theme] || 0) + 1;
+      const topic = questionTheme(question);
+      topicMisses[topic] = (topicMisses[topic] || 0) + 1;
     }
 
     return { question, answer, state };
@@ -530,13 +631,13 @@ function renderResults(result) {
               <div class="question-meta">
                 <span class="pill reference-pill">${questionReference(question)}</span>
                 <span class="pill">${state === "correct" ? "Correcta" : state === "wrong" ? "Incorrecta" : "En blanc"}</span>
-                <span class="pill">${question.theme}</span>
+                <span class="pill">${questionTheme(question)}</span>
                 ${reviewPill(question)}
               </div>
               <h3>${index + 1}. ${question.prompt}</h3>
               <p><strong>La teva resposta:</strong> ${answerLabel}</p>
               <p><strong>Resposta correcta:</strong> ${question.options[question.correct]}</p>
-              <p class="muted">${question.explanation}</p>
+              <p class="muted">${questionExplanation(question)}</p>
             </article>
           `;
         }).join("")}
@@ -545,7 +646,8 @@ function renderResults(result) {
   `;
   document.getElementById("repeatBtn").addEventListener("click", () => startExam(session.type, {
     questionCount: session.questionCount,
-    annexFilter: session.annexFilter
+    annexFilter: session.annexFilter,
+    previousSelection: session.previousSelection
   }));
   document.getElementById("homeBtn").addEventListener("click", renderHome);
 }
